@@ -1,0 +1,16 @@
+$text-primary:   alpha(#fff, 1);
+$text-secondary: alpha(#fff, .4);
+$text-disabled:  alpha(#fff, .15);
+
+$text-primary-invert:   alpha(#000, .75);
+$text-secondary-invert: alpha(#000, .45);
+$text-disabled-invert:  alpha(#000, .2);
+
+
+$accent:  #7998b3;
+$info:    #e8a05f;
+$warning: #e86b6b;
+
+
+// Selectors with modified default colors:
+// .window-caption
