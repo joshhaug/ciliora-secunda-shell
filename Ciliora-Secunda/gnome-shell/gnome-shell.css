@@ -1645,10 +1645,14 @@ StEntry:insensitive StIcon {
   color: transparent !important;
 }
 
+.alt-tab-app StIcon {
+  width: 64px;
+  height: 64px;
+  padding-bottom: 10px;
+}
+
 .input-source-switcher-symbol {
-  font-size: 34pt;
-  width: 96px;
-  height: 96px;
+  font-size: 32pt;
 }
 
 /* =====================================================
