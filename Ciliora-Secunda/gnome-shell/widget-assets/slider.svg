@@ -15,7 +15,7 @@
    height="16"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="slider.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.21875"
-     inkscape:cx="9.1996393"
+     inkscape:cx="1.8476511"
      inkscape:cy="13.622415"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,9 +38,9 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="849"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -153,7 +153,7 @@
     <path
        id="rect4145"
        d="m 2,289 c -1.108,0 -2,0.892 -2,2 l 0,2 c 0,1.108 0.892,2 2,2 l 9,0 c 1.108,0 2,-0.892 2,-2 l 0,-2 c 0,-1.108 -0.892,-2 -2,-2 z m -1,1 11,0 0,4 -11,0 z"
-       style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="sssssssssccccc" />
   </g>

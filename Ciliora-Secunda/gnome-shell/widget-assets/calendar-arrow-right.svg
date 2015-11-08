@@ -15,7 +15,7 @@
    height="16"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="calendar-arrow-right.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,17 +30,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.21875"
-     inkscape:cx="-7.6701033"
-     inkscape:cy="7.5287185"
+     inkscape:cx="-5.0073638"
+     inkscape:cy="7.9057437"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="875"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -90,7 +90,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -131,7 +131,7 @@
      id="layer1"
      transform="translate(0,-284)">
     <path
-       style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="display:inline;fill:#888888;fill-opacity:1;stroke:none"
        d="m 6,296 0,-8 4,4 z"
        id="path18028"
        inkscape:connector-curvature="0"

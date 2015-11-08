@@ -15,7 +15,7 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.91 r"
    sodipodi:docname="entry.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="20.005229"
-     inkscape:cx="10.593033"
+     inkscape:cx="2.7950718"
      inkscape:cy="13.399633"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,9 +38,9 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="849"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="25"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -133,7 +133,7 @@
     <path
        id="rect4145"
        d="m 2,276 c -1.108,0 -2,0.892 -2,2 l 0,20 c 0,1.108 0.892,2 2,2 l 20,0 c 1.108,0 2,-0.892 2,-2 l 0,-20 c 0,-1.108 -0.892,-2 -2,-2 l -20,0 z m -1,1 22,0 0,22 -22,0 0,-22 z"
-       style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
     <rect
        style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"

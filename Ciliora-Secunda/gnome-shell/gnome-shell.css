@@ -168,7 +168,7 @@ StEntry:insensitive StIcon {
    ===================================================== */
 .toggle-switch-us,
 .toggle-switch-intl {
-  width: 28px;
+  width: 26px;
   height: 16px;
   background-size: contain;
   background-image: url("widget-assets/off.svg");
@@ -195,19 +195,19 @@ StEntry:insensitive StIcon {
 .check-box StBin {
   width: 17px;
   height: 17px;
-  background-image: url("widget-assets/checkbox.svg");
+  background-image: url("widget-assets/check-box.svg");
 }
 
 .check-box:focus StBin {
-  background-image: url("widget-assets/checkbox-focused.svg");
+  background-image: url("widget-assets/check-box-focused.svg");
 }
 
 .check-box:checked StBin {
-  background-image: url("widget-assets/checkbox-checked.svg");
+  background-image: url("widget-assets/check-box-checked.svg");
 }
 
 .check-box:focus:checked StBin {
-  background-image: url("widget-assets/checkbox-focused-checked.svg");
+  background-image: url("widget-assets/check-box-focused-checked.svg");
 }
 
 /* =====================================================

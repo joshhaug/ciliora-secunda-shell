@@ -14,20 +14,19 @@
     }
 
     StBin {
-        width: 17px;
-        height: 17px;
-        background-image: url("widget-assets/checkbox.svg");
+        @include size(17px);
+        background-image: url("widget-assets/check-box.svg");
     }
 
     &:focus StBin {
-        background-image: url("widget-assets/checkbox-focused.svg");
+        background-image: url("widget-assets/check-box-focused.svg");
     }
 
     &:checked StBin {
-        background-image: url("widget-assets/checkbox-checked.svg");
+        background-image: url("widget-assets/check-box-checked.svg");
     }
 
     &:focus:checked StBin {
-        background-image: url("widget-assets/checkbox-focused-checked.svg");
+        background-image: url("widget-assets/check-box-focused-checked.svg");
     }
 }
