@@ -40,11 +40,11 @@
     }
 
     &-item {
-        spacing: .8em;
+        spacing: .6em;
 
-        &:ltr { padding: .4em 1.7em .4em 0; }
+        &:ltr { padding: .4em 1.9em .4em .2em; }
 
-        &:rtl { padding: .4em 0 .4em 1.7em; }
+        &:rtl { padding: .4em .2em .4em 1.9em; }
 
         &:checked {
             background-color: rgba(0, 0, 0, 0);

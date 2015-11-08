@@ -1438,15 +1438,15 @@ StEntry:insensitive StIcon {
 }
 
 .popup-menu-item {
-  spacing: .8em;
+  spacing: .6em;
 }
 
 .popup-menu-item:ltr {
-  padding: .4em 1.7em .4em 0;
+  padding: .4em 1.9em .4em .2em;
 }
 
 .popup-menu-item:rtl {
-  padding: .4em 0 .4em 1.7em;
+  padding: .4em .2em .4em 1.9em;
 }
 
 .popup-menu-item:checked {
