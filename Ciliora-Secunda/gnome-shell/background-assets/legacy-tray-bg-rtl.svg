@@ -30,7 +30,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="24.582394"
-     inkscape:cx="5.5420783"
+     inkscape:cx="-0.76324737"
      inkscape:cy="9.9234999"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,7 +38,7 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -130,13 +130,13 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"
        d="m 24,278 0,1 -20,0 0,21 -1,0 0,-22 z"
        id="rect5319"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <path
-       style="opacity:0.85;fill:#131619;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        d="m 24,300 -20,0 0,-21 20,0 z"
        id="rect5315"
        inkscape:connector-curvature="0"

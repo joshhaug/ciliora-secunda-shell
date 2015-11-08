@@ -30,15 +30,15 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="17.382377"
-     inkscape:cx="8.5410052"
+     inkscape:cx="-0.31854261"
      inkscape:cy="10.575997"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4149"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -129,37 +129,47 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <rect
-       y="-300"
-       x="2"
-       height="24"
-       width="20"
-       id="rect5315-5"
-       style="opacity:0.37999998;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
-    <rect
-       style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4706"
-       width="20"
-       height="1"
-       x="2"
-       y="-299"
-       transform="scale(1,-1)" />
-    <rect
-       y="-298"
-       x="2"
-       height="1"
-       width="20"
-       id="rect4708"
-       style="opacity:0.12000002;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
-    <rect
-       y="-300"
-       x="2"
-       height="1"
-       width="20"
-       id="rect4719"
-       style="fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
+    <g
+       style="display:inline;enable-background:new"
+       id="g4149"
+       transform="translate(0,276)">
+      <rect
+         y="-21"
+         x="2"
+         height="1"
+         width="20"
+         id="rect4708-0"
+         style="opacity:0.07000002;fill:#000000;fill-opacity:1;stroke:none"
+         transform="scale(1,-1)" />
+      <rect
+         y="-22"
+         x="2"
+         height="22"
+         width="20"
+         id="rect5315-5-7"
+         style="opacity:0.37999998;fill:#000000;fill-opacity:1;stroke:none"
+         transform="scale(1,-1)" />
+      <rect
+         style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
+         id="rect4706-1"
+         width="20"
+         height="1"
+         x="2"
+         y="-22"
+         transform="scale(1,-1)" />
+      <rect
+         y="-23"
+         x="2"
+         height="1"
+         width="20"
+         id="rect4719-7"
+         style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
+         transform="scale(1,-1)" />
+      <path
+         style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+         d="m 2,23 0,1 20,0 0,-1 -20,0 z"
+         id="rect4185"
+         inkscape:connector-curvature="0" />
+    </g>
   </g>
 </svg>

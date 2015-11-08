@@ -52,10 +52,10 @@ StScrollBar StButton#hhandle {
   margin: 0 !important;
 }
 
-StScrollBar StButton#vhandle:hover,
-StScrollBar StButton#vhandle:focus,
-StScrollBar StButton#vhandle:active,
-StScrollBar StButton#hhandle:hover, StScrollBar StButton#hhandle:focus, StScrollBar StButton#hhandle:active {
+StScrollBar StButton#vhandle:hover, StScrollBar StButton#vhandle:focus, StScrollBar StButton#vhandle:active,
+StScrollBar StButton#hhandle:hover,
+StScrollBar StButton#hhandle:focus,
+StScrollBar StButton#hhandle:active {
   border-image: url("widget-assets/scroll-handle-hover.svg") 4;
 }
 
@@ -65,10 +65,10 @@ StScrollBar StButton#hhandle:hover, StScrollBar StButton#hhandle:focus, StScroll
   border-image: url("widget-assets/overview-scroll-handle.svg") 5;
 }
 
-.search-display StScrollBar StButton#vhandle:hover,
-.search-display StScrollBar StButton#vhandle:focus,
-.search-display StScrollBar StButton#vhandle:active,
-.search-display StScrollBar StButton#hhandle:hover, .search-display StScrollBar StButton#hhandle:focus, .search-display StScrollBar StButton#hhandle:active {
+.search-display StScrollBar StButton#vhandle:hover, .search-display StScrollBar StButton#vhandle:focus, .search-display StScrollBar StButton#vhandle:active,
+.search-display StScrollBar StButton#hhandle:hover,
+.search-display StScrollBar StButton#hhandle:focus,
+.search-display StScrollBar StButton#hhandle:active {
   border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
 }
 
@@ -239,11 +239,11 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-focused.svg") 10;
 }
 
-.button:active,
-.button:pressed,
+.button:active, .button:pressed,
 .modal-dialog-button:active,
 .modal-dialog-button:pressed,
-.notification-button:active, .notification-button:pressed {
+.notification-button:active,
+.notification-button:pressed {
   border-image: url("button-assets/button-pressed.svg") 10;
 }
 
@@ -253,11 +253,11 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-focused-hover.svg") 10;
 }
 
-.button:focus:active,
-.button:focus:pressed,
+.button:focus:active, .button:focus:pressed,
 .modal-dialog-button:focus:active,
 .modal-dialog-button:focus:pressed,
-.notification-button:focus:active, .notification-button:focus:pressed {
+.notification-button:focus:active,
+.notification-button:focus:pressed {
   border-image: url("button-assets/button-focused-pressed.svg") 10;
 }
 
@@ -284,8 +284,7 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-.end-session-dialog .modal-dialog-button:hover,
-.end-session-dialog .modal-dialog-button:focus {
+.end-session-dialog .modal-dialog-button:hover, .end-session-dialog .modal-dialog-button:focus {
   border-image: url("button-assets/button-red.svg") 7;
   border-radius: 0 !important;
 }
@@ -295,10 +294,7 @@ StEntry:insensitive StIcon {
   border-radius: 0 !important;
 }
 
-.end-session-dialog .modal-dialog-button:active,
-.end-session-dialog .modal-dialog-button:pressed,
-.end-session-dialog .modal-dialog-button:focus:active,
-.end-session-dialog .modal-dialog-button:focus:pressed {
+.end-session-dialog .modal-dialog-button:active, .end-session-dialog .modal-dialog-button:pressed, .end-session-dialog .modal-dialog-button:focus:active, .end-session-dialog .modal-dialog-button:focus:pressed {
   border-image: url("button-assets/button-red-pressed.svg") 7;
   border-radius: 0 !important;
 }
@@ -310,8 +306,7 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-.end-session-dialog .modal-dialog-button:first-child:hover,
-.end-session-dialog .modal-dialog-button:first-child:focus {
+.end-session-dialog .modal-dialog-button:first-child:hover, .end-session-dialog .modal-dialog-button:first-child:focus {
   border-image: url("button-assets/button-green.svg") 7;
   border-radius: 0 !important;
 }
@@ -321,10 +316,7 @@ StEntry:insensitive StIcon {
   border-radius: 0 !important;
 }
 
-.end-session-dialog .modal-dialog-button:first-child:active,
-.end-session-dialog .modal-dialog-button:first-child:pressed,
-.end-session-dialog .modal-dialog-button:first-child:focus:active,
-.end-session-dialog .modal-dialog-button:first-child:focus:pressed {
+.end-session-dialog .modal-dialog-button:first-child:active, .end-session-dialog .modal-dialog-button:first-child:pressed, .end-session-dialog .modal-dialog-button:first-child:focus:active, .end-session-dialog .modal-dialog-button:first-child:focus:pressed {
   border-image: url("button-assets/button-green-pressed.svg") 7;
   border-radius: 0 !important;
 }
@@ -340,8 +332,7 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-violet-hover.svg") 10;
 }
 
-.extension-dialog .modal-dialog-button:focus:active,
-.extension-dialog .modal-dialog-button:focus:pressed {
+.extension-dialog .modal-dialog-button:focus:active, .extension-dialog .modal-dialog-button:focus:pressed {
   border-image: url("button-assets/button-violet-pressed.svg") 10;
 }
 
@@ -1089,30 +1080,25 @@ StEntry:insensitive StIcon {
   text-align: right;
 }
 
-.end-session-dialog-session-list,
-.end-session-dialog-app-list {
+.end-session-dialog-session-list, .end-session-dialog-app-list {
   spacing: 0;
 }
 
-.end-session-dialog-app-list-item,
-.end-session-dialog-session-list-item {
+.end-session-dialog-app-list-item, .end-session-dialog-session-list-item {
   spacing: 1em;
   padding-top: 16px;
 }
 
-.end-session-dialog-app-list-item:first-child,
-.end-session-dialog-session-list-item:first-child {
+.end-session-dialog-app-list-item:first-child, .end-session-dialog-session-list-item:first-child {
   border: 0 rgba(0, 0, 0, 0.15);
   border-top-width: 1px;
 }
 
-.end-session-dialog-app-list-item-name,
-.end-session-dialog-session-list-item-name {
+.end-session-dialog-app-list-item-name, .end-session-dialog-session-list-item-name {
   font-weight: bold;
 }
 
-.end-session-dialog-app-list-item-description,
-.end-session-dialog-session-list-item-description {
+.end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
   color: rgba(255, 255, 255, 0.4);
   font-size: 9pt;
@@ -1420,8 +1406,8 @@ StEntry:insensitive StIcon {
 .popup-menu-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
-  -arrow-background-color: rgba(19, 22, 25, 0.85);
-  -arrow-border-color: rgba(0, 0, 0, 0.8);
+  -arrow-background-color: rgba(19, 22, 25, 0.9);
+  -arrow-border-color: rgba(0, 0, 0, 0.9);
   -arrow-border-width: 1px;
   -arrow-base: 12px;
   -arrow-rise: 6px;
@@ -1430,7 +1416,7 @@ StEntry:insensitive StIcon {
 
 .popup-menu-content {
   border-image: url("background-assets/popup-inside.svg") 9;
-  padding: 0.7em 0.2em;
+  padding: .7em .2em;
   color: white;
 }
 
@@ -1456,11 +1442,11 @@ StEntry:insensitive StIcon {
 }
 
 .popup-menu-item:ltr {
-  padding: 0.4em 1.7em 0.4em 0;
+  padding: .4em 1.7em .4em 0;
 }
 
 .popup-menu-item:rtl {
-  padding: 0.4em 0 0.4em 1.7em;
+  padding: .4em 0 .4em 1.7em;
 }
 
 .popup-menu-item:checked {
@@ -1469,8 +1455,7 @@ StEntry:insensitive StIcon {
   font-weight: normal;
 }
 
-.popup-menu-item:active,
-.popup-menu-item.selected {
+.popup-menu-item:active, .popup-menu-item.selected {
   border-image: url("background-assets/hover.svg") 9;
   color: white;
 }
@@ -1726,8 +1711,7 @@ StEntry:insensitive StIcon {
   font-weight: bold;
 }
 
-#panel.unlock-screen,
-#panel.lock-screen {
+#panel.unlock-screen, #panel.lock-screen {
   background-color: transparent;
   border-image: url("panel-assets/panel-top.svg") 4;
 }
@@ -1831,13 +1815,13 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-.unlock-screen #panel .panel-button:focus,
-.unlock-screen #panel .panel-button:hover,
-.unlock-screen #panel .panel-button:active,
+.unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active,
 .login-screen #panel .panel-button:focus,
 .login-screen #panel .panel-button:hover,
 .login-screen #panel .panel-button:active,
-.lock-screen #panel .panel-button:focus, .lock-screen #panel .panel-button:hover, .lock-screen #panel .panel-button:active {
+.lock-screen #panel .panel-button:focus,
+.lock-screen #panel .panel-button:hover,
+.lock-screen #panel .panel-button:active {
   color: white;
 }
 
@@ -1866,7 +1850,7 @@ StEntry:insensitive StIcon {
 }
 
 .calendar {
-  margin: 0 1.5em 0.3em 1.5em;
+  margin: 0 1.5em .3em 1.5em;
 }
 
 .datemenu-calendar-column {
@@ -1875,8 +1859,8 @@ StEntry:insensitive StIcon {
 
 /*--- ! Day & Date ---*/
 .datemenu-today-button {
-  margin: 0 0.7em 0.3em 0.7em;
-  padding: 0.7em 1em;
+  margin: 0 .7em .3em .7em;
+  padding: .7em 1em;
 }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus, .datemenu-today-button:active {
@@ -1902,7 +1886,7 @@ StEntry:insensitive StIcon {
 
 /*--- ! World Clocks ---*/
 .datemenu-displays-box {
-  margin: 0 0.7em;
+  margin: 0 .7em;
   width: 0;
 }
 
@@ -1914,7 +1898,7 @@ StEntry:insensitive StIcon {
 
 .world-clocks-grid {
   spacing-rows: .6em;
-  padding: 0.4em 0.7em;
+  padding: .4em .7em;
   font-size: 9pt;
 }
 
@@ -1968,20 +1952,18 @@ StEntry:insensitive StIcon {
   background-image: url("widget-assets/calendar-arrow-right.svg");
 }
 
-.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-back:focus,
-.pager-button.calendar-change-month-forward:hover:rtl, .pager-button.calendar-change-month-forward:focus:rtl {
+.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-back:focus, .pager-button.calendar-change-month-forward:hover:rtl, .pager-button.calendar-change-month-forward:focus:rtl {
   background-image: url("widget-assets/calendar-arrow-left-hover.svg");
 }
 
-.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-forward:focus,
-.pager-button.calendar-change-month-back:focus:rtl, .pager-button.calendar-change-month-back:hover:rtl {
+.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-forward:focus, .pager-button.calendar-change-month-back:focus:rtl, .pager-button.calendar-change-month-back:hover:rtl {
   background-image: url("widget-assets/calendar-arrow-right-hover.svg");
 }
 
 .calendar-month-label {
   color: rgba(255, 255, 255, 0.4);
   font-weight: bold;
-  padding: 0.6em 0.8em;
+  padding: .6em .8em;
 }
 
 .calendar-month-label:focus {
@@ -2140,11 +2122,10 @@ StEntry:insensitive StIcon {
 
 .message-list-sections {
   spacing: 1.5em;
-  margin: 0.6em 1.3em 1em 1.3em;
+  margin: .6em 1.3em 1em 1.3em;
 }
 
-.message-list-section,
-.message-list-section-list {
+.message-list-section, .message-list-section-list {
   spacing: 0.7em;
 }
 
@@ -2158,7 +2139,7 @@ StEntry:insensitive StIcon {
 }
 
 .message-list-section-title {
-  padding: 0.1em 0 0 0.2em;
+  padding: .1em 0 0 .2em;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.4);
 }
@@ -2449,15 +2430,15 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-.legacy-tray-handle:hover,
-.legacy-tray-handle:focus,
-.legacy-tray-icon:hover, .legacy-tray-icon:focus {
+.legacy-tray-handle:hover, .legacy-tray-handle:focus,
+.legacy-tray-icon:hover,
+.legacy-tray-icon:focus {
   background-color: transparent !important;
 }
 
-.legacy-tray-handle:hover StIcon,
-.legacy-tray-handle:focus StIcon,
-.legacy-tray-icon:hover StIcon, .legacy-tray-icon:focus StIcon {
+.legacy-tray-handle:hover StIcon, .legacy-tray-handle:focus StIcon,
+.legacy-tray-icon:hover StIcon,
+.legacy-tray-icon:focus StIcon {
   color: #7998b3;
 }
 
@@ -2526,8 +2507,7 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-hover.svg") 7;
 }
 
-.keyboard-key:checked,
-.keyboard-key:active {
+.keyboard-key:checked, .keyboard-key:active {
   border-image: url("button-assets/button-pressed.svg") 7;
 }
 
@@ -2551,13 +2531,13 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-lighter-hover.svg") 7;
 }
 
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:checked,
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:active,
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:checked, .keyboard-layout > *:first-child .keyboard-row > *:last-child:active,
 .keyboard-layout .keyboard-row:last-child > *:last-child:checked,
 .keyboard-layout .keyboard-row:last-child > *:last-child:active,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:checked,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:active,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:checked, .keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:active {
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:checked,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:active {
   border-image: url("button-assets/button-lighter-pressed.svg") 7;
 }
 
@@ -2565,8 +2545,8 @@ StEntry:insensitive StIcon {
 .keyboard-subkeys {
   padding: 0;
   -arrow-border-radius: 0;
-  -arrow-background-color: rgba(19, 22, 25, 0.85);
-  -arrow-border-color: rgba(0, 0, 0, 0.8);
+  -arrow-background-color: rgba(19, 22, 25, 0.9);
+  -arrow-border-color: rgba(0, 0, 0, 0.9);
   -arrow-border-width: 1px;
   -arrow-base: 12px;
   -arrow-rise: 6px;
@@ -2583,8 +2563,8 @@ StEntry:insensitive StIcon {
 .candidate-popup-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
-  -arrow-background-color: rgba(19, 22, 25, 0.85);
-  -arrow-border-color: rgba(0, 0, 0, 0.8);
+  -arrow-background-color: rgba(19, 22, 25, 0.9);
+  -arrow-border-color: rgba(0, 0, 0, 0.9);
   -arrow-border-width: 1px;
   -arrow-base: 12px;
   -arrow-rise: 6px;
@@ -2628,13 +2608,13 @@ StEntry:insensitive StIcon {
 }
 
 .vertical .candidate-box {
-  padding: 0.4em 0.7em;
+  padding: .4em .7em;
   margin: .2em 0;
 }
 
 .horizontal .candidate-box {
   padding: 0 1em;
-  margin: 0 0 0.7em 0.7em;
+  margin: 0 0 .7em .7em;
 }
 
 .candidate-page-button {
@@ -2652,7 +2632,7 @@ StEntry:insensitive StIcon {
 
 .horizontal .candidate-page-button-box {
   padding: 0;
-  margin: 0 0.7em 0.7em 0.7em;
+  margin: 0 .7em .7em .7em;
 }
 
 .candidate-page-button-previous {

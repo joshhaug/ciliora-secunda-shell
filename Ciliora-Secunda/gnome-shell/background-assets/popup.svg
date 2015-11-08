@@ -142,7 +142,7 @@
        height="20"
        width="20"
        id="rect5634"
-       style="opacity:0.85;fill:#131619;fill-opacity:1;stroke:none" />
+       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none" />
     <rect
        y="279"
        x="3"
@@ -160,7 +160,7 @@
        id="rect3855"
        style="display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new;opacity:0.8" />
     <rect
-       style="display:inline;fill:#1d2329;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;fill:#20262D;fill-opacity:1;stroke:none;enable-background:new"
        id="rect3085"
        width="14"
        height="14"
