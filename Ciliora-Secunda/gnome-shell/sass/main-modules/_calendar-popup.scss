@@ -19,7 +19,7 @@
         background-color: transparent;
 
         .day-label, .date-label {
-            color: $accent;
+            color: $link;
             text-decoration: underline;
         }
     }
@@ -64,7 +64,7 @@
         background-color: transparent !important;
 
         .world-clocks-header {
-            color: $accent;
+            color: $link;
             text-decoration: underline;
         }
     }
@@ -125,7 +125,7 @@
     padding: .6em .8em;
 
     &:focus  {
-        color: $accent;
+        color: $link;
     }
 }
 
@@ -152,7 +152,7 @@
 
     &:focus {
         background-color: transparent;
-        color: $accent;
+        color: $link;
     }
 }
 
@@ -322,7 +322,7 @@
 
         &:hover, &:focus, &:active {
             background-color: transparent !important;
-            color: $accent;
+            color: $link;
             text-decoration: underline;
 
         }
@@ -342,7 +342,7 @@
         &:hover > StIcon,
         &:focus > StIcon {
             background-color: transparent;
-            color: $warning;
+            color: $accent-danger;
         }
     }
 
@@ -393,7 +393,7 @@
         padding: 10px;
 
         StIcon {
-            color: $warning;
+            color: $accent-danger;
             margin-bottom: 0;
         }
     }

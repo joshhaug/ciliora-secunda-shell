@@ -79,7 +79,7 @@
     }
 
     .screencast-indicator {
-        color: $warning;
+        color: $accent-danger;
     }
 
     .panel-corner {
@@ -130,7 +130,7 @@
 /* ! Notification indicator */
 .clock-display {
     > * > *:last-child {
-        color: $warning;
+        color: $accent-danger;
         margin-left: .3em;
     }
 

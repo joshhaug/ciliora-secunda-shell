@@ -93,11 +93,11 @@ StEntry {
   width: 220px;
   font-size: 9pt;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 StEntry StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 StEntry StIcon.capslock-icon {
@@ -123,11 +123,11 @@ StEntry:focus StIcon {
 
 StEntry:insensitive {
   border-image: url("widget-assets/entry-insensitive.svg") 6;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 StEntry:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 /*--- ! Search entry in overview  ---*/
@@ -137,14 +137,14 @@ StEntry:insensitive StIcon {
   height: 22px;
   width: 320px;
   border-radius: 0;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
 }
 
 .search-entry StIcon {
   icon-size: 16px;
   padding: 0 4px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .search-entry:hover StIcon {
@@ -607,7 +607,7 @@ StEntry:insensitive StIcon {
 }
 
 .search-statustext {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 16pt;
   font-weight: bold;
 }
@@ -753,7 +753,7 @@ StEntry:insensitive StIcon {
 }
 
 .no-frequent-applications-label {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 16pt;
   font-weight: bold;
 }
@@ -813,7 +813,7 @@ StEntry:insensitive StIcon {
   box-shadow: 0 0 transparent;
   border-image: url("overview-assets/overview-dark-bg.svg") 7;
   padding: 6px 12px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .app-view-control:hover, .app-view-control:focus, .app-view-control:focus:active, .app-view-control:checked {
@@ -1100,7 +1100,7 @@ StEntry:insensitive StIcon {
 
 .end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
 }
 
@@ -1235,12 +1235,12 @@ StEntry:insensitive StIcon {
 
 .prompt-dialog-info-label {
   font-size: 9pt;
-  color: #7998b3;
+  color: #9574b8;
 }
 
 .prompt-dialog-null-label {
   font-size: 9pt;
-  color: #7998b3;
+  color: #e8a05f;
 }
 
 .prompt-dialog StEntry {
@@ -1372,7 +1372,7 @@ StEntry:insensitive StIcon {
 
 .nm-dialog-icon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .no-networks-label {
@@ -1474,7 +1474,7 @@ StEntry:insensitive StIcon {
 }
 
 .popup-menu .popup-menu-item .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .popup-menu .popup-menu-item.selected .popup-status-menu-item {
@@ -1498,7 +1498,7 @@ StEntry:insensitive StIcon {
 }
 
 .popup-sub-menu .popup-menu-item .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .popup-separator-menu-item {
@@ -1875,7 +1875,7 @@ StEntry:insensitive StIcon {
 .datemenu-today-button .day-label {
   padding-bottom: .2em;
   font-size: 9pt;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .datemenu-today-button .date-label {
@@ -1891,7 +1891,7 @@ StEntry:insensitive StIcon {
 }
 
 .world-clocks-header {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: bold;
   font-size: 9pt;
 }
@@ -1961,7 +1961,7 @@ StEntry:insensitive StIcon {
 }
 
 .calendar-month-label {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: bold;
   padding: .6em .8em;
 }
@@ -2029,7 +2029,7 @@ StEntry:insensitive StIcon {
 .calendar-nonwork-day {
   border-image: url("misc-assets/calendar-nonwork-day.svg") 7;
   border: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .calendar-nonwork-day:hover, .calendar-nonwork-day:focus {
@@ -2093,7 +2093,7 @@ StEntry:insensitive StIcon {
 
 /*---  ! Week Number ---*/
 .calendar-week-number {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 8pt;
   font-weight: normal;
   width: 2.4em;
@@ -2141,7 +2141,7 @@ StEntry:insensitive StIcon {
 .message-list-section-title {
   padding: .1em 0 0 .2em;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .message-list-section-title:hover, .message-list-section-title:focus, .message-list-section-title:active {
@@ -2156,7 +2156,7 @@ StEntry:insensitive StIcon {
 }
 
 .message-list-section-close > StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   icon-size: 16px;
   background-color: transparent !important;
   border-radius: 0 !important;
@@ -2212,7 +2212,7 @@ StEntry:insensitive StIcon {
 }
 
 .message-secondary-bin {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
 }
 
@@ -2331,7 +2331,7 @@ StEntry:insensitive StIcon {
 }
 
 .hotplug-notification-item {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
   text-shadow: none !important;
   padding: 10px;
@@ -2361,7 +2361,7 @@ StEntry:insensitive StIcon {
 }
 
 .chat-log-message {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .chat-new-group {
@@ -2372,7 +2372,7 @@ StEntry:insensitive StIcon {
   border-image: url("background-assets/light-bg-bubble-left.svg") 7 11 7 9;
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: normal;
 }
 
@@ -2396,7 +2396,7 @@ StEntry:insensitive StIcon {
   padding-left: 4px;
   font-size: 9pt;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .chat-meta-message:rtl {
@@ -2582,7 +2582,7 @@ StEntry:insensitive StIcon {
 }
 
 .candidate-index {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-weight: normal;
   font-size: 10pt;
 }
@@ -2725,7 +2725,7 @@ StEntry:insensitive StIcon {
   font-size: 9pt;
   font-weight: bold;
   padding: 0;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   border-image: url("button-assets/linked-button-middle.svg") 7;
 }
 
