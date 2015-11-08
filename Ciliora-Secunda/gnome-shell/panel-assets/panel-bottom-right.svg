@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="24.582394"
-     inkscape:cx="3.7115003"
-     inkscape:cy="16.432223"
+     inkscape:zoom="17.382377"
+     inkscape:cx="-3.3579434"
+     inkscape:cy="15.993169"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -130,13 +130,13 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"
        d="m 24,276 0,1 -23,0 0,23 -1,0 0,-24 z"
        id="rect5319"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccccc" />
     <rect
-       style="opacity:0.8;fill:#131619;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        id="rect5315"
        width="23"
        height="23"
