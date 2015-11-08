@@ -2074,7 +2074,7 @@ StEntry:insensitive StIcon {
 .switcher-list {
   border-image: url("background-assets/popup-outside.svg") 9;
   color: white;
-  padding: 2px;
+  padding: 1px;
   margin: 2px;
   font-size: 12px;
   font-weight: bold;
