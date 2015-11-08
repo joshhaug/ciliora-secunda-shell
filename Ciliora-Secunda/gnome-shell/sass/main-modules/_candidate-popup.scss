@@ -45,7 +45,7 @@
     border-radius: 0 !important;
 
     &:selected, &:hover {
-        border-image: url("background-assets/hover.svg") 7;
+        border-image: url("background-assets/hover-popup.svg") 7;
     }
 
     .vertical & { padding: .4em .7em; margin: .2em 0;}

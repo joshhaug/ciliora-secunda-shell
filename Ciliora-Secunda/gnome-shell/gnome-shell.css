@@ -858,7 +858,7 @@ StEntry:insensitive StIcon {
 .app-folder-popup-bin .app-well-app:selected .overview-icon,
 .app-folder-popup-bin .app-well-app:active .overview-icon,
 .app-folder-popup-bin .app-well-app:checked .overview-icon {
-  border-image: url("background-assets/hover.svg") 7;
+  border-image: url("background-assets/hover-popup.svg") 7;
   color: white;
 }
 
@@ -976,13 +976,13 @@ StEntry:insensitive StIcon {
 .run-dialog-error-box {
   padding: 8px 2px 2px 2px;
   spacing: 5px;
-  color: #e86b6b;
+  color: #f45f5f;
 }
 
 .run-dialog-error-box StIcon {
   width: 16px;
   height: 16px;
-  color: #e86b6b;
+  color: #f45f5f;
 }
 
 .run-dialog-completion-box {
@@ -1230,17 +1230,17 @@ StEntry:insensitive StIcon {
 
 .prompt-dialog-error-label {
   font-size: 9pt;
-  color: #e86b6b;
+  color: #f45f5f;
 }
 
 .prompt-dialog-info-label {
   font-size: 9pt;
-  color: #9574b8;
+  color: #9565c7;
 }
 
 .prompt-dialog-null-label {
   font-size: 9pt;
-  color: #e8a05f;
+  color: #f59f52;
 }
 
 .prompt-dialog StEntry {
@@ -1456,7 +1456,7 @@ StEntry:insensitive StIcon {
 }
 
 .popup-menu-item:active, .popup-menu-item.selected {
-  border-image: url("background-assets/hover.svg") 9;
+  border-image: url("background-assets/hover-popup.svg") 9;
   color: white;
 }
 
@@ -1493,7 +1493,7 @@ StEntry:insensitive StIcon {
 
 .popup-sub-menu .popup-menu-item:active,
 .popup-sub-menu .popup-menu-item.selected {
-  border-image: url("background-assets/hover.svg") 9;
+  border-image: url("background-assets/hover-popup.svg") 9;
   color: white;
 }
 
@@ -1857,7 +1857,7 @@ StEntry:insensitive StIcon {
   spacing: 0;
 }
 
-/*--- ! Day & Date ---*/
+/* ! Day & Date */
 .datemenu-today-button {
   margin: 0 .7em .3em .7em;
   padding: .7em 1em;
@@ -1884,10 +1884,9 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-/*--- ! World Clocks ---*/
+/* ! World Clocks */
 .datemenu-displays-box {
   margin: 0 .7em;
-  width: 0;
 }
 
 .world-clocks-header {
@@ -1904,6 +1903,7 @@ StEntry:insensitive StIcon {
 
 .world-clocks-button {
   color: white;
+  border-radius: 0;
 }
 
 .world-clocks-button:hover, .world-clocks-button:focus, .world-clocks-button:active {
@@ -1917,11 +1917,13 @@ StEntry:insensitive StIcon {
 
 .world-clocks-city {
   font-size: 9pt;
+  margin: 0 .6em;
 }
 
 .world-clocks-time {
   font-size: 9pt;
   font-weight: bold;
+  margin: 0 .6em;
 }
 
 .datemenu-displays-section {
@@ -1932,7 +1934,7 @@ StEntry:insensitive StIcon {
   padding: 0 8px 0 0;
 }
 
-/*--- ! Change Month ---*/
+/* ! Change Month */
 .pager-button {
   color: white;
   background-color: transparent;
@@ -1970,15 +1972,15 @@ StEntry:insensitive StIcon {
   color: #7998b3;
 }
 
-/*--- ! Calendar Days ---*/
+/* ! Calendar Days */
 .calendar-day-base {
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: bold;
   text-align: center;
-  padding: 0.1em;
-  margin: 2px;
-  width: 2.2em;
-  height: 2.5em;
+  margin: 1px;
+  padding-left: .2em;
+  width: 2.5em;
+  height: 2.7em;
 }
 
 .calendar-day-heading {
@@ -1993,7 +1995,7 @@ StEntry:insensitive StIcon {
   color: #7998b3;
 }
 
-/*---  ! Work Day ---*/
+/*  ! Work Day */
 .calendar-work-day {
   border-image: url("misc-assets/calendar-work-day.svg") 7;
   border: none;
@@ -2006,26 +2008,31 @@ StEntry:insensitive StIcon {
 
 .calendar-work-day:active {
   border-image: url("misc-assets/calendar-day-active.svg") 7;
+  color: white;
 }
 
 .calendar-work-day.calendar-day-with-events {
   border-image: url("misc-assets/calendar-work-day-events.svg") 7;
   background-image: none !important;
+  color: #9565c7;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
   border-image: url("misc-assets/calendar-day-active-events.svg") 7;
+  color: white;
 }
 
 .calendar-work-day.calendar-today {
   border-image: url("misc-assets/calendar-work-day-today.svg") 7;
+  color: #7998b3;
 }
 
 .calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active {
   border-image: url("misc-assets/calendar-day-active.svg") 7;
+  color: white;
 }
 
-/*---  ! Non-work Day ---*/
+/*  ! Non-work Day */
 .calendar-nonwork-day {
   border-image: url("misc-assets/calendar-nonwork-day.svg") 7;
   border: none;
@@ -2045,6 +2052,7 @@ StEntry:insensitive StIcon {
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("misc-assets/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
+  color: #9565c7;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
@@ -2054,6 +2062,7 @@ StEntry:insensitive StIcon {
 
 .calendar-nonwork-day.calendar-today {
   border-image: url("misc-assets/calendar-nonwork-day-today.svg") 7;
+  color: #7998b3;
 }
 
 .calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
@@ -2061,7 +2070,7 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-/*---  ! Other Month Day ---*/
+/*  ! Other Month Day */
 .calendar-other-month-day {
   border-image: url("misc-assets/calendar-other-month-day.svg") 7;
   color: rgba(255, 255, 255, 0.15);
@@ -2078,20 +2087,20 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-/*---  ! Events Day ---*/
+/*  ! Events Day */
 .calendar-day-with-events:hover, .calendar-day-with-events:focus {
   border-image: url("misc-assets/calendar-day-with-events-hover.svg") 7;
   background-image: none !important;
   color: white;
 }
 
-/*---  ! Today ---*/
+/*  ! Today */
 .calendar-today:hover, .calendar-today:focus {
   border-image: url("misc-assets/calendar-hover.svg") 7;
   color: white;
 }
 
-/*---  ! Week Number ---*/
+/*  ! Week Number */
 .calendar-week-number {
   color: rgba(255, 255, 255, 0.45);
   font-size: 8pt;
@@ -2106,7 +2115,7 @@ StEntry:insensitive StIcon {
    ! Message List
    ===================================================== */
 .message-list {
-  width: 420px;
+  width: 34em;
 }
 
 .message-list-placeholder StIcon {
@@ -2172,16 +2181,22 @@ StEntry:insensitive StIcon {
   padding: 8px 0 10px 0;
 }
 
+/* =====================================================
+   ! Message
+   ===================================================== */
 .message {
-  border-image: url("background-assets/light-bg.svg") 7;
   background-color: transparent !important;
   border-radius: 0;
-  padding: 3px;
   margin: 0;
+  padding: .2em .2em .2em .6em;
 }
 
-.message:hover {
-  background-color: transparent !important;
+.message-list-section:first-child .message {
+  border-image: url("background-assets/light-bg-marked-blue.svg") 7;
+}
+
+.message-list-section:last-child .message {
+  border-image: url("background-assets/light-bg-marked-violet.svg") 7;
 }
 
 .message:focus {
@@ -2198,6 +2213,18 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
+.message-list-section:first-child .message:focus {
+  border-image: url("background-assets/hover.svg") 7;
+}
+
+.message-list-section:last-child .message:focus {
+  border-image: url("background-assets/hover-violet.svg") 7;
+}
+
+.message:hover {
+  background-color: transparent !important;
+}
+
 .message-icon-bin {
   padding: 8px 0 8px 8px;
 }
@@ -2207,8 +2234,7 @@ StEntry:insensitive StIcon {
 }
 
 .message-icon-bin > StIcon {
-  width: 48px;
-  height: 48px;
+  icon-size: 32px;
 }
 
 .message-secondary-bin {
@@ -2225,6 +2251,7 @@ StEntry:insensitive StIcon {
 .message-content {
   spacing: .4em;
   padding: 10px;
+  font-size: 9pt;
 }
 
 .message-content StIcon {
@@ -2287,15 +2314,13 @@ StEntry:insensitive StIcon {
 /* =====================================================
    ! Notifications
    ===================================================== */
-.url-highlighter {
+texturl-highlighter {
   link-color: #7998b3;
 }
 
 .notification-banner {
-  border-image: url("background-assets/popup-outside.svg") 7;
   color: white;
   font-size: 9pt;
-  padding: 1px;
   margin: 2px;
   width: 34em;
   border-radius: 0 !important;
@@ -2303,54 +2328,63 @@ StEntry:insensitive StIcon {
   border: 0 solid transparent !important;
 }
 
-.notification-banner > StBoxLayout > StBoxLayout {
-  border-image: url("background-assets/popup-inside.svg") 7;
+.notification-banner > StBoxLayout {
+  border-image: url("background-assets/popup.svg") 7;
+  padding: 4px 4px 1px 4px;
+}
+
+.notification-banner:hover, .notification-banner:focus {
+  color: white;
+  background-color: transparent !important;
+}
+
+.notification-banner:hover .url-highlighter, .notification-banner:focus .url-highlighter {
+  link-color: rgba(255, 255, 255, 0.45);
+}
+
+.notification-banner:hover .message-content StIcon, .notification-banner:focus .message-content StIcon {
+  color: #f45f5f;
+}
+
+.notification-banner StEntry {
+  margin: 0 10px 10px 10px;
+}
+
+.notification-banner .message-icon-bin {
+  padding: 1.1em 1.1em 1.3em 1.1em;
+}
+
+.notification-banner .message-content {
+  padding: 1.1em 1.1em 1.3em 0;
 }
 
 .notification-banner .notification-actions {
   background-color: transparent;
-  padding: 0 10px 6px 10px;
-  spacing: 1px;
+  padding: 0;
+  spacing: 0;
 }
 
 .notification-banner .notification-button {
-  padding: 10px;
   background-color: transparent !important;
-}
-
-.notification-banner StEntry {
-  margin: 4px 10px 6px 10px;
-}
-
-.notification-banner .message-icon-bin {
-  padding: 12px;
-}
-
-.notification-banner .message-content {
-  padding: 12px 12px 12px 0;
 }
 
 .hotplug-notification-item {
   color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
   text-shadow: none !important;
-  padding: 10px;
-}
-
-.hotplug-notification-item:focus {
-  padding: 1px 71px 1px 11px;
+  padding: .8em;
 }
 
 .hotplug-notification-item-icon {
   icon-size: 16px;
-  padding: 2px 5px;
+  padding: .2em .4em;
 }
 
 .secondary-icon {
   icon-size: 16px;
 }
 
-/*--- ! Chat Notification ---*/
+/* ! Chat Bubble */
 .chat-body {
   spacing: 5px;
   padding: 4px 6px;
@@ -2372,8 +2406,8 @@ StEntry:insensitive StIcon {
   border-image: url("background-assets/light-bg-bubble-left.svg") 7 11 7 9;
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: normal;
+  color: white;
+  font-weight: bold;
 }
 
 .chat-received:rtl {
@@ -2607,7 +2641,7 @@ StEntry:insensitive StIcon {
 }
 
 .candidate-box:selected, .candidate-box:hover {
-  border-image: url("background-assets/hover.svg") 7;
+  border-image: url("background-assets/hover-popup.svg") 7;
 }
 
 .vertical .candidate-box {

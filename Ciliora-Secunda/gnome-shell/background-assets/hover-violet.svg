@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="hover.svg"
+   sodipodi:docname="hover-violet.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -30,8 +30,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="18.102857"
-     inkscape:cx="12.542157"
-     inkscape:cy="11.818922"
+     inkscape:cx="-4.7479317"
+     inkscape:cy="10.603644"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -136,7 +136,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
     <rect
-       style="fill:#7998b3;fill-opacity:1;stroke:none"
+       style="fill:#9574b8;fill-opacity:1;stroke:none"
        id="rect4270-9"
        width="20"
        height="20"

@@ -14,9 +14,9 @@ $text-primary-invert:   alpha(#000, .75);
 $text-secondary-invert: alpha(#000, .45);
 $text-disabled-invert:  alpha(#000, .2);
 
-$text-info:    $accent-info;
-$text-warning: $accent-warning;
-$text-danger:  $accent-danger;
+$text-info:    saturate($accent-info, 14%);
+$text-warning: saturate($accent-warning, 14%);
+$text-danger:  saturate($accent-danger, 14%);
 
 
 // Link colors

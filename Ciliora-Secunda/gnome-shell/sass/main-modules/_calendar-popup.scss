@@ -2,14 +2,21 @@
    ! Calendar
    ===================================================== */
 
-#calendarArea { padding: 0;  max-height: 700px;}
+#calendarArea {
+    padding: 0;
+    max-height: 700px;
+}
 
-.calendar { margin: 0 1.5em .3em 1.5em; }
+.calendar {
+    margin: 0 1.5em .3em 1.5em;
+}
 
-.datemenu-calendar-column { spacing: 0; }
+.datemenu-calendar-column {
+    spacing: 0;
+}
 
 
-/*--- ! Day & Date ---*/
+/* ! Day & Date */
 
 .datemenu-today-button {
     margin: 0 .7em .3em .7em;
@@ -38,11 +45,10 @@
 }
 
 
-/*--- ! World Clocks ---*/
+/* ! World Clocks */
 
 .datemenu-displays-box {
     margin: 0 .7em;
-    width: 0; // ! FIX for big num of clocks
 }
 
 .world-clocks-header {
@@ -59,6 +65,7 @@
 
 .world-clocks-button {
     color: $text-primary;
+    border-radius: 0;
 
     &:hover, &:focus, &:active {
         background-color: transparent !important;
@@ -72,21 +79,25 @@
 
 .world-clocks-city {
     font-size: 9pt;
+    margin: 0 .6em;
 }
 
 .world-clocks-time {
     font-size: 9pt;
     font-weight: bold;
+    margin: 0 .6em; 
 }
 
 .datemenu-displays-section {
     padding-bottom: 0;
 
-    StScrollBar { padding: 0 8px 0 0; }
+    StScrollBar {
+        padding: 0 8px 0 0;
+    }
 }
 
 
-/*--- ! Change Month ---*/
+/* ! Change Month */
 
 .pager-button {
     color: $text-primary;
@@ -130,18 +141,18 @@
 }
 
 
-/*--- ! Calendar Days ---*/
+/* ! Calendar Days */
 
 .calendar-day {
 }
 
 .calendar-day-base {
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: bold;
     text-align: center;
-    padding: 0.1em;
-    margin: 2px;
-    @include size(2.2em, 2.5em);
+    margin: 1px;
+    padding-left: .2em; 
+    @include size(2.5em, 2.7em);
 }
 
 .calendar-day-heading {
@@ -162,7 +173,7 @@
 .calendar-day-left {
 }
 
-/*---  ! Work Day ---*/
+/*  ! Work Day */
 
 .calendar-work-day {
     border-image: url("misc-assets/calendar-work-day.svg") 7;
@@ -175,27 +186,32 @@
 
     &:active {
         border-image: url("misc-assets/calendar-day-active.svg") 7;
+        color: $text-primary;
     }
 
     &.calendar-day-with-events {
         border-image: url("misc-assets/calendar-work-day-events.svg") 7;
         background-image: none !important;
+        color: $text-info;
 
         &:hover, &:focus, &:active {
             border-image: url("misc-assets/calendar-day-active-events.svg") 7;
+            color: $text-primary;
         }
     }
 
     &.calendar-today {
         border-image: url("misc-assets/calendar-work-day-today.svg") 7;
+        color: $link;
 
         &:hover, &:focus, &:active {
             border-image: url("misc-assets/calendar-day-active.svg") 7;
+            color: $text-primary;
         }
     }
 }
 
-/*---  ! Non-work Day ---*/
+/*  ! Non-work Day */
 
 .calendar-nonwork-day {
     border-image: url("misc-assets/calendar-nonwork-day.svg") 7;
@@ -215,6 +231,7 @@
     &.calendar-day-with-events {
         border-image: url("misc-assets/calendar-nonwork-day-events.svg") 7;
         background-image: none !important;
+        color: $text-info;
 
         &:hover, &:focus, &:active {
             border-image: url("misc-assets/calendar-day-active-events.svg") 7;
@@ -224,6 +241,7 @@
 
     &.calendar-today {
         border-image: url("misc-assets/calendar-nonwork-day-today.svg") 7;
+        color: $link;
 
         &:hover, &:focus, &:active {
             border-image: url("misc-assets/calendar-day-active.svg") 7;
@@ -232,7 +250,7 @@
     }
 }
 
-/*---  ! Other Month Day ---*/
+/*  ! Other Month Day */
 
 .calendar-other-month-day {
     border-image: url("misc-assets/calendar-other-month-day.svg") 7;
@@ -250,7 +268,7 @@
     }
 }
 
-/*---  ! Events Day ---*/
+/*  ! Events Day */
 
 .calendar-day-with-events {
     &:hover, &:focus {
@@ -260,7 +278,7 @@
     }
 }
 
-/*---  ! Today ---*/
+/*  ! Today */
 
 .calendar-today {
     &:hover, &:focus {
@@ -269,7 +287,7 @@
     }
 }
 
-/*---  ! Week Number ---*/
+/*  ! Week Number */
 
 .calendar-week-number {
     color: $text-secondary;
@@ -284,7 +302,7 @@
    ===================================================== */
 
 .message-list {
-    width: 420px;
+    width: 34em;
 
     &-placeholder {
         StIcon { @include size(0); }
@@ -349,15 +367,23 @@
     StScrollBar { padding: 8px 0 10px 0; }
 }
 
+
+/* =====================================================
+   ! Message
+   ===================================================== */
+
 .message {
-    border-image: url("background-assets/light-bg.svg") 7;
     background-color: transparent !important;
     border-radius: 0;
-    padding: 3px;
     margin: 0;
+    padding: .2em .2em .2em .6em;
 
-    &:hover {
-        background-color: transparent !important;
+    .message-list-section:first-child & {
+        border-image: url("background-assets/light-bg-marked-blue.svg") 7;
+    }
+
+    .message-list-section:last-child & {
+        border-image: url("background-assets/light-bg-marked-violet.svg") 7;
     }
 
     &:focus {
@@ -367,6 +393,18 @@
 
         .message-content StIcon { color: $text-primary; }
         .message-secondary-bin  { color: $text-primary; }
+
+        .message-list-section:first-child & {
+            border-image: url("background-assets/hover.svg") 7;
+        }
+
+        .message-list-section:last-child & {
+            border-image: url("background-assets/hover-violet.svg") 7;
+        }
+    }
+
+    &:hover {
+        background-color: transparent !important;
     }
 
     &-icon-bin {
@@ -374,7 +412,9 @@
 
         &:rtl { padding: 8px 8px 8px 0; }
 
-        > StIcon { @include size(48px); }
+        > StIcon {
+            icon-size: 32px;
+        }
     }
 
     &-secondary-bin {
@@ -391,6 +431,7 @@
     &-content {
         spacing: .4em;
         padding: 10px;
+        font-size: 9pt;
 
         StIcon {
             color: $accent-danger;

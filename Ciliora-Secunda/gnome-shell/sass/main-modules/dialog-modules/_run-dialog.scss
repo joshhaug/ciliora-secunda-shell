@@ -32,11 +32,11 @@
     &-error-box {
         padding: 8px 2px 2px 2px;
         spacing: 5px;
-        color: $accent-danger;
+        color: $text-danger;
 
         StIcon {
             @include size(16px);
-            color: $accent-danger;
+            color: $text-danger;
         }
     }
 

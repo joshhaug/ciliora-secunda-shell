@@ -2,62 +2,71 @@
    ! Notifications
    ===================================================== */
 
-.url-highlighter {
+texturl-highlighter {
     link-color: $link;
 }
 
 .notification-banner {
-    border-image: url("background-assets/popup-outside.svg") 7;
     color: $text-primary;
     font-size: 9pt;
-    padding: 1px;
     margin: 2px;
     width: 34em;
     border-radius: 0 !important;
     background-color: transparent !important;
     border: 0 solid transparent !important;
 
-    > StBoxLayout > StBoxLayout {
-        border-image: url("background-assets/popup-inside.svg") 7;
+    > StBoxLayout {
+        border-image: url("background-assets/popup.svg") 7;
+        padding: 4px 4px 1px 4px;
+    }
+
+    &:hover, &:focus {
+        color: $text-primary;
+        background-color: transparent !important;
+
+        .url-highlighter {
+            link-color: $text-secondary;
+        }
+
+        .message-content StIcon {
+            color: $text-danger;
+        }
+    }
+
+    StEntry {
+        margin: 0 10px 10px 10px;
+    }
+
+    .message-icon-bin {
+        padding: 1.1em 1.1em 1.3em 1.1em;
+    }
+
+    .message-content {
+        padding: 1.1em 1.1em 1.3em 0;
     }
 
     .notification-actions {
         background-color: transparent;
-        padding: 0 10px 6px 10px;
-        spacing: 1px;
+        padding: 0;
+        spacing: 0;
     }
 
     .notification-button {
-        padding: 10px;
+//        @include btn-dialog-linked-primary;
         background-color: transparent !important;
-    }
-
-    StEntry {
-        margin: 4px 10px 6px 10px;
-    }
-
-    .message-icon-bin {
-        padding: 12px;
-    }
-
-    .message-content {
-        padding: 12px 12px 12px 0;
     }
 }
 
 .hotplug-notification-item {
+//    @include btn-dialog-primary;
     color: $text-secondary;
     font-size: 9pt;
     text-shadow: none !important;
-    padding: 10px;
-
-    &:focus {
-        padding: 1px 71px 1px 11px;
-    }
+    padding: .8em;
 
     &-icon {
         icon-size: 16px;
-        padding: 2px 5px;
+        padding: .2em .4em;
     }
 }
 
@@ -65,7 +74,7 @@
     icon-size: 16px;
 }
 
-/*--- ! Chat Notification ---*/
+/* ! Chat Bubble */
 
 .chat-body {
     spacing: 5px;
@@ -88,8 +97,8 @@
     border-image: url("background-assets/light-bg-bubble-left.svg") 7 11 7 9;
     padding: 1em 1.6em 1em 1em;
     margin-left: 2em;
-    color: $text-secondary;
-    font-weight: normal;
+    color: $text-primary;
+    font-weight: bold;
 
     &:rtl { padding: 1em 1em 1em 1.6em; }
 }
