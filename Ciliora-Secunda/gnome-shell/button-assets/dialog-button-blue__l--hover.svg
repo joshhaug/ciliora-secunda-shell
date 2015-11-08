@@ -11,12 +11,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
-   width="24"
+   width="17"
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="button-light.svg"
+   sodipodi:docname="dialog-button-blue__l--hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.769527"
-     inkscape:cx="0.41876506"
-     inkscape:cy="12.172919"
+     inkscape:zoom="10.002615"
+     inkscape:cx="-22.139773"
+     inkscape:cy="18.573037"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -62,7 +62,8 @@
      guidecolor="#ff0b00"
      guideopacity="1"
      guidehicolor="#001aff"
-     guidehiopacity="0.49803922">
+     guidehiopacity="0.49803922"
+     inkscape:snap-smooth-nodes="true">
     <inkscape:grid
        type="xygrid"
        id="grid3123"
@@ -130,24 +131,27 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 5,279 c -1.108,0 -2,0.892 -2,2 l 0,14 c 0,1.108 0.892,2 2,2 l 14,0 c 1.108,0 2,-0.892 2,-2 l 0,-14 c 0,-1.108 -0.892,-2 -2,-2 z m -1,1 16,0 0,16 -16,0 z"
-       id="rect4136"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 1,280 -1,0 0,15 1,0 z"
+       id="rect4238-3-8"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssssssssccccc" />
+       sodipodi:nodetypes="ccccc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4238-3-8-8"
+       d="m 15,279 0,1 -15,0 0,-1 15,0 z"
+       style="display:inline;opacity:0.05;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 15,280 0,1 -14,0 0,-1 14,0 z"
+       id="path4169" />
     <rect
-       y="280"
-       x="4"
-       height="16"
-       width="16"
-       id="rect4272"
-       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.75" />
-    <rect
-       style="fill:#33373b;fill-opacity:1;stroke:none"
-       id="rect4270"
-       width="14"
+       y="281"
+       x="1"
        height="14"
-       x="5"
-       y="281" />
+       width="14"
+       id="rect4270-5"
+       style="fill:#86a2ba;fill-opacity:1;stroke:none" />
   </g>
 </svg>

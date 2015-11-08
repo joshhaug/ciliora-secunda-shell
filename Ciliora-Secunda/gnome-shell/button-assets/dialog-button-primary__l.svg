@@ -7,7 +7,6 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
@@ -17,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="linked-button-left-hover.svg"
+   sodipodi:docname="dialog-button-primary__l.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -31,15 +30,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="20.005229"
-     inkscape:cx="-5.930864"
-     inkscape:cy="13.376238"
+     inkscape:cx="-2.3444405"
+     inkscape:cy="10.976866"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -74,42 +73,7 @@
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
   <defs
-     id="defs3">
-    <linearGradient
-       spreadMethod="reflect"
-       gradientUnits="userSpaceOnUse"
-       y2="297"
-       x2="22"
-       y1="297"
-       x1="2"
-       id="linearGradient5205"
-       xlink:href="#linearGradient5235"
-       inkscape:collect="always"
-       gradientTransform="translate(-2.9999993,-1.3417969e-5)" />
-    <linearGradient
-       id="linearGradient5235">
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="0"
-         id="stop5237" />
-      <stop
-         id="stop5239"
-         offset="0.34999999"
-         style="stop-color:#000000;stop-opacity:0.78431374;" />
-      <stop
-         id="stop5241"
-         offset="0.5"
-         style="stop-color:#000000;stop-opacity:1;" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0.78431374;"
-         offset="0.64999998"
-         id="stop5243" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop5245" />
-    </linearGradient>
-  </defs>
+     id="defs3" />
   <metadata
      id="metadata4">
     <rdf:RDF>
@@ -167,33 +131,28 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 2.000529,278.99908 c -1.108,-7e-5 -2,0.892 -2,2 l 0,14 c 0,1.108 0.892,2 2,2 L 17,297 l 0,-1 -15.999471,-9.2e-4 0,-16 L 17,280 l 0,-1 z"
-       id="rect4136"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 1,280 -1,0 0,15 1,0 z"
+       id="rect4238-3-8"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssssccccccs" />
+       sodipodi:nodetypes="ccccc" />
     <rect
-       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4272"
-       width="16"
-       height="16"
-       x="1"
-       y="280" />
-    <rect
-       y="281"
-       x="2"
-       height="14"
+       style="display:inline;opacity:1;fill:#272d33;fill-opacity:1;stroke:none;enable-background:new"
+       id="rect4270-9-3-2"
        width="14"
-       id="rect4270"
-       style="fill:#2e3236;fill-opacity:1;stroke:none" />
-    <rect
-       ry="2"
-       y="296"
-       x="1"
-       height="1"
-       width="16"
-       id="rect5197"
-       style="display:inline;opacity:0.5;fill:url(#linearGradient5205);fill-opacity:1;stroke:none;enable-background:new"
-       rx="2" />
+       height="14"
+       x="-15"
+       y="281"
+       transform="scale(-1,1)" />
+    <path
+       inkscape:connector-curvature="0"
+       id="rect4238-3-8-8"
+       d="m 15,279 0,1 -15,0 0,-1 15,0 z"
+       style="display:inline;opacity:0.04;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 15,280 0,1 -14,0 0,-1 14,0 z"
+       id="path4169" />
   </g>
 </svg>

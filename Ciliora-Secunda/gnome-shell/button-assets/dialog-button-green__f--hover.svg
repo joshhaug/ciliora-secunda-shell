@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="linked-button-left.svg"
+   sodipodi:docname="dialog-button-green__f--hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="20.005229"
-     inkscape:cx="-2.1818441"
-     inkscape:cy="13.476212"
+     inkscape:zoom="9.9878835"
+     inkscape:cx="0.32725475"
+     inkscape:cy="22.78279"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -90,7 +90,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -131,24 +131,21 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 2.000529,278.99908 c -1.108,-7e-5 -2,0.892 -2,2 l 0,14 c 0,1.108 0.892,2 2,2 L 17,297 l 0,-1 -15.999471,-9.2e-4 0,-16 L 17,280 l 0,-1 z"
-       id="rect4136"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ssssccccccs" />
-    <rect
-       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4272"
-       width="16"
-       height="16"
-       x="1"
-       y="280" />
+       id="rect4238-3-8-8"
+       d="m 17,279 0,1 -15,0 0,-1 15,0 z"
+       style="display:inline;opacity:0.03999999;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 17,280 0,1 -15,0 0,-1 15,0 z"
+       id="path4169-7" />
     <rect
        y="281"
        x="2"
        height="14"
-       width="14"
-       id="rect4270"
-       style="fill:#2a2d30;fill-opacity:1;stroke:none" />
+       width="15"
+       id="rect4270-9"
+       style="fill:#81bf94;fill-opacity:1;stroke:none" />
   </g>
 </svg>

@@ -3,24 +3,23 @@
    ===================================================== */
 
 .run-dialog {
-    .modal-dialog-button,
-    .modal-dialog-button:hover,
-    .modal-dialog-button:focus,
-    .modal-dialog-button:active,
-    .modal-dialog-button:pressed,
-    .modal-dialog-button:focus:hover,
-    .modal-dialog-button:focus:active,
-    .modal-dialog-button:focus:pressed,
-    .modal-dialog-button:insensitive {
-        border-image: none;
+    .modal-dialog-linked-button,
+    .modal-dialog-linked-button:hover,
+    .modal-dialog-linked-button:focus,
+    .modal-dialog-linked-button:active,
+    .modal-dialog-linked-button:pressed,
+    .modal-dialog-linked-button:focus:hover,
+    .modal-dialog-linked-button:focus:active,
+    .modal-dialog-linked-button:focus:pressed,
+    .modal-dialog-linked-button:insensitive {
+        border-image: none !important;
     }
 
-    > * {
-        border-image: url("background-assets/popup.svg") 9;
-        padding: 12px;
+    .modal-dialog-content-box {
+        padding: 12px !important;
     }
 
-    > .modal-dialog-button-box {
+    > *:last-child {
         background-color: rgba(0, 0, 0, 0);
         border-image: none;
         box-shadow: none;

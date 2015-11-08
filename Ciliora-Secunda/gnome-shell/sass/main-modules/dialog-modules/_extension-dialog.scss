@@ -1,3 +1,7 @@
+/* =====================================================
+   ! Extension dialog
+   ===================================================== */
+
 .extension-dialog {
     .headline {
         font-size: 10pt;
@@ -8,3 +12,21 @@
         @include size(32px);
     }
 }
+
+
+/* =====================================================
+   ! Extension dialog buttons
+   ===================================================== */
+
+.extension-dialog .modal-dialog-linked-button {
+    @include btn-dlg(m, $text-primary, primary, $text-primary, blue);
+    
+    &:first-child {
+        @include btn-dlg(f, $text-primary, primary, $text-primary, blue);
+    }
+
+    &:last-child {
+        @include btn-dlg(l, $text-primary, primary, $text-primary, violet, $mod:true);
+    }
+}
+

@@ -17,22 +17,25 @@
 }
 
 .modal-dialog {
+    border-image: url("background-assets/popup.svg") 9;
     background-color: rgba(0, 0, 0, 0) !important;
     border: 0 transparent !important;
     border-radius: 0;
     color: $text-primary;
     padding: 0;
 
-    > * {
-        border-image: url("background-assets/popup-modal.svg") 9;
-        padding: 24px;
+    &-content-box {
+        padding: 24px !important;
         border-radius: 0;
     }
 
-    > .modal-dialog-button-box {
-        border-image: url("background-assets/modal-button-box.svg") 8;
+    > *:last-child {
         spacing: 0;
         margin: 0;
-        padding: 0 10px 6px 10px;
+        padding: 0 3px 0 3px;
     }
+}
+
+.modal-dialog-linked-button {
+    @include btn-dialog-linked-primary;
 }

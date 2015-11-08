@@ -211,129 +211,66 @@ StEntry:insensitive StIcon {
 }
 
 /* =====================================================
-   ! Buttons
+   ! Button global selector
    ===================================================== */
-.button,
-.modal-dialog-button,
-.notification-button {
+.button {
   background-color: transparent;
   background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
   border: none;
+  border-width: 0;
   border-radius: 0;
-  border-image: url("button-assets/button.svg") 10;
-  padding: 10px 30px;
-  -st-natural-width: 24px;
   font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__s.svg") 10;
   color: white;
+  padding: .9em 2em .9em 2em;
 }
 
-.button:hover,
-.modal-dialog-button:hover,
-.notification-button:hover {
-  border-image: url("button-assets/button-hover.svg") 10;
-}
-
-.button:focus,
-.modal-dialog-button:focus,
-.notification-button:focus {
-  border-image: url("button-assets/button-focused.svg") 10;
-}
-
-.button:active, .button:pressed,
-.modal-dialog-button:active,
-.modal-dialog-button:pressed,
-.notification-button:active,
-.notification-button:pressed {
-  border-image: url("button-assets/button-pressed.svg") 10;
-}
-
-.button:focus:hover,
-.modal-dialog-button:focus:hover,
-.notification-button:focus:hover {
-  border-image: url("button-assets/button-focused-hover.svg") 10;
-}
-
-.button:focus:active, .button:focus:pressed,
-.modal-dialog-button:focus:active,
-.modal-dialog-button:focus:pressed,
-.notification-button:focus:active,
-.notification-button:focus:pressed {
-  border-image: url("button-assets/button-focused-pressed.svg") 10;
-}
-
-.button:insensitive,
-.modal-dialog-button:insensitive,
-.notification-button:insensitive {
-  border-image: url("button-assets/button-insensitive.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
-}
-
-.button StIcon,
-.modal-dialog-button StIcon,
-.notification-button StIcon {
+.button > StIcon {
+  width: 16px;
+  height: 16px;
   icon-size: 16px;
 }
 
-/* =====================================================
- * ! End-session and Logout dialog buttons
-   ===================================================== */
-/*--- Red ---*/
-.end-session-dialog .modal-dialog-button {
-  border-image: url("button-assets/button.svg") 7;
-  border-radius: 0 !important;
+.button:grayed, .button:disabled, .button:insensitive, .button:focus:grayed, .button:focus:disabled, .button:focus:insensitive {
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.button:grayed StIcon, .button:disabled StIcon, .button:insensitive StIcon, .button:focus:grayed StIcon, .button:focus:disabled StIcon, .button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.button StIcon {
   color: white;
 }
 
-.end-session-dialog .modal-dialog-button:hover, .end-session-dialog .modal-dialog-button:focus {
-  border-image: url("button-assets/button-red.svg") 7;
-  border-radius: 0 !important;
+.button:hover {
+  border-image: url("button-assets/button-primary__s--hover.svg") 10;
 }
 
-.end-session-dialog .modal-dialog-button:focus:hover {
-  border-image: url("button-assets/button-red-hover.svg") 7;
-  border-radius: 0 !important;
+.button:active, .button:pressed, .button:selected {
+  border-image: url("button-assets/button-primary__s--pressed.svg") 10;
 }
 
-.end-session-dialog .modal-dialog-button:active, .end-session-dialog .modal-dialog-button:pressed, .end-session-dialog .modal-dialog-button:focus:active, .end-session-dialog .modal-dialog-button:focus:pressed {
-  border-image: url("button-assets/button-red-pressed.svg") 7;
-  border-radius: 0 !important;
-}
-
-/*--- Green ---*/
-.end-session-dialog .modal-dialog-button:first-child {
-  border-image: url("button-assets/button.svg") 7;
-  border-radius: 0 !important;
+.button:focus {
+  border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-.end-session-dialog .modal-dialog-button:first-child:hover, .end-session-dialog .modal-dialog-button:first-child:focus {
-  border-image: url("button-assets/button-green.svg") 7;
-  border-radius: 0 !important;
+.button:focus StIcon {
+  color: white;
 }
 
-.end-session-dialog .modal-dialog-button:first-child:focus:hover {
-  border-image: url("button-assets/button-green-hover.svg") 7;
-  border-radius: 0 !important;
+.button:focus:hover {
+  border-image: url("button-assets/button-blue__s--hover.svg") 10;
 }
 
-.end-session-dialog .modal-dialog-button:first-child:active, .end-session-dialog .modal-dialog-button:first-child:pressed, .end-session-dialog .modal-dialog-button:first-child:focus:active, .end-session-dialog .modal-dialog-button:first-child:focus:pressed {
-  border-image: url("button-assets/button-green-pressed.svg") 7;
-  border-radius: 0 !important;
-}
-
-/* =====================================================
- * ! Extension dialog button
-   ===================================================== */
-.extension-dialog .modal-dialog-button:focus {
-  border-image: url("button-assets/button-violet.svg") 10;
-}
-
-.extension-dialog .modal-dialog-button:focus:hover {
-  border-image: url("button-assets/button-violet-hover.svg") 10;
-}
-
-.extension-dialog .modal-dialog-button:focus:active, .extension-dialog .modal-dialog-button:focus:pressed {
-  border-image: url("button-assets/button-violet-pressed.svg") 10;
+.button:focus:active, .button:focus:pressed, .button:focus:selected {
+  border-image: url("button-assets/button-blue__s--pressed.svg") 10;
 }
 
 /* =====================================================
@@ -924,6 +861,7 @@ StEntry:insensitive StIcon {
 }
 
 .modal-dialog {
+  border-image: url("background-assets/popup.svg") 9;
   background-color: transparent !important;
   border: 0 transparent !important;
   border-radius: 0;
@@ -931,40 +869,277 @@ StEntry:insensitive StIcon {
   padding: 0;
 }
 
-.modal-dialog > * {
-  border-image: url("background-assets/popup-modal.svg") 9;
-  padding: 24px;
+.modal-dialog-content-box {
+  padding: 24px !important;
   border-radius: 0;
 }
 
-.modal-dialog > .modal-dialog-button-box {
-  border-image: url("background-assets/modal-button-box.svg") 8;
+.modal-dialog > *:last-child {
   spacing: 0;
   margin: 0;
-  padding: 0 10px 6px 10px;
+  padding: 0 3px 0 3px;
+}
+
+.modal-dialog-linked-button {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.modal-dialog-linked-button:grayed, .modal-dialog-linked-button:disabled, .modal-dialog-linked-button:insensitive, .modal-dialog-linked-button:focus:grayed, .modal-dialog-linked-button:focus:disabled, .modal-dialog-linked-button:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:grayed StIcon, .modal-dialog-linked-button:disabled StIcon, .modal-dialog-linked-button:insensitive StIcon, .modal-dialog-linked-button:focus:grayed StIcon, .modal-dialog-linked-button:focus:disabled StIcon, .modal-dialog-linked-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:hover {
+  border-image: url("button-assets/dialog-button-primary__m--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:active, .modal-dialog-linked-button:pressed, .modal-dialog-linked-button:selected {
+  border-image: url("button-assets/dialog-button-primary__m--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:focus {
+  border-image: url("button-assets/dialog-button-blue__m.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:focus StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__m--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:focus:active, .modal-dialog-linked-button:focus:pressed, .modal-dialog-linked-button:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__m--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.modal-dialog-linked-button:first-child:grayed, .modal-dialog-linked-button:first-child:disabled, .modal-dialog-linked-button:first-child:insensitive, .modal-dialog-linked-button:first-child:focus:grayed, .modal-dialog-linked-button:first-child:focus:disabled, .modal-dialog-linked-button:first-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:first-child:grayed StIcon, .modal-dialog-linked-button:first-child:disabled StIcon, .modal-dialog-linked-button:first-child:insensitive StIcon, .modal-dialog-linked-button:first-child:focus:grayed StIcon, .modal-dialog-linked-button:first-child:focus:disabled StIcon, .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:first-child StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:hover {
+  border-image: url("button-assets/dialog-button-primary__f--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:active, .modal-dialog-linked-button:first-child:pressed, .modal-dialog-linked-button:first-child:selected {
+  border-image: url("button-assets/dialog-button-primary__f--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:focus {
+  border-image: url("button-assets/dialog-button-blue__f.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:focus StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__f--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:focus:active, .modal-dialog-linked-button:first-child:focus:pressed, .modal-dialog-linked-button:first-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__f--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.modal-dialog-linked-button:last-child:grayed, .modal-dialog-linked-button:last-child:disabled, .modal-dialog-linked-button:last-child:insensitive, .modal-dialog-linked-button:last-child:focus:grayed, .modal-dialog-linked-button:last-child:focus:disabled, .modal-dialog-linked-button:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:last-child:grayed StIcon, .modal-dialog-linked-button:last-child:disabled StIcon, .modal-dialog-linked-button:last-child:insensitive StIcon, .modal-dialog-linked-button:last-child:focus:grayed StIcon, .modal-dialog-linked-button:last-child:focus:disabled StIcon, .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:last-child StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:last-child:hover {
+  border-image: url("button-assets/dialog-button-primary__l--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:last-child:active, .modal-dialog-linked-button:last-child:pressed, .modal-dialog-linked-button:last-child:selected {
+  border-image: url("button-assets/dialog-button-primary__l--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:last-child:focus {
+  border-image: url("button-assets/dialog-button-blue__l.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:last-child:focus StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__l--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:last-child:focus:active, .modal-dialog-linked-button:last-child:focus:pressed, .modal-dialog-linked-button:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__l--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.modal-dialog-linked-button:first-child:last-child:grayed, .modal-dialog-linked-button:first-child:last-child:disabled, .modal-dialog-linked-button:first-child:last-child:insensitive, .modal-dialog-linked-button:first-child:last-child:focus:grayed, .modal-dialog-linked-button:first-child:last-child:focus:disabled, .modal-dialog-linked-button:first-child:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:first-child:last-child:grayed StIcon, .modal-dialog-linked-button:first-child:last-child:disabled StIcon, .modal-dialog-linked-button:first-child:last-child:insensitive StIcon, .modal-dialog-linked-button:first-child:last-child:focus:grayed StIcon, .modal-dialog-linked-button:first-child:last-child:focus:disabled StIcon, .modal-dialog-linked-button:first-child:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.modal-dialog-linked-button:first-child:last-child StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:last-child:hover {
+  border-image: url("button-assets/dialog-button-primary__s--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:last-child:active, .modal-dialog-linked-button:first-child:last-child:pressed, .modal-dialog-linked-button:first-child:last-child:selected {
+  border-image: url("button-assets/dialog-button-primary__s--pressed.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:last-child:focus {
+  border-image: url("button-assets/dialog-button-blue__s.svg") 10;
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:last-child:focus StIcon {
+  color: white;
+}
+
+.modal-dialog-linked-button:first-child:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__s--hover.svg") 10;
+}
+
+.modal-dialog-linked-button:first-child:last-child:focus:active, .modal-dialog-linked-button:first-child:last-child:focus:pressed, .modal-dialog-linked-button:first-child:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__s--pressed.svg") 10;
 }
 
 /* =====================================================
    ! Run dialog
    ===================================================== */
-.run-dialog .modal-dialog-button,
-.run-dialog .modal-dialog-button:hover,
-.run-dialog .modal-dialog-button:focus,
-.run-dialog .modal-dialog-button:active,
-.run-dialog .modal-dialog-button:pressed,
-.run-dialog .modal-dialog-button:focus:hover,
-.run-dialog .modal-dialog-button:focus:active,
-.run-dialog .modal-dialog-button:focus:pressed,
-.run-dialog .modal-dialog-button:insensitive {
-  border-image: none;
+.run-dialog .modal-dialog-linked-button,
+.run-dialog .modal-dialog-linked-button:hover,
+.run-dialog .modal-dialog-linked-button:focus,
+.run-dialog .modal-dialog-linked-button:active,
+.run-dialog .modal-dialog-linked-button:pressed,
+.run-dialog .modal-dialog-linked-button:focus:hover,
+.run-dialog .modal-dialog-linked-button:focus:active,
+.run-dialog .modal-dialog-linked-button:focus:pressed,
+.run-dialog .modal-dialog-linked-button:insensitive {
+  border-image: none !important;
 }
 
-.run-dialog > * {
-  border-image: url("background-assets/popup.svg") 9;
-  padding: 12px;
+.run-dialog .modal-dialog-content-box {
+  padding: 12px !important;
 }
 
-.run-dialog > .modal-dialog-button-box {
+.run-dialog > *:last-child {
   background-color: transparent;
   border-image: none;
   box-shadow: none;
@@ -1004,6 +1179,10 @@ StEntry:insensitive StIcon {
 .end-session-dialog {
   spacing: 0 !important;
   border: 0 transparent !important;
+}
+
+.end-session-dialog .modal-dialog-content-box {
+  padding-bottom: 14px !important;
 }
 
 .end-session-dialog-layout {
@@ -1102,6 +1281,153 @@ StEntry:insensitive StIcon {
   margin-top: .4em;
   color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
+}
+
+/* =====================================================
+ * ! End-session & Logout dialog buttons
+   ===================================================== */
+.end-session-dialog .modal-dialog-linked-button {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.end-session-dialog .modal-dialog-linked-button:grayed, .end-session-dialog .modal-dialog-linked-button:disabled, .end-session-dialog .modal-dialog-linked-button:insensitive, .end-session-dialog .modal-dialog-linked-button:focus:grayed, .end-session-dialog .modal-dialog-linked-button:focus:disabled, .end-session-dialog .modal-dialog-linked-button:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:hover, .end-session-dialog .modal-dialog-linked-button:focus, .end-session-dialog .modal-dialog-linked-button:focus:hover {
+  border-image: url("button-assets/dialog-button-red__m.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:hover StIcon, .end-session-dialog .modal-dialog-linked-button:focus StIcon, .end-session-dialog .modal-dialog-linked-button:focus:hover StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:active, .end-session-dialog .modal-dialog-linked-button:pressed, .end-session-dialog .modal-dialog-linked-button:selected, .end-session-dialog .modal-dialog-linked-button:focus:active, .end-session-dialog .modal-dialog-linked-button:focus:pressed, .end-session-dialog .modal-dialog-linked-button:focus:selected {
+  border-image: url("button-assets/dialog-button-red__m--pressed.svg") 10;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:hover, .end-session-dialog .modal-dialog-linked-button:first-child:focus, .end-session-dialog .modal-dialog-linked-button:first-child:focus:hover {
+  border-image: url("button-assets/dialog-button-green__f.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:hover StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:hover StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:active, .end-session-dialog .modal-dialog-linked-button:first-child:pressed, .end-session-dialog .modal-dialog-linked-button:first-child:selected, .end-session-dialog .modal-dialog-linked-button:first-child:focus:active, .end-session-dialog .modal-dialog-linked-button:first-child:focus:pressed, .end-session-dialog .modal-dialog-linked-button:first-child:focus:selected {
+  border-image: url("button-assets/dialog-button-green__f--pressed.svg") 10;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:grayed, .end-session-dialog .modal-dialog-linked-button:last-child:disabled, .end-session-dialog .modal-dialog-linked-button:last-child:insensitive, .end-session-dialog .modal-dialog-linked-button:last-child:focus:grayed, .end-session-dialog .modal-dialog-linked-button:last-child:focus:disabled, .end-session-dialog .modal-dialog-linked-button:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:focus, .end-session-dialog .modal-dialog-linked-button:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-red__l.svg") 10;
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:hover StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:hover StIcon {
+  color: white;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:active, .end-session-dialog .modal-dialog-linked-button:last-child:pressed, .end-session-dialog .modal-dialog-linked-button:last-child:selected, .end-session-dialog .modal-dialog-linked-button:last-child:focus:active, .end-session-dialog .modal-dialog-linked-button:last-child:focus:pressed, .end-session-dialog .modal-dialog-linked-button:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-red__l--pressed.svg") 10;
 }
 
 /* =====================================================
@@ -1305,6 +1631,7 @@ StEntry:insensitive StIcon {
 
 .nm-dialog-content {
   spacing: 20px;
+  padding: 24px;
 }
 
 .nm-dialog-header-hbox {
@@ -1385,6 +1712,9 @@ StEntry:insensitive StIcon {
   spacing: 12px;
 }
 
+/* =====================================================
+   ! Extension dialog
+   ===================================================== */
 .extension-dialog .headline {
   font-size: 10pt;
 }
@@ -1393,6 +1723,177 @@ StEntry:insensitive StIcon {
   icon-size: 32px;
   width: 32px;
   height: 32px;
+}
+
+/* =====================================================
+   ! Extension dialog buttons
+   ===================================================== */
+.extension-dialog .modal-dialog-linked-button {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.extension-dialog .modal-dialog-linked-button:grayed, .extension-dialog .modal-dialog-linked-button:disabled, .extension-dialog .modal-dialog-linked-button:insensitive, .extension-dialog .modal-dialog-linked-button:focus:grayed, .extension-dialog .modal-dialog-linked-button:focus:disabled, .extension-dialog .modal-dialog-linked-button:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button:grayed StIcon, .extension-dialog .modal-dialog-linked-button:disabled StIcon, .extension-dialog .modal-dialog-linked-button:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:hover {
+  border-image: url("button-assets/dialog-button-primary__m--hover.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:active, .extension-dialog .modal-dialog-linked-button:pressed, .extension-dialog .modal-dialog-linked-button:selected {
+  border-image: url("button-assets/dialog-button-primary__m--pressed.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:focus {
+  border-image: url("button-assets/dialog-button-blue__m.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:focus StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__m--hover.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:focus:active, .extension-dialog .modal-dialog-linked-button:focus:pressed, .extension-dialog .modal-dialog-linked-button:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__m--pressed.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:grayed, .extension-dialog .modal-dialog-linked-button:first-child:disabled, .extension-dialog .modal-dialog-linked-button:first-child:insensitive, .extension-dialog .modal-dialog-linked-button:first-child:focus:grayed, .extension-dialog .modal-dialog-linked-button:first-child:focus:disabled, .extension-dialog .modal-dialog-linked-button:first-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:grayed StIcon, .extension-dialog .modal-dialog-linked-button:first-child:disabled StIcon, .extension-dialog .modal-dialog-linked-button:first-child:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:hover {
+  border-image: url("button-assets/dialog-button-primary__f--hover.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:active, .extension-dialog .modal-dialog-linked-button:first-child:pressed, .extension-dialog .modal-dialog-linked-button:first-child:selected {
+  border-image: url("button-assets/dialog-button-primary__f--pressed.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:focus {
+  border-image: url("button-assets/dialog-button-blue__f.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:focus StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__f--hover.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:focus:active, .extension-dialog .modal-dialog-linked-button:first-child:focus:pressed, .extension-dialog .modal-dialog-linked-button:first-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__f--pressed.svg") 10;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:grayed, .extension-dialog .modal-dialog-linked-button:last-child:disabled, .extension-dialog .modal-dialog-linked-button:last-child:insensitive, .extension-dialog .modal-dialog-linked-button:last-child:focus:grayed, .extension-dialog .modal-dialog-linked-button:last-child:focus:disabled, .extension-dialog .modal-dialog-linked-button:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:grayed StIcon, .extension-dialog .modal-dialog-linked-button:last-child:disabled StIcon, .extension-dialog .modal-dialog-linked-button:last-child:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:hover, .extension-dialog .modal-dialog-linked-button:last-child:focus, .extension-dialog .modal-dialog-linked-button:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-violet__l.svg") 10;
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:hover StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:hover StIcon {
+  color: white;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:active, .extension-dialog .modal-dialog-linked-button:last-child:pressed, .extension-dialog .modal-dialog-linked-button:last-child:selected, .extension-dialog .modal-dialog-linked-button:last-child:focus:active, .extension-dialog .modal-dialog-linked-button:last-child:focus:pressed, .extension-dialog .modal-dialog-linked-button:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-violet__l--pressed.svg") 10;
 }
 
 /* =====================================================
@@ -2287,7 +2788,7 @@ StEntry:insensitive StIcon {
 }
 
 .system-menu-action:hover, .system-menu-action:focus, .system-menu-action:active {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
   border-radius: 0;
   padding: 10px;
   border: 0 solid transparent !important;
@@ -2365,14 +2866,308 @@ texturl-highlighter {
 }
 
 .notification-banner .notification-button {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: white;
   background-color: transparent !important;
 }
 
+.notification-banner .notification-button > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.notification-banner .notification-button:grayed, .notification-banner .notification-button:disabled, .notification-banner .notification-button:insensitive, .notification-banner .notification-button:focus:grayed, .notification-banner .notification-button:focus:disabled, .notification-banner .notification-button:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:grayed StIcon, .notification-banner .notification-button:disabled StIcon, .notification-banner .notification-button:insensitive StIcon, .notification-banner .notification-button:focus:grayed StIcon, .notification-banner .notification-button:focus:disabled StIcon, .notification-banner .notification-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:hover {
+  border-image: url("button-assets/dialog-button-primary__m--hover.svg") 10;
+}
+
+.notification-banner .notification-button:active, .notification-banner .notification-button:pressed, .notification-banner .notification-button:selected {
+  border-image: url("button-assets/dialog-button-primary__m--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:focus {
+  border-image: url("button-assets/dialog-button-blue__m.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:focus StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__m--hover.svg") 10;
+}
+
+.notification-banner .notification-button:focus:active, .notification-banner .notification-button:focus:pressed, .notification-banner .notification-button:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__m--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.notification-banner .notification-button:first-child:grayed, .notification-banner .notification-button:first-child:disabled, .notification-banner .notification-button:first-child:insensitive, .notification-banner .notification-button:first-child:focus:grayed, .notification-banner .notification-button:first-child:focus:disabled, .notification-banner .notification-button:first-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:first-child:grayed StIcon, .notification-banner .notification-button:first-child:disabled StIcon, .notification-banner .notification-button:first-child:insensitive StIcon, .notification-banner .notification-button:first-child:focus:grayed StIcon, .notification-banner .notification-button:first-child:focus:disabled StIcon, .notification-banner .notification-button:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:first-child StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:hover {
+  border-image: url("button-assets/dialog-button-primary__f--hover.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:active, .notification-banner .notification-button:first-child:pressed, .notification-banner .notification-button:first-child:selected {
+  border-image: url("button-assets/dialog-button-primary__f--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:focus {
+  border-image: url("button-assets/dialog-button-blue__f.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:focus StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__f--hover.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:focus:active, .notification-banner .notification-button:first-child:focus:pressed, .notification-banner .notification-button:first-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__f--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.notification-banner .notification-button:last-child:grayed, .notification-banner .notification-button:last-child:disabled, .notification-banner .notification-button:last-child:insensitive, .notification-banner .notification-button:last-child:focus:grayed, .notification-banner .notification-button:last-child:focus:disabled, .notification-banner .notification-button:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:last-child:grayed StIcon, .notification-banner .notification-button:last-child:disabled StIcon, .notification-banner .notification-button:last-child:insensitive StIcon, .notification-banner .notification-button:last-child:focus:grayed StIcon, .notification-banner .notification-button:last-child:focus:disabled StIcon, .notification-banner .notification-button:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:last-child StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:last-child:hover {
+  border-image: url("button-assets/dialog-button-primary__l--hover.svg") 10;
+}
+
+.notification-banner .notification-button:last-child:active, .notification-banner .notification-button:last-child:pressed, .notification-banner .notification-button:last-child:selected {
+  border-image: url("button-assets/dialog-button-primary__l--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:last-child:focus {
+  border-image: url("button-assets/dialog-button-blue__l.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:last-child:focus StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__l--hover.svg") 10;
+}
+
+.notification-banner .notification-button:last-child:focus:active, .notification-banner .notification-button:last-child:focus:pressed, .notification-banner .notification-button:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__l--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:last-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.notification-banner .notification-button:first-child:last-child:grayed, .notification-banner .notification-button:first-child:last-child:disabled, .notification-banner .notification-button:first-child:last-child:insensitive, .notification-banner .notification-button:first-child:last-child:focus:grayed, .notification-banner .notification-button:first-child:last-child:focus:disabled, .notification-banner .notification-button:first-child:last-child:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:first-child:last-child:grayed StIcon, .notification-banner .notification-button:first-child:last-child:disabled StIcon, .notification-banner .notification-button:first-child:last-child:insensitive StIcon, .notification-banner .notification-button:first-child:last-child:focus:grayed StIcon, .notification-banner .notification-button:first-child:last-child:focus:disabled StIcon, .notification-banner .notification-button:first-child:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.notification-banner .notification-button:first-child:last-child StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:last-child:hover {
+  border-image: url("button-assets/dialog-button-primary__s--hover.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:last-child:active, .notification-banner .notification-button:first-child:last-child:pressed, .notification-banner .notification-button:first-child:last-child:selected {
+  border-image: url("button-assets/dialog-button-primary__s--pressed.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:last-child:focus {
+  border-image: url("button-assets/dialog-button-blue__s.svg") 10;
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:last-child:focus StIcon {
+  color: white;
+}
+
+.notification-banner .notification-button:first-child:last-child:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__s--hover.svg") 10;
+}
+
+.notification-banner .notification-button:first-child:last-child:focus:active, .notification-banner .notification-button:first-child:last-child:focus:pressed, .notification-banner .notification-button:first-child:last-child:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__s--pressed.svg") 10;
+}
+
 .hotplug-notification-item {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  padding: 1em 0;
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: white;
   color: rgba(255, 255, 255, 0.45);
   font-size: 9pt;
   text-shadow: none !important;
   padding: .8em;
+}
+
+.hotplug-notification-item > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.hotplug-notification-item:grayed, .hotplug-notification-item:disabled, .hotplug-notification-item:insensitive, .hotplug-notification-item:focus:grayed, .hotplug-notification-item:focus:disabled, .hotplug-notification-item:focus:insensitive {
+  border-image: url("button-assets/dialog-button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.hotplug-notification-item:grayed StIcon, .hotplug-notification-item:disabled StIcon, .hotplug-notification-item:insensitive StIcon, .hotplug-notification-item:focus:grayed StIcon, .hotplug-notification-item:focus:disabled StIcon, .hotplug-notification-item:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.hotplug-notification-item StIcon {
+  color: white;
+}
+
+.hotplug-notification-item:hover {
+  border-image: url("button-assets/dialog-button-primary__s--hover.svg") 10;
+}
+
+.hotplug-notification-item:active, .hotplug-notification-item:pressed, .hotplug-notification-item:selected {
+  border-image: url("button-assets/dialog-button-primary__s--pressed.svg") 10;
+}
+
+.hotplug-notification-item:focus {
+  border-image: url("button-assets/dialog-button-blue__s.svg") 10;
+  color: white;
+}
+
+.hotplug-notification-item:focus StIcon {
+  color: white;
+}
+
+.hotplug-notification-item:focus:hover {
+  border-image: url("button-assets/dialog-button-blue__s--hover.svg") 10;
+}
+
+.hotplug-notification-item:focus:active, .hotplug-notification-item:focus:pressed, .hotplug-notification-item:focus:selected {
+  border-image: url("button-assets/dialog-button-blue__s--pressed.svg") 10;
 }
 
 .hotplug-notification-item-icon {
@@ -2673,51 +3468,123 @@ texturl-highlighter {
 }
 
 .candidate-page-button-previous {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
   border-radius: 0;
-  border: 0 transparent !important;
-  padding: 4px 10px;
-  -st-natural-width: 0;
-  border-image: url("button-assets/linked-button-left.svg") 7;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__f.svg") 10;
+  color: white;
+  padding: .9em;
+}
+
+.candidate-page-button-previous > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.candidate-page-button-previous:grayed, .candidate-page-button-previous:disabled, .candidate-page-button-previous:insensitive, .candidate-page-button-previous:focus:grayed, .candidate-page-button-previous:focus:disabled, .candidate-page-button-previous:focus:insensitive {
+  border-image: url("button-assets/button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.candidate-page-button-previous:grayed StIcon, .candidate-page-button-previous:disabled StIcon, .candidate-page-button-previous:insensitive StIcon, .candidate-page-button-previous:focus:grayed StIcon, .candidate-page-button-previous:focus:disabled StIcon, .candidate-page-button-previous:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.candidate-page-button-previous StIcon {
+  color: white;
 }
 
 .candidate-page-button-previous:hover {
-  border-image: url("button-assets/linked-button-left-hover.svg") 7;
+  border-image: url("button-assets/button-primary__f--hover.svg") 10;
 }
 
-.candidate-page-button-previous:active {
-  border-image: url("button-assets/linked-button-left-pressed.svg") 7;
+.candidate-page-button-previous:active, .candidate-page-button-previous:pressed, .candidate-page-button-previous:selected {
+  border-image: url("button-assets/button-primary__f--pressed.svg") 10;
 }
 
-.candidate-page-button-previous:insensitive {
-  border-image: url("button-assets/linked-button-left.svg") 7;
+.candidate-page-button-previous:focus {
+  border-image: url("button-assets/button-blue__f.svg") 10;
+  color: white;
 }
 
-.candidate-page-button-previous:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+.candidate-page-button-previous:focus StIcon {
+  color: white;
+}
+
+.candidate-page-button-previous:focus:hover {
+  border-image: url("button-assets/button-blue__f--hover.svg") 10;
+}
+
+.candidate-page-button-previous:focus:active, .candidate-page-button-previous:focus:pressed, .candidate-page-button-previous:focus:selected {
+  border-image: url("button-assets/button-blue__f--pressed.svg") 10;
 }
 
 .candidate-page-button-next {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
   border-radius: 0;
-  border: 0 transparent !important;
-  padding: 4px 10px;
-  -st-natural-width: 0;
-  border-image: url("button-assets/linked-button-right.svg") 7;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__l.svg") 10;
+  color: white;
+  padding: .9em;
+}
+
+.candidate-page-button-next > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.candidate-page-button-next:grayed, .candidate-page-button-next:disabled, .candidate-page-button-next:insensitive, .candidate-page-button-next:focus:grayed, .candidate-page-button-next:focus:disabled, .candidate-page-button-next:focus:insensitive {
+  border-image: url("button-assets/button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.candidate-page-button-next:grayed StIcon, .candidate-page-button-next:disabled StIcon, .candidate-page-button-next:insensitive StIcon, .candidate-page-button-next:focus:grayed StIcon, .candidate-page-button-next:focus:disabled StIcon, .candidate-page-button-next:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.candidate-page-button-next StIcon {
+  color: white;
 }
 
 .candidate-page-button-next:hover {
-  border-image: url("button-assets/linked-button-right-hover.svg") 7;
+  border-image: url("button-assets/button-primary__l--hover.svg") 10;
 }
 
-.candidate-page-button-next:active {
-  border-image: url("button-assets/linked-button-right-pressed.svg") 7;
+.candidate-page-button-next:active, .candidate-page-button-next:pressed, .candidate-page-button-next:selected {
+  border-image: url("button-assets/button-primary__l--pressed.svg") 10;
 }
 
-.candidate-page-button-next:insensitive {
-  border-image: url("button-assets/linked-button-right.svg") 7;
+.candidate-page-button-next:focus {
+  border-image: url("button-assets/button-blue__l.svg") 10;
+  color: white;
 }
 
-.candidate-page-button-next:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+.candidate-page-button-next:focus StIcon {
+  color: white;
+}
+
+.candidate-page-button-next:focus:hover {
+  border-image: url("button-assets/button-blue__l--hover.svg") 10;
+}
+
+.candidate-page-button-next:focus:active, .candidate-page-button-next:focus:pressed, .candidate-page-button-next:focus:selected {
+  border-image: url("button-assets/button-blue__l--pressed.svg") 10;
 }
 
 .candidate-page-button-icon {
@@ -2754,55 +3621,218 @@ texturl-highlighter {
 }
 
 #LookingGlassDialog .notebook-tab {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.45);
+  padding: 0;
   -natural-hpadding: 12px;
   -minimum-hpadding: 6px;
-  font-size: 9pt;
-  font-weight: bold;
-  padding: 0;
+}
+
+#LookingGlassDialog .notebook-tab > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+#LookingGlassDialog .notebook-tab:grayed, #LookingGlassDialog .notebook-tab:disabled, #LookingGlassDialog .notebook-tab:insensitive, #LookingGlassDialog .notebook-tab:focus:grayed, #LookingGlassDialog .notebook-tab:focus:disabled, #LookingGlassDialog .notebook-tab:focus:insensitive {
+  border-image: url("button-assets/button-primary__m.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:grayed StIcon, #LookingGlassDialog .notebook-tab:disabled StIcon, #LookingGlassDialog .notebook-tab:insensitive StIcon, #LookingGlassDialog .notebook-tab:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab StIcon {
   color: rgba(255, 255, 255, 0.45);
-  border-image: url("button-assets/linked-button-middle.svg") 7;
 }
 
-#LookingGlassDialog .notebook-tab StButton {
-  padding: 10px 14px;
-}
-
-#LookingGlassDialog .notebook-tab:hover {
-  border-image: url("button-assets/linked-button-middle-hover.svg") 7;
-  text-shadow: transparent 0 0 !important;
+#LookingGlassDialog .notebook-tab:hover, #LookingGlassDialog .notebook-tab:focus, #LookingGlassDialog .notebook-tab:focus:hover {
+  border-image: url("button-assets/button-primary__m--hover.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:selected {
-  text-shadow: trannsparent 0 0 !important;
-  border-color: transparent !important;
-  border-bottom-width: 0 !important;
-  border-image: url("button-assets/linked-button-middle-pressed.svg") 7;
+#LookingGlassDialog .notebook-tab:hover StIcon, #LookingGlassDialog .notebook-tab:focus StIcon, #LookingGlassDialog .notebook-tab:focus:hover StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:active, #LookingGlassDialog .notebook-tab:pressed, #LookingGlassDialog .notebook-tab:selected, #LookingGlassDialog .notebook-tab:focus:active, #LookingGlassDialog .notebook-tab:focus:pressed, #LookingGlassDialog .notebook-tab:focus:selected {
+  border-image: url("button-assets/button-primary__m--pressed.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:active StIcon, #LookingGlassDialog .notebook-tab:pressed StIcon, #LookingGlassDialog .notebook-tab:selected StIcon, #LookingGlassDialog .notebook-tab:focus:active StIcon, #LookingGlassDialog .notebook-tab:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:focus:selected StIcon {
   color: white;
 }
 
 #LookingGlassDialog .notebook-tab:first-child {
-  border-image: url("button-assets/linked-button-left.svg") 7;
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:first-child:hover {
-  border-image: url("button-assets/linked-button-left-hover.svg") 7;
+#LookingGlassDialog .notebook-tab:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:first-child:selected {
-  border-image: url("button-assets/linked-button-left-pressed.svg") 7;
+#LookingGlassDialog .notebook-tab:first-child:grayed, #LookingGlassDialog .notebook-tab:first-child:disabled, #LookingGlassDialog .notebook-tab:first-child:insensitive, #LookingGlassDialog .notebook-tab:first-child:focus:grayed, #LookingGlassDialog .notebook-tab:first-child:focus:disabled, #LookingGlassDialog .notebook-tab:first-child:focus:insensitive {
+  border-image: url("button-assets/button-primary__f.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:first-child:grayed StIcon, #LookingGlassDialog .notebook-tab:first-child:disabled StIcon, #LookingGlassDialog .notebook-tab:first-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:first-child StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#LookingGlassDialog .notebook-tab:first-child:hover, #LookingGlassDialog .notebook-tab:first-child:focus, #LookingGlassDialog .notebook-tab:first-child:focus:hover {
+  border-image: url("button-assets/button-primary__f--hover.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:first-child:hover StIcon, #LookingGlassDialog .notebook-tab:first-child:focus StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:hover StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:first-child:active, #LookingGlassDialog .notebook-tab:first-child:pressed, #LookingGlassDialog .notebook-tab:first-child:selected, #LookingGlassDialog .notebook-tab:first-child:focus:active, #LookingGlassDialog .notebook-tab:first-child:focus:pressed, #LookingGlassDialog .notebook-tab:first-child:focus:selected {
+  border-image: url("button-assets/button-primary__f--pressed.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:first-child:active StIcon, #LookingGlassDialog .notebook-tab:first-child:pressed StIcon, #LookingGlassDialog .notebook-tab:first-child:selected StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:selected StIcon {
+  color: white;
 }
 
 #LookingGlassDialog .notebook-tab:last-child {
-  border-image: url("button-assets/linked-button-right.svg") 7;
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:hover {
-  border-image: url("button-assets/linked-button-right-hover.svg") 7;
+#LookingGlassDialog .notebook-tab:last-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:selected {
-  border-image: url("button-assets/linked-button-right-pressed.svg") 7;
+#LookingGlassDialog .notebook-tab:last-child:grayed, #LookingGlassDialog .notebook-tab:last-child:disabled, #LookingGlassDialog .notebook-tab:last-child:insensitive, #LookingGlassDialog .notebook-tab:last-child:focus:grayed, #LookingGlassDialog .notebook-tab:last-child:focus:disabled, #LookingGlassDialog .notebook-tab:last-child:focus:insensitive {
+  border-image: url("button-assets/button-primary__l.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:last-child StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:hover, #LookingGlassDialog .notebook-tab:last-child:focus, #LookingGlassDialog .notebook-tab:last-child:focus:hover {
+  border-image: url("button-assets/button-primary__l--hover.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:hover StIcon, #LookingGlassDialog .notebook-tab:last-child:focus StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:hover StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:active, #LookingGlassDialog .notebook-tab:last-child:pressed, #LookingGlassDialog .notebook-tab:last-child:selected, #LookingGlassDialog .notebook-tab:last-child:focus:active, #LookingGlassDialog .notebook-tab:last-child:focus:pressed, #LookingGlassDialog .notebook-tab:last-child:focus:selected {
+  border-image: url("button-assets/button-primary__l--pressed.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:active StIcon, #LookingGlassDialog .notebook-tab:last-child:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:selected StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:selected StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:grayed, #LookingGlassDialog .notebook-tab:last-child:first-child:disabled, #LookingGlassDialog .notebook-tab:last-child:first-child:insensitive, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:grayed, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:disabled, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:insensitive {
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:hover, #LookingGlassDialog .notebook-tab:last-child:first-child:focus, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:hover {
+  border-image: url("button-assets/button-primary__s--hover.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:hover StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:hover StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:active, #LookingGlassDialog .notebook-tab:last-child:first-child:pressed, #LookingGlassDialog .notebook-tab:last-child:first-child:selected, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:active, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:pressed, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:selected {
+  border-image: url("button-assets/button-primary__s--pressed.svg") 10;
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab:last-child:first-child:active StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:selected StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:selected StIcon {
+  color: white;
+}
+
+#LookingGlassDialog .notebook-tab StButton {
+  padding: 10px 14px;
 }
 
 #LookingGlassDialog StBoxLayout#EvalBox {

@@ -6,6 +6,9 @@
     spacing: 0 !important;
     border: 0 rgba(0, 0, 0, 0) !important;
 
+    .modal-dialog-content-box {
+        padding-bottom: 14px !important;
+    }
 
     &-layout {
         padding-left: 1em;
@@ -93,5 +96,21 @@
             color: $text-secondary;
             font-size: 9pt;
         }
+    }
+}
+
+/* =====================================================
+ * ! End-session & Logout dialog buttons
+   ===================================================== */
+
+.end-session-dialog .modal-dialog-linked-button {
+    @include btn-dlg(m, $text-primary, primary, $text-primary, red, $mod:true);
+    
+    &:first-child {
+        @include btn-dlg(f, $text-primary, primary, $text-primary, green, $mod:true);
+    }
+
+    &:last-child {
+        @include btn-dlg(l, $text-primary, primary, $text-primary, red, $mod:true);
     }
 }

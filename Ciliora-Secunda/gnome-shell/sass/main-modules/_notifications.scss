@@ -52,13 +52,13 @@ texturl-highlighter {
     }
 
     .notification-button {
-//        @include btn-dialog-linked-primary;
+        @include btn-dialog-linked-primary;
         background-color: transparent !important;
     }
 }
 
 .hotplug-notification-item {
-//    @include btn-dialog-primary;
+    @include btn-dialog-primary;
     color: $text-secondary;
     font-size: 9pt;
     text-shadow: none !important;
