@@ -26,14 +26,14 @@
 
         StLabel {
             font-weight: bold;
-            color: $accent-warning;
+            color: $text-warning;
             padding-left: .4em;
         }
     }
 
     &-warning {
         width: 28em;
-        color: $accent-danger;
+        color: $text-danger;
         padding-top: 0;
 
         &:rtl { text-align: right; }
@@ -66,7 +66,7 @@
     &-list-header {
         font-weight: bold;
         padding-bottom: 16px;
-        color: $accent-danger;
+        color: $text-danger;
 
         &:rtl { text-align: right; }
     }

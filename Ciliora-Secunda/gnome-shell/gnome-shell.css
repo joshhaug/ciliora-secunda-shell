@@ -1030,13 +1030,13 @@ StEntry:insensitive StIcon {
 
 .end-session-dialog .check-box StLabel {
   font-weight: bold;
-  color: #e8a05f;
+  color: #f59f52;
   padding-left: .4em;
 }
 
 .end-session-dialog-warning {
   width: 28em;
-  color: #e86b6b;
+  color: #f45f5f;
   padding-top: 0;
 }
 
@@ -1073,7 +1073,7 @@ StEntry:insensitive StIcon {
 .end-session-dialog-list-header {
   font-weight: bold;
   padding-bottom: 16px;
-  color: #e86b6b;
+  color: #f45f5f;
 }
 
 .end-session-dialog-list-header:rtl {
@@ -1235,7 +1235,7 @@ StEntry:insensitive StIcon {
 
 .prompt-dialog-info-label {
   font-size: 9pt;
-  color: #9565c7;
+  color: #b995de;
 }
 
 .prompt-dialog-null-label {
@@ -2014,7 +2014,7 @@ StEntry:insensitive StIcon {
 .calendar-work-day.calendar-day-with-events {
   border-image: url("misc-assets/calendar-work-day-events.svg") 7;
   background-image: none !important;
-  color: #9565c7;
+  color: #b995de;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
@@ -2052,7 +2052,7 @@ StEntry:insensitive StIcon {
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("misc-assets/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: #9565c7;
+  color: #b995de;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
