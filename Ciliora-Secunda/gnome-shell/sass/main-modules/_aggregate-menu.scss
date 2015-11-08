@@ -3,13 +3,17 @@
    ===================================================== */
 
 .system-switch-user-submenu-icon {
-    icon-size: 16px;
-    color: $text-primary;
     border: 0 solid transparent !important;
+    padding: 0;
+
+    &.user-icon,
+    &.default-icon {
+        icon-size: 16px;
+    }
 }
 
 .aggregate-menu {
-    width: 300px;
+    min-width: 21em;
 
     .popup-menu-icon { padding: 0; }
 }
@@ -21,11 +25,11 @@
     border: 0 solid transparent !important;
 
     &:hover, &:focus, &:active {
-        color: $accent;
+        color: $text-primary-invert;
         border-radius: 0;
         padding: 10px;
         border: 0 solid transparent !important;
-        background-color: transparent !important;
+        border-image: url("background-assets/hover.svg") 6;
     }
 
     > StIcon { icon-size: 16px; }
