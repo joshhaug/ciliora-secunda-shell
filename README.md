@@ -1,7 +1,4 @@
-[![ License ](https://img.shields.io/badge/license-GPLv3-blue.svg?style=flat-square)](LICENSE)
-[![ Latest gnome-shell version ](https://img.shields.io/badge/gnome--shell-3.16-brightgreen.svg?style=flat-square)](#compatibility)
-
-###Ciliora Secunda for gnome-shell 
+###Ciliora-Secunda for gnome-shell 
 
 ---
 
@@ -44,15 +41,9 @@ In order to apply this theme to your login screen, move the `gnome-shell-theme.g
 
 ####Compatibility
 
-This theme supports gnome-shell **3.16** only.
+The latest version of this theme is on the master branch, and it supports gnome-shell `3.18`.
 
----
-
-####Contributing
-
-In case you want to contribute code, **don't edit the css file!** Instead, edit the relevant sass files(s) and compile to css.
-
-This is a very opinionated project, so try to avoid suggesting visual changes. :grinning:
+For older versions, check the available [releases](../../releases).
 
 ---
 
