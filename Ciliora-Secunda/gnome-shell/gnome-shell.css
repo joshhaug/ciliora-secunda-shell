@@ -3307,9 +3307,9 @@ texturl-highlighter {
   border: none;
 }
 
-/* =====================================================
-   ! On-screen Keyboard
-   ===================================================== */
+/* ===================================================================
+   ! On screen keyboard
+   ===================================================================*/
 #keyboard {
   border-image: url("panel-assets/panel-bottom.svg") 7;
 }
@@ -3324,53 +3324,200 @@ texturl-highlighter {
 }
 
 .keyboard-key {
-  background-gradient-direction: none !important;
-  background-color: transparent !important;
-  border-radius: 0 !important;
-  border: none !important;
-  border-image: url("button-assets/button.svg") 7;
-  padding: 0;
-  color: white;
-  font-size: 12pt;
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
   font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: white;
+  padding: .9em;
+  font-size: 12pt;
+}
+
+.keyboard-key > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.keyboard-key:grayed, .keyboard-key:disabled, .keyboard-key:insensitive, .keyboard-key:focus:grayed, .keyboard-key:focus:disabled, .keyboard-key:focus:insensitive {
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.keyboard-key:grayed StIcon, .keyboard-key:disabled StIcon, .keyboard-key:insensitive StIcon, .keyboard-key:focus:grayed StIcon, .keyboard-key:focus:disabled StIcon, .keyboard-key:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.keyboard-key StIcon {
+  color: white;
 }
 
 .keyboard-key:hover {
-  border-image: url("button-assets/button-hover.svg") 7;
+  border-image: url("button-assets/button-primary__s--hover.svg") 10;
 }
 
-.keyboard-key:checked, .keyboard-key:active {
-  border-image: url("button-assets/button-pressed.svg") 7;
+.keyboard-key:active, .keyboard-key:pressed, .keyboard-key:selected {
+  border-image: url("button-assets/button-primary__s--pressed.svg") 10;
 }
 
-.keyboard-key:grayed {
-  border-image: url("button-assets/button-insensitive.svg") 7;
-  color: rgba(255, 255, 255, 0.15);
+.keyboard-key:focus {
+  border-image: url("button-assets/button-blue__s.svg") 10;
+  color: white;
+}
+
+.keyboard-key:focus StIcon {
+  color: white;
+}
+
+.keyboard-key:focus:hover {
+  border-image: url("button-assets/button-blue__s--hover.svg") 10;
+}
+
+.keyboard-key:focus:active, .keyboard-key:focus:pressed, .keyboard-key:focus:selected {
+  border-image: url("button-assets/button-blue__s--pressed.svg") 10;
 }
 
 /* Backspace, return, hide-keyboard & abc/123 keys */
 .keyboard-layout > *:first-child .keyboard-row > *:last-child,
 .keyboard-layout .keyboard-row:last-child > *:last-child,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child {
-  border-image: url("button-assets/button-lighter.svg") 7;
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-secondary__s.svg") 10;
+  color: white;
+  font-size: 12pt;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child > StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child > StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child > StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:grayed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:disabled, .keyboard-layout > *:first-child .keyboard-row > *:last-child:insensitive, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:grayed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:disabled, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:insensitive,
+.keyboard-layout .keyboard-row:last-child > *:last-child:grayed,
+.keyboard-layout .keyboard-row:last-child > *:last-child:disabled,
+.keyboard-layout .keyboard-row:last-child > *:last-child:insensitive,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:grayed,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:disabled,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:insensitive,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:grayed,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:disabled,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:insensitive,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:grayed,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:disabled,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:insensitive,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:grayed,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:disabled,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:insensitive,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:grayed,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive {
+  border-image: url("button-assets/button-secondary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:insensitive StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:insensitive StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:grayed StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:disabled StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:insensitive StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:grayed StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:disabled StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child StIcon {
+  color: white;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:hover,
 .keyboard-layout .keyboard-row:last-child > *:last-child:hover,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:hover,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:hover {
-  border-image: url("button-assets/button-lighter-hover.svg") 7;
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:hover {
+  border-image: url("button-assets/button-secondary__s--hover.svg") 10;
 }
 
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:checked, .keyboard-layout > *:first-child .keyboard-row > *:last-child:active,
-.keyboard-layout .keyboard-row:last-child > *:last-child:checked,
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:active, .keyboard-layout > *:first-child .keyboard-row > *:last-child:pressed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected,
 .keyboard-layout .keyboard-row:last-child > *:last-child:active,
-.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:checked,
+.keyboard-layout .keyboard-row:last-child > *:last-child:pressed,
+.keyboard-layout .keyboard-row:last-child > *:last-child:selected,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:active,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:checked,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:last-child:active {
-  border-image: url("button-assets/button-lighter-pressed.svg") 7;
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:pressed,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:selected,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:active,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:pressed,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected {
+  border-image: url("button-assets/button-secondary__s--pressed.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus {
+  border-image: url("button-assets/button-blue__s.svg") 10;
+  color: white;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus StIcon,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus StIcon {
+  color: white;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:hover,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:hover,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:hover,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:hover {
+  border-image: url("button-assets/button-blue__s--hover.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:active, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:pressed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:selected,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:active,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:pressed,
+.keyboard-layout .keyboard-row:last-child > *:last-child:focus:selected,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:active,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:pressed,
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus:selected,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:active,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:pressed,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:selected {
+  border-image: url("button-assets/button-blue__s--pressed.svg") 10;
 }
 
 /* subkeys popup */
