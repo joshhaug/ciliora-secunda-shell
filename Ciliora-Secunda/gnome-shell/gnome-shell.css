@@ -185,7 +185,6 @@ StEntry:insensitive StIcon {
 .check-box StBoxLayout {
   spacing: .4em;
   min-height: 17px;
-  padding-bottom: 2px;
 }
 
 .check-box StLabel {
@@ -1642,14 +1641,6 @@ StEntry:insensitive StIcon {
   background-size: contain;
   width: 48px;
   height: 48px;
-}
-
-/* =====================================================
-   ! Network Agent dialog
-   ===================================================== */
-.network-dialog-secret-table {
-  spacing-rows: 15px;
-  spacing-columns: 1em;
 }
 
 /* =====================================================
