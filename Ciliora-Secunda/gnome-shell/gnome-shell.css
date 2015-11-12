@@ -1518,7 +1518,7 @@ StEntry:insensitive StIcon {
 }
 
 .prompt-dialog > .modal-dialog-content-box {
-  padding-bottom: 12px !important;
+  padding-bottom: 20px !important;
 }
 
 .prompt-dialog > *:last-child {
@@ -1538,13 +1538,12 @@ StEntry:insensitive StIcon {
     cause ugly paddings in some cases
     with "em" units, collapsed boxes
     produce 0px margins
-    override for specific elements below
     */
   spacing: 0;
 }
 
 .prompt-dialog-message-layout > * {
-  margin-top: 1em;
+  margin-top: 1.1em;
 }
 
 .prompt-dialog-message-layout > *:first-child {
@@ -1558,7 +1557,6 @@ StEntry:insensitive StIcon {
 }
 
 .prompt-dialog-description {
-  margin-top: .6em;
   margin-bottom: .6em;
 }
 
@@ -1569,6 +1567,7 @@ StEntry:insensitive StIcon {
 .prompt-dialog-password-box {
   spacing: 1em;
   font-size: 9pt;
+  padding-bottom: 0;
 }
 
 .prompt-dialog-password-label {
@@ -1579,12 +1578,14 @@ StEntry:insensitive StIcon {
   font-size: 9pt;
   font-weight: bold;
   color: #f45f5f;
+  padding-bottom: 0;
 }
 
 .prompt-dialog-info-label {
   font-size: 9pt;
   font-weight: bold;
   color: #b995de;
+  padding-bottom: 0;
 }
 
 .prompt-dialog StEntry {
