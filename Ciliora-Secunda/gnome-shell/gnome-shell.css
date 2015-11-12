@@ -890,7 +890,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__m.svg") 10;
   color: white;
 }
@@ -950,7 +950,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__f.svg") 10;
   color: white;
 }
@@ -1010,7 +1010,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__l.svg") 10;
   color: white;
 }
@@ -1070,7 +1070,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__s.svg") 10;
   color: white;
 }
@@ -1296,7 +1296,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__m.svg") 10;
   color: white;
 }
@@ -1344,7 +1344,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__f.svg") 10;
   color: white;
 }
@@ -1392,7 +1392,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__l.svg") 10;
   color: white;
 }
@@ -1763,7 +1763,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__m.svg") 10;
   color: white;
 }
@@ -1823,7 +1823,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__f.svg") 10;
   color: white;
 }
@@ -1883,7 +1883,7 @@ StEntry:insensitive StIcon {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__l.svg") 10;
   color: white;
 }
@@ -2900,7 +2900,7 @@ texturl-highlighter {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__m.svg") 10;
   color: white;
   background-color: transparent !important;
@@ -2961,7 +2961,7 @@ texturl-highlighter {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__f.svg") 10;
   color: white;
 }
@@ -3021,7 +3021,7 @@ texturl-highlighter {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__l.svg") 10;
   color: white;
 }
@@ -3081,7 +3081,7 @@ texturl-highlighter {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__s.svg") 10;
   color: white;
 }
@@ -3141,7 +3141,7 @@ texturl-highlighter {
   border-radius: 0;
   font-weight: bold;
   font-size: 9pt;
-  padding: 1em 0;
+  padding: 1.1em 0;
   border-image: url("button-assets/dialog-button-primary__s.svg") 10;
   color: white;
   color: rgba(255, 255, 255, 0.45);

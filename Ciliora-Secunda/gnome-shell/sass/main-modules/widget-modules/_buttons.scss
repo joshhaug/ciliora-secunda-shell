@@ -26,17 +26,17 @@
 // ===================================================================
 // Generate buttons
 //
-// 
+//
 //  Provide a $position parameter:
 //      s (single)
 //      f (first-child)
 //      l (last-child)
 //      m (middle)
-//                            
-// 
+//
+//
 //  Provide 2 color parameters to modify text-color and bg
 //
-// 
+//
 //  Provide 2 additional color parameters to modify
 //  text & bg colors of focused states
 //  independently from normal/hover/pressed states
@@ -147,8 +147,8 @@
 
 // ===================================================================
 // Generate dialog buttons
-// 
-// 
+//
+//
 //  Name pattern for button assets:
 //      dialog-button-{$bg}__{$position}.svg
 //      dialog-button-{$bg}__{$position}--hover.svg
@@ -171,7 +171,7 @@
 
     // Include common properties
     @include btn-common;
-    padding: 1em 0;
+    padding: 1.1em 0;
 
 
     &:grayed,
@@ -275,7 +275,7 @@
 
 @mixin btn-linked-primary {
     @include btn(m, $text-secondary, primary, $text-primary, $mod:true);
-    
+
     &:first-child {
         @include btn(f, $text-secondary, primary, $text-primary, $mod:true);
     }
@@ -300,7 +300,7 @@
 
 @mixin btn-dialog-linked-primary {
     @include btn-dlg(m, $text-primary, primary, $text-primary, blue);
-    
+
     &:first-child {
         @include btn-dlg(f, $text-primary, primary, $text-primary, blue);
     }
