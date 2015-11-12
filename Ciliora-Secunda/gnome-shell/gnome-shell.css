@@ -1519,13 +1519,13 @@ StEntry:insensitive StIcon {
 }
 
 .prompt-dialog > .modal-dialog-content-box {
-  padding-bottom: 0 !important;
+  padding-bottom: 12px !important;
 }
 
 .prompt-dialog > *:last-child {
   spacing: 0;
   margin: 0;
-  padding: 0 3px 0 3px;
+  padding: 0 4px 1px 4px;
 }
 
 .prompt-dialog-main-layout {
@@ -1534,8 +1534,22 @@ StEntry:insensitive StIcon {
 }
 
 .prompt-dialog-message-layout {
-  spacing: 16px;
-  padding-bottom: 14px;
+  /*
+    collapsed boxes are affected by spacing and
+    cause ugly paddings in some cases
+    with "em" units, collapsed boxes
+    produce 0px margins
+    override for specific elements below
+    */
+  spacing: 0;
+}
+
+.prompt-dialog-message-layout > * {
+  margin-top: 1em;
+}
+
+.prompt-dialog-message-layout > *:first-child {
+  margin-top: 0;
 }
 
 .prompt-dialog-headline {
@@ -1544,29 +1558,34 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-.prompt-dialog-description:rtl {
+.prompt-dialog-description {
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
+
+.prompt-dialog-description :rtl {
   text-align: right;
 }
 
 .prompt-dialog-password-box {
   spacing: 1em;
-  padding-bottom: 1em;
   font-size: 9pt;
+}
+
+.prompt-dialog-password-label {
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .prompt-dialog-error-label {
   font-size: 9pt;
+  font-weight: bold;
   color: #f45f5f;
 }
 
 .prompt-dialog-info-label {
   font-size: 9pt;
+  font-weight: bold;
   color: #b995de;
-}
-
-.prompt-dialog-null-label {
-  font-size: 9pt;
-  color: #f59f52;
 }
 
 .prompt-dialog StEntry {
@@ -1579,29 +1598,43 @@ StEntry:insensitive StIcon {
 }
 
 .keyring-dialog-control-table {
-  spacing-rows: 15px;
+  spacing-rows: 1em;
   spacing-columns: 1em;
+}
+
+.network-dialog-secret-table {
+  spacing-rows: 1em;
+  spacing-columns: 1em;
+}
+
+/* set to 0 the remove the intentionally added element */
+.prompt-dialog-null-label {
+  height: 0 !important;
+  font-size: 0 !important;
 }
 
 .hidden {
   color: transparent;
 }
 
-/* =====================================================
-   ! Polkit dialog
-   ===================================================== */
+/* This is the user box styles in password dialog */
 .polkit-dialog-user-layout {
-  padding-left: 10px;
-  spacing: 10px;
+  padding-left: 0;
+  spacing: 14px;
 }
 
 .polkit-dialog-user-layout:rtl {
   padding-left: 0;
-  padding-right: 10px;
+  padding-right: 0;
 }
 
 .polkit-dialog-user-root-label {
-  color: #e86b6b;
+  color: #f45f5f;
+}
+
+.polkit-dialog-user-label {
+  color: white;
+  font-weight: bold;
 }
 
 .polkit-dialog-user-icon {
