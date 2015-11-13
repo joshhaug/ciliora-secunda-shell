@@ -85,7 +85,7 @@
 .world-clocks-time {
     font-size: 9pt;
     font-weight: bold;
-    margin: 0 .6em; 
+    margin: 0 .6em;
 }
 
 .datemenu-displays-section {
@@ -151,7 +151,7 @@
     font-weight: bold;
     text-align: center;
     margin: 1px;
-    padding-left: .2em; 
+    padding-left: .2em;
     @include size(2.5em, 2.7em);
 }
 
@@ -291,11 +291,11 @@
 
 .calendar-week-number {
     color: $text-secondary;
-    font-size: 8pt;
+    font-size: 9pt;
     font-weight: normal;
     @include size(2.4em, 1.6em);
-    padding-top: .8em;
-    padding-right: .6em;
+    padding-top: .7em;
+    padding-right: .4em;
 }
 /* =====================================================
    ! Message List

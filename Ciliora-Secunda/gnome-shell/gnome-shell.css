@@ -2629,12 +2629,12 @@ StEntry:insensitive StIcon {
 /*  ! Week Number */
 .calendar-week-number {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 8pt;
+  font-size: 9pt;
   font-weight: normal;
   width: 2.4em;
   height: 1.6em;
-  padding-top: .8em;
-  padding-right: .6em;
+  padding-top: .7em;
+  padding-right: .4em;
 }
 
 /* =====================================================
