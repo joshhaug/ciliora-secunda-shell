@@ -2099,7 +2099,7 @@ StEntry:insensitive StIcon {
 .switcher-list {
   border-image: url("background-assets/popup-outside.svg") 9;
   color: white;
-  padding: 1px;
+  padding: 2px;
   margin: 2px;
   font-size: 12px;
   font-weight: bold;
@@ -2154,12 +2154,6 @@ StEntry:insensitive StIcon {
 
 .switcher-list .switcher-arrow:highlighted {
   color: transparent !important;
-}
-
-.alt-tab-app StIcon {
-  width: 64px;
-  height: 64px;
-  padding-bottom: 10px;
 }
 
 .input-source-switcher-symbol {

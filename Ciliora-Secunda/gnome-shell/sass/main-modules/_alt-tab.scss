@@ -10,7 +10,7 @@
 .switcher-list {
     border-image: url("background-assets/popup-outside.svg") 9;
     color: $text-primary;
-    padding: 1px;
+    padding: 2px;
     margin: 2px;
     font-size: 12px;
     font-weight: bold;
@@ -63,10 +63,6 @@
 
         &:highlighted { color: transparent !important; }
     }
-}
-.alt-tab-app StIcon {
-    @include size(64px);
-    padding-bottom: 10px;
 }
 
 .input-source-switcher-symbol {
