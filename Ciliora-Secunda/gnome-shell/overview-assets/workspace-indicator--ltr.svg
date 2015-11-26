@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="workspace-border.svg"
+   sodipodi:docname="workspace-indicator--ltr.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="13.979167"
-     inkscape:cx="-16.613651"
-     inkscape:cy="10.687655"
+     inkscape:zoom="14.895833"
+     inkscape:cx="-4.6657356"
+     inkscape:cy="10.120279"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -62,8 +62,7 @@
      guidecolor="#ff0b00"
      guideopacity="1"
      guidehicolor="#001aff"
-     guidehiopacity="0.49803922"
-     inkscape:snap-smooth-nodes="true">
+     guidehiopacity="0.49803922">
     <inkscape:grid
        type="xygrid"
        id="grid3123"
@@ -130,28 +129,12 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <path
-       style="opacity:1;fill:#7998b3;fill-opacity:1;stroke:none"
-       d="m 23,277 0,22 -22,0 0,-22 z m -3,3 -16,0 0,16 16,0 z"
-       id="rect5315-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccc" />
-    <path
-       style="opacity:0.65;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 20,280 0,16 -16,0 0,-16 16,0 z m -1,1 -14,0 0,14 14,0 0,-14 z"
-       id="rect5319-7"
-       inkscape:connector-curvature="0" />
-    <path
-       style="opacity:0.65;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 24,276 0,24 -24,0 0,-24 24,0 z m -1,1 -22,0 0,22 22,0 0,-22 z"
-       id="path4277"
-       inkscape:connector-curvature="0" />
     <rect
-       style="opacity:0.3;fill:#8daecb;fill-opacity:1"
-       id="rect4304"
-       width="14"
-       height="14"
-       x="5"
-       y="281" />
+       y="277"
+       x="1"
+       height="21.999989"
+       width="2.9999998"
+       id="rect4270-9"
+       style="opacity:1;fill:#7998b3;fill-opacity:1;stroke:none" />
   </g>
 </svg>
