@@ -3787,32 +3787,47 @@ texturl-highlighter {
 /* =====================================================
    ! Looking Glass
    ===================================================== */
+/* Dialog when picker is active is targeted with an id
+   because it only has an id
+   The main dialog has the same id and the "lg-dialog" class
+*/
 #LookingGlassDialog {
-  background-color: transparent !important;
-  spacing: 4px;
+  border-image: url("background-assets/popup-outside.svg") 7;
+  font-weight: bold;
+  font-size: 10pt;
   padding: 16px;
-  border: 0 transparent !important;
-  border-radius: 4px;
-  border-image: url("background-assets/popup.svg") 7;
   color: white;
 }
 
-#LookingGlassDialog * {
+/* Main dialog */
+.lg-dialog {
+  background-color: transparent !important;
+  border: 0 transparent !important;
+  border-radius: 0;
+  border-image: url("background-assets/popup.svg") 7 !important;
+  font-weight: normal !important;
+  font-size: 9pt !important;
+  spacing: 4px;
+  padding: 16px;
+  color: white;
+}
+
+.lg-dialog * {
   font-family: Droid Sans, Sans-Serif;
   transition-duration: 0ms;
 }
 
-#LookingGlassDialog > #Toolbar {
+.lg-dialog #Toolbar {
   border: 0 transparent !important;
   border-radius: 0 !important;
   padding: 0 16px 4px 8px;
 }
 
-#LookingGlassDialog .labels {
+.lg-dialog #Toolbar .labels {
   spacing: 0;
 }
 
-#LookingGlassDialog .notebook-tab {
+.lg-dialog #Toolbar .notebook-tab {
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -3830,44 +3845,44 @@ texturl-highlighter {
   -minimum-hpadding: 6px;
 }
 
-#LookingGlassDialog .notebook-tab > StIcon {
+.lg-dialog #Toolbar .notebook-tab > StIcon {
   width: 16px;
   height: 16px;
   icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:grayed, #LookingGlassDialog .notebook-tab:disabled, #LookingGlassDialog .notebook-tab:insensitive, #LookingGlassDialog .notebook-tab:focus:grayed, #LookingGlassDialog .notebook-tab:focus:disabled, #LookingGlassDialog .notebook-tab:focus:insensitive {
+.lg-dialog #Toolbar .notebook-tab:grayed, .lg-dialog #Toolbar .notebook-tab:disabled, .lg-dialog #Toolbar .notebook-tab:insensitive, .lg-dialog #Toolbar .notebook-tab:focus:grayed, .lg-dialog #Toolbar .notebook-tab:focus:disabled, .lg-dialog #Toolbar .notebook-tab:focus:insensitive {
   border-image: url("button-assets/button-primary__m.svg") 10;
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:grayed StIcon, #LookingGlassDialog .notebook-tab:disabled StIcon, #LookingGlassDialog .notebook-tab:insensitive StIcon, #LookingGlassDialog .notebook-tab:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:focus:insensitive StIcon {
+.lg-dialog #Toolbar .notebook-tab:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:focus:insensitive StIcon {
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab StIcon {
+.lg-dialog #Toolbar .notebook-tab StIcon {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:hover, #LookingGlassDialog .notebook-tab:focus, #LookingGlassDialog .notebook-tab:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:hover, .lg-dialog #Toolbar .notebook-tab:focus, .lg-dialog #Toolbar .notebook-tab:focus:hover {
   border-image: url("button-assets/button-primary__m--hover.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:hover StIcon, #LookingGlassDialog .notebook-tab:focus StIcon, #LookingGlassDialog .notebook-tab:focus:hover StIcon {
+.lg-dialog #Toolbar .notebook-tab:hover StIcon, .lg-dialog #Toolbar .notebook-tab:focus StIcon, .lg-dialog #Toolbar .notebook-tab:focus:hover StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:active, #LookingGlassDialog .notebook-tab:pressed, #LookingGlassDialog .notebook-tab:selected, #LookingGlassDialog .notebook-tab:focus:active, #LookingGlassDialog .notebook-tab:focus:pressed, #LookingGlassDialog .notebook-tab:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:active, .lg-dialog #Toolbar .notebook-tab:pressed, .lg-dialog #Toolbar .notebook-tab:selected, .lg-dialog #Toolbar .notebook-tab:focus:active, .lg-dialog #Toolbar .notebook-tab:focus:pressed, .lg-dialog #Toolbar .notebook-tab:focus:selected {
   border-image: url("button-assets/button-primary__m--pressed.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:active StIcon, #LookingGlassDialog .notebook-tab:pressed StIcon, #LookingGlassDialog .notebook-tab:selected StIcon, #LookingGlassDialog .notebook-tab:focus:active StIcon, #LookingGlassDialog .notebook-tab:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:active StIcon, .lg-dialog #Toolbar .notebook-tab:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:selected StIcon, .lg-dialog #Toolbar .notebook-tab:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:focus:selected StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:first-child {
+.lg-dialog #Toolbar .notebook-tab:first-child {
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -3882,44 +3897,44 @@ texturl-highlighter {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:first-child > StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child > StIcon {
   width: 16px;
   height: 16px;
   icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:first-child:grayed, #LookingGlassDialog .notebook-tab:first-child:disabled, #LookingGlassDialog .notebook-tab:first-child:insensitive, #LookingGlassDialog .notebook-tab:first-child:focus:grayed, #LookingGlassDialog .notebook-tab:first-child:focus:disabled, #LookingGlassDialog .notebook-tab:first-child:focus:insensitive {
+.lg-dialog #Toolbar .notebook-tab:first-child:grayed, .lg-dialog #Toolbar .notebook-tab:first-child:disabled, .lg-dialog #Toolbar .notebook-tab:first-child:insensitive, .lg-dialog #Toolbar .notebook-tab:first-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:first-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:first-child:focus:insensitive {
   border-image: url("button-assets/button-primary__f.svg") 10;
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:first-child:grayed StIcon, #LookingGlassDialog .notebook-tab:first-child:disabled StIcon, #LookingGlassDialog .notebook-tab:first-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:insensitive StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:insensitive StIcon {
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:first-child StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child StIcon {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:first-child:hover, #LookingGlassDialog .notebook-tab:first-child:focus, #LookingGlassDialog .notebook-tab:first-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:first-child:hover, .lg-dialog #Toolbar .notebook-tab:first-child:focus, .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover {
   border-image: url("button-assets/button-primary__f--hover.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:first-child:hover StIcon, #LookingGlassDialog .notebook-tab:first-child:focus StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:hover StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:first-child:active, #LookingGlassDialog .notebook-tab:first-child:pressed, #LookingGlassDialog .notebook-tab:first-child:selected, #LookingGlassDialog .notebook-tab:first-child:focus:active, #LookingGlassDialog .notebook-tab:first-child:focus:pressed, #LookingGlassDialog .notebook-tab:first-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:first-child:active, .lg-dialog #Toolbar .notebook-tab:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:selected, .lg-dialog #Toolbar .notebook-tab:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:focus:selected {
   border-image: url("button-assets/button-primary__f--pressed.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:first-child:active StIcon, #LookingGlassDialog .notebook-tab:first-child:pressed StIcon, #LookingGlassDialog .notebook-tab:first-child:selected StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:first-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:selected StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child {
+.lg-dialog #Toolbar .notebook-tab:last-child {
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -3934,44 +3949,44 @@ texturl-highlighter {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:last-child > StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child > StIcon {
   width: 16px;
   height: 16px;
   icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:grayed, #LookingGlassDialog .notebook-tab:last-child:disabled, #LookingGlassDialog .notebook-tab:last-child:insensitive, #LookingGlassDialog .notebook-tab:last-child:focus:grayed, #LookingGlassDialog .notebook-tab:last-child:focus:disabled, #LookingGlassDialog .notebook-tab:last-child:focus:insensitive {
+.lg-dialog #Toolbar .notebook-tab:last-child:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:insensitive, .lg-dialog #Toolbar .notebook-tab:last-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:focus:insensitive {
   border-image: url("button-assets/button-primary__l.svg") 10;
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:insensitive StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:insensitive StIcon {
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:last-child StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child StIcon {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:hover, #LookingGlassDialog .notebook-tab:last-child:focus, #LookingGlassDialog .notebook-tab:last-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:last-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover {
   border-image: url("button-assets/button-primary__l--hover.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:hover StIcon, #LookingGlassDialog .notebook-tab:last-child:focus StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:hover StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:active, #LookingGlassDialog .notebook-tab:last-child:pressed, #LookingGlassDialog .notebook-tab:last-child:selected, #LookingGlassDialog .notebook-tab:last-child:focus:active, #LookingGlassDialog .notebook-tab:last-child:focus:pressed, #LookingGlassDialog .notebook-tab:last-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:last-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:selected, .lg-dialog #Toolbar .notebook-tab:last-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:focus:selected {
   border-image: url("button-assets/button-primary__l--pressed.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:active StIcon, #LookingGlassDialog .notebook-tab:last-child:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:selected StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:selected StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child {
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -3986,155 +4001,147 @@ texturl-highlighter {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child > StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child > StIcon {
   width: 16px;
   height: 16px;
   icon-size: 16px;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:grayed, #LookingGlassDialog .notebook-tab:last-child:first-child:disabled, #LookingGlassDialog .notebook-tab:last-child:first-child:insensitive, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:grayed, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:disabled, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:insensitive {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:insensitive, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:insensitive {
   border-image: url("button-assets/button-primary__s.svg") 10;
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:insensitive StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:grayed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:disabled StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:insensitive StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:insensitive StIcon {
   color: rgba(255, 255, 255, 0.15);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child StIcon {
   color: rgba(255, 255, 255, 0.45);
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:hover, #LookingGlassDialog .notebook-tab:last-child:first-child:focus, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover {
   border-image: url("button-assets/button-primary__s--hover.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:hover StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:hover StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:active, #LookingGlassDialog .notebook-tab:last-child:first-child:pressed, #LookingGlassDialog .notebook-tab:last-child:first-child:selected, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:active, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:pressed, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:selected {
   border-image: url("button-assets/button-primary__s--pressed.svg") 10;
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab:last-child:first-child:active StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:selected StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:active StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:pressed StIcon, #LookingGlassDialog .notebook-tab:last-child:first-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:selected StIcon {
   color: white;
 }
 
-#LookingGlassDialog .notebook-tab StButton {
+.lg-dialog #Toolbar .notebook-tab StButton {
   padding: 10px 14px;
-}
-
-#LookingGlassDialog StBoxLayout#EvalBox {
-  color: white;
-  padding: 0 4px 0 0;
-  spacing: 8px;
-}
-
-#LookingGlassDialog StBoxLayout#ResultsArea {
-  color: white;
-  padding: 4px 0 14px 0;
-  spacing: 8px;
-}
-
-#LookingGlassDialog StBoxLayout#ResultsArea > StBoxLayout {
-  padding: 10px 10px 10px 20px;
-  border-image: url("background-assets/light-bg-marked-blue.svg") 10;
-  font-size: 9pt;
-  spacing: 1em;
-}
-
-#LookingGlassDialog StBoxLayout#Windows {
-  color: white;
-  padding: 4px 4px 4px 0;
-  spacing: 8px;
-}
-
-#LookingGlassDialog StBoxLayout#Windows > StBoxLayout {
-  padding: 10px 10px 10px 20px;
-  border-image: url("background-assets/light-bg-marked-green.svg") 10;
-  font-size: 9pt;
-  spacing: 1em;
-}
-
-.lg-dialog StEntry {
-  selection-background-color: #7998b3;
-  selected-color: rgba(0, 0, 0, 0.75);
 }
 
 .lg-dialog StScrollBar {
   padding: 3px 0;
 }
 
-.lg-completions-text {
+.lg-dialog #EvalBox {
   color: white;
-  font-size: 9pt;
-  font-style: normal;
+  padding: 0 4px 0 0;
+  spacing: 8px;
 }
 
-.lg-obj-inspector-title {
+.lg-dialog #ResultsArea {
   color: white;
-  font-size: 10pt;
-  font-weight: bold;
-  spacing: 4px;
+  padding: 4px 0 14px 0;
+  spacing: 8px;
 }
 
-.lg-obj-inspector-button {
-  border-image: url("button-assets/button.svg") 7;
+.lg-dialog #ResultsArea > StBoxLayout {
+  padding: 10px 10px 10px 14px;
+  border-image: url("background-assets/light-bg-marked-blue.svg") 10;
   font-size: 9pt;
-  border: 0 transparent !important;
-  padding: 12px 14px;
-  border-radius: 0 !important;
+  spacing: 1em;
 }
 
-.lg-obj-inspector-button:hover {
-  border-image: url("button-assets/button-hover.svg") 7;
-  border: 0 transparent !important;
+.lg-dialog #Windows {
+  color: white;
+  padding: 4px 4px 4px 0;
+  spacing: 8px;
 }
 
-.lg-obj-inspector-button:active {
-  border-image: url("button-assets/button-pressed.svg") 7;
-  border: 0 transparent !important;
+.lg-dialog #Windows > StBoxLayout {
+  padding: 10px 10px 10px 14px;
+  border-image: url("background-assets/light-bg-marked-green.svg") 10;
+  font-size: 9pt;
+  spacing: 1em;
 }
 
-#lookingGlassExtensions {
+.lg-dialog #Windows > StBoxLayout StButton:first-child {
+  font-size: 12pt;
+}
+
+.lg-dialog #lookingGlassExtensions {
   padding: 0 4px 0 0;
 }
 
-.lg-extensions-list {
+.lg-dialog #lookingGlassExtensions .lg-extensions-list {
   padding: 4px 0;
   spacing: 8px;
 }
 
-.lg-extension {
+.lg-dialog #lookingGlassExtensions .lg-extensions-none {
+  font-size: 12pt;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.lg-dialog #lookingGlassExtensions .lg-extension {
   border: 0  transparent !important;
   border-radius: 0 !important;
   border-image: url("background-assets/light-bg-marked-violet.svg") 7;
-  padding: 10px 10px 10px 20px;
+  padding: 10px 10px 10px 14px;
   color: white;
-  font-size: 9pt;
   spacing: .8em;
 }
 
-.lg-extension-name {
+.lg-dialog #lookingGlassExtensions .lg-extension-name {
   color: white;
   font-size: 12pt;
   font-weight: bold;
   padding-bottom: 2px;
 }
 
-.lg-extension-meta {
-  spacing: 6px;
+.lg-dialog #lookingGlassExtensions .lg-extension-description {
+  font-size: 9pt;
 }
 
+.lg-dialog #lookingGlassExtensions .lg-extension-meta {
+  spacing: 6px;
+  font-size: 9pt;
+}
+
+.lg-dialog #lookingGlassExtensions .lg-extension-state {
+  font-weight: bold;
+  color: #f59f52;
+}
+
+.lg-dialog #EntryArea StLabel {
+  margin-top: 6px;
+}
+
+.lg-dialog #EntryArea StEntry {
+  selection-background-color: #7998b3;
+  selected-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Lg Inspector */
 #LookingGlassPropertyInspector {
   border-image: url("background-assets/popup.svg") 7;
-  color: white;
   background: transparent;
   border: 0 transparent;
   border-radius: 0;
+  color: white;
   spacing: .4em;
   padding: 4px 4px 16px 4px;
 }
@@ -4150,7 +4157,8 @@ texturl-highlighter {
 
 #LookingGlassPropertyInspector > StBoxLayout:first-child {
   padding: 10px;
-  border-image: url("background-assets/sub.svg") 10;
+  margin: 10px;
+  border-image: url("background-assets/light-bg.svg") 10;
 }
 
 #LookingGlassPropertyInspector .window-close {
@@ -4162,6 +4170,73 @@ texturl-highlighter {
 
 #LookingGlassPropertyInspector .window-close:hover {
   background-image: url("widget-assets/close-simple-hover.svg");
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-title {
+  color: white;
+  font-size: 10pt;
+  font-weight: bold;
+  spacing: 4px;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 9pt;
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: white;
+  padding: .9em;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button > StIcon {
+  width: 16px;
+  height: 16px;
+  icon-size: 16px;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive {
+  border-image: url("button-assets/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button StIcon {
+  color: white;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:hover {
+  border-image: url("button-assets/button-primary__s--hover.svg") 10;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:active, #LookingGlassPropertyInspector .lg-obj-inspector-button:pressed, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected {
+  border-image: url("button-assets/button-primary__s--pressed.svg") 10;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus {
+  border-image: url("button-assets/button-blue__s.svg") 10;
+  color: white;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus StIcon {
+  color: white;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus:hover {
+  border-image: url("button-assets/button-blue__s--hover.svg") 10;
+}
+
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus:active, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:pressed, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:selected {
+  border-image: url("button-assets/button-blue__s--pressed.svg") 10;
 }
 
 /* ===================================================================
