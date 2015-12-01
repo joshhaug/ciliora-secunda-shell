@@ -16,6 +16,10 @@
     border-image: url("background-assets/popup-inside.svg") 8;
     padding: 11px 11px 0 11px;
 
+    StScrollBar {
+        padding-bottom: 17px;
+    }
+
     .overview-icon {
         color: $text-primary;
     }

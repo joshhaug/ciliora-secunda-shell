@@ -30,27 +30,3 @@ StScrollBar {
         }
     }
 }
-
-/*--- Search Results Scrollbar ---*/
-
-.search-display {
-    StScrollBar {
-
-        StButton#vhandle,
-        StButton#hhandle {
-            border-image: url("widget-assets/overview-scroll-handle.svg") 5;
-
-            &:hover, &:focus, &:active {
-                border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
-            }
-        }
-    }
-}
-
-/*--- App Folder Scrollbar ---*/
-
-.app-folder-popup-bin {
-    StScrollBar {
-        padding-bottom: 17px;
-    }
-}

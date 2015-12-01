@@ -59,24 +59,6 @@ StScrollBar StButton#hhandle:active {
   border-image: url("widget-assets/scroll-handle-hover.svg") 4;
 }
 
-/*--- Search Results Scrollbar ---*/
-.search-display StScrollBar StButton#vhandle,
-.search-display StScrollBar StButton#hhandle {
-  border-image: url("widget-assets/overview-scroll-handle.svg") 5;
-}
-
-.search-display StScrollBar StButton#vhandle:hover, .search-display StScrollBar StButton#vhandle:focus, .search-display StScrollBar StButton#vhandle:active,
-.search-display StScrollBar StButton#hhandle:hover,
-.search-display StScrollBar StButton#hhandle:focus,
-.search-display StScrollBar StButton#hhandle:active {
-  border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
-}
-
-/*--- App Folder Scrollbar ---*/
-.app-folder-popup-bin StScrollBar {
-  padding-bottom: 17px;
-}
-
 /* =====================================================
    ! Entries
    ===================================================== */
@@ -547,7 +529,7 @@ StEntry:insensitive StIcon {
    ===================================================== */
 #searchResults {
   padding: 20px 10px 0px 10px;
-  spacing: 18px;
+  spacing: 16px;
 }
 
 #searchResultsBin {
@@ -557,7 +539,7 @@ StEntry:insensitive StIcon {
 #searchResultsContent {
   padding-left: 20px;
   padding-right: 20px;
-  spacing: 16px;
+  spacing: 0;
 }
 
 .search-statustext {
@@ -572,7 +554,7 @@ StEntry:insensitive StIcon {
 }
 
 .search-section-separator {
-  height: 4px;
+  height: 0 !important;
   -margin-horizontal: 1.5em;
   -gradient-height: 0;
 }
@@ -581,10 +563,23 @@ StEntry:insensitive StIcon {
 .search-section-content {
   spacing: 0;
   padding: 0;
+  margin-bottom: 10px;
   background: transparent;
   border: none;
   color: white;
   border-image: url("overview-assets/overview-light-bg.svg") 6;
+}
+
+.search-display StScrollBar StButton#vhandle,
+.search-display StScrollBar StButton#hhandle {
+  border-image: url("widget-assets/overview-scroll-handle.svg") 5;
+}
+
+.search-display StScrollBar StButton#vhandle:hover, .search-display StScrollBar StButton#vhandle:focus, .search-display StScrollBar StButton#vhandle:active,
+.search-display StScrollBar StButton#hhandle:hover,
+.search-display StScrollBar StButton#hhandle:focus,
+.search-display StScrollBar StButton#hhandle:active {
+  border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
 }
 
 /* =====================================================
@@ -801,6 +796,10 @@ StEntry:insensitive StIcon {
 .app-folder-popup-bin {
   border-image: url("background-assets/popup-inside.svg") 8;
   padding: 11px 11px 0 11px;
+}
+
+.app-folder-popup-bin StScrollBar {
+  padding-bottom: 17px;
 }
 
 .app-folder-popup-bin .overview-icon {

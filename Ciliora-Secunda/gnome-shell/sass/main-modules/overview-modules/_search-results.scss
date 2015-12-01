@@ -4,7 +4,7 @@
 
 #searchResults {
     padding: 20px 10px 0px 10px;
-    spacing: 18px;
+    spacing: 16px;
 }
 
 #searchResultsBin {
@@ -14,7 +14,7 @@
 #searchResultsContent {
     padding-left: 20px;
     padding-right: 20px;
-    spacing: 16px;
+    spacing: 0;
 }
 
 .search-statustext {
@@ -29,7 +29,7 @@
 }
 
 .search-section-separator {
-    height: 4px;
+    height: 0 !important;
     -margin-horizontal: 1.5em;
     -gradient-height: 0;
 }
@@ -38,11 +38,27 @@
 .search-section-content {
     spacing: 0;
     padding: 0;
+    margin-bottom: 10px;
     background: rgba(0, 0, 0, 0);
     border: none;
     color: $text-primary;
     border-image: url("overview-assets/overview-light-bg.svg") 6;
 }
+
+.search-display {
+    StScrollBar {
+
+        StButton#vhandle,
+        StButton#hhandle {
+            border-image: url("widget-assets/overview-scroll-handle.svg") 5;
+
+            &:hover, &:focus, &:active {
+                border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
+            }
+        }
+    }
+}
+
 /* =====================================================
  * ! List Search Results
    ===================================================== */
