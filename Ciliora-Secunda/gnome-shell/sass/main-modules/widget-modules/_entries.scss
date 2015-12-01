@@ -8,8 +8,7 @@
         border: 0;
         border-image: url("widget-assets/entry.svg") 6;
         padding: 4px 12px 3px 12px;
-        height: $height;
-        width: $width;
+        @include size($width, $height);
         font-size: 9pt;
         font-weight: normal;
         color: $text-secondary;
@@ -29,25 +28,32 @@
         border-image: url("widget-assets/entry-focused.svg") 6;
         font-size: 10pt;
         font-weight: bold;
+        @include size($width, $height);
         color: $text-primary;
         caret-color: $text-primary;
         caret-size: 1px;
         selected-color: $text-primary;
         selection-background-color: $accent-primary;
-        StIcon { color: $text-primary; }
+
+        StIcon {
+            color: $text-primary;
+        }
     }
 
     @else if $t==insensitive {
         border-image: url("widget-assets/entry-insensitive.svg") 6;
         color: $text-secondary;
-        StIcon { color: $text-secondary; }
+        @include size($width, $height);
+
+        StIcon {
+            color: $text-secondary;
+        }
     }
 
     @else if $t==normal--overview {
         border-image: url("overview-assets/overview-dark-bg.svg") 7;
         padding: 6px 8px;
-        height: $height;
-        width: $width;
+        @include size($width, $height);
         border-radius: 0;
         color: $text-secondary;
         font-size: 9pt;
@@ -58,17 +64,25 @@
             color: $text-secondary;
         }
 
-        &:hover StIcon { color: $text-primary; }
+        &:hover StIcon {
+            color: $text-primary;
+        }
     }
 
     @else if $t==focus--overview {
-        border-image: url("widget-assets/entry-focused-overview.svg") 7;
+        border-image: url("overview-assets/overview-light-bg.svg") 7;
         border-width: 0;
-        color: $text-primary;
         font-weight: bold;
         font-size: 10pt;
+        color: $text-primary;
+        caret-color: $text-primary;
+        caret-size: 1px;
+        selected-color: $text-primary;
+        selection-background-color: $accent-primary;
 
-        StIcon { color: $text-primary; }
+        StIcon {
+            color: $text-primary;
+        }
     }
 }
 /* =====================================================
@@ -89,5 +103,5 @@ StEntry {
 .search-entry {
     @include entry(normal--overview, $width: 320px);
 
-    &:focus { @include entry(focus--overview); }
+    &:focus { @include entry(focus--overview, $width: 320px); }
 }
