@@ -2851,6 +2851,10 @@ StEntry:insensitive StIcon {
   icon-size: 16px;
 }
 
+.aggregate-menu .system-menu-action:last-child:hover, .aggregate-menu .system-menu-action:last-child:focus, .aggregate-menu .system-menu-action:last-child:active {
+  border-image: url("background-assets/hover-red.svg") 6;
+}
+
 /* =====================================================
    ! Ripple Box
    ===================================================== */

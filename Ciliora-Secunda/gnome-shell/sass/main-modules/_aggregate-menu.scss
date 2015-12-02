@@ -34,3 +34,9 @@
 
     > StIcon { icon-size: 16px; }
 }
+
+.aggregate-menu .system-menu-action:last-child {
+    &:hover, &:focus, &:active {
+        border-image: url("background-assets/hover-red.svg") 6;
+    }
+}
