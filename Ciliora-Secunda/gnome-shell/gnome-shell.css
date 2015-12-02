@@ -2386,7 +2386,7 @@ StEntry:insensitive StIcon {
 
 /* ! Notification indicator */
 .clock-display > * > *:last-child {
-  color: #e86b6b;
+  color: #7998b3;
   margin-left: .3em;
 }
 
