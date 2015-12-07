@@ -2860,6 +2860,10 @@ StEntry:insensitive StIcon {
   border-image: url("background-assets/hover-red.svg") 6;
 }
 
+.aggregate-menu .popup-sub-menu .system-menu-action:last-child:hover, .aggregate-menu .popup-sub-menu .system-menu-action:last-child:focus, .aggregate-menu .popup-sub-menu .system-menu-action:last-child:active {
+  border-image: url("background-assets/hover.svg") 6;
+}
+
 /* =====================================================
    ! Ripple Box
    ===================================================== */
