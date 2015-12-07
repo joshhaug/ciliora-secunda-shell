@@ -4455,8 +4455,8 @@ texturl-highlighter {
 .login-dialog .modal-dialog-button:default,
 .login-dialog .modal-dialog-button {
   border-image: url("resource:///org/gnome/shell/theme/overview-button.svg") 10;
-  padding: 12px 32px;
-  -st-natural-width: 32px;
+  padding: 10px 28px;
+  -st-natural-width: 28px;
   font-weight: bold;
   color: #fff;
 }
@@ -4509,7 +4509,7 @@ texturl-highlighter {
 }
 
 .login-dialog StEntry:focus {
-  border-image: url("resource:///org/gnome/shell/theme/entry-focused-overview.svg") 7;
+  border-image: url("resource:///org/gnome/shell/theme/entry-focused.svg") 7;
   font-size: 10pt;
   font-weight: bold;
   color: #fff;
@@ -4519,14 +4519,18 @@ texturl-highlighter {
   selection-background-color: #7998b3;
 }
 
-/*--- Screen Shield ---*/
+/* ===================================================================
+   ! Screen Shield
+   ===================================================================*/
+#lockScreenContents {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .screen-shield-background {
   background: #666;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.65);
 }
 
 .screen-shield-contents-box {
-  border-image: url("resource:///org/gnome/shell/theme/popup.svg") 7;
   padding: 16px;
   spacing: 20px;
 }
@@ -4541,7 +4545,7 @@ texturl-highlighter {
   width: 24px;
   height: 24px;
   -arrow-thickness: 12px;
-  -arrow-shadow: transparent;
+  -arrow-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .screen-shield-clock {
@@ -4550,21 +4554,22 @@ texturl-highlighter {
 }
 
 .screen-shield-clock-time {
-  color: #fff;
-  font-size: 36pt;
+  color: white;
+  font-size: 68pt;
 }
 
 .screen-shield-clock-date {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 16pt;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 18pt;
   padding: 0 10px;
 }
 
 .screen-shield-notifications-container {
-  spacing: 6px;
+  spacing: 4px;
   min-width: 30em;
   background-color: transparent;
   max-height: 500px;
+  padding-left: 12px;
 }
 
 .screen-shield-notifications-container .summary-notification-stack-scrollview {
@@ -4574,33 +4579,37 @@ texturl-highlighter {
 
 .screen-shield-notifications-container .notification,
 .screen-shield-notifications-container .screen-shield-notification-source {
-  padding: 12px;
-  border-image: url("resource:///org/gnome/shell/theme/light-bg.svg") 6;
-  color: #fff;
+  border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
+  padding: .6em;
+  color: white;
   font-family: Droid Sans, sans-serif;
+  spacing: 10px;
 }
 
 .screen-shield-notification-label {
   font-weight: bold;
-  padding: 2px 0 0 12px;
+  font-size: 12pt;
+  padding: .2em 0 0 0;
 }
 
 .screen-shield-notification-count-text {
-  padding: 0 0 0 12px;
+  padding: .6em 0 0 0;
 }
 
 #screenShieldNotifications StScrollBar {
   padding: 0 0 0 6px;
+  min-height: 10px;
+  min-width: 10px;
 }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
-  border-image: url("resource:///org/gnome/shell/theme/scroll-handle.svg") 4;
+  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
-  border-image: url("resource:///org/gnome/shell/theme/scroll-handle-hover.svg") 4;
+  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
-  border-image: url("resource:///org/gnome/shell/theme/scroll-handle-hover.svg") 4;
+  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
 }
