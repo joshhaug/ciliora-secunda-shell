@@ -31,20 +31,20 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.769527"
-     inkscape:cx="-0.81249814"
-     inkscape:cy="14.574178"
+     inkscape:cx="10.821569"
+     inkscape:cy="14.270681"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
      height="300px"
-     inkscape:snap-nodes="true"
+     inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
      inkscape:object-nodes="true"
@@ -75,7 +75,7 @@
   <defs
      id="defs3">
     <linearGradient
-       gradientTransform="matrix(1.0625,0,0,1,-0.2499991,1.5176953e-5)"
+       gradientTransform="matrix(1.375,0,0,1,-4.4999988,3.0000152)"
        inkscape:collect="always"
        xlink:href="#linearGradient5235"
        id="linearGradient5205"
@@ -125,7 +125,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -169,23 +169,23 @@
        sodipodi:nodetypes="cccccccccc"
        inkscape:connector-curvature="0"
        id="rect5319-7"
-       d="m 4,279 0,17 17,0 0,-17 z m 1,1 15,0 0,15 -15,0 z"
+       d="m 1,277 0,22 22,0 0,-22 z m 1,1 20,0 0,20 -20,0 z"
        style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        style="opacity:0.85;fill:#1e2328;fill-opacity:1;stroke:none"
        id="rect5315-7-0"
-       width="15"
-       height="15"
-       x="5"
-       y="280" />
+       width="20"
+       height="20"
+       x="2"
+       y="278" />
     <rect
        rx="2"
        style="display:inline;opacity:0.5;fill:url(#linearGradient5205);fill-opacity:1;stroke:none;enable-background:new"
        id="rect5197"
-       width="17"
+       width="22"
        height="1"
-       x="4"
-       y="296"
+       x="1"
+       y="299"
        ry="2" />
   </g>
 </svg>
