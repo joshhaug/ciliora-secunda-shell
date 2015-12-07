@@ -570,6 +570,11 @@ StEntry:insensitive StIcon {
   border-image: url("overview-assets/overview-light-bg.svg") 6;
 }
 
+.search-display StScrollBar {
+  min-height: 10px;
+  min-width: 10px;
+}
+
 .search-display StScrollBar StButton#vhandle,
 .search-display StScrollBar StButton#hhandle {
   border-image: url("widget-assets/overview-scroll-handle.svg") 5;

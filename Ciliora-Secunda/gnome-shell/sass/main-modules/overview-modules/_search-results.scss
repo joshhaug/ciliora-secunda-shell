@@ -47,6 +47,8 @@
 
 .search-display {
     StScrollBar {
+        min-height: 10px;
+        min-width: 10px;
 
         StButton#vhandle,
         StButton#hhandle {
