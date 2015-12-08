@@ -2407,17 +2407,19 @@ StEntry:insensitive StIcon {
 }
 
 .calendar {
-  margin: 0 1.5em .3em 1.5em;
+  margin: 0 15px .3em 15px;
 }
 
 .datemenu-calendar-column {
   spacing: 0;
 }
 
-/* ! Day & Date */
+/* =====================================================
+   ! Day & Date
+   ===================================================== */
 .datemenu-today-button {
-  margin: 0 .7em .3em .7em;
-  padding: .7em 1em;
+  margin: 0 6px .3em 6px;
+  padding: .7em 1.2em;
 }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus, .datemenu-today-button:active {
@@ -2441,21 +2443,20 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
-/* ! World Clocks */
-.datemenu-displays-box {
-  margin: 0 .7em;
+/* =====================================================
+   ! World Clocks
+   ===================================================== */
+.datemenu-displays-section {
+  padding-bottom: 0;
+  margin: 0 6px;
 }
 
-.world-clocks-header {
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: bold;
-  font-size: 9pt;
+.datemenu-displays-section StScrollBar {
+  padding: 0;
 }
 
-.world-clocks-grid {
-  spacing-rows: .6em;
-  padding: .4em .7em;
-  font-size: 9pt;
+.datemenu-displays-section .datemenu-displays-box {
+  padding: 0 15px;
 }
 
 .world-clocks-button {
@@ -2472,26 +2473,32 @@ StEntry:insensitive StIcon {
   text-decoration: underline;
 }
 
+.world-clocks-header {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: bold;
+  font-size: 9pt;
+}
+
+.world-clocks-grid {
+  spacing-rows: .6em;
+  padding: .4em 0;
+  font-size: 9pt;
+}
+
 .world-clocks-city {
   font-size: 9pt;
-  margin: 0 .6em;
+  margin: 0;
 }
 
 .world-clocks-time {
   font-size: 9pt;
   font-weight: bold;
-  margin: 0 .6em;
+  margin: 0;
 }
 
-.datemenu-displays-section {
-  padding-bottom: 0;
-}
-
-.datemenu-displays-section StScrollBar {
-  padding: 0 8px 0 0;
-}
-
-/* ! Change Month */
+/* =====================================================
+   ! Change Month
+   ===================================================== */
 .pager-button {
   color: white;
   background-color: transparent;
@@ -2529,7 +2536,9 @@ StEntry:insensitive StIcon {
   color: #7998b3;
 }
 
-/* ! Calendar Days */
+/* =====================================================
+   ! Calendar
+   ===================================================== */
 .calendar-day-base {
   font-size: 9pt;
   font-weight: bold;
@@ -2589,6 +2598,16 @@ StEntry:insensitive StIcon {
   color: white;
 }
 
+.calendar-work-day.calendar-day-with-events.calendar-today {
+  border-image: url("misc-assets/calendar-work-day-today-events.svg") 7;
+  color: #7998b3;
+}
+
+.calendar-work-day.calendar-day-with-events.calendar-today:hover, .calendar-work-day.calendar-day-with-events.calendar-today:focus, .calendar-work-day.calendar-day-with-events.calendar-today:active {
+  border-image: url("misc-assets/calendar-day-active.svg") 7;
+  color: white;
+}
+
 /*  ! Non-work Day */
 .calendar-nonwork-day {
   border-image: url("misc-assets/calendar-nonwork-day.svg") 7;
@@ -2623,6 +2642,16 @@ StEntry:insensitive StIcon {
 }
 
 .calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
+  border-image: url("misc-assets/calendar-day-active.svg") 7;
+  color: white;
+}
+
+.calendar-nonwork-day.calendar-day-with-events.calendar-today {
+  border-image: url("misc-assets/calendar-nonwork-day-today-events.svg") 7;
+  color: #7998b3;
+}
+
+.calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active {
   border-image: url("misc-assets/calendar-day-active.svg") 7;
   color: white;
 }
@@ -2664,7 +2693,7 @@ StEntry:insensitive StIcon {
   font-weight: normal;
   width: 2.4em;
   height: 1.6em;
-  padding-top: .7em;
+  padding-top: .8em;
   padding-right: .4em;
 }
 
@@ -2673,6 +2702,7 @@ StEntry:insensitive StIcon {
    ===================================================== */
 .message-list {
   width: 34em;
+  margin: 0 5px 0 15px;
 }
 
 .message-list-placeholder StIcon {
@@ -2688,7 +2718,7 @@ StEntry:insensitive StIcon {
 
 .message-list-sections {
   spacing: 1.5em;
-  margin: .6em 1.3em 1em 1.3em;
+  margin: .6em 0 1em 0;
 }
 
 .message-list-section, .message-list-section-list {

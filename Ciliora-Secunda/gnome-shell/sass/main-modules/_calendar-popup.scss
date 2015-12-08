@@ -8,19 +8,20 @@
 }
 
 .calendar {
-    margin: 0 1.5em .3em 1.5em;
+    margin: 0 15px .3em 15px;
 }
 
 .datemenu-calendar-column {
     spacing: 0;
 }
 
-
-/* ! Day & Date */
+/* =====================================================
+   ! Day & Date
+   ===================================================== */
 
 .datemenu-today-button {
-    margin: 0 .7em .3em .7em;
-    padding: .7em 1em;
+    margin: 0 6px .3em 6px;
+    padding: .7em 1.2em;
 
     &:hover, &:focus, &:active {
         background-color: transparent;
@@ -44,23 +45,22 @@
     }
 }
 
+/* =====================================================
+   ! World Clocks
+   ===================================================== */
 
-/* ! World Clocks */
+.datemenu-displays-section {
+    padding-bottom: 0;
+    margin: 0 6px;
 
-.datemenu-displays-box {
-    margin: 0 .7em;
-}
+    StScrollBar {
+        padding: 0;
+    }
 
-.world-clocks-header {
-    color: $text-secondary;
-    font-weight: bold;
-    font-size: 9pt;
-}
+    .datemenu-displays-box {
+        padding: 0 15px;
+    }
 
-.world-clocks-grid {
-    spacing-rows: .6em;
-    padding: .4em .7em;
-    font-size: 9pt;
 }
 
 .world-clocks-button {
@@ -77,27 +77,33 @@
     }
 }
 
+.world-clocks-header {
+    color: $text-secondary;
+    font-weight: bold;
+    font-size: 9pt;
+}
+
+.world-clocks-grid {
+    spacing-rows: .6em;
+    padding: .4em 0;
+    font-size: 9pt;
+}
+
+
 .world-clocks-city {
     font-size: 9pt;
-    margin: 0 .6em;
+    margin: 0 ;
 }
 
 .world-clocks-time {
     font-size: 9pt;
     font-weight: bold;
-    margin: 0 .6em;
+    margin: 0 ;
 }
 
-.datemenu-displays-section {
-    padding-bottom: 0;
-
-    StScrollBar {
-        padding: 0 8px 0 0;
-    }
-}
-
-
-/* ! Change Month */
+/* =====================================================
+   ! Change Month
+   ===================================================== */
 
 .pager-button {
     color: $text-primary;
@@ -140,8 +146,9 @@
     }
 }
 
-
-/* ! Calendar Days */
+/* =====================================================
+   ! Calendar
+   ===================================================== */
 
 .calendar-day {
 }
@@ -209,6 +216,16 @@
             color: $text-primary;
         }
     }
+
+        &.calendar-day-with-events.calendar-today {
+        border-image: url("misc-assets/calendar-work-day-today-events.svg") 7;
+        color: $link;
+
+        &:hover, &:focus, &:active {
+            border-image: url("misc-assets/calendar-day-active.svg") 7;
+            color: $text-primary;
+        }
+    }
 }
 
 /*  ! Non-work Day */
@@ -241,6 +258,16 @@
 
     &.calendar-today {
         border-image: url("misc-assets/calendar-nonwork-day-today.svg") 7;
+        color: $link;
+
+        &:hover, &:focus, &:active {
+            border-image: url("misc-assets/calendar-day-active.svg") 7;
+            color: $text-primary;
+        }
+    }
+
+    &.calendar-day-with-events.calendar-today {
+        border-image: url("misc-assets/calendar-nonwork-day-today-events.svg") 7;
         color: $link;
 
         &:hover, &:focus, &:active {
@@ -294,15 +321,17 @@
     font-size: 9pt;
     font-weight: normal;
     @include size(2.4em, 1.6em);
-    padding-top: .7em;
+    padding-top: .8em;
     padding-right: .4em;
 }
+
 /* =====================================================
    ! Message List
    ===================================================== */
 
 .message-list {
     width: 34em;
+    margin: 0 5px 0 15px;
 
     &-placeholder {
         StIcon { @include size(0); }
@@ -316,7 +345,7 @@
 
     &-sections {
         spacing: 1.5em;
-        margin: .6em 1.3em 1em 1.3em;
+        margin: .6em 0 1em 0;
     }
 
     &-section,
@@ -366,7 +395,6 @@
 
     StScrollBar { padding: 8px 0 10px 0; }
 }
-
 
 /* =====================================================
    ! Message
