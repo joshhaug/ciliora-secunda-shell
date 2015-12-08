@@ -80,12 +80,11 @@ StEntry {
 
 StEntry StIcon {
   color: rgba(255, 255, 255, 0.45);
+  icon-size: 16px;
 }
 
-StEntry StIcon.capslock-icon {
-  icon-size: 16px;
-  warning-color: white;
-  padding: 0 4px;
+StEntry StIcon.capslock-warning {
+  color: #f59f52 !important;
 }
 
 StEntry:focus {

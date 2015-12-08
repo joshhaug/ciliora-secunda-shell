@@ -15,11 +15,10 @@
 
         StIcon {
             color: $text-secondary;
+            icon-size: 16px;
 
-            &.capslock-icon {
-                icon-size: 16px;
-                warning-color: $text-primary;
-                padding: 0 4px;
+            &.capslock-warning {
+                color: $text-warning !important;
             }
         }
     }
