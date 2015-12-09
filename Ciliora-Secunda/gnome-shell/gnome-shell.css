@@ -2702,7 +2702,7 @@ StEntry:insensitive StIcon {
    ===================================================== */
 .message-list {
   width: 34em;
-  margin: 0 5px 0 15px;
+  margin: 0;
 }
 
 .message-list-placeholder StIcon {
@@ -2718,7 +2718,7 @@ StEntry:insensitive StIcon {
 
 .message-list-sections {
   spacing: 1.5em;
-  margin: .6em 0 1em 0;
+  margin: .6em 15px 1em 15px;
 }
 
 .message-list-section, .message-list-section-list {
