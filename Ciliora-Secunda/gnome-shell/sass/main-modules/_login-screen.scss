@@ -3,268 +3,261 @@
    ===================================================================*/
 
 #lockDialogGroup {
-  background: #333 url(resource:///org/gnome/shell/theme/overview-pattern.svg);
-  background-repeat: repeat;
-}
-
-/* Auth Dialogs & Screen Shield */
-.framed-user-icon {
-  border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 6;
-  background-size: contain;
-  color: #fff;
-  padding: 6px;
-}
-
-.framed-user-icon:hover {
-  color: #fff;
-}
-
-.login-dialog-banner-view {
-  padding-top: 24px;
-  max-width: 23em;
+    background: #303030 url(resource:///org/gnome/shell/theme/overview-pattern.svg);
+    background-repeat: repeat;
 }
 
 .login-dialog {
-  border: none;
-  background-color: transparent;
-}
+    border: none;
+    background-color: transparent;
 
-.login-dialog-logo-bin {
-  padding: 24px 0;
-}
-.login-dialog-banner {
-  color: #fff;
-}
+    &-prompt-layout {
+        padding-top: 24px;
+        padding-bottom: 12px;
+        spacing: 8px;
+        width: 23em;
+    }
 
-.login-dialog-message-warning {
-  color: #e86b6b;
-}
+    &-prompt-label {
+        color: $text-secondary;
+        font-size: 9pt;
+        padding-top: 1em;
+    }
 
-.login-dialog-message-hint {
-  padding-top: 0;
-  padding-bottom: 20px;
-}
+    .framed-user-icon {
+        border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 6;
+        background-size: contain;
+        color: $text-primary;
+        padding: 6px;
+    }
 
-.login-dialog-user-selection-box {
-  padding: 100px 0px;
-}
+    &-username,
+    .user-widget-label {
+        color: #fff;
+        font-size: 10pt;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 15px;
 
-.login-dialog-user-selection-box .login-dialog-not-listed-label {
-  padding-left: 2px;
-}
+        &:ltr {
+            padding-left: 18px;
+        }
 
-.login-dialog-not-listed-label {
-  font-size: 9pt;
-  font-weight: normal;
-  color: rgba(255, 255, 255, .4);
-  padding-top: 1em;
-}
+        &:rtl {
+            padding-right: 18px;
+        }
+    }
 
-.login-dialog-not-listed-button:focus .login-dialog-user-selection-box .login-dialog-not-listed-label,
-.login-dialog-not-listed-button:hover .login-dialog-user-selection-box .login-dialog-not-listed-label {
-  color: #eeeeec;
-}
+    &-message-warning {
+        color: $text-warning;
+    }
 
-/*--- User List ---*/
+    &-message-hint {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
 
-.login-dialog-user-list-view {
-  -st-vfade-offset: 0;
-  max-height: 600px;
-}
+    &-banner-view {
+        padding-top: 24px;
+        max-width: 23em;
+    }
 
-.login-dialog-user-list-view StScrollBar {
-  padding: 0 0 0 6px;
-}
+    &-banner {
+        color: $text-primary;
+        font-size: 10pt;
+    }
 
-.login-dialog-user-list-view StButton#vhandle,
-.login-dialog-user-list-view StButton#hhandle {
-  border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle.svg) 6;
-}
+    &-logo-bin {
+        padding: 24px 0;
+    }
 
-.login-dialog-user-list-view StButton#vhandle:hover,
-.login-dialog-user-list-view StButton#hhandle:hover,
-.login-dialog-user-list-view StButton#vhandle:focus,
-.login-dialog-user-list-view StButton#hhandle:focus,
-.login-dialog-user-list-view StButton#vhandle:active,
-.login-dialog-user-list-view StButton#hhandle:active {
-  border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg) 6;
-}
+    &-user-selection-box {
+        padding: 100px 0px;
 
-.login-dialog-user-list {
-  spacing: 12px;
-  padding: 0;
-  width: 23em;
-}
+        .login-dialog-not-listed-label {
+            padding-left: 2px;
+        }
+    }
 
-.login-dialog-user-list-item {
-  border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 8;
-  padding: 2px 2px 0 2px;
-  color: #fff;
-}
+    &-not-listed-button {
+        color: $text-secondary;
 
-.login-dialog-user-list-item:hover {
-  border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 8;
-}
+        &:focus,
+        &:hover {
+            color: $text-primary;
+        }
+    }
 
-.login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
-  border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 8;
-}
+    &-not-listed-label {
+        padding-top: 1em;
+        font-size: 9pt;
+        font-weight: normal;
+    }
 
-.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
-  border-image: url(resource:///org/gnome/shell/theme/user-logged-in.svg) 8;
-}
+    &-session-list-button {
+        padding: 0 .4em;
+        color: $text-secondary;
 
-.login-dialog-user-list:expanded .login-dialog-user-list-item:focus:logged-in,
-.login-dialog-user-list:expanded .login-dialog-user-list-item:hover:logged-in {
-  border-image: url(resource:///org/gnome/shell/theme/user-logged-in-active.svg) 8;
-}
+        &:active,
+        &:hover,
+        &:focus {
+            color: $text-primary;
+        }
 
-.login-dialog-user-list-item .framed-user-icon {
-  border-image: none;
-  margin: 0;
-  padding: 0;
-}
-
-.login-dialog-user-list-item:ltr {
-  padding-right: 1em;
-}
-
-.login-dialog-user-list-item:rtl {
-  padding-left: 1em;
-}
-
-.login-dialog-user-list-item .login-dialog-timed-login-indicator {
-  height: 2px;
-  margin: 0;
-  background-color: #7998b3;
-}
-
-.login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
-  background-color: #fff;
-}
-
-.login-dialog-username,
-.user-widget-label {
-  color: #fff;
-  font-size: 10pt;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 15px;
-}
-
-.user-widget-label:ltr {
-  padding-left: 18px;
-}
-
-.user-widget-label:rtl {
-  padding-right: 18px;
-}
-
-.login-dialog-prompt-layout {
-  padding-top: 24px;
-  padding-bottom: 12px;
-  spacing: 8px;
-  width: 23em;
-}
-
-.login-dialog-prompt-label {
-  color: rgba(255, 255, 255, .4);
-  font-size: 9pt;
-  padding-top: 1em;
-}
-
-.login-dialog-session-list-button StIcon {
-  icon-size: 16px;
-  color: rgba(255, 255, 255, .4)
-}
-
-.login-dialog-session-list-button:hover,
-.login-dialog-session-list-button:focus,
-.login-dialog-session-list-button:active,
-.login-dialog-session-list-button:active StIcon,
-.login-dialog-session-list-button:hover StIcon,
-.login-dialog-session-list-button:focus StIcon {
-  color: #fff;
-}
-
-/*--------login buttons----------*/
+        StIcon {
+            icon-size: 16px;
+        }
+    }
 
 
-.login-dialog .modal-dialog-button-box {
-    spacing: 3px;
-}
+    // User List
 
-.login-dialog .modal-dialog-button:default,
-.login-dialog .modal-dialog-button {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button.svg") 10;
-    padding: 10px 28px;
-    -st-natural-width: 28px;
-    font-weight: bold;
-    color: #fff;
-}
+    &-user-list-view {
+        -st-vfade-offset: 0;
+        max-height: 600px;
 
-.login-dialog .modal-dialog-button:default:hover,
-.login-dialog .modal-dialog-button:hover {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-hover.svg") 10;
-}
+        StScrollBar {
+            padding: 0 0 0 6px;
+        }
 
-.login-dialog .modal-dialog-button:default:focus,
-.login-dialog .modal-dialog-button:focus {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-focused.svg") 10;
-}
+        StButton#vhandle,
+        StButton#hhandle {
+            border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle.svg) 6;
+        }
 
-.login-dialog .modal-dialog-button:default:active,
-.login-dialog .modal-dialog-button:default:pressed,
-.login-dialog .modal-dialog-button:active,
-.login-dialog .modal-dialog-button:pressed {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-pressed.svg") 10;
-}
+        StButton#vhandle:hover,
+        StButton#hhandle:hover,
+        StButton#vhandle:focus,
+        StButton#hhandle:focus,
+        StButton#vhandle:active,
+        StButton#hhandle:active {
+            border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg) 6;
+        }
+    }
 
-.login-dialog .modal-dialog-button:default:focus:hover,
-.login-dialog .modal-dialog-button:focus:hover {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-hover.svg") 10;
-}
+    &-user-list {
+        spacing: 12px;
+        padding: 0;
+        width: 23em;
 
-.login-dialog .modal-dialog-button:default:focus:active,
-.login-dialog .modal-dialog-button:default:focus:pressed,
-.login-dialog .modal-dialog-button:focus:active,
-.login-dialog .modal-dialog-button:focus:pressed {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-pressed.svg") 10;
-}
+        &:expanded {
+            .login-dialog-user-list-item:focus {
+                border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 6;
+            }
 
-.login-dialog .modal-dialog-button:default:insensitive,
-.login-dialog .modal-dialog-button:insensitive {
-    border-image: url("resource:///org/gnome/shell/theme/overview-button-insensitive.svg") 10;
-    color: rgba(255, 255, 255, .4);
-}
+            .login-dialog-user-list-item:logged-in {
+                border-image: url(resource:///org/gnome/shell/theme/user-logged-in.svg) 6;
+            }
+        }
+    }
 
-/*--- Login Entry ---*/
+    &-user-list-item {
+        border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 6;
+        padding: 2px 2px 0 2px;
+        color: #fff;
 
-.login-dialog StEntry {
-    border-image: url("resource:///org/gnome/shell/theme/overview-dark-bg.svg") 6;
-    padding: 6px 8px;
-    height: 22px;
-    width: 220px;
-    font-size: 10pt;
-    font-weight: normal;
-    color: rgba(255, 255, 255, .65);
-    transition-duration: 0ms;
+        &:ltr {
+            padding-right: 1em;
+        }
 
-    StIcon.capslock-warning {
-        color: $text-primary !important;
+        &:rtl {
+            padding-left: 1em;
+        }
+
+        &:hover {
+            border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 6;
+        }
+
+        .login-dialog-timed-login-indicator {
+            height: 2px;
+            margin: 0;
+            background-color: $accent-primary;
+        }
+
+        &:focus .login-dialog-timed-login-indicator {
+            background-color: #ffffff;
+        }
+
+        .framed-user-icon {
+            border-image: none;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+    // buttons
+
+    .modal-dialog-button-box {
+        spacing: 3px;
+    }
+
+    .modal-dialog-button:default,
+    .modal-dialog-button {
+        border-image: url("resource:///org/gnome/shell/theme/overview-button.svg") 10;
+        padding: 10px 30px;
+        -st-natural-width: 30px;
+        font-weight: bold;
+        color: #fff;
+
+        &:hover {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-hover.svg") 10;
+        }
+
+        &:focus {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-focused.svg") 10;
+        }
+
+        &:active,
+        &:pressed {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-pressed.svg") 10;
+        }
+
+        &:focus:hover {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-hover.svg") 10;
+        }
+
+        &:focus:active,
+        &:focus:pressed {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-pressed.svg") 10;
+        }
+
+        &:insensitive {
+            border-image: url("resource:///org/gnome/shell/theme/overview-button-insensitive.svg") 10;
+            color: $text-disabled;
+        }
+    }
+
+
+    // entry
+
+    StEntry {
+        border-image: url("resource:///org/gnome/shell/theme/overview-dark-bg.svg") 6;
+        padding: 6px 8px;
+        height: 22px;
+        width: 220px;
+        font-size: 10pt;
+        font-weight: normal;
+        color: $text-secondary;
+        transition-duration: 0ms;
+
+        &:focus  {
+            border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
+            font-size: 10pt;
+            font-weight: bold;
+            color: $text-primary;
+            caret-color: $text-primary;
+            caret-size: 1px;
+            selected-color: $text-primary;
+            selection-background-color: $accent-primary;
+        }
+
+        StIcon.capslock-warning {
+            color: $text-primary !important;
+        }
     }
 }
 
-.login-dialog StEntry:focus  {
-    border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 7;
-    font-size: 10pt;
-    font-weight: bold;
-    color: #fff;
-    caret-color: #fff;
-    caret-size: 1px;
-    selected-color: #fff;
-    selection-background-color: #7998b3;
-}
 
 /* ===================================================================
    ! Screen Shield
@@ -275,12 +268,12 @@
 }
 
 .screen-shield-background {
-  background: #666;
+    background: #666;
 }
 
 .screen-shield-contents-box {
-  padding: 16px;
-  spacing: 20px;
+    padding: 16px;
+    spacing: 20px;
 }
 
 .screen-shield-arrows {
@@ -289,75 +282,75 @@
 }
 
 .screen-shield-arrows Gjs_Arrow {
-  color: transparent;
-  width: 24px;
-  height: 24px;
-  -arrow-thickness: 12px;
-  -arrow-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    color: transparent;
+    width: 24px;
+    height: 24px;
+    -arrow-thickness: 12px;
+    -arrow-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .screen-shield-clock {
-  font-weight: normal;
-  text-align: center;
+    font-weight: normal;
+    text-align: center;
 }
 
 .screen-shield-clock-time {
-  color: $text-primary;
-  font-size: 68pt;
+    color: $text-primary;
+    font-size: 68pt;
 }
 
 .screen-shield-clock-date {
-  color: $text-secondary;
-  font-size: 18pt;
-  padding: 0 10px;
+    color: $text-secondary;
+    font-size: 18pt;
+    padding: 0 10px;
 }
 
 .screen-shield-notifications-container {
-  spacing: 4px;
-  min-width: 30em;
-  background-color: transparent;
-  max-height: 500px;
-  padding-left: 8px;
+    spacing: 4px;
+    min-width: 30em;
+    background-color: transparent;
+    max-height: 500px;
+    padding-left: 8px;
 }
 
 .screen-shield-notifications-container .summary-notification-stack-scrollview {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .screen-shield-notifications-container .notification,
 .screen-shield-notifications-container .screen-shield-notification-source {
-  border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
-  padding: .6em;
-  color: $text-primary;
-  font-family: Droid Sans, sans-serif;
-  spacing: 10px;
+    border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
+    padding: .6em;
+    color: $text-primary;
+    font-family: Droid Sans, sans-serif;
+    spacing: 10px;
 }
 
 .screen-shield-notification-label {
-  font-weight: bold;
-  font-size: 12pt;
-  padding: .2em 0 0 0;
+    font-weight: bold;
+    font-size: 12pt;
+    padding: .2em 0 0 0;
 }
 
 .screen-shield-notification-count-text {
-  padding: .6em 0 0 0;
+    padding: .6em 0 0 0;
 }
 
 #screenShieldNotifications StScrollBar {
-  padding: 0 0 0 6px;
-  min-height: 10px;
-  min-width: 10px;
+    padding: 0 0 0 6px;
+    min-height: 10px;
+    min-width: 10px;
 }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle.svg") 4;
+    border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
+    border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
+    border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
 }
