@@ -900,6 +900,11 @@ StEntry:insensitive StIcon {
   padding: 0 3px 0 3px;
 }
 
+.modal-dialog .framed-user-icon {
+  border-image: none;
+  color: white;
+}
+
 .modal-dialog-linked-button {
   background-color: transparent;
   background-gradient-direction: none;

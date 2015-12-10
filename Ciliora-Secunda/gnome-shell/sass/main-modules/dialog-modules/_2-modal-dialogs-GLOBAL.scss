@@ -34,6 +34,11 @@
         margin: 0;
         padding: 0 3px 0 3px;
     }
+
+    .framed-user-icon {
+        border-image: none;
+        color: $text-primary;
+    }
 }
 
 .modal-dialog-linked-button {
