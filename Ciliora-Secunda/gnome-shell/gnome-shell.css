@@ -3663,6 +3663,7 @@ texturl-highlighter {
   color: rgba(255, 255, 255, 0.45);
   font-weight: normal;
   font-size: 10pt;
+  margin: 0 .7em 0 0;
 }
 
 .candidate-label {

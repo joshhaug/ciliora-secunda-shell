@@ -24,6 +24,7 @@
     color: $text-secondary;
     font-weight: normal;
     font-size: 10pt;
+    margin: 0 .7em 0 0;
 }
 
 .candidate-label {
@@ -44,12 +45,18 @@
     font-size: 10pt;
     border-radius: 0 !important;
 
-    &:selected, &:hover {
+    &:selected,
+    &:hover {
         border-image: url("background-assets/hover-popup.svg") 7;
     }
 
-    .vertical & { padding: .4em .7em; margin: .2em 0;}
-    .horizontal & { padding: 0 1em; margin: 0 0 .7em .7em; }
+    .vertical & {
+        padding: .4em .7em; margin: .2em 0;
+    }
+
+    .horizontal & {
+        padding: 0 1em; margin: 0 0 .7em .7em;
+    }
 }
 
 .candidate-page-button {
@@ -59,8 +66,13 @@
         padding: .6em;
         min-height: 32px;
 
-        .vertical & { padding-top: 0; }
-        .horizontal & { padding: 0; margin: 0 .7em .7em .7em; }
+        .vertical & {
+            padding-top: 0;
+        }
+
+        .horizontal & {
+            padding: 0; margin: 0 .7em .7em .7em;
+        }
     }
 
     &-previous {
