@@ -240,16 +240,16 @@ StEntry:insensitive StIcon {
   border-image: url("button-assets/button-primary__s--hover.svg") 10;
 }
 
-.button:active, .button:pressed, .button:selected {
+.button:active, .button:pressed {
   border-image: url("button-assets/button-primary__s--pressed.svg") 10;
 }
 
-.button:focus {
+.button:focus, .button:selected {
   border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-.button:focus StIcon {
+.button:focus StIcon, .button:selected StIcon {
   color: white;
 }
 
@@ -3462,16 +3462,16 @@ texturl-highlighter {
   border-image: url("button-assets/button-primary__s--hover.svg") 10;
 }
 
-.keyboard-key:active, .keyboard-key:pressed, .keyboard-key:selected {
+.keyboard-key:active, .keyboard-key:pressed {
   border-image: url("button-assets/button-primary__s--pressed.svg") 10;
 }
 
-.keyboard-key:focus {
+.keyboard-key:focus, .keyboard-key:selected {
   border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-.keyboard-key:focus StIcon {
+.keyboard-key:focus StIcon, .keyboard-key:selected StIcon {
   color: white;
 }
 
@@ -3571,31 +3571,34 @@ texturl-highlighter {
   border-image: url("button-assets/button-secondary__s--hover.svg") 10;
 }
 
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:active, .keyboard-layout > *:first-child .keyboard-row > *:last-child:pressed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected,
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:active, .keyboard-layout > *:first-child .keyboard-row > *:last-child:pressed,
 .keyboard-layout .keyboard-row:last-child > *:last-child:active,
 .keyboard-layout .keyboard-row:last-child > *:last-child:pressed,
-.keyboard-layout .keyboard-row:last-child > *:last-child:selected,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:active,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:pressed,
-.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:selected,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:active,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:pressed,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected {
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:pressed {
   border-image: url("button-assets/button-secondary__s--pressed.svg") 10;
 }
 
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus,
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected,
 .keyboard-layout .keyboard-row:last-child > *:last-child:focus,
+.keyboard-layout .keyboard-row:last-child > *:last-child:selected,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus {
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:selected,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected {
   border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus StIcon,
+.keyboard-layout > *:first-child .keyboard-row > *:last-child:focus StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected StIcon,
 .keyboard-layout .keyboard-row:last-child > *:last-child:focus StIcon,
+.keyboard-layout .keyboard-row:last-child > *:last-child:selected StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus StIcon,
-.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus StIcon {
+.keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:selected StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus StIcon,
+.keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected StIcon {
   color: white;
 }
 
@@ -3752,16 +3755,16 @@ texturl-highlighter {
   border-image: url("button-assets/button-primary__f--hover.svg") 10;
 }
 
-.candidate-page-button-previous:active, .candidate-page-button-previous:pressed, .candidate-page-button-previous:selected {
+.candidate-page-button-previous:active, .candidate-page-button-previous:pressed {
   border-image: url("button-assets/button-primary__f--pressed.svg") 10;
 }
 
-.candidate-page-button-previous:focus {
+.candidate-page-button-previous:focus, .candidate-page-button-previous:selected {
   border-image: url("button-assets/button-blue__f.svg") 10;
   color: white;
 }
 
-.candidate-page-button-previous:focus StIcon {
+.candidate-page-button-previous:focus StIcon, .candidate-page-button-previous:selected StIcon {
   color: white;
 }
 
@@ -3812,16 +3815,16 @@ texturl-highlighter {
   border-image: url("button-assets/button-primary__l--hover.svg") 10;
 }
 
-.candidate-page-button-next:active, .candidate-page-button-next:pressed, .candidate-page-button-next:selected {
+.candidate-page-button-next:active, .candidate-page-button-next:pressed {
   border-image: url("button-assets/button-primary__l--pressed.svg") 10;
 }
 
-.candidate-page-button-next:focus {
+.candidate-page-button-next:focus, .candidate-page-button-next:selected {
   border-image: url("button-assets/button-blue__l.svg") 10;
   color: white;
 }
 
-.candidate-page-button-next:focus StIcon {
+.candidate-page-button-next:focus StIcon, .candidate-page-button-next:selected StIcon {
   color: white;
 }
 
@@ -3893,7 +3896,7 @@ texturl-highlighter {
   font-weight: bold;
   font-size: 9pt;
   border-image: url("button-assets/button-primary__m.svg") 10;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
   padding: 0;
   -natural-hpadding: 12px;
   -minimum-hpadding: 6px;
@@ -3915,25 +3918,32 @@ texturl-highlighter {
 }
 
 .lg-dialog #Toolbar .notebook-tab StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:hover, .lg-dialog #Toolbar .notebook-tab:focus, .lg-dialog #Toolbar .notebook-tab:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:hover {
   border-image: url("button-assets/button-primary__m--hover.svg") 10;
-  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:hover StIcon, .lg-dialog #Toolbar .notebook-tab:focus StIcon, .lg-dialog #Toolbar .notebook-tab:focus:hover StIcon {
-  color: white;
-}
-
-.lg-dialog #Toolbar .notebook-tab:active, .lg-dialog #Toolbar .notebook-tab:pressed, .lg-dialog #Toolbar .notebook-tab:selected, .lg-dialog #Toolbar .notebook-tab:focus:active, .lg-dialog #Toolbar .notebook-tab:focus:pressed, .lg-dialog #Toolbar .notebook-tab:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:active, .lg-dialog #Toolbar .notebook-tab:pressed {
   border-image: url("button-assets/button-primary__m--pressed.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:focus, .lg-dialog #Toolbar .notebook-tab:selected {
+  border-image: url("button-assets/button-blue__m.svg") 10;
   color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:active StIcon, .lg-dialog #Toolbar .notebook-tab:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:selected StIcon, .lg-dialog #Toolbar .notebook-tab:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:focus StIcon, .lg-dialog #Toolbar .notebook-tab:selected StIcon {
   color: white;
+}
+
+.lg-dialog #Toolbar .notebook-tab:focus:hover {
+  border-image: url("button-assets/button-blue__m--hover.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:focus:active, .lg-dialog #Toolbar .notebook-tab:focus:pressed, .lg-dialog #Toolbar .notebook-tab:focus:selected {
+  border-image: url("button-assets/button-blue__m--pressed.svg") 10;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child {
@@ -3948,7 +3958,7 @@ texturl-highlighter {
   font-weight: bold;
   font-size: 9pt;
   border-image: url("button-assets/button-primary__f.svg") 10;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child > StIcon {
@@ -3967,25 +3977,32 @@ texturl-highlighter {
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:first-child:hover, .lg-dialog #Toolbar .notebook-tab:first-child:focus, .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:first-child:hover {
   border-image: url("button-assets/button-primary__f--hover.svg") 10;
-  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover StIcon {
-  color: white;
-}
-
-.lg-dialog #Toolbar .notebook-tab:first-child:active, .lg-dialog #Toolbar .notebook-tab:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:selected, .lg-dialog #Toolbar .notebook-tab:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:first-child:active, .lg-dialog #Toolbar .notebook-tab:first-child:pressed {
   border-image: url("button-assets/button-primary__f--pressed.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:first-child:focus, .lg-dialog #Toolbar .notebook-tab:first-child:selected {
+  border-image: url("button-assets/button-blue__f.svg") 10;
   color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:selected StIcon {
   color: white;
+}
+
+.lg-dialog #Toolbar .notebook-tab:first-child:focus:hover {
+  border-image: url("button-assets/button-blue__f--hover.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:focus:selected {
+  border-image: url("button-assets/button-blue__f--pressed.svg") 10;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child {
@@ -4000,7 +4017,7 @@ texturl-highlighter {
   font-weight: bold;
   font-size: 9pt;
   border-image: url("button-assets/button-primary__l.svg") 10;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child > StIcon {
@@ -4019,25 +4036,32 @@ texturl-highlighter {
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:last-child:hover {
   border-image: url("button-assets/button-primary__l--hover.svg") 10;
-  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover StIcon {
-  color: white;
-}
-
-.lg-dialog #Toolbar .notebook-tab:last-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:selected, .lg-dialog #Toolbar .notebook-tab:last-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:last-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:pressed {
   border-image: url("button-assets/button-primary__l--pressed.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:selected {
+  border-image: url("button-assets/button-blue__l.svg") 10;
   color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:selected StIcon {
   color: white;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:focus:hover {
+  border-image: url("button-assets/button-blue__l--hover.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:focus:selected {
+  border-image: url("button-assets/button-blue__l--pressed.svg") 10;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child {
@@ -4052,7 +4076,7 @@ texturl-highlighter {
   font-weight: bold;
   font-size: 9pt;
   border-image: url("button-assets/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child > StIcon {
@@ -4071,25 +4095,32 @@ texturl-highlighter {
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover {
   border-image: url("button-assets/button-primary__s--hover.svg") 10;
-  color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover StIcon {
-  color: white;
-}
-
-.lg-dialog #Toolbar .notebook-tab:last-child:first-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:selected {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed {
   border-image: url("button-assets/button-primary__s--pressed.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected {
+  border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-.lg-dialog #Toolbar .notebook-tab:last-child:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:selected StIcon {
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected StIcon {
   color: white;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover {
+  border-image: url("button-assets/button-blue__s--hover.svg") 10;
+}
+
+.lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:selected {
+  border-image: url("button-assets/button-blue__s--pressed.svg") 10;
 }
 
 .lg-dialog #Toolbar .notebook-tab StButton {
@@ -4184,11 +4215,6 @@ texturl-highlighter {
   margin-top: 6px;
 }
 
-.lg-dialog #EntryArea StEntry {
-  selection-background-color: #7998b3;
-  selected-color: rgba(0, 0, 0, 0.75);
-}
-
 /* Lg Inspector */
 #LookingGlassPropertyInspector {
   border-image: url("background-assets/popup.svg") 7;
@@ -4272,16 +4298,16 @@ texturl-highlighter {
   border-image: url("button-assets/button-primary__s--hover.svg") 10;
 }
 
-#LookingGlassPropertyInspector .lg-obj-inspector-button:active, #LookingGlassPropertyInspector .lg-obj-inspector-button:pressed, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected {
+#LookingGlassPropertyInspector .lg-obj-inspector-button:active, #LookingGlassPropertyInspector .lg-obj-inspector-button:pressed {
   border-image: url("button-assets/button-primary__s--pressed.svg") 10;
 }
 
-#LookingGlassPropertyInspector .lg-obj-inspector-button:focus {
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected {
   border-image: url("button-assets/button-blue__s.svg") 10;
   color: white;
 }
 
-#LookingGlassPropertyInspector .lg-obj-inspector-button:focus StIcon {
+#LookingGlassPropertyInspector .lg-obj-inspector-button:focus StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected StIcon {
   color: white;
 }
 

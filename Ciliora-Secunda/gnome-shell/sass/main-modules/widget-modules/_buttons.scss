@@ -60,7 +60,7 @@
             $mod:false ) {
 
 
-    // Paramteres in this case are strings, not css colors
+    // Parameters in this case are strings, not css colors
     // Quote them to prevent conversion to hex values
     $position: quote($position);
     $bg:       quote($bg);
@@ -94,12 +94,12 @@
         }
 
         &:active,
-        &:pressed,
-        &:selected {
+        &:pressed {
             border-image: url("button-assets/button-#{$bg}__#{$position}--pressed.svg") 10;
         }
 
-        &:focus {
+        &:focus,
+        &:selected {
             border-image: url("button-assets/button-#{$bg-focus}__#{$position}.svg") 10;
             color: $color-focus;
             StIcon { color: $color; }
@@ -162,7 +162,7 @@
                 $mod:false ) {
 
 
-    // Paramteres in this case are strings, not css colors
+    // Parameters in this case are strings, not css colors
     // Quote them to prevent conversion to hex values
     $position: quote($position);
     $bg:       quote($bg);
@@ -274,18 +274,18 @@
 
 
 @mixin btn-linked-primary {
-    @include btn(m, $text-secondary, primary, $text-primary, $mod:true);
+    @include btn(m, $text-primary, primary, $bg-focus:blue);
 
     &:first-child {
-        @include btn(f, $text-secondary, primary, $text-primary, $mod:true);
+        @include btn(f, $text-primary, primary, $bg-focus:blue);
     }
 
     &:last-child {
-        @include btn(l, $text-secondary, primary, $text-primary, $mod:true);
+        @include btn(l, $text-primary, primary, $bg-focus:blue);
     }
 
     &:last-child:first-child {
-        @include btn(s, $text-secondary, primary, $text-primary, $mod:true);
+        @include btn(s, $text-primary, primary, $bg-focus:blue);
     }
 }
 
