@@ -2,7 +2,7 @@
    ! Notifications
    ===================================================== */
 
-texturl-highlighter {
+.url-highlighter {
     link-color: $link;
 }
 
@@ -17,7 +17,7 @@ texturl-highlighter {
 
     > StBoxLayout {
         border-image: url("background-assets/popup.svg") 7;
-        padding: 4px 3px 0 3px;
+        padding: 4px 4px 1px 4px;
     }
 
     &:hover, &:focus {
@@ -25,11 +25,11 @@ texturl-highlighter {
         background-color: transparent !important;
 
         .url-highlighter {
-            link-color: $text-secondary;
+            link-color: $link;
         }
 
         .message-content StIcon {
-            color: $text-danger;
+            color: $accent-danger;
         }
     }
 
@@ -76,9 +76,18 @@ texturl-highlighter {
 
 /* ! Chat Bubble */
 
+.chat-scrollview {
+    border: 10px;
+    padding: 4px 6px;
+
+    StScrollBar {
+        padding: 0 6px;
+    }
+}
+
 .chat-body {
     spacing: 5px;
-    padding: 4px 6px;
+    padding: 0;
 }
 
 .chat-response {
@@ -94,17 +103,18 @@ texturl-highlighter {
 }
 
 .chat-received {
-    border-image: url("background-assets/light-bg-bubble-left.svg") 7 11 7 9;
+    border-image: url("background-assets/light-bg-bubble-right.svg") 7 11 7 9;
     padding: 1em 1.6em 1em 1em;
     margin-left: 2em;
-    color: $text-primary;
     font-weight: bold;
+    color: $text-primary;
+    link-color: $text-primary !important;
 
     &:rtl { padding: 1em 1em 1em 1.6em; }
 }
 
 .chat-sent {
-    border-image: url("background-assets/light-bg-bubble-right.svg") 11 7 9 7;
+    border-image: url("background-assets/light-bg-bubble-left.svg") 11 7 9 7;
     padding: 1em 1em 1em 1.6em;
     margin-left: 0;
     color: $text-primary;

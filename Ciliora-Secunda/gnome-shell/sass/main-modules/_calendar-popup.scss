@@ -334,7 +334,9 @@
     margin: 0;
 
     &-placeholder {
-        StIcon { @include size(0); }
+        StIcon {
+            @include size(0);
+        }
 
         StLabel {
             color: $text-disabled;
@@ -393,7 +395,9 @@
         }
     }
 
-    StScrollBar { padding: 8px 0 10px 0; }
+    StScrollBar {
+        padding: 8px 0 10px 0;
+    }
 }
 
 /* =====================================================
@@ -415,12 +419,9 @@
     }
 
     &:focus {
-        border-image: url("background-assets/hover.svg") 7;
         background-color: transparent !important;
+        border-image: url("background-assets/hover.svg") 7;
         color: $text-primary;
-
-        .message-content StIcon { color: $text-primary; }
-        .message-secondary-bin  { color: $text-primary; }
 
         .message-list-section:first-child & {
             border-image: url("background-assets/hover.svg") 7;
@@ -428,6 +429,18 @@
 
         .message-list-section:last-child & {
             border-image: url("background-assets/hover-violet.svg") 7;
+        }
+
+        > *:first-child StIcon {
+            color: $text-primary;
+        }
+
+        .event-time {
+            color: $text-primary;
+        }
+
+        .url-highlighter {
+            link-color: $text-primary;
         }
     }
 
@@ -437,7 +450,6 @@
 
     &-icon-bin {
         padding: 8px 0 8px 8px;
-
         &:rtl { padding: 8px 8px 8px 0; }
 
         > StIcon {
@@ -445,9 +457,15 @@
         }
     }
 
-    &-secondary-bin {
-        color: $text-secondary;
+    &-content {
+        spacing: .4em;
+        padding: 10px;
         font-size: 9pt;
+
+        // the close icon
+        > *:first-child StIcon {
+            color: $text-danger;
+        }
     }
 
     &-title {
@@ -456,14 +474,17 @@
         height: 1.2em;
     }
 
-    &-content {
-        spacing: .4em;
-        padding: 10px;
-        font-size: 9pt;
+    &-body {
+    }
 
+    &-secondary-bin {
         StIcon {
-            color: $accent-danger;
-            margin-bottom: 0;
+            icon-size: 16px;
         }
+    }
+
+    .event-time {
+        color: $text-secondary;
+        font-size: 9pt;
     }
 }

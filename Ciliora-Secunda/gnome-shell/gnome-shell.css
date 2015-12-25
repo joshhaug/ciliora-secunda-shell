@@ -2792,16 +2792,8 @@ StEntry:insensitive StIcon {
 }
 
 .message:focus {
-  border-image: url("background-assets/hover.svg") 7;
   background-color: transparent !important;
-  color: white;
-}
-
-.message:focus .message-content StIcon {
-  color: white;
-}
-
-.message:focus .message-secondary-bin {
+  border-image: url("background-assets/hover.svg") 7;
   color: white;
 }
 
@@ -2811,6 +2803,18 @@ StEntry:insensitive StIcon {
 
 .message-list-section:last-child .message:focus {
   border-image: url("background-assets/hover-violet.svg") 7;
+}
+
+.message:focus > *:first-child StIcon {
+  color: white;
+}
+
+.message:focus .event-time {
+  color: white;
+}
+
+.message:focus .url-highlighter {
+  link-color: white;
 }
 
 .message:hover {
@@ -2829,9 +2833,14 @@ StEntry:insensitive StIcon {
   icon-size: 32px;
 }
 
-.message-secondary-bin {
-  color: rgba(255, 255, 255, 0.45);
+.message-content {
+  spacing: .4em;
+  padding: 10px;
   font-size: 9pt;
+}
+
+.message-content > *:first-child StIcon {
+  color: #f45f5f;
 }
 
 .message-title {
@@ -2840,15 +2849,13 @@ StEntry:insensitive StIcon {
   height: 1.2em;
 }
 
-.message-content {
-  spacing: .4em;
-  padding: 10px;
-  font-size: 9pt;
+.message-secondary-bin StIcon {
+  icon-size: 16px;
 }
 
-.message-content StIcon {
-  color: #e86b6b;
-  margin-bottom: 0;
+.message .event-time {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 9pt;
 }
 
 /* =====================================================
@@ -2914,7 +2921,7 @@ StEntry:insensitive StIcon {
 /* =====================================================
    ! Notifications
    ===================================================== */
-texturl-highlighter {
+.url-highlighter {
   link-color: #7998b3;
 }
 
@@ -2930,7 +2937,7 @@ texturl-highlighter {
 
 .notification-banner > StBoxLayout {
   border-image: url("background-assets/popup.svg") 7;
-  padding: 4px 3px 0 3px;
+  padding: 4px 4px 1px 4px;
 }
 
 .notification-banner:hover, .notification-banner:focus {
@@ -2939,11 +2946,11 @@ texturl-highlighter {
 }
 
 .notification-banner:hover .url-highlighter, .notification-banner:focus .url-highlighter {
-  link-color: rgba(255, 255, 255, 0.45);
+  link-color: #7998b3;
 }
 
 .notification-banner:hover .message-content StIcon, .notification-banner:focus .message-content StIcon {
-  color: #f45f5f;
+  color: #e86b6b;
 }
 
 .notification-banner StEntry {
@@ -3279,9 +3286,18 @@ texturl-highlighter {
 }
 
 /* ! Chat Bubble */
+.chat-scrollview {
+  border: 10px;
+  padding: 4px 6px;
+}
+
+.chat-scrollview StScrollBar {
+  padding: 0 6px;
+}
+
 .chat-body {
   spacing: 5px;
-  padding: 4px 6px;
+  padding: 0;
 }
 
 .chat-response {
@@ -3297,11 +3313,12 @@ texturl-highlighter {
 }
 
 .chat-received {
-  border-image: url("background-assets/light-bg-bubble-left.svg") 7 11 7 9;
+  border-image: url("background-assets/light-bg-bubble-right.svg") 7 11 7 9;
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
-  color: white;
   font-weight: bold;
+  color: white;
+  link-color: white !important;
 }
 
 .chat-received:rtl {
@@ -3309,7 +3326,7 @@ texturl-highlighter {
 }
 
 .chat-sent {
-  border-image: url("background-assets/light-bg-bubble-right.svg") 11 7 9 7;
+  border-image: url("background-assets/light-bg-bubble-left.svg") 11 7 9 7;
   padding: 1em 1em 1em 1.6em;
   margin-left: 0;
   color: white;
