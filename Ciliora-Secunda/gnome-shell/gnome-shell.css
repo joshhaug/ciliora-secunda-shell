@@ -4694,9 +4694,21 @@ StEntry:insensitive StIcon {
    ! Apps menu extension
    ===================================================== */
 .calendar-vertical-separator {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.05);
   width: 1px;
   margin: 0 10px;
+}
+
+.apps-menu .popup-menu-item {
+  padding-right: .9em;
+}
+
+.apps-menu .popup-menu-item:ltr {
+  padding-right: .9em;
+}
+
+.apps-menu .popup-menu-item:rtl {
+  padding-left: .9em;
 }
 
 .apps-menu .popup-menu-ornament {
