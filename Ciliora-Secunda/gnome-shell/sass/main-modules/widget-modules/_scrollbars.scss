@@ -9,11 +9,11 @@ StScrollView {
 
 StScrollBar {
     padding: 6px;
+    min-width: 12px;
+    min-height: 12px;
 
-    StScrollView & {
-        min-width: 12px;
-        min-height: 12px;
-    }
+    StScrollView.vfade & { padding: 0 6px; }
+    StScrollView.hfade & { padding: 6px 0; }
 
     StBin#trough {
         background-color: rgba(0, 0, 0, 0);
