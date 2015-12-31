@@ -4684,3 +4684,16 @@ StEntry:insensitive StIcon {
 #screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
   border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
 }
+
+/* =====================================================
+   ! Apps menu extension
+   ===================================================== */
+.calendar-vertical-separator {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 1px;
+  margin: 0 10px;
+}
+
+.apps-menu .popup-menu-ornament {
+  width: 0;
+}

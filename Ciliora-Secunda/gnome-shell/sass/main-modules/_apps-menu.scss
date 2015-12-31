@@ -1,0 +1,15 @@
+/* =====================================================
+   ! Apps menu extension
+   ===================================================== */
+
+.calendar-vertical-separator {
+    background-color: alpha(#000, .15);
+    width: 1px;
+    margin: 0 10px;
+}
+
+.apps-menu {
+    .popup-menu-ornament {
+        width: 0;
+    }
+}
