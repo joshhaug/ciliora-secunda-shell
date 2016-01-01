@@ -30,15 +30,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.741654"
-     inkscape:cx="-0.018152217"
-     inkscape:cy="10.933354"
+     inkscape:cx="6.4670949"
+     inkscape:cy="10.381418"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -105,7 +105,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -147,7 +147,7 @@
      transform="translate(0,-276)">
     <path
        style="fill:#ffffff;fill-opacity:1"
-       d="m 17,283 -10,0 0,2 10,0 z"
+       d="m 18,283 -12,0 0,2 12,0 z"
        id="rect3357"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
@@ -155,11 +155,11 @@
        sodipodi:nodetypes="ccccc"
        inkscape:connector-curvature="0"
        id="path4149"
-       d="m 17,287 -10,0 0,2 10,0 z"
+       d="m 18,287 -12,0 0,2 12,0 z"
        style="fill:#ffffff;fill-opacity:1" />
     <path
        style="fill:#ffffff;fill-opacity:1"
-       d="m 17,291 -10,0 0,2 10,0 z"
+       d="m 18,291 -12,0 0,2 12,0 z"
        id="path4151"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
