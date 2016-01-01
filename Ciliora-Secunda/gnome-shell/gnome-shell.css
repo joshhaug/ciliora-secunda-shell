@@ -2933,7 +2933,7 @@ StEntry:insensitive StIcon {
 .notification-banner {
   color: white;
   font-size: 9pt;
-  margin: 2px;
+  margin: 5px;
   width: 34em;
   border-radius: 0 !important;
   background-color: transparent !important;
@@ -3889,6 +3889,7 @@ StEntry:insensitive StIcon {
   font-size: 9pt !important;
   spacing: 4px;
   padding: 16px;
+  margin: 7px;
   color: white;
 }
 
