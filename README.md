@@ -23,9 +23,13 @@
 
 In order to apply this theme to your login screen, move the `gnome-shell-theme.gresource` file into the `usr/share/gnome-shell` dir and restart gnome-shell.
 
-**_Make sure that you backup the previous file before doing this!_**
+* **Make sure that you backup the previous file before doing this!**
 
-**_Be very careful when doing this! You could potentially break GDM and have a hard time logging back in if you screw up._**
+* **Be very careful when doing this! You could potentially break GDM and have a hard time logging back in if you screw up.**
+
+* **Other themes won't look good until you restore the default root theme.**
+
+* **Although rare, updates to the system could restore the old theme.**
 
 ---
 
