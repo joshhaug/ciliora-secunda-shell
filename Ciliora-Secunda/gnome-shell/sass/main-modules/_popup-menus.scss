@@ -70,11 +70,12 @@
         &:insensitive { color: $text-disabled; }
     }
 
-    .popup-menu-item .popup-status-menu-item {
+    .popup-status-menu-item {
         color: $text-secondary;
     }
 
-    .popup-menu-item.selected .popup-status-menu-item {
+    &:active .popup-status-menu-item,
+    &.selected .popup-status-menu-item {
         color: $text-primary;
     }
 
@@ -88,14 +89,14 @@
     box-shadow: 0 0 rgba(0, 0, 0, 0);
     padding: 12px 0;
 
+    .popup-status-menu-item {
+        color: $text-secondary;
+    }
+
     .popup-menu-item:active,
     .popup-menu-item.selected {
         border-image: url("background-assets/hover-popup.svg") 9;
         color: $text-primary;
-    }
-
-    .popup-menu-item .popup-status-menu-item {
-        color: $text-secondary;
     }
 }
 
