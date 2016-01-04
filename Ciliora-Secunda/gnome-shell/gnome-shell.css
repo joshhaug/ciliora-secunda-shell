@@ -67,7 +67,9 @@ StScrollBar StButton#hhandle:active {
 /* =====================================================
    ! Entries
    ===================================================== */
-StEntry {
+/* ! Standard light entries */
+StEntry,
+.popup-menu .search-entry {
   background-gradient-direction: none;
   background-gradient-start: transparent;
   background-gradient-end: transparent;
@@ -75,29 +77,33 @@ StEntry {
   border-radius: 0;
   border: 0;
   border-image: url("widget-assets/entry.svg") 6;
-  padding: 4px 12px 3px 12px;
-  width: 220px;
-  height: 22px;
-  font-size: 9pt;
+  padding: .5em !important;
+  min-height: 1.2em;
+  width: 18em;
+  font-size: 10pt;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.45);
 }
 
-StEntry StIcon {
-  color: rgba(255, 255, 255, 0.45);
+StEntry StIcon,
+.popup-menu .search-entry StIcon {
+  color: white;
   icon-size: 16px;
 }
 
-StEntry StIcon.capslock-warning {
+StEntry StIcon.capslock-warning,
+.popup-menu .search-entry StIcon.capslock-warning {
   color: #f59f52 !important;
 }
 
-StEntry:focus {
+StEntry:focus,
+.popup-menu .search-entry:focus {
   border-image: url("widget-assets/entry-focused.svg") 6;
   font-size: 10pt;
   font-weight: bold;
-  width: 220px;
-  height: 22px;
+  padding: .5em !important;
+  min-height: 1.2em;
+  width: 18em;
   color: white;
   caret-color: white;
   caret-size: 1px;
@@ -105,30 +111,36 @@ StEntry:focus {
   selection-background-color: #7998b3;
 }
 
-StEntry:focus StIcon {
+StEntry:focus StIcon,
+.popup-menu .search-entry:focus StIcon {
   color: white;
 }
 
-StEntry:insensitive {
+StEntry:insensitive,
+.popup-menu .search-entry:insensitive {
   border-image: url("widget-assets/entry-insensitive.svg") 6;
-  color: rgba(255, 255, 255, 0.45);
-  width: 220px;
-  height: 22px;
-}
-
-StEntry:insensitive StIcon {
+  width: 18em;
   color: rgba(255, 255, 255, 0.45);
 }
 
-/*--- ! Search entry in overview  ---*/
+StEntry:insensitive StIcon,
+.popup-menu .search-entry:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ! Search entry in overview */
 .search-entry {
   border-image: url("overview-assets/overview-dark-bg.svg") 7;
-  padding: 6px 8px;
-  width: 320px;
-  height: 22px;
   border-radius: 0;
+  padding: .6em !important;
+  min-height: 1.3em;
+  width: 320px;
   color: rgba(255, 255, 255, 0.45);
-  font-size: 9pt;
+  font-size: 10pt;
+}
+
+.search-entry > * {
+  margin-bottom: 1px;
 }
 
 .search-entry StIcon {
@@ -138,22 +150,29 @@ StEntry:insensitive StIcon {
 }
 
 .search-entry:hover StIcon {
-  color: white;
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .search-entry:focus {
-  border-image: url("overview-assets/overview-light-bg.svg") 7;
   border-width: 0;
-  font-weight: bold;
-  font-size: 10pt;
+  border-image: url("overview-assets/overview-light-bg.svg") 7;
+  padding: .6em !important;
+  min-height: 1.3em;
+  width: 320px;
   color: white;
   caret-color: white;
   caret-size: 1px;
   selected-color: white;
   selection-background-color: #7998b3;
+  font-weight: bold;
+  font-size: 10pt;
 }
 
 .search-entry:focus StIcon {
+  color: white;
+}
+
+.search-entry:focus:hover StIcon {
   color: white;
 }
 
@@ -1179,14 +1198,16 @@ StEntry:insensitive StIcon {
 }
 
 .run-dialog-error-box {
-  padding: 8px 2px 2px 2px;
-  spacing: 5px;
+  padding: .3em .1em .3em .2em;
+  margin-top: 6px;
+  spacing: 0;
   color: #f45f5f;
+  font-weight: bold;
 }
 
 .run-dialog-error-box StIcon {
-  width: 16px;
-  height: 16px;
+  width: 0;
+  height: 0;
   color: #f45f5f;
 }
 
@@ -1633,15 +1654,6 @@ StEntry:insensitive StIcon {
   font-weight: bold;
   color: #bb96e3;
   padding-bottom: 0;
-}
-
-.prompt-dialog StEntry {
-  font-size: 8pt;
-}
-
-.prompt-dialog StEntry:focus {
-  font-size: 8pt;
-  font-weight: normal;
 }
 
 .keyring-dialog-control-table {
@@ -4572,29 +4584,50 @@ StEntry:insensitive StIcon {
 }
 
 .login-dialog StEntry {
-  border-image: url("resource:///org/gnome/shell/theme/overview-dark-bg.svg") 6;
-  padding: 6px 8px;
-  height: 22px;
-  width: 220px;
-  font-size: 10pt;
-  font-weight: normal;
+  border-image: url("overview-assets/overview-dark-bg.svg") 7;
+  border-radius: 0;
+  padding: .6em !important;
+  min-height: 1.3em;
+  width: 320px;
   color: rgba(255, 255, 255, 0.45);
-  transition-duration: 0ms;
+  font-size: 10pt;
+}
+
+.login-dialog StEntry > * {
+  margin-bottom: 1px;
+}
+
+.login-dialog StEntry StIcon {
+  icon-size: 16px;
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.login-dialog StEntry:hover StIcon {
+  color: rgba(255, 255, 255, 0.45);
 }
 
 .login-dialog StEntry:focus {
-  border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
-  font-size: 10pt;
-  font-weight: bold;
+  border-width: 0;
+  border-image: url("overview-assets/overview-light-bg.svg") 7;
+  padding: .6em !important;
+  min-height: 1.3em;
+  width: 320px;
   color: white;
   caret-color: white;
   caret-size: 1px;
   selected-color: white;
   selection-background-color: #7998b3;
+  font-weight: bold;
+  font-size: 10pt;
 }
 
-.login-dialog StEntry StIcon.capslock-warning {
-  color: white !important;
+.login-dialog StEntry:focus StIcon {
+  color: white;
+}
+
+.login-dialog StEntry:focus:hover StIcon {
+  color: white;
 }
 
 /* ===================================================================

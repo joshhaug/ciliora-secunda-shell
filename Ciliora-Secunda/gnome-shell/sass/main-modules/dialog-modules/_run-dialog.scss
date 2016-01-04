@@ -29,12 +29,14 @@
     }
 
     &-error-box {
-        padding: 8px 2px 2px 2px;
-        spacing: 5px;
+        padding: .3em .1em .3em .2em;
+        margin-top: 6px;
+        spacing: 0;
         color: $text-danger;
+        font-weight: bold;
 
         StIcon {
-            @include size(16px);
+            @include size(0);
             color: $text-danger;
         }
     }

@@ -232,29 +232,9 @@
     // entry
 
     StEntry {
-        border-image: url("resource:///org/gnome/shell/theme/overview-dark-bg.svg") 6;
-        padding: 6px 8px;
-        height: 22px;
-        width: 220px;
-        font-size: 10pt;
-        font-weight: normal;
-        color: $text-secondary;
-        transition-duration: 0ms;
+        @include entry(normal--dark, $width: 320px);
 
-        &:focus  {
-            border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
-            font-size: 10pt;
-            font-weight: bold;
-            color: $text-primary;
-            caret-color: $text-primary;
-            caret-size: 1px;
-            selected-color: $text-primary;
-            selection-background-color: $accent-primary;
-        }
-
-        StIcon.capslock-warning {
-            color: $text-primary !important;
-        }
+        &:focus { @include entry(focus--dark, $width: 320px); }
     }
 }
 
