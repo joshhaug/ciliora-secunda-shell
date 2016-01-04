@@ -6,6 +6,10 @@
     padding: 3px;
     min-width: 100px;
 
+    > * > * > * {
+        border-image: url("background-assets/popup-inside.svg") 9;
+    }
+
     &-boxpointer {
         padding: 0;
         -arrow-border-radius: 0;
@@ -17,8 +21,8 @@
         -boxpointer-gap: 0;
     }
 
+
     &-content {
-        border-image: url("background-assets/popup-inside.svg") 9;
         padding: .7em .2em;
         color: $text-primary;
     }

@@ -1,4 +1,4 @@
-@mixin entry($t, $width: 18em ) {
+@mixin entry($t, $width: null ) {
     @if $t==normal {
         background-gradient-direction: none;
         background-gradient-start: rgba(0, 0, 0, 0);
