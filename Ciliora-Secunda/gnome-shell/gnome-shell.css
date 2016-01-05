@@ -1203,10 +1203,6 @@ StEntry:insensitive StIcon,
   color: #f45f5f;
 }
 
-.run-dialog-completion-box {
-  font-size: 10px;
-}
-
 .run-dialog-label {
   font-size: 0;
   padding-bottom: 0 !important;
