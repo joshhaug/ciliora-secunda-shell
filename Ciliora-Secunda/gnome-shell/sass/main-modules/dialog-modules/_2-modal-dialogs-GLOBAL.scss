@@ -2,13 +2,8 @@
    ! Modal dialogs
    ===================================================== */
 
-/* Dialog Subject Text Style */
-.show-processes-dialog-subject,
-.mount-question-dialog-subject,
-.end-session-dialog-subject {
-    font-size: 12pt;
-    font-weight: bold;
-    color: $text-primary;
+#modalDialogGroup > * {
+    background-color: alpha(#000, .5);
 }
 
 .headline {

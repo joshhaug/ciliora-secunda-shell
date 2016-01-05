@@ -23,6 +23,12 @@
         &:rtl { text-align: right; }
     }
 
+    &-subject {
+        font-size: 12pt;
+        font-weight: bold;
+        color: $text-primary;
+    }
+
     .check-box {
         margin-top: .4em;
         margin-bottom: .4em;

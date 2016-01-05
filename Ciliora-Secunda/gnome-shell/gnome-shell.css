@@ -887,13 +887,8 @@ StEntry:insensitive StIcon,
 /* =====================================================
    ! Modal dialogs
    ===================================================== */
-/* Dialog Subject Text Style */
-.show-processes-dialog-subject,
-.mount-question-dialog-subject,
-.end-session-dialog-subject {
-  font-size: 12pt;
-  font-weight: bold;
-  color: white;
+#modalDialogGroup > * {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .headline {
@@ -1249,6 +1244,12 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog-description:rtl {
   text-align: right;
+}
+
+.end-session-dialog-subject {
+  font-size: 12pt;
+  font-weight: bold;
+  color: white;
 }
 
 .end-session-dialog .check-box {
