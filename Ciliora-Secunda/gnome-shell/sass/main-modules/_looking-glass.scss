@@ -43,6 +43,12 @@
         border-radius: 0 !important;
         padding: 0 16px 4px 8px;
 
+        StIcon {
+            margin: 0 10px;
+            &:first-child { margin-left: 0; }
+            &:last-child { margin-right: 0; }
+        }
+
         .labels {
             spacing: 0;
         }
@@ -152,32 +158,51 @@
             margin-top: 6px;
         }
     }
+
+
+    #LookingGlassAutoCompletionText {
+        padding: 0 1em;
+    }
 }
 
 
 /* Lg Inspector */
 
+/* This box has no id's or classes and is
+   the direct child of the global container
+
+   We assume that there is no
+   uiGroup > StScrollView used elsewhere
+*/
+
+#uiGroup {
+    > StScrollView {
+        border-image: url("background-assets/popup.svg") 7;
+        padding: 5px;
+
+        StScrollBar {
+            padding: 9px 4px 9px 4px;
+        }
+    }
+}
+
 #LookingGlassPropertyInspector {
-    border-image: url("background-assets/popup.svg") 7;
+    border-image: none !important;
     background: transparent;
     border: 0 transparent;
     border-radius: 0;
 
     color: $text-primary;
-    spacing: .4em;
-    padding: 4px 4px 16px 4px;
-
-    StScrollBar {
-        margin-right: 20px;
-        padding: 0;
-    }
+    spacing: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 
     > StBoxLayout {
         padding: 6px 14px;
 
         &:first-child {
             padding: 10px;
-            margin: 10px;
+            margin: 10px 0 10px 10px;
             border-image: url("background-assets/light-bg.svg") 10;
         }
     }

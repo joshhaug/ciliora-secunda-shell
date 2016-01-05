@@ -3918,6 +3918,18 @@ StEntry:insensitive StIcon,
   padding: 0 16px 4px 8px;
 }
 
+.lg-dialog #Toolbar StIcon {
+  margin: 0 10px;
+}
+
+.lg-dialog #Toolbar StIcon:first-child {
+  margin-left: 0;
+}
+
+.lg-dialog #Toolbar StIcon:last-child {
+  margin-right: 0;
+}
+
 .lg-dialog #Toolbar .labels {
   spacing: 0;
 }
@@ -4253,20 +4265,35 @@ StEntry:insensitive StIcon,
   margin-top: 6px;
 }
 
+.lg-dialog #LookingGlassAutoCompletionText {
+  padding: 0 1em;
+}
+
 /* Lg Inspector */
-#LookingGlassPropertyInspector {
+/* This box has no id's or classes and is
+   the direct child of the global container
+
+   We assume that there is no
+   uiGroup > StScrollView used elsewhere
+*/
+#uiGroup > StScrollView {
   border-image: url("background-assets/popup.svg") 7;
+  padding: 5px;
+}
+
+#uiGroup > StScrollView StScrollBar {
+  padding: 9px 4px 9px 4px;
+}
+
+#LookingGlassPropertyInspector {
+  border-image: none !important;
   background: transparent;
   border: 0 transparent;
   border-radius: 0;
   color: white;
-  spacing: .4em;
-  padding: 4px 4px 16px 4px;
-}
-
-#LookingGlassPropertyInspector StScrollBar {
-  margin-right: 20px;
-  padding: 0;
+  spacing: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 #LookingGlassPropertyInspector > StBoxLayout {
@@ -4275,7 +4302,7 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector > StBoxLayout:first-child {
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0 10px 10px;
   border-image: url("background-assets/light-bg.svg") 10;
 }
 
