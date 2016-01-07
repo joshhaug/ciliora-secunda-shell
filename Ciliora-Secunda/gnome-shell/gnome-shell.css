@@ -1717,6 +1717,16 @@ StEntry:insensitive StIcon,
   spacing: 10px;
 }
 
+.nm-dialog-header {
+  font-weight: bold;
+  font-size: 12pt;
+  color: white;
+}
+
+.nm-dialog-subheader {
+  margin-top: .4em;
+}
+
 .nm-dialog-airplane-box {
   spacing: 12px;
   padding: 14px;

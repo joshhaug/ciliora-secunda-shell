@@ -17,6 +17,16 @@
         spacing: 10px;
     }
 
+    &-header {
+        font-weight: bold;
+        font-size: 12pt;
+        color: $text-primary;
+    }
+
+    &-subheader {
+        margin-top: .4em;
+    }
+
     &-airplane-box {
         spacing: 12px;
         padding: 14px;
