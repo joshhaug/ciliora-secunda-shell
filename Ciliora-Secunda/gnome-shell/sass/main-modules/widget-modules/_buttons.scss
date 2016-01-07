@@ -16,9 +16,9 @@
     font-size: 9pt;
 
 
-    > StIcon {
-        @include size(16px);
-        icon-size: 16px;
+    StIcon {
+        @include size(16px, $important:true);
+        icon-size: 16px !important;
     }
 }
 
@@ -293,12 +293,8 @@
 // ===================================================================
 // Standard dialog buttons
 // ===================================================================
+
 @mixin btn-dialog-primary {
-    @include btn-dlg(s, $text-primary, primary, $text-primary, blue);
-}
-
-
-@mixin btn-dialog-linked-primary {
     @include btn-dlg(m, $text-primary, primary, $text-primary, blue);
 
     &:first-child {

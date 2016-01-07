@@ -13,7 +13,9 @@
 
 
 // Shorthand for size properties
-@mixin size($width, $height:$width) {
-    width: $width;
-    height: $height;
+@mixin size($width, $height:$width, $important:false) {
+    $important: if($important, !important, null);
+
+    width: $width $important;
+    height: $height $important;
 }
