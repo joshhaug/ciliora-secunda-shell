@@ -8,6 +8,7 @@
 * [Compatibility](#compatibility)
 * [Contributing](#contributing)
 * [Development](#development)
+* [Preview](#preview)
 
 ---
 
@@ -95,3 +96,7 @@ You should use the provided `gulpfile.js` for improved workflow.
 * **Compile sass** whenever certain files change. _(Open `gulpfile.js` to see what files/folders are being watched.)_
 
 * **Autoreload the theme** on save. _(No more `alt-f2 + rt`. :+1:)_
+
+---
+
+<img src="http://orig09.deviantart.net/6ca8/f/2016/002/3/8/ciliora_secunda_shell_by_zagortenay333-d86qzm2.png" id="preview">
