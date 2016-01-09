@@ -100,3 +100,4 @@ You should use the provided `gulpfile.js` for improved workflow.
 ---
 
 <img src="http://orig09.deviantart.net/6ca8/f/2016/002/3/8/ciliora_secunda_shell_by_zagortenay333-d86qzm2.png" id="preview">
+<sup>**Screenshot info:** [Wallpaper](http://nosphere.deviantart.com/art/Ns-Wp-03-447969721), [Icons](http://samuelhewitt.com/moka)</sup>
