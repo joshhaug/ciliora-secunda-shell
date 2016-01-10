@@ -91,7 +91,7 @@ You should use the provided `gulpfile.js` for improved workflow.
 
     * Even if you change the location of your working directory, running `gulp` will update the link.
 
-    * **NOTE:** Make sure you don't have a folder named `Ciliora-Secunda` in this dir when you first run gulp.
+    * If you already have a folder/file named `Ciliora-Secunda` in your `.themes` dir, it will be __deleted__.
 
 * **Compile sass** whenever certain files change. _(Open `gulpfile.js` to see what files/folders are being watched.)_
 
