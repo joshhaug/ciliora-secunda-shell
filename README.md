@@ -6,7 +6,7 @@
 * [Login Screen](#login-screen)
 * [Tips](#tips)
 * [Compatibility](#compatibility)
-* [Contributing](#contributing)
+* [Contributing](CONTRIBUTING.md)
 * [Development](#development)
 * [Preview](#preview)
 
