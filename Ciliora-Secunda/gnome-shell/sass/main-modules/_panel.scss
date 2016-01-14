@@ -123,8 +123,12 @@
 
 #appMenu {
     spinner-image: url("misc-assets/process-working.svg");
-    spacing: 4px;
     padding: 0 8px;
+
+    // this targets the spinner image
+    StBin:last-child {
+        margin: 0 0 0 3px;
+    }
 }
 
 /* ! Notification indicator */

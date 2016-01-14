@@ -2415,8 +2415,11 @@ StEntry:insensitive StIcon,
 
 #appMenu {
   spinner-image: url("misc-assets/process-working.svg");
-  spacing: 4px;
   padding: 0 8px;
+}
+
+#appMenu StBin:last-child {
+  margin: 0 0 0 3px;
 }
 
 /* ! Notification indicator */
