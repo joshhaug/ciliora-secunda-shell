@@ -2533,15 +2533,37 @@ StEntry:insensitive StIcon,
 /* =====================================================
    ! Change Month
    ===================================================== */
+.calendar > StBoxLayout:first-child {
+  border-image: url("background-assets/dark-bg.svg") 7;
+  padding: 0;
+}
+
 .pager-button {
   color: white;
   background-color: transparent;
   width: 32px;
   border-radius: 0 !important;
+  padding: 0 .4em;
+}
+
+.pager-button:first-child {
+  border-image: url("misc-assets/change-month-btn-f.svg") 7;
+}
+
+.pager-button:last-child {
+  border-image: url("misc-assets/change-month-btn-l.svg") 7;
 }
 
 .pager-button:hover, .pager-button:focus, .pager-button:active {
   background-color: transparent !important;
+}
+
+.pager-button:hover:first-child, .pager-button:focus:first-child, .pager-button:active:first-child {
+  border-image: url("misc-assets/change-month-btn-f-hover.svg") 7;
+}
+
+.pager-button:hover:last-child, .pager-button:focus:last-child, .pager-button:active:last-child {
+  border-image: url("misc-assets/change-month-btn-l-hover.svg") 7;
 }
 
 .pager-button.calendar-change-month-back, .pager-button.calendar-change-month-forward:rtl {
@@ -2584,7 +2606,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-day-heading {
-  font-size: 9pt;
+  font-size: inherit;
   color: white;
   margin-top: 1em;
   height: 2em;
@@ -2707,28 +2729,37 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/*  ! Events Day */
-.calendar-day-with-events:hover, .calendar-day-with-events:focus {
-  border-image: url("misc-assets/calendar-day-with-events-hover.svg") 7;
+.calendar-other-month-day.calendar-day-with-events {
+  border-image: url("misc-assets/calendar-other-month-day-events.svg") 7;
   background-image: none !important;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
+  border-image: url("misc-assets/calendar-day-active-events.svg") 7;
   color: white;
 }
 
-/*  ! Today */
-.calendar-today:hover, .calendar-today:focus {
-  border-image: url("misc-assets/calendar-hover.svg") 7;
+.calendar-other-month-day.calendar-today {
+  border-image: url("misc-assets/calendar-other-month-day-today.svg") 7;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
+  border-image: url("misc-assets/calendar-day-active.svg") 7;
   color: white;
 }
 
 /*  ! Week Number */
 .calendar-week-number {
+  margin: 0 !important;
+  background-color: transparent !important;
   color: rgba(255, 255, 255, 0.45);
-  font-size: 9pt;
+  font-size: inherit;
   font-weight: normal;
   width: 2.4em;
   height: 1.6em;
-  padding-top: .8em;
-  padding-right: .4em;
+  padding: .9em .4em 0 0;
 }
 
 /* =====================================================

@@ -105,14 +105,38 @@
    ! Change Month
    ===================================================== */
 
+.calendar {
+    > StBoxLayout:first-child {
+        border-image: url("background-assets/dark-bg.svg") 7;
+        padding: 0;
+    }
+}
+
 .pager-button {
     color: $text-primary;
     background-color: transparent;
     width: 32px;
     border-radius: 0 !important;
+    padding: 0 .4em;
+
+    &:first-child {
+        border-image: url("misc-assets/change-month-btn-f.svg") 7;
+    }
+
+    &:last-child {
+        border-image: url("misc-assets/change-month-btn-l.svg") 7;
+    }
 
     &:hover, &:focus, &:active {
         background-color: transparent !important;
+
+        &:first-child {
+            border-image: url("misc-assets/change-month-btn-f-hover.svg") 7;
+        }
+
+        &:last-child {
+            border-image: url("misc-assets/change-month-btn-l-hover.svg") 7;
+        }
     }
 
     &.calendar-change-month {
@@ -163,7 +187,7 @@
 }
 
 .calendar-day-heading {
-    font-size: 9pt;
+    font-size: inherit;
     color: $text-primary;
     margin-top: 1em;
     height: 2em;
@@ -293,37 +317,42 @@
         border-image: url("misc-assets/calendar-day-active.svg") 7;
         color: $text-primary;
     }
-}
 
-/*  ! Events Day */
-
-.calendar-day-with-events {
-    &:hover, &:focus {
-        border-image: url("misc-assets/calendar-day-with-events-hover.svg") 7;
+    &.calendar-day-with-events {
+        border-image: url("misc-assets/calendar-other-month-day-events.svg") 7;
         background-image: none !important;
-        color: $text-primary;
+        color: $text-disabled;
+
+        &:hover, &:focus, &:active {
+            border-image: url("misc-assets/calendar-day-active-events.svg") 7;
+            color: $text-primary;
+        }
     }
-}
 
-/*  ! Today */
+    &.calendar-today {
+        border-image: url("misc-assets/calendar-other-month-day-today.svg") 7;
+        color: $text-disabled;
 
-.calendar-today {
-    &:hover, &:focus {
-        border-image: url("misc-assets/calendar-hover.svg") 7;
-        color: $text-primary;
+        &:hover, &:focus, &:active {
+            border-image: url("misc-assets/calendar-day-active.svg") 7;
+            color: $text-primary;
+        }
     }
 }
 
 /*  ! Week Number */
 
 .calendar-week-number {
+    margin: 0 !important;
+    background-color: alpha(#000, 0) !important;
+
     color: $text-secondary;
-    font-size: 9pt;
+    font-size: inherit;
     font-weight: normal;
     @include size(2.4em, 1.6em);
-    padding-top: .8em;
-    padding-right: .4em;
+    padding: .9em .4em 0 0;
 }
+
 
 /* =====================================================
    ! Message List
