@@ -51,7 +51,7 @@
 
 .datemenu-displays-section {
     padding-bottom: 0;
-    margin: 0 6px;
+    margin: .2em 3px 0 3px;
 
     StScrollBar {
         padding: 0;
@@ -109,6 +109,7 @@
     > StBoxLayout:first-child {
         border-image: url("background-assets/dark-bg.svg") 7;
         padding: 0;
+        margin: 1px;
     }
 }
 
@@ -117,7 +118,7 @@
     background-color: transparent;
     width: 32px;
     border-radius: 0 !important;
-    padding: 0 .4em;
+    padding: 0;
 
     &:first-child {
         border-image: url("misc-assets/change-month-btn-f.svg") 7;
@@ -163,7 +164,7 @@
 .calendar-month-label {
     color: $text-secondary;
     font-weight: bold;
-    padding: .6em .8em;
+    padding: .7em .8em;
 
     &:focus  {
         color: $link;

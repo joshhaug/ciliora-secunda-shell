@@ -69,7 +69,7 @@
         &:active,
         &.selected {
             border-image: url("background-assets/hover-popup.svg") 9;
-            color: $text-primary;
+            * { color: $text-primary !important; }
         }
 
         &:insensitive {
