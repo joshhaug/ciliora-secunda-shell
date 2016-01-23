@@ -30,6 +30,7 @@
     &-ornament {
         text-align: right;
         width: 1em;
+        color: $link;
     }
 
     &-arrow {
@@ -44,11 +45,20 @@
     }
 
     &-item {
-        spacing: .6em;
+        spacing: 0;
 
-        &:ltr { padding: .4em 1.9em .4em .2em; }
+        // ugly fix for the ornament spacing
+        &:ltr {
+            padding: .5em 1em .5em 0;
+            > * { margin: 0 .6em 0 0; }
+            .popup-menu-ornament { margin: 0 .2em 0 .2em !important; }
+        }
 
-        &:rtl { padding: .4em .2em .4em 1.9em; }
+        &:rtl {
+            padding: .5em 0 .5em 1em;
+            > * { margin: 0 0 0 .6em; }
+            .popup-menu-ornament { margin: 0 .2em 0 .2em !important; }
+        }
 
         &:checked {
             background-color: rgba(0, 0, 0, 0);
