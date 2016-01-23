@@ -28,7 +28,7 @@
     }
 
     &-ornament {
-        text-align: right;
+        text-align: center;
         width: 1em;
         color: $link;
     }
@@ -51,13 +51,13 @@
         &:ltr {
             padding: .5em 1em .5em 0;
             > * { margin: 0 .6em 0 0; }
-            .popup-menu-ornament { margin: 0 .2em 0 .2em !important; }
+            .popup-menu-ornament { margin: 0 .1em 0 .2em !important; }
         }
 
         &:rtl {
             padding: .5em 0 .5em 1em;
             > * { margin: 0 0 0 .6em; }
-            .popup-menu-ornament { margin: 0 .2em 0 .2em !important; }
+            .popup-menu-ornament { margin: 0 .2em 0 .1em !important; }
         }
 
         &:checked {

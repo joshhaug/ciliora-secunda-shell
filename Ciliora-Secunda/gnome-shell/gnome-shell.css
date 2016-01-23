@@ -2014,7 +2014,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-ornament {
-  text-align: right;
+  text-align: center;
   width: 1em;
   color: #8ab2d5;
 }
@@ -2044,7 +2044,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-item:ltr .popup-menu-ornament {
-  margin: 0 .2em 0 .2em !important;
+  margin: 0 .1em 0 .2em !important;
 }
 
 .popup-menu-item:rtl {
@@ -2056,7 +2056,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-item:rtl .popup-menu-ornament {
-  margin: 0 .2em 0 .2em !important;
+  margin: 0 .2em 0 .1em !important;
 }
 
 .popup-menu-item:checked {
