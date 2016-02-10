@@ -2,13 +2,21 @@
 
 ---
 
+* [Compatibility](#compatibility)
 * [Installation](#installation)
 * [Login Screen](#login-screen)
 * [Tips](#tips)
-* [Compatibility](#compatibility)
 * [Contributing](CONTRIBUTING.md)
 * [Development](#development)
 * [Preview](#preview)
+
+---
+
+####Compatibility
+
+The latest version of this theme is on the master branch, and it supports gnome-shell `3.18`.
+
+For older versions, check the available [releases](../../releases).
 
 ---
 
@@ -41,14 +49,6 @@ In order to apply this theme to your login screen, move the `gnome-shell-theme.g
 * To remove/change the activities icon, edit the gnome-shell.css file at selector `#panelActivities`. If you don't want to use an icon here, just get rid of that selector. The `menu-icons` folder contains a bunch of icons that you can try. :smile:
 
 * To increase the max height of the calendar popup, edit the gnome-shell.css file at selector `#calendarArea`.
-
----
-
-####Compatibility
-
-The latest version of this theme is on the master branch, and it supports gnome-shell `3.18`.
-
-For older versions, check the available [releases](../../releases).
 
 ---
 
