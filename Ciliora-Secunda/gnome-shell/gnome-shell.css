@@ -4448,7 +4448,7 @@ StEntry:insensitive StIcon,
    ! Login and Lock Screen
    ===================================================================*/
 #lockDialogGroup {
-  background: #303030 url(resource:///org/gnome/shell/theme/overview-pattern.svg);
+  background: #303030 url("overview-assets/overview-pattern.svg");
   background-repeat: repeat;
 }
 
@@ -4471,7 +4471,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog .framed-user-icon {
-  border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 6;
+  border-image: url("overview-assets/overview-dark-bg.svg") 6;
   background-size: contain;
   color: white;
   padding: 6px;
@@ -4565,7 +4565,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog-user-list-view StButton#vhandle,
 .login-dialog-user-list-view StButton#hhandle {
-  border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle.svg) 6;
+  border-image: url("widget-assets/overview-scroll-handle.svg") 6;
 }
 
 .login-dialog-user-list-view StButton#vhandle:hover,
@@ -4574,7 +4574,7 @@ StEntry:insensitive StIcon,
 .login-dialog-user-list-view StButton#hhandle:focus,
 .login-dialog-user-list-view StButton#vhandle:active,
 .login-dialog-user-list-view StButton#hhandle:active {
-  border-image: url(resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg) 6;
+  border-image: url("widget-assets/overview-scroll-handle-hover.svg") 6;
 }
 
 .login-dialog-user-list {
@@ -4584,15 +4584,15 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
-  border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 6;
+  border-image: url("overview-assets/overview-light-bg.svg") 6;
 }
 
 .login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
-  border-image: url(resource:///org/gnome/shell/theme/user-logged-in.svg) 6;
+  border-image: url("overview-assets/user-logged-in.svg") 6;
 }
 
 .login-dialog-user-list-item {
-  border-image: url(resource:///org/gnome/shell/theme/overview-dark-bg.svg) 6;
+  border-image: url("overview-assets/overview-dark-bg.svg") 6;
   padding: 2px 2px 0 2px;
   color: #fff;
 }
@@ -4606,7 +4606,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-user-list-item:hover {
-  border-image: url(resource:///org/gnome/shell/theme/overview-light-bg.svg) 6;
+  border-image: url("overview-assets/overview-light-bg.svg") 6;
 }
 
 .login-dialog-user-list-item .login-dialog-timed-login-indicator {
@@ -4631,7 +4631,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog .modal-dialog-button:default,
 .login-dialog .modal-dialog-button {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button.svg") 10;
+  border-image: url("button-assets/overview-button.svg") 10;
   padding: 10px 30px;
   -st-natural-width: 30px;
   font-weight: bold;
@@ -4640,34 +4640,34 @@ StEntry:insensitive StIcon,
 
 .login-dialog .modal-dialog-button:default:hover,
 .login-dialog .modal-dialog-button:hover {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-hover.svg") 10;
+  border-image: url("button-assets/overview-button-hover.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:focus,
 .login-dialog .modal-dialog-button:focus {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-focused.svg") 10;
+  border-image: url("button-assets/overview-button-focused.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:pressed,
 .login-dialog .modal-dialog-button:active,
 .login-dialog .modal-dialog-button:pressed {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-pressed.svg") 10;
+  border-image: url("button-assets/overview-button-pressed.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:focus:hover,
 .login-dialog .modal-dialog-button:focus:hover {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-hover.svg") 10;
+  border-image: url("button-assets/overview-button-focused-hover.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:focus:active, .login-dialog .modal-dialog-button:default:focus:pressed,
 .login-dialog .modal-dialog-button:focus:active,
 .login-dialog .modal-dialog-button:focus:pressed {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-focused-pressed.svg") 10;
+  border-image: url("button-assets/overview-button-focused-pressed.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:insensitive,
 .login-dialog .modal-dialog-button:insensitive {
-  border-image: url("resource:///org/gnome/shell/theme/overview-button-insensitive.svg") 10;
+  border-image: url("button-assets/overview-button-insensitive.svg") 10;
   color: rgba(255, 255, 255, 0.15);
 }
 
@@ -4735,7 +4735,7 @@ StEntry:insensitive StIcon,
 }
 
 .screen-shield-arrows {
-  background-image: url("resource:///org/gnome/shell/theme/lock.svg");
+  background-image: url("misc-assets/lock.svg");
   padding-bottom: 2.8em;
 }
 
@@ -4778,7 +4778,7 @@ StEntry:insensitive StIcon,
 
 .screen-shield-notifications-container .notification,
 .screen-shield-notifications-container .screen-shield-notification-source {
-  border-image: url("resource:///org/gnome/shell/theme/overview-light-bg.svg") 6;
+  border-image: url("overview-assets/overview-light-bg.svg") 6;
   padding: .6em;
   color: white;
   font-family: Droid Sans, sans-serif;
@@ -4802,15 +4802,15 @@ StEntry:insensitive StIcon,
 }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle.svg") 4;
+  border-image: url("widget-assets/overview-scroll-handle.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
+  border-image: url("widget-assets/overview-scroll-handle-hover.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
-  border-image: url("resource:///org/gnome/shell/theme/overview-scroll-handle-hover.svg") 4;
+  border-image: url("widget-assets/overview-scroll-handle-hover.svg") 4;
 }
 
 /* =====================================================
