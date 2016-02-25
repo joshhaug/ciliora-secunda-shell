@@ -2,21 +2,13 @@
 
 ---
 
-* [Compatibility](#compatibility)
 * [Installation](#installation)
 * [Login Screen](#login-screen)
 * [Tips](#tips)
+* [Compatibility](#compatibility)
 * [Contributing](CONTRIBUTING.md)
 * [Development](#development)
 * [Preview](#preview)
-
----
-
-####Compatibility
-
-The latest version of this theme is on the master branch, and it supports gnome-shell `3.18`.
-
-For older versions, check the available [releases](../../releases).
 
 ---
 
@@ -49,6 +41,14 @@ In order to apply this theme to your login screen, move the `gnome-shell-theme.g
 * To remove/change the activities icon, edit the gnome-shell.css file at selector `#panelActivities`. If you don't want to use an icon here, just get rid of that selector. The `menu-icons` folder contains a bunch of icons that you can try. :smile:
 
 * To increase the max height of the calendar popup, edit the gnome-shell.css file at selector `#calendarArea`.
+
+---
+
+####Compatibility
+
+The latest version of this theme is on the master branch, and it supports gnome-shell `3.18`.
+
+For older versions, check the available [releases](../../releases).
 
 ---
 
@@ -96,6 +96,21 @@ You should use the provided `gulpfile.js` for improved workflow.
 * **Compile sass** whenever certain files change. _(Open `gulpfile.js` to see what files/folders are being watched.)_
 
 * **Autoreload the theme** on save. _(No more `alt-f2 + rt`. :+1:)_
+
+---
+
+#####Generating the gresource file
+
+You can use the provided `gresource-gen.sh` script to generate a gresource from the theme (into the repo's root dir by default.)  
+Make sure to update the `asset_dirs` variable in case you change your dirs.
+
+**Script dependencies:**
+
+* gjs
+* glib-compile-schemas
+* gdk-pixbuf-pixdata
+
+**You should know how to restore the default theme in case the generated file is not working and crashes gnome-shell.**
 
 ---
 
