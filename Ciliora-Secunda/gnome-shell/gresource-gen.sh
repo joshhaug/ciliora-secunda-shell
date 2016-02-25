@@ -84,9 +84,9 @@ echo "<file>gnome-shell.css</file></gresource></gresources>" >> "${tmp_dir}"/gno
 #   Create gresource file
 #======================================
 
- glib-compile-resources --sourcedir="$tmp_dir" \
-                        --target="$gresource_dest" \
-                        "${tmp_dir}"/gnome-shell-theme.gresource.xml
+glib-compile-resources --sourcedir="$tmp_dir" \
+                       --target="$gresource_dest" \
+                       "${tmp_dir}"/gnome-shell-theme.gresource.xml
 
 
 exit
