@@ -22,8 +22,9 @@ gresource_dest="../../gnome-shell-theme.gresource"
 #======================================
 #   Copy all assets into tmp_dir
 #
-#   Gresource doesn't seem to work well
-#   when the assets aren't in one dir
+#   GDM seems to have some trouble
+#   when the assets aren't in the same
+#   dir as the .xml file
 #======================================
 
 trap 'rm -rf $tmp_dir; exit' INT TERM EXIT
@@ -40,16 +41,14 @@ find "${asset_dirs[@]}" -type f -execdir cp -f {} "${PWD}/${tmp_dir}/" \;
 #
 # Patterns
 #
-printf -v regex "%s\\|" "${asset_dirs[@]}"
+printf -v regex "%s/|" "${asset_dirs[@]}"
 
-regex=${regex%\\|}  # remove trailing "\|"
-
-replace="resource\:\/\/\/org\/gnome\/shell\/theme"
+regex=${regex%|}  # remove trailing "|"
 
 #
 # Create modified gnome-shell.css file
 #
-sed "s/${regex}/${replace}/" "$css_file" > ${tmp_dir}/gnome-shell.css
+sed -r "s:${regex}::" "$css_file" > "${tmp_dir}"/gnome-shell.css
 
 
 #======================================
@@ -68,16 +67,17 @@ echo "<?xml version='1.0' encoding='UTF-8'?><gresources><gresource prefix='/org/
 for i in "${tmp_dir}"/*; do
 
     # Only loop over png's & svg's
-    if [ "${i##*.}" != "svg" ] && \
-       [ "${i##*.}" != "png" ]; then continue; fi
+    [ "${i##*.}" != "svg" ] && [ "${i##*.}" != "png" ] && continue
 
-    echo "<file preprocess='to-pixdata'>${i##*/}</file>" >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
+    echo "<file preprocess='to-pixdata'>${i##*/}</file>" \
+         >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
 done
 
 #
 # Close outer tags
 #
-echo "<file>gnome-shell.css</file></gresource></gresources>" >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
+echo "<file>gnome-shell.css</file></gresource></gresources>" \
+     >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
 
 
 #======================================
