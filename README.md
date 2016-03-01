@@ -101,7 +101,7 @@ You should use the provided `gulpfile.js` for improved workflow.
 
 #####Generating the gresource file
 
-You can use the provided `gresource-gen.sh` script to generate a gresource from the theme (into the repo's root dir by default.)  
+You can use the provided `gresource-gen` script to generate a gresource from the theme (into the repo's root dir by default.)  
 Make sure to update the `asset_dirs` variable in case you change your dirs.
 
 **Script dependencies:**
