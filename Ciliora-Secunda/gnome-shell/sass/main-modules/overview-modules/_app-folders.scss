@@ -13,7 +13,7 @@
 }
 
 .app-folder-popup-bin {
-    border-image: url("background-assets/popup-inside.svg") 8;
+    border-image: url("container--widgets/popup-inside.svg") 8;
     padding: 11px 11px 0 11px;
 
     StScrollBar {
@@ -29,7 +29,7 @@
     .app-well-app:selected .overview-icon,
     .app-well-app:active .overview-icon,
     .app-well-app:checked .overview-icon {
-        border-image: url("background-assets/hover-popup.svg") 7;
+        border-image: url("container--widgets/hover-popup.svg") 7;
         color: $text-primary;
     }
 }
@@ -41,6 +41,6 @@
 }
 
 .app-folder .overview-icon {
-    border-image: url("overview-assets/overview-dark-bg.svg") 7;
+    border-image: url("overview--widgets/overview-dark-bg.svg") 7;
     text-align: center;
 }

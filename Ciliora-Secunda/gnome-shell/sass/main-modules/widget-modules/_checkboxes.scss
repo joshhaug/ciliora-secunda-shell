@@ -14,18 +14,18 @@
 
     StBin {
         @include size(17px);
-        background-image: url("widget-assets/check-box.svg");
+        background-image: url("control--widgets/check-box.svg");
     }
 
     &:focus StBin {
-        background-image: url("widget-assets/check-box-focused.svg");
+        background-image: url("control--widgets/check-box-focused.svg");
     }
 
     &:checked StBin {
-        background-image: url("widget-assets/check-box-checked.svg");
+        background-image: url("control--widgets/check-box-checked.svg");
     }
 
     &:focus:checked StBin {
-        background-image: url("widget-assets/check-box-focused-checked.svg");
+        background-image: url("control--widgets/check-box-focused-checked.svg");
     }
 }

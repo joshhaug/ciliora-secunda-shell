@@ -14,7 +14,7 @@
 }
 
 .candidate-popup-content {
-    border-image: url("background-assets/popup-inside.svg") 7;
+    border-image: url("container--widgets/popup-inside.svg") 7;
     padding: .2em;
     spacing: .5em;
     color: $text-primary;
@@ -38,7 +38,7 @@
     font-weight: bold;
     font-size: 10pt;
     padding: .7em;
-    border-image: url("background-assets/sub.svg") 7;
+    border-image: url("container--widgets/sub.svg") 7;
 }
 
 .candidate-box {
@@ -47,7 +47,7 @@
 
     &:selected,
     &:hover {
-        border-image: url("background-assets/hover-popup.svg") 7;
+        border-image: url("container--widgets/hover-popup.svg") 7;
     }
 
     .vertical & {

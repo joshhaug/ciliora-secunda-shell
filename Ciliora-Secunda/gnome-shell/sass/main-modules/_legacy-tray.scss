@@ -8,11 +8,11 @@
     padding: 0;
 
     &:ltr > StBoxLayout {
-        border-image: url("background-assets/legacy-tray-bg-ltr.svg") 10;
+        border-image: url("container--widgets/legacy-tray-bg-ltr.svg") 10;
     }
 
     &:rtl > StBoxLayout {
-        border-image: url("background-assets/legacy-tray-bg-rtl.svg") 10;
+        border-image: url("container--widgets/legacy-tray-bg-rtl.svg") 10;
     }
 }
 
@@ -45,7 +45,7 @@
         padding: 4px;
 
         &:hover, &:focus {
-            border-image: url("background-assets/hover.svg") 6;
+            border-image: url("container--widgets/hover.svg") 6;
         }
     }
 }

@@ -21,12 +21,12 @@ StScrollBar {
 
     StButton#vhandle,
     StButton#hhandle {
-        border-image: url("widget-assets/scroll-handle.svg") 4;
+        border-image: url("control--widgets/scroll-handle.svg") 4;
         border: 0 solid !important;
         margin: 0 !important;
 
         &:hover, &:focus, &:active {
-            border-image: url("widget-assets/scroll-handle-hover.svg") 4;
+            border-image: url("control--widgets/scroll-handle-hover.svg") 4;
         }
     }
 }

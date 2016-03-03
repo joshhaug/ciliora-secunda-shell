@@ -77,7 +77,7 @@
     &:focus:grayed,
     &:focus:disabled,
     &:focus:insensitive {
-        border-image: url("button-assets/button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/button-#{$bg}__#{$position}.svg") 10;
         color: $text-disabled;
         StIcon { color: $text-disabled; }
     }
@@ -85,48 +85,48 @@
 
     // No mod
     @if $mod == false {
-        border-image: url("button-assets/button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/button-#{$bg}__#{$position}.svg") 10;
         color: $color;
         StIcon { color: $color; }
 
         &:hover {
-            border-image: url("button-assets/button-#{$bg}__#{$position}--hover.svg") 10;
+            border-image: url("button--widgets/button-#{$bg}__#{$position}--hover.svg") 10;
         }
 
         &:active,
         &:pressed {
-            border-image: url("button-assets/button-#{$bg}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/button-#{$bg}__#{$position}--pressed.svg") 10;
         }
 
         &:focus,
         &:selected {
-            border-image: url("button-assets/button-#{$bg-focus}__#{$position}.svg") 10;
+            border-image: url("button--widgets/button-#{$bg-focus}__#{$position}.svg") 10;
             color: $color-focus;
             StIcon { color: $color; }
         }
 
         &:focus:hover {
-            border-image: url("button-assets/button-#{$bg-focus}__#{$position}--hover.svg") 10;
+            border-image: url("button--widgets/button-#{$bg-focus}__#{$position}--hover.svg") 10;
         }
 
         &:focus:active,
         &:focus:pressed,
         &:focus:selected {
-            border-image: url("button-assets/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
         }
     }
 
 
     // Mod style
     @if $mod == true {
-        border-image: url("button-assets/button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/button-#{$bg}__#{$position}.svg") 10;
         color: $color;
         StIcon { color: $color; }
 
         &:hover,
         &:focus,
         &:focus:hover {
-            border-image: url("button-assets/button-#{$bg-focus}__#{$position}--hover.svg") 10;
+            border-image: url("button--widgets/button-#{$bg-focus}__#{$position}--hover.svg") 10;
             color: $color-focus;
             StIcon { color: $color-focus; }
         }
@@ -137,7 +137,7 @@
         &:focus:active,
         &:focus:pressed,
         &:focus:selected {
-            border-image: url("button-assets/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
             color: $color-focus;
             StIcon { color: $color-focus; }
         }
@@ -180,7 +180,7 @@
     &:focus:grayed,
     &:focus:disabled,
     &:focus:insensitive {
-        border-image: url("button-assets/dialog-button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/dialog-button-#{$bg}__#{$position}.svg") 10;
         color: $text-disabled;
         StIcon { color: $text-disabled; }
     }
@@ -188,48 +188,48 @@
 
     // No mod
     @if $mod == false {
-        border-image: url("button-assets/dialog-button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/dialog-button-#{$bg}__#{$position}.svg") 10;
         color: $color;
         StIcon { color: $color; }
 
         &:hover {
-            border-image: url("button-assets/dialog-button-#{$bg}__#{$position}--hover.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg}__#{$position}--hover.svg") 10;
         }
 
         &:active,
         &:pressed,
         &:selected {
-            border-image: url("button-assets/dialog-button-#{$bg}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg}__#{$position}--pressed.svg") 10;
         }
 
         &:focus {
-            border-image: url("button-assets/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
             color: $color-focus;
             StIcon { color: $color; }
         }
 
         &:focus:hover {
-            border-image: url("button-assets/dialog-button-#{$bg-focus}__#{$position}--hover.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg-focus}__#{$position}--hover.svg") 10;
         }
 
         &:focus:active,
         &:focus:pressed,
         &:focus:selected {
-            border-image: url("button-assets/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
         }
     }
 
 
     // Mod style
     @if $mod == true {
-        border-image: url("button-assets/dialog-button-#{$bg}__#{$position}.svg") 10;
+        border-image: url("button--widgets/dialog-button-#{$bg}__#{$position}.svg") 10;
         color: $color;
         StIcon { color: $color; }
 
         &:hover,
         &:focus,
         &:focus:hover {
-            border-image: url("button-assets/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
             color: $color-focus;
             StIcon { color: $color-focus; }
         }
@@ -240,7 +240,7 @@
         &:focus:active,
         &:focus:pressed,
         &:focus:selected {
-            border-image: url("button-assets/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
+            border-image: url("button--widgets/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
         }
     }
 }

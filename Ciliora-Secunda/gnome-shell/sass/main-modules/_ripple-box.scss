@@ -4,9 +4,9 @@
 
 .ripple-box {
     @include size(12px);
-    background-image: url("misc-assets/corner-ripple-ltr.svg");
+    background-image: url("misc--widgets/corner-ripple-ltr.svg");
 
     &:rtl {
-        background-image: url("misc-assets/corner-ripple-rtla.svg");
+        background-image: url("misc--widgets/corner-ripple-rtla.svg");
     }
 }

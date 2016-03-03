@@ -6,14 +6,14 @@
     background-gradient-direction: none !important;
     background-color: transparent !important;
     border-bottom-width: 0 !important;
-    border-image: url("panel-assets/panel-top.svg") 4;
+    border-image: url("panel--widgets/panel-top.svg") 4;
     height: 2em;
     font-weight: bold;
 
     &.unlock-screen,
     &.lock-screen {
         background-color: transparent;
-        border-image: url("panel-assets/panel-top.svg") 4;
+        border-image: url("panel--widgets/panel-top.svg") 4;
     }
 
     &Left, &Center, &Right {
@@ -47,7 +47,7 @@
     }
 
     .panel-button:hover {
-        border-image: url("panel-assets/panel-top-item-blue.svg") 6;
+        border-image: url("panel--widgets/panel-top-item-blue.svg") 6;
     }
 
     .panel-button:active,
@@ -58,7 +58,7 @@
         background-color: transparent !important;
         box-shadow: inset 0 0 transparent !important;
 
-        border-image: url("panel-assets/panel-top-item-blue-active.svg") 6;
+        border-image: url("panel--widgets/panel-top-item-blue-active.svg") 6;
     }
 
     .panel-button:active   > .system-status-icon,
@@ -122,7 +122,7 @@
 }
 
 #appMenu {
-    spinner-image: url("misc-assets/process-working.svg");
+    spinner-image: url("misc--widgets/process-working.svg");
     padding: 0 8px;
 
     // this targets the spinner image

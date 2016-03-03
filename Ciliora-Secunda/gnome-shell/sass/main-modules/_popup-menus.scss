@@ -7,7 +7,7 @@
     min-width: 100px;
 
     > * > * > * {
-        border-image: url("background-assets/popup-inside.svg") 9;
+        border-image: url("container--widgets/popup-inside.svg") 9;
     }
 
     &-boxpointer {
@@ -68,7 +68,7 @@
 
         &:active,
         &.selected {
-            border-image: url("background-assets/hover-popup.svg") 9;
+            border-image: url("container--widgets/hover-popup.svg") 9;
             * { color: $text-primary !important; }
         }
 
@@ -99,7 +99,7 @@
 }
 
 .popup-sub-menu {
-    border-image: url("background-assets/submenu-bg.svg") 7;
+    border-image: url("container--widgets/submenu-bg.svg") 7;
     box-shadow: 0 0 rgba(0, 0, 0, 0);
     padding: 12px 0;
 
@@ -109,13 +109,13 @@
 
     .popup-menu-item:active,
     .popup-menu-item.selected {
-        border-image: url("background-assets/hover-popup.svg") 9;
+        border-image: url("container--widgets/hover-popup.svg") 9;
         color: $text-primary;
     }
 }
 
 .popup-separator-menu-item {
-    background-image: url("misc-assets/separator.svg");
+    background-image: url("misc--widgets/separator.svg");
     background-repeat: repeat;
     height: 13px;
     margin: 0;

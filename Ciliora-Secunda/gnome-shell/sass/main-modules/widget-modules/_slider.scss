@@ -10,14 +10,14 @@
     -slider-border-width: 1px;
     -slider-handle-radius: 4px;
     color: $text-primary;
-    border-image: url("widget-assets/slider.svg") 9 6 8 8;
+    border-image: url("control--widgets/slider.svg") 9 6 8 8;
     border: 0 solid transparent;
     border-right-width: 1px;
     border-left-width: 1px;
     height: 16px;
 
     .popup-menu-item.selected & {
-        border-image: url("widget-assets/slider-hover.svg") 9 6 8 8;
+        border-image: url("control--widgets/slider-hover.svg") 9 6 8 8;
        -slider-handle-radius: 5px;
     }
 }

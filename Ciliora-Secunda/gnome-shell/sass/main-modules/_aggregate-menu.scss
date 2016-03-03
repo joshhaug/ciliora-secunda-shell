@@ -29,7 +29,7 @@
         border-radius: 0;
         padding: 10px;
         border: 0 solid transparent !important;
-        border-image: url("background-assets/hover.svg") 6;
+        border-image: url("container--widgets/hover.svg") 6;
     }
 
     > StIcon { icon-size: 16px; }
@@ -38,14 +38,14 @@
 .aggregate-menu {
     .system-menu-action:last-child {
         &:hover, &:focus, &:active {
-            border-image: url("background-assets/hover-red.svg") 6;
+            border-image: url("container--widgets/hover-red.svg") 6;
         }
     }
 
     // fix for media player extension
     .popup-sub-menu .system-menu-action:last-child {
         &:hover, &:focus, &:active {
-            border-image: url("background-assets/hover.svg") 6;
+            border-image: url("container--widgets/hover.svg") 6;
         }
     }
 }

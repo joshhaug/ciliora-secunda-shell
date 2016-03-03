@@ -7,7 +7,7 @@
         border-radius: 0;
         border: 0;
 
-        border-image: url("widget-assets/entry.svg") 6;
+        border-image: url("control--widgets/entry.svg") 6;
         padding: .5em !important;
         min-height: 1.2em;
         width: $width;
@@ -26,7 +26,7 @@
     }
 
     @else if $t==focus {
-        border-image: url("widget-assets/entry-focused.svg") 6;
+        border-image: url("control--widgets/entry-focused.svg") 6;
         font-size: 10pt;
         font-weight: bold;
         padding: .5em !important;
@@ -44,7 +44,7 @@
     }
 
     @else if $t==insensitive {
-        border-image: url("widget-assets/entry-insensitive.svg") 6;
+        border-image: url("control--widgets/entry-insensitive.svg") 6;
         width: $width;
         color: $text-secondary;
 
@@ -54,7 +54,7 @@
     }
 
     @else if $t==normal--dark {
-        border-image: url("overview-assets/overview-dark-bg.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg.svg") 7;
         border-radius: 0;
         padding: .6em !important;
         min-height: 1.3em;
@@ -80,7 +80,7 @@
     @else if $t==focus--dark {
         border-width: 0;
 
-        border-image: url("overview-assets/overview-light-bg.svg") 7;
+        border-image: url("overview--widgets/overview-light-bg.svg") 7;
         padding: .6em !important;
         min-height: 1.3em;
         width: $width;

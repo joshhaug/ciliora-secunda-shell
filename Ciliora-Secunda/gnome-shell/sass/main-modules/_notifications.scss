@@ -16,7 +16,7 @@
     border: 0 solid transparent !important;
 
     > StBoxLayout {
-        border-image: url("background-assets/popup.svg") 7;
+        border-image: url("container--widgets/popup.svg") 7;
         padding: 3px 3px 0px 3px;
     }
 
@@ -101,7 +101,7 @@
 }
 
 .chat-received {
-    border-image: url("background-assets/light-bg-bubble-right.svg") 7 11 7 9;
+    border-image: url("container--widgets/light-bg-bubble-right.svg") 7 11 7 9;
     padding: 1em 1.6em 1em 1em;
     margin-left: 2em;
     font-weight: bold;
@@ -112,7 +112,7 @@
 }
 
 .chat-sent {
-    border-image: url("background-assets/light-bg-bubble-left.svg") 11 7 9 7;
+    border-image: url("container--widgets/light-bg-bubble-left.svg") 11 7 9 7;
     padding: 1em 1em 1em 1.6em;
     margin-left: 0;
     color: $text-primary;

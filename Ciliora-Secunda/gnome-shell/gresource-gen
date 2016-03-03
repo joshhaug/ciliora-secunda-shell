@@ -4,13 +4,13 @@
 #======================================
 #   Global Variables
 #======================================
-declare -a asset_dirs=( "background-assets"
-                        "button-assets"
+declare -a asset_dirs=( "container--widgets"
+                        "button--widgets"
                         "menu-icons"
-                        "misc-assets"
-                        "overview-assets"
-                        "panel-assets"
-                        "widget-assets" )
+                        "misc--widgets"
+                        "overview--widgets"
+                        "panel--widgets"
+                        "control--widgets" )
 
 tmp_dir=".tmp"
 

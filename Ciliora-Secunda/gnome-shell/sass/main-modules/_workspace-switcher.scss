@@ -14,14 +14,14 @@
     }
 
     &-container {
-        border-image: url("background-assets/popup-outside.svg") 7;
+        border-image: url("container--widgets/popup-outside.svg") 7;
         padding: 2px !important;
         border: 0;
     }
 }
 
 .ws-switcher-active-up, .ws-switcher-active-down {
-    border-image: url("background-assets/popup-inside-2-active.svg") 7;
+    border-image: url("container--widgets/popup-inside-2-active.svg") 7;
     height: 30px;
     background-image: none !important;
     background-color: transparent !important;
@@ -29,7 +29,7 @@
 }
 
 .ws-switcher-box {
-    border-image: url("background-assets/popup-inside-2.svg") 7;
+    border-image: url("container--widgets/popup-inside-2.svg") 7;
     height: 30px;
     border: 0 solid rgba(0, 0, 0, 0) !important;
     background: transparent;

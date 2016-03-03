@@ -9,7 +9,7 @@
     background-color: transparent !important;
     border: 0 transparent !important;
 
-    border-image: url("overview-assets/workspace-bg--ltr.svg") 7;
+    border-image: url("overview--widgets/workspace-bg--ltr.svg") 7;
     visible-width: 4px;
     spacing: 10px;
     padding: 10px 10px 10px 12px;
@@ -17,7 +17,7 @@
     color: $text-primary-invert;
 
       &:rtl {
-        border-image: url("overview-assets/workspace-bg--rtl.svg") 7;
+        border-image: url("overview--widgets/workspace-bg--rtl.svg") 7;
         padding: 10px 12px 10px 10px;
       }
 }
@@ -28,10 +28,10 @@
     border-bottom-width: 1px;
 
     &:ltr {
-        border-image: url("overview-assets/workspace-indicator--ltr.svg") 10;
+        border-image: url("overview--widgets/workspace-indicator--ltr.svg") 10;
     }
 
     &:rtl {
-        border-image: url("overview-assets/workspace-indicator--rtl.svg") 10;
+        border-image: url("overview--widgets/workspace-indicator--rtl.svg") 10;
     }
 }

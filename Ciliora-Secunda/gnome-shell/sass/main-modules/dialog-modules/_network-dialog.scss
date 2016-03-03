@@ -50,7 +50,7 @@
 
     &-scroll-view {
         border: 0 transparent !important;
-        border-image: url("background-assets/dark-bg.svg") 6;
+        border-image: url("container--widgets/dark-bg.svg") 6;
         padding: 8px;
         padding-right: 0;
 
@@ -73,7 +73,7 @@
     &-item:selected {
         background-color: transparent !important;
         color: $text-primary;
-        border-image: url("background-assets/hover.svg") 6;
+        border-image: url("container--widgets/hover.svg") 6;
 
         .nm-dialog-icon { color: $text-primary; }
     }

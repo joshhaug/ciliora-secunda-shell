@@ -42,7 +42,7 @@
     background: rgba(0, 0, 0, 0);
     border: none;
     color: $text-primary;
-    border-image: url("overview-assets/overview-light-bg.svg") 6;
+    border-image: url("overview--widgets/overview-light-bg.svg") 6;
 }
 
 .search-display {
@@ -52,10 +52,10 @@
 
         StButton#vhandle,
         StButton#hhandle {
-            border-image: url("widget-assets/overview-scroll-handle.svg") 5;
+            border-image: url("control--widgets/overview-scroll-handle.svg") 5;
 
             &:hover, &:focus, &:active {
-                border-image: url("widget-assets/overview-scroll-handle-hover.svg") 5;
+                border-image: url("control--widgets/overview-scroll-handle-hover.svg") 5;
             }
         }
     }
@@ -68,7 +68,7 @@
 .list-search-results {
     spacing: 0;
     padding: 0;
-    border-image: url("overview-assets/search-list-border-left.svg") 6;
+    border-image: url("overview--widgets/search-list-border-left.svg") 6;
 }
 
 .list-search-result {
@@ -79,23 +79,23 @@
     spacing: 0;
     transition-duration: 0ms !important;
     text-align: center;
-    border-image: url("overview-assets/search-list-border-bottom.svg") 6;
+    border-image: url("overview--widgets/search-list-border-bottom.svg") 6;
 
     &:hover, &:focus, &:active {
-        border-image: url("overview-assets/search-list-hover.svg") 6;
+        border-image: url("overview--widgets/search-list-hover.svg") 6;
     }
 
     &:last-child {
         border-image: none;
 
         &:hover, &:focus, &:selected, &:active {
-            border-image: url("overview-assets/search-list-hover-last-child.svg") 6;
+            border-image: url("overview--widgets/search-list-hover-last-child.svg") 6;
         }
     }
 
     &:first-child {
         &:hover, &:focus, &:selected, &:active {
-            border-image: url("overview-assets/search-list-hover-first-child.svg") 6;
+            border-image: url("overview--widgets/search-list-hover-first-child.svg") 6;
         }
     }
 }
@@ -142,7 +142,7 @@
 
 .search-provider-icon-more {
     @include size(48px);
-    background-image: url("overview-assets/search-provider-overlay.svg");
+    background-image: url("overview--widgets/search-provider-overlay.svg");
 }
 
 .search-provider-icon {
@@ -153,6 +153,6 @@
     padding: 14px;
 
     &:hover, &:focus, &:selected, &:active {
-        border-image: url("overview-assets/search-provider-hover.svg") 6;
+        border-image: url("overview--widgets/search-provider-hover.svg") 6;
     }
 }

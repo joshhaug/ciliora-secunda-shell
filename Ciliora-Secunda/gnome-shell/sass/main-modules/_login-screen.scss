@@ -3,7 +3,7 @@
    ===================================================================*/
 
 #lockDialogGroup {
-    background: #303030 url("overview-assets/overview-pattern.svg");
+    background: #303030 url("overview--widgets/overview-pattern.svg");
     background-repeat: repeat;
 }
 
@@ -25,7 +25,7 @@
     }
 
     .framed-user-icon {
-        border-image: url("overview-assets/overview-dark-bg.svg") 6;
+        border-image: url("overview--widgets/overview-dark-bg.svg") 6;
         background-size: contain;
         color: $text-primary;
         padding: 6px;
@@ -122,7 +122,7 @@
 
         StButton#vhandle,
         StButton#hhandle {
-            border-image: url("widget-assets/overview-scroll-handle.svg") 6;
+            border-image: url("control--widgets/overview-scroll-handle.svg") 6;
         }
 
         StButton#vhandle:hover,
@@ -131,7 +131,7 @@
         StButton#hhandle:focus,
         StButton#vhandle:active,
         StButton#hhandle:active {
-            border-image: url("widget-assets/overview-scroll-handle-hover.svg") 6;
+            border-image: url("control--widgets/overview-scroll-handle-hover.svg") 6;
         }
     }
 
@@ -142,17 +142,17 @@
 
         &:expanded {
             .login-dialog-user-list-item:focus {
-                border-image: url("overview-assets/overview-light-bg.svg") 6;
+                border-image: url("overview--widgets/overview-light-bg.svg") 6;
             }
 
             .login-dialog-user-list-item:logged-in {
-                border-image: url("overview-assets/user-logged-in.svg") 6;
+                border-image: url("overview--widgets/user-logged-in.svg") 6;
             }
         }
     }
 
     &-user-list-item {
-        border-image: url("overview-assets/overview-dark-bg.svg") 6;
+        border-image: url("overview--widgets/overview-dark-bg.svg") 6;
         padding: 2px 2px 0 2px;
         color: #fff;
 
@@ -165,7 +165,7 @@
         }
 
         &:hover {
-            border-image: url("overview-assets/overview-light-bg.svg") 6;
+            border-image: url("overview--widgets/overview-light-bg.svg") 6;
         }
 
         .login-dialog-timed-login-indicator {
@@ -194,36 +194,36 @@
 
     .modal-dialog-button:default,
     .modal-dialog-button {
-        border-image: url("button-assets/overview-button.svg") 10;
+        border-image: url("button--widgets/overview-button.svg") 10;
         padding: 10px 30px;
         -st-natural-width: 30px;
         font-weight: bold;
         color: #fff;
 
         &:hover {
-            border-image: url("button-assets/overview-button-hover.svg") 10;
+            border-image: url("button--widgets/overview-button-hover.svg") 10;
         }
 
         &:focus {
-            border-image: url("button-assets/overview-button-focused.svg") 10;
+            border-image: url("button--widgets/overview-button-focused.svg") 10;
         }
 
         &:active,
         &:pressed {
-            border-image: url("button-assets/overview-button-pressed.svg") 10;
+            border-image: url("button--widgets/overview-button-pressed.svg") 10;
         }
 
         &:focus:hover {
-            border-image: url("button-assets/overview-button-focused-hover.svg") 10;
+            border-image: url("button--widgets/overview-button-focused-hover.svg") 10;
         }
 
         &:focus:active,
         &:focus:pressed {
-            border-image: url("button-assets/overview-button-focused-pressed.svg") 10;
+            border-image: url("button--widgets/overview-button-focused-pressed.svg") 10;
         }
 
         &:insensitive {
-            border-image: url("button-assets/overview-button-insensitive.svg") 10;
+            border-image: url("button--widgets/overview-button-insensitive.svg") 10;
             color: $text-disabled;
         }
     }
@@ -257,7 +257,7 @@
 }
 
 .screen-shield-arrows {
-    background-image: url("misc-assets/lock.svg");
+    background-image: url("misc--widgets/lock.svg");
     padding-bottom: 2.8em;
 }
 
@@ -300,7 +300,7 @@
 
 .screen-shield-notifications-container .notification,
 .screen-shield-notifications-container .screen-shield-notification-source {
-    border-image: url("overview-assets/overview-light-bg.svg") 6;
+    border-image: url("overview--widgets/overview-light-bg.svg") 6;
     padding: .6em;
     color: $text-primary;
     font-family: Droid Sans, sans-serif;
@@ -324,13 +324,13 @@
 }
 
 #screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
-    border-image: url("widget-assets/overview-scroll-handle.svg") 4;
+    border-image: url("control--widgets/overview-scroll-handle.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
-    border-image: url("widget-assets/overview-scroll-handle-hover.svg") 4;
+    border-image: url("control--widgets/overview-scroll-handle-hover.svg") 4;
 }
 
 #screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
-    border-image: url("widget-assets/overview-scroll-handle-hover.svg") 4;
+    border-image: url("control--widgets/overview-scroll-handle-hover.svg") 4;
 }

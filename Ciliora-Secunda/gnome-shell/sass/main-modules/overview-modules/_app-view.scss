@@ -32,7 +32,7 @@
 }
 
 .app-well-app-running-dot {
-    background-image: url("overview-assets/running1.svg");
+    background-image: url("overview--widgets/running1.svg");
     @include size(28px, 4px);
     background-color: transparent;
     margin-bottom: 0;
@@ -69,6 +69,6 @@
     .grid-search-result:selected &,
     .grid-search-result:active &,
     .grid-search-result:checked & {
-        border-image: url("overview-assets/overview-light-bg.svg") 7;
+        border-image: url("overview--widgets/overview-light-bg.svg") 7;
     }
 }

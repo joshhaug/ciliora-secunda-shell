@@ -3,7 +3,7 @@
    ===================================================== */
 
 #dash {
-    border-image: url("overview-assets/overview-dark-bg-left.svg") 7;
+    border-image: url("overview--widgets/overview-dark-bg-left.svg") 7;
     font-size: 9pt;
     padding: 4px 0;
     background-color: transparent !important;
@@ -11,7 +11,7 @@
     border-radius: 0 !important;
 
     &:rtl {
-        border-image: url("overview-assets/overview-dark-bg-right.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg-right.svg") 7;
         border-radius: 0;
     }
 
@@ -26,7 +26,7 @@
 }
 
 .dash-label {
-    border-image: url("overview-assets/overview-dark-bg.svg") 7;
+    border-image: url("overview--widgets/overview-dark-bg.svg") 7;
     padding: 4px 10px;
     -x-offset: 8px;
     color: $text-primary;
@@ -61,12 +61,12 @@
     .dash-item-container .app-well-app:selected &,
     .dash-item-container .app-well-app:active &,
     .dash-item-container .app-well-app:checked & {
-        border-image: url("overview-assets/overview-light-bg.svg") 7;
+        border-image: url("overview--widgets/overview-light-bg.svg") 7;
     }
 
     .show-apps:checked &,
     .show-apps:selected & {
-        border-image: url("overview-assets/overview-highlight-bg.svg") 7;
+        border-image: url("overview--widgets/overview-highlight-bg.svg") 7;
     }
 }
 
@@ -80,37 +80,37 @@
 #dashtodockContainer {
 
     &.left #dash {
-        border-image: url("overview-assets/overview-dark-bg-left.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg-left.svg") 7;
     }
 
     &.right #dash {
-        border-image: url("overview-assets/overview-dark-bg-right.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg-right.svg") 7;
     }
 
     &.top #dash {
-        border-image: url("overview-assets/overview-dark-bg-top.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg-top.svg") 7;
     }
 
     &.bottom #dash {
-        border-image: url("overview-assets/overview-dark-bg-bottom.svg") 7;
+        border-image: url("overview--widgets/overview-dark-bg-bottom.svg") 7;
     }
 
 
 
     &.left.extended #dash {
-        border-image: url("panel-assets/panel-left.svg") 7;
+        border-image: url("panel--widgets/panel-left.svg") 7;
     }
 
     &.right.extended #dash {
-        border-image: url("panel-assets/panel-right.svg") 7;
+        border-image: url("panel--widgets/panel-right.svg") 7;
     }
 
     &.top.extended #dash {
-        border-image: url("panel-assets/panel-top.svg") 7;
+        border-image: url("panel--widgets/panel-top.svg") 7;
     }
 
     &.bottom.extended #dash {
-        border-image: url("panel-assets/panel-bottom.svg") 7;
+        border-image: url("panel--widgets/panel-bottom.svg") 7;
     }
 
 
@@ -122,7 +122,7 @@
 
     @each $var in 1, 2, 3, 4 {
         .running#{$var} .app-well-app-running-dot {
-            background-image: url("overview-assets/running#{$var}.svg");
+            background-image: url("overview--widgets/running#{$var}.svg");
         }
     }
 }
