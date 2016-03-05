@@ -87,12 +87,12 @@ gulp.task("install", function () {
 // Watch
 gulp.task('watch', function () {
     gulp.watch(['sass/**/*',
-                'background-assets/**/*',
-                'button-assets/**/*',
-                'misc-assets/**/*',
-                'overview-assets/**/*',
-                'panel-assets/**/*',
-                'widget-assets/**/*',
+                'container--widgets/**/*',
+                'button--widgets/**/*',
+                'misc--widgets/**/*',
+                'overview--widgets/**/*',
+                'panel--widgets/**/*',
+                'control--widgets/**/*',
                 'menu-icons/**/*',
                 'extensions/**/*'], ['reloadTheme']);
 });
