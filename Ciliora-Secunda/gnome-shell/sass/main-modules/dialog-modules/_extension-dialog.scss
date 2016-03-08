@@ -4,7 +4,7 @@
 
 .extension-dialog {
     .headline {
-        font-size: 10pt;
+        font-size: 14px;
     }
 
     StIcon {
@@ -20,7 +20,7 @@
 
 .extension-dialog .modal-dialog-linked-button {
     @include btn-dlg(m, $text-primary, primary, $text-primary, blue);
-    
+
     &:first-child {
         @include btn-dlg(f, $text-primary, primary, $text-primary, blue);
     }

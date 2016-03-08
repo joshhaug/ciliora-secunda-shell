@@ -23,26 +23,26 @@
 .candidate-index {
     color: $text-secondary;
     font-weight: normal;
-    font-size: 10pt;
+    font-size: 14px;
     margin: 0 .7em 0 0;
 }
 
 .candidate-label {
     color: $text-primary;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 14px;
 }
 
 .candidate-popup-text {
     color: $text-primary;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 14px;
     padding: .7em;
     border-image: url("container--widgets/sub.svg") 7;
 }
 
 .candidate-box {
-    font-size: 10pt;
+    font-size: 14px;
     border-radius: 0 !important;
 
     &:selected,

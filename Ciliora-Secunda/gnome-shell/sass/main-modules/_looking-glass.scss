@@ -10,7 +10,7 @@
 #LookingGlassDialog {
     border-image: url("container--widgets/popup-outside.svg") 7;
     font-weight: bold;
-    font-size: 10pt;
+    font-size: 14px;
     padding: 16px;
     color: $text-primary;
 }
@@ -25,7 +25,7 @@
 
     border-image: url("container--widgets/popup.svg") 7 !important;
     font-weight: normal !important;
-    font-size: 9pt !important;
+    font-size: 12px !important;
     spacing: 4px;
     padding: 16px;
     margin: 7px;
@@ -84,7 +84,7 @@
         > StBoxLayout {
             padding: 10px 10px 10px 14px;
             border-image: url("container--widgets/light-bg-marked-blue.svg") 10;
-            font-size: 9pt;
+            font-size: 12px;
             spacing: 1em;
         }
     }
@@ -98,11 +98,11 @@
         > StBoxLayout {
             padding: 10px 10px 10px 14px;
             border-image: url("container--widgets/light-bg-marked-green.svg") 10;
-            font-size: 9pt;
+            font-size: 12px;
             spacing: 1em;
 
             StButton:first-child {
-                font-size: 12pt;
+                font-size: 16px;
             }
         }
     }
@@ -117,7 +117,7 @@
         }
 
         .lg-extensions-none {
-            font-size: 12pt;
+            font-size: 16px;
             color: $text-secondary;
         }
 
@@ -131,18 +131,18 @@
 
             &-name {
                 color: $text-primary;
-                font-size: 12pt;
+                font-size: 16px;
                 font-weight: bold;
                 padding-bottom: 2px;
             }
 
             &-description {
-                font-size: 9pt;
+                font-size: 12px;
             }
 
             &-meta {
                 spacing: 6px;
-                font-size: 9pt;
+                font-size: 12px;
             }
 
             &-state {
@@ -219,7 +219,7 @@
 
     .lg-obj-inspector-title {
         color: $text-primary;
-        font-size: 10pt;
+        font-size: 14px;
         font-weight: bold;
         spacing: 4px;
     }

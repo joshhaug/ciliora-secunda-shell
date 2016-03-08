@@ -8,10 +8,10 @@
         border: 0;
 
         border-image: url("control--widgets/entry.svg") 6;
-        padding: .5em !important;
-        min-height: 1.2em;
+        font-size: 12px;
+        padding: .7em !important;
+        min-height: 1em;
         width: $width;
-        font-size: 10pt;
         font-weight: normal;
         color: $text-secondary;
 
@@ -27,10 +27,10 @@
 
     @else if $t==focus {
         border-image: url("control--widgets/entry-focused.svg") 6;
-        font-size: 10pt;
         font-weight: bold;
-        padding: .5em !important;
-        min-height: 1.2em;
+        font-size: 12px;
+        padding: .7em !important;
+        min-height: 1em;
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -53,18 +53,14 @@
         }
     }
 
-    @else if $t==normal--dark {
+    @else if $t==overview--normal {
         border-image: url("overview--widgets/overview-dark-bg.svg") 7;
         border-radius: 0;
-        padding: .6em !important;
-        min-height: 1.3em;
+        font-size: 12px;
+        padding: .7em !important;
+        min-height: 1em;
         width: $width;
         color: $text-secondary;
-        font-size: 10pt;
-
-        > * {
-            margin-bottom: 1px;
-        }
 
         StIcon {
             icon-size: 16px;
@@ -77,12 +73,13 @@
         }
     }
 
-    @else if $t==focus--dark {
+    @else if $t==overview--focus {
         border-width: 0;
 
         border-image: url("overview--widgets/overview-light-bg.svg") 7;
-        padding: .6em !important;
-        min-height: 1.3em;
+        font-size: 12px;
+        padding: .7em !important;
+        min-height: 1em;
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -90,7 +87,6 @@
         selected-color: $text-primary;
         selection-background-color: $accent-primary;
         font-weight: bold;
-        font-size: 10pt;
 
         StIcon {
             color: $text-primary;
@@ -113,12 +109,4 @@ StEntry,
     &:focus { @include entry(focus); }
 
     &:insensitive { @include entry(insensitive); }
-}
-
-
-/* ! Search entry in overview */
-.search-entry {
-    @include entry(normal--dark, $width: 320px);
-
-    &:focus { @include entry(focus--dark, $width: 320px); }
 }

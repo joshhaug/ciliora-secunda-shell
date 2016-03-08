@@ -3,7 +3,7 @@
    ===================================================== */
 stage {
   font-family: Droid Sans, Sans-Serif;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .shell-link {
@@ -77,9 +77,9 @@ StEntry,
   border-radius: 0;
   border: 0;
   border-image: url("control--widgets/entry.svg") 6;
-  padding: .5em !important;
-  min-height: 1.2em;
-  font-size: 10pt;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -98,10 +98,10 @@ StEntry StIcon.capslock-warning,
 StEntry:focus,
 .popup-menu .search-entry:focus {
   border-image: url("control--widgets/entry-focused.svg") 6;
-  font-size: 10pt;
   font-weight: bold;
-  padding: .5em !important;
-  min-height: 1.2em;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
   color: white;
   caret-color: white;
   caret-size: 1px;
@@ -123,54 +123,6 @@ StEntry:insensitive,
 StEntry:insensitive StIcon,
 .popup-menu .search-entry:insensitive StIcon {
   color: rgba(255, 255, 255, 0.45);
-}
-
-/* ! Search entry in overview */
-.search-entry {
-  border-image: url("overview--widgets/overview-dark-bg.svg") 7;
-  border-radius: 0;
-  padding: .6em !important;
-  min-height: 1.3em;
-  width: 320px;
-  color: rgba(255, 255, 255, 0.45);
-  font-size: 10pt;
-}
-
-.search-entry > * {
-  margin-bottom: 1px;
-}
-
-.search-entry StIcon {
-  icon-size: 16px;
-  padding: 0 4px;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.search-entry:hover StIcon {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.search-entry:focus {
-  border-width: 0;
-  border-image: url("overview--widgets/overview-light-bg.svg") 7;
-  padding: .6em !important;
-  min-height: 1.3em;
-  width: 320px;
-  color: white;
-  caret-color: white;
-  caret-size: 1px;
-  selected-color: white;
-  selection-background-color: #7998b3;
-  font-weight: bold;
-  font-size: 10pt;
-}
-
-.search-entry:focus StIcon {
-  color: white;
-}
-
-.search-entry:focus:hover StIcon {
-  color: white;
 }
 
 /* =====================================================
@@ -232,7 +184,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__s.svg") 10;
   color: white;
   padding: .9em 2em .9em 2em;
@@ -316,6 +268,50 @@ StEntry:insensitive StIcon,
   spacing: 24px;
 }
 
+/* ! Search entry in overview */
+.search-entry {
+  border-image: url("overview--widgets/overview-dark-bg.svg") 7;
+  border-radius: 0;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
+  width: 320px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry StIcon {
+  icon-size: 16px;
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry:hover StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry:focus {
+  border-width: 0;
+  border-image: url("overview--widgets/overview-light-bg.svg") 7;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
+  width: 320px;
+  color: white;
+  caret-color: white;
+  caret-size: 1px;
+  selected-color: white;
+  selection-background-color: #7998b3;
+  font-weight: bold;
+}
+
+.search-entry:focus StIcon {
+  color: white;
+}
+
+.search-entry:focus:hover StIcon {
+  color: white;
+}
+
 /* =====================================================
  * ! Overview Windows
    ===================================================== */
@@ -345,7 +341,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   color: rgba(255, 255, 255, 0.85);
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .window-caption:hover {
@@ -379,7 +375,7 @@ StEntry:insensitive StIcon,
    ===================================================== */
 #dash {
   border-image: url("overview--widgets/overview-dark-bg-left.svg") 7;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 4px 0;
   background-color: transparent !important;
   border: 0 transparent !important;
@@ -564,7 +560,7 @@ StEntry:insensitive StIcon,
 
 .search-statustext {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 16pt;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -652,7 +648,7 @@ StEntry:insensitive StIcon,
 .list-search-result-title {
   text-shadow: 0 0 transparent;
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   color: white;
   padding-bottom: 5px;
 }
@@ -668,7 +664,7 @@ StEntry:insensitive StIcon,
 .list-search-result-description {
   text-shadow: 0 0 transparent;
   font-weight: normal;
-  font-size: 9pt;
+  font-size: 12px;
   color: white;
 }
 
@@ -728,7 +724,7 @@ StEntry:insensitive StIcon,
 
 .no-frequent-applications-label {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 16pt;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -892,7 +888,7 @@ StEntry:insensitive StIcon,
 }
 
 .headline {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -931,7 +927,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__m.svg") 10;
   color: white;
@@ -991,7 +987,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__f.svg") 10;
   color: white;
@@ -1051,7 +1047,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__l.svg") 10;
   color: white;
@@ -1111,7 +1107,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__s.svg") 10;
   color: white;
@@ -1243,7 +1239,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog-subject {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
   color: white;
 }
@@ -1342,7 +1338,7 @@ StEntry:insensitive StIcon,
 .end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
   color: rgba(255, 255, 255, 0.45);
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 /* =====================================================
@@ -1358,7 +1354,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__m.svg") 10;
   color: white;
@@ -1406,7 +1402,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__f.svg") 10;
   color: white;
@@ -1454,7 +1450,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__l.svg") 10;
   color: white;
@@ -1569,7 +1565,7 @@ StEntry:insensitive StIcon,
 }
 
 .show-processes-dialog-app-list-item-name {
-  font-size: 10pt;
+  font-size: 14px;
 }
 
 /* =====================================================
@@ -1614,7 +1610,7 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-headline {
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
   color: white;
 }
@@ -1629,7 +1625,7 @@ StEntry:insensitive StIcon,
 
 .prompt-dialog-password-box {
   spacing: 1em;
-  font-size: 9pt;
+  font-size: 12px;
   padding-bottom: 0;
 }
 
@@ -1638,14 +1634,14 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-error-label {
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
   color: #f45f5f;
   padding-bottom: 0;
 }
 
 .prompt-dialog-info-label {
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
   color: #bb96e3;
   padding-bottom: 0;
@@ -1719,7 +1715,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-header {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   color: white;
 }
 
@@ -1734,7 +1730,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-airplane-headline {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   text-align: center;
 }
 
@@ -1761,12 +1757,12 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-header {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   color: white;
 }
 
 .nm-dialog-item {
-  font-size: 10pt;
+  font-size: 14px;
   font-weight: bold;
   padding: 14px;
   spacing: 20px;
@@ -1793,7 +1789,7 @@ StEntry:insensitive StIcon,
 
 .no-networks-label {
   color: white;
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -1805,7 +1801,7 @@ StEntry:insensitive StIcon,
    ! Extension dialog
    ===================================================== */
 .extension-dialog .headline {
-  font-size: 10pt;
+  font-size: 14px;
 }
 
 .extension-dialog StIcon {
@@ -1827,7 +1823,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__m.svg") 10;
   color: white;
@@ -1887,7 +1883,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__f.svg") 10;
   color: white;
@@ -1947,7 +1943,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__l.svg") 10;
   color: white;
@@ -2169,7 +2165,7 @@ StEntry:insensitive StIcon,
   border-image: url("overview--widgets/overview-dark-bg.svg") 7;
   color: white;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14px;
   padding: 8px;
   background-color: transparent !important;
   border: 0 solid transparent !important;
@@ -2245,7 +2241,7 @@ StEntry:insensitive StIcon,
 }
 
 .input-source-switcher-symbol {
-  font-size: 32pt;
+  font-size: 32px;
 }
 
 /* =====================================================
@@ -2487,13 +2483,13 @@ StEntry:insensitive StIcon,
 
 .datemenu-today-button .day-label {
   padding-bottom: .2em;
-  font-size: 9pt;
+  font-size: 12px;
   color: rgba(255, 255, 255, 0.45);
 }
 
 .datemenu-today-button .date-label {
   text-align: center !important;
-  font-size: 14pt;
+  font-size: 18px;
   color: white;
 }
 
@@ -2530,22 +2526,22 @@ StEntry:insensitive StIcon,
 .world-clocks-header {
   color: rgba(255, 255, 255, 0.45);
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .world-clocks-grid {
   spacing-rows: .6em;
   padding: .4em 0;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .world-clocks-city {
-  font-size: 9pt;
+  font-size: 12px;
   margin: 0;
 }
 
 .world-clocks-time {
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
   margin: 0;
 }
@@ -2617,7 +2613,7 @@ StEntry:insensitive StIcon,
    ! Calendar
    ===================================================== */
 .calendar-day-base {
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
   text-align: center;
   margin: 1px;
@@ -2798,7 +2794,7 @@ StEntry:insensitive StIcon,
 
 .message-list-placeholder StLabel {
   color: rgba(255, 255, 255, 0.15);
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -2917,7 +2913,7 @@ StEntry:insensitive StIcon,
 .message-content {
   spacing: .4em;
   padding: 10px;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .message-content > *:first-child StIcon {
@@ -2926,7 +2922,7 @@ StEntry:insensitive StIcon,
 
 .message-title {
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14px;
   height: 1.2em;
 }
 
@@ -2936,7 +2932,7 @@ StEntry:insensitive StIcon,
 
 .message .event-time {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 /* =====================================================
@@ -3008,7 +3004,7 @@ StEntry:insensitive StIcon,
 
 .notification-banner {
   color: white;
-  font-size: 9pt;
+  font-size: 12px;
   margin: 5px;
   width: 34em;
   border-radius: 0 !important;
@@ -3062,7 +3058,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__m.svg") 10;
   color: white;
@@ -3123,7 +3119,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__f.svg") 10;
   color: white;
@@ -3183,7 +3179,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__l.svg") 10;
   color: white;
@@ -3243,7 +3239,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__s.svg") 10;
   color: white;
@@ -3303,11 +3299,11 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   padding: 1.1em 0;
   border-image: url("button--widgets/dialog-button-primary__s.svg") 10;
   color: white;
-  font-size: 9pt;
+  font-size: 12px;
   text-shadow: 0 0 transparent !important;
   padding: .8em;
 }
@@ -3418,7 +3414,7 @@ StEntry:insensitive StIcon,
 
 .chat-meta-message {
   padding-left: 4px;
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -3528,11 +3524,11 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__s.svg") 10;
   color: white;
   padding: .9em;
-  font-size: 12pt;
+  font-size: 16px;
 }
 
 .keyboard-key StIcon {
@@ -3593,10 +3589,10 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-secondary__s.svg") 10;
   color: white;
-  font-size: 12pt;
+  font-size: 16px;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child StIcon,
@@ -3758,26 +3754,26 @@ StEntry:insensitive StIcon,
 .candidate-index {
   color: rgba(255, 255, 255, 0.45);
   font-weight: normal;
-  font-size: 10pt;
+  font-size: 14px;
   margin: 0 .7em 0 0;
 }
 
 .candidate-label {
   color: white;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14px;
 }
 
 .candidate-popup-text {
   color: white;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14px;
   padding: .7em;
   border-image: url("container--widgets/sub.svg") 7;
 }
 
 .candidate-box {
-  font-size: 10pt;
+  font-size: 14px;
   border-radius: 0 !important;
 }
 
@@ -3823,7 +3819,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__f.svg") 10;
   color: white;
   padding: .9em;
@@ -3883,7 +3879,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__l.svg") 10;
   color: white;
   padding: .9em;
@@ -3948,7 +3944,7 @@ StEntry:insensitive StIcon,
 #LookingGlassDialog {
   border-image: url("container--widgets/popup-outside.svg") 7;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 14px;
   padding: 16px;
   color: white;
 }
@@ -3960,7 +3956,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   border-image: url("container--widgets/popup.svg") 7 !important;
   font-weight: normal !important;
-  font-size: 9pt !important;
+  font-size: 12px !important;
   spacing: 4px;
   padding: 16px;
   margin: 7px;
@@ -4004,7 +4000,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__m.svg") 10;
   color: white;
   padding: 0;
@@ -4066,7 +4062,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__f.svg") 10;
   color: white;
 }
@@ -4125,7 +4121,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__l.svg") 10;
   color: white;
 }
@@ -4184,7 +4180,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__s.svg") 10;
   color: white;
 }
@@ -4256,7 +4252,7 @@ StEntry:insensitive StIcon,
 .lg-dialog #ResultsArea > StBoxLayout {
   padding: 10px 10px 10px 14px;
   border-image: url("container--widgets/light-bg-marked-blue.svg") 10;
-  font-size: 9pt;
+  font-size: 12px;
   spacing: 1em;
 }
 
@@ -4269,12 +4265,12 @@ StEntry:insensitive StIcon,
 .lg-dialog #Windows > StBoxLayout {
   padding: 10px 10px 10px 14px;
   border-image: url("container--widgets/light-bg-marked-green.svg") 10;
-  font-size: 9pt;
+  font-size: 12px;
   spacing: 1em;
 }
 
 .lg-dialog #Windows > StBoxLayout StButton:first-child {
-  font-size: 12pt;
+  font-size: 16px;
 }
 
 .lg-dialog #lookingGlassExtensions {
@@ -4287,7 +4283,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extensions-none {
-  font-size: 12pt;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -4302,18 +4298,18 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extension-name {
   color: white;
-  font-size: 12pt;
+  font-size: 16px;
   font-weight: bold;
   padding-bottom: 2px;
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension-description {
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension-meta {
   spacing: 6px;
-  font-size: 9pt;
+  font-size: 12px;
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension-state {
@@ -4379,7 +4375,7 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector .lg-obj-inspector-title {
   color: white;
-  font-size: 10pt;
+  font-size: 14px;
   font-weight: bold;
   spacing: 4px;
 }
@@ -4394,7 +4390,7 @@ StEntry:insensitive StIcon,
   border-width: 0;
   border-radius: 0;
   font-weight: bold;
-  font-size: 9pt;
+  font-size: 12px;
   border-image: url("button--widgets/button-primary__s.svg") 10;
   color: white;
   padding: .9em;
@@ -4466,7 +4462,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog-prompt-label {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 9pt;
+  font-size: 12px;
   padding-top: 1em;
 }
 
@@ -4480,7 +4476,7 @@ StEntry:insensitive StIcon,
 .login-dialog-username,
 .login-dialog .user-widget-label {
   color: #fff;
-  font-size: 10pt;
+  font-size: 14px;
   font-weight: bold;
   text-align: left;
   padding-left: 15px;
@@ -4512,7 +4508,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog-banner {
   color: white;
-  font-size: 10pt;
+  font-size: 14px;
 }
 
 .login-dialog-logo-bin {
@@ -4537,7 +4533,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog-not-listed-label {
   padding-top: 1em;
-  font-size: 9pt;
+  font-size: 12px;
   font-weight: normal;
 }
 
@@ -4674,15 +4670,11 @@ StEntry:insensitive StIcon,
 .login-dialog StEntry {
   border-image: url("overview--widgets/overview-dark-bg.svg") 7;
   border-radius: 0;
-  padding: .6em !important;
-  min-height: 1.3em;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
   width: 320px;
   color: rgba(255, 255, 255, 0.45);
-  font-size: 10pt;
-}
-
-.login-dialog StEntry > * {
-  margin-bottom: 1px;
 }
 
 .login-dialog StEntry StIcon {
@@ -4698,8 +4690,9 @@ StEntry:insensitive StIcon,
 .login-dialog StEntry:focus {
   border-width: 0;
   border-image: url("overview--widgets/overview-light-bg.svg") 7;
-  padding: .6em !important;
-  min-height: 1.3em;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 1em;
   width: 320px;
   color: white;
   caret-color: white;
@@ -4707,7 +4700,6 @@ StEntry:insensitive StIcon,
   selected-color: white;
   selection-background-color: #7998b3;
   font-weight: bold;
-  font-size: 10pt;
 }
 
 .login-dialog StEntry:focus StIcon {
@@ -4754,12 +4746,12 @@ StEntry:insensitive StIcon,
 
 .screen-shield-clock-time {
   color: white;
-  font-size: 68pt;
+  font-size: 74px;
 }
 
 .screen-shield-clock-date {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 18pt;
+  font-size: 22px;
   padding: 0 10px;
 }
 
@@ -4787,7 +4779,7 @@ StEntry:insensitive StIcon,
 
 .screen-shield-notification-label {
   font-weight: bold;
-  font-size: 12pt;
+  font-size: 16px;
   padding: .2em 0 0 0;
 }
 
