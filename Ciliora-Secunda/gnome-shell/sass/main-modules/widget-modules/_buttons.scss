@@ -1,5 +1,5 @@
 // ===================================================================
-// Button common
+//  Button common
 // ===================================================================
 @mixin btn-common {
     background-color: rgba(0, 0, 0, 0);
@@ -24,7 +24,7 @@
 
 
 // ===================================================================
-// Generate buttons
+//  Generate buttons
 //
 //
 //  Provide a $position parameter:
@@ -146,7 +146,7 @@
 
 
 // ===================================================================
-// Generate dialog buttons
+//  Generate dialog buttons
 //
 //
 //  Name pattern for button assets:
@@ -287,6 +287,11 @@
     &:last-child:first-child {
         @include btn(s, $text-primary, primary, $bg-focus:blue);
     }
+}
+
+
+@mixin btn-overview {
+    @include btn(s, $text-primary, overview, $text-primary, overview-blue);
 }
 
 

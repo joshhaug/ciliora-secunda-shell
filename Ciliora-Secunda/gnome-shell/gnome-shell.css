@@ -4627,44 +4627,88 @@ StEntry:insensitive StIcon,
 
 .login-dialog .modal-dialog-button:default,
 .login-dialog .modal-dialog-button {
-  border-image: url("button--widgets/overview-button.svg") 10;
-  padding: 10px 30px;
-  -st-natural-width: 30px;
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
   font-weight: bold;
-  color: #fff;
+  font-size: 12px;
+  border-image: url("button--widgets/button-overview__s.svg") 10;
+  color: white;
+  padding: .8em 2em;
+}
+
+.login-dialog .modal-dialog-button:default StIcon,
+.login-dialog .modal-dialog-button StIcon {
+  width: 16px !important;
+  height: 16px !important;
+  icon-size: 16px !important;
+}
+
+.login-dialog .modal-dialog-button:default:grayed, .login-dialog .modal-dialog-button:default:disabled, .login-dialog .modal-dialog-button:default:insensitive, .login-dialog .modal-dialog-button:default:focus:grayed, .login-dialog .modal-dialog-button:default:focus:disabled, .login-dialog .modal-dialog-button:default:focus:insensitive,
+.login-dialog .modal-dialog-button:grayed,
+.login-dialog .modal-dialog-button:disabled,
+.login-dialog .modal-dialog-button:insensitive,
+.login-dialog .modal-dialog-button:focus:grayed,
+.login-dialog .modal-dialog-button:focus:disabled,
+.login-dialog .modal-dialog-button:focus:insensitive {
+  border-image: url("button--widgets/button-overview__s.svg") 10;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.login-dialog .modal-dialog-button:default:grayed StIcon, .login-dialog .modal-dialog-button:default:disabled StIcon, .login-dialog .modal-dialog-button:default:insensitive StIcon, .login-dialog .modal-dialog-button:default:focus:grayed StIcon, .login-dialog .modal-dialog-button:default:focus:disabled StIcon, .login-dialog .modal-dialog-button:default:focus:insensitive StIcon,
+.login-dialog .modal-dialog-button:grayed StIcon,
+.login-dialog .modal-dialog-button:disabled StIcon,
+.login-dialog .modal-dialog-button:insensitive StIcon,
+.login-dialog .modal-dialog-button:focus:grayed StIcon,
+.login-dialog .modal-dialog-button:focus:disabled StIcon,
+.login-dialog .modal-dialog-button:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.login-dialog .modal-dialog-button:default StIcon,
+.login-dialog .modal-dialog-button StIcon {
+  color: white;
 }
 
 .login-dialog .modal-dialog-button:default:hover,
 .login-dialog .modal-dialog-button:hover {
-  border-image: url("button--widgets/overview-button-hover.svg") 10;
-}
-
-.login-dialog .modal-dialog-button:default:focus,
-.login-dialog .modal-dialog-button:focus {
-  border-image: url("button--widgets/overview-button-focused.svg") 10;
+  border-image: url("button--widgets/button-overview__s--hover.svg") 10;
 }
 
 .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:pressed,
 .login-dialog .modal-dialog-button:active,
 .login-dialog .modal-dialog-button:pressed {
-  border-image: url("button--widgets/overview-button-pressed.svg") 10;
+  border-image: url("button--widgets/button-overview__s--pressed.svg") 10;
+}
+
+.login-dialog .modal-dialog-button:default:focus, .login-dialog .modal-dialog-button:default:selected,
+.login-dialog .modal-dialog-button:focus,
+.login-dialog .modal-dialog-button:selected {
+  border-image: url("button--widgets/button-overview-blue__s.svg") 10;
+  color: white;
+}
+
+.login-dialog .modal-dialog-button:default:focus StIcon, .login-dialog .modal-dialog-button:default:selected StIcon,
+.login-dialog .modal-dialog-button:focus StIcon,
+.login-dialog .modal-dialog-button:selected StIcon {
+  color: white;
 }
 
 .login-dialog .modal-dialog-button:default:focus:hover,
 .login-dialog .modal-dialog-button:focus:hover {
-  border-image: url("button--widgets/overview-button-focused-hover.svg") 10;
+  border-image: url("button--widgets/button-overview-blue__s--hover.svg") 10;
 }
 
-.login-dialog .modal-dialog-button:default:focus:active, .login-dialog .modal-dialog-button:default:focus:pressed,
+.login-dialog .modal-dialog-button:default:focus:active, .login-dialog .modal-dialog-button:default:focus:pressed, .login-dialog .modal-dialog-button:default:focus:selected,
 .login-dialog .modal-dialog-button:focus:active,
-.login-dialog .modal-dialog-button:focus:pressed {
-  border-image: url("button--widgets/overview-button-focused-pressed.svg") 10;
-}
-
-.login-dialog .modal-dialog-button:default:insensitive,
-.login-dialog .modal-dialog-button:insensitive {
-  border-image: url("button--widgets/overview-button-insensitive.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+.login-dialog .modal-dialog-button:focus:pressed,
+.login-dialog .modal-dialog-button:focus:selected {
+  border-image: url("button--widgets/button-overview-blue__s--pressed.svg") 10;
 }
 
 .login-dialog StEntry {

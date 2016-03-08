@@ -17,7 +17,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="overview-button-hover.svg"
+   sodipodi:docname="button-overview__s--hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -31,7 +31,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.769527"
-     inkscape:cx="10.821569"
+     inkscape:cx="2.9812196"
      inkscape:cy="14.270681"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -170,9 +170,9 @@
        inkscape:connector-curvature="0"
        id="rect5319-7"
        d="m 1,277 0,22 22,0 0,-22 z m 1,1 20,0 0,20 -20,0 z"
-       style="opacity:0.8;fill:#000000;fill-opacity:1;stroke:none" />
+       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
-       style="opacity:0.85;fill:#1e2328;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#1e2328;fill-opacity:1;stroke:none"
        id="rect5315-7-0"
        width="20"
        height="20"

@@ -194,38 +194,8 @@
 
     .modal-dialog-button:default,
     .modal-dialog-button {
-        border-image: url("button--widgets/overview-button.svg") 10;
-        padding: 10px 30px;
-        -st-natural-width: 30px;
-        font-weight: bold;
-        color: #fff;
-
-        &:hover {
-            border-image: url("button--widgets/overview-button-hover.svg") 10;
-        }
-
-        &:focus {
-            border-image: url("button--widgets/overview-button-focused.svg") 10;
-        }
-
-        &:active,
-        &:pressed {
-            border-image: url("button--widgets/overview-button-pressed.svg") 10;
-        }
-
-        &:focus:hover {
-            border-image: url("button--widgets/overview-button-focused-hover.svg") 10;
-        }
-
-        &:focus:active,
-        &:focus:pressed {
-            border-image: url("button--widgets/overview-button-focused-pressed.svg") 10;
-        }
-
-        &:insensitive {
-            border-image: url("button--widgets/overview-button-insensitive.svg") 10;
-            color: $text-disabled;
-        }
+        @include btn-overview;
+        padding: .8em 2em;
     }
 
 
