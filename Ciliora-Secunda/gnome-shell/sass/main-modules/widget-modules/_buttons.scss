@@ -94,12 +94,12 @@
         }
 
         &:active,
-        &:pressed {
+        &:pressed,
+        &:selected {
             border-image: url("button--widgets/button-#{$bg}__#{$position}--pressed.svg") 10;
         }
 
-        &:focus,
-        &:selected {
+        &:focus {
             border-image: url("button--widgets/button-#{$bg-focus}__#{$position}.svg") 10;
             color: $color-focus;
             StIcon { color: $color; }
