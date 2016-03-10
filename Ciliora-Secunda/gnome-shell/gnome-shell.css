@@ -2814,6 +2814,7 @@ StEntry:insensitive StIcon,
 
 .message-list-section-title-box {
   spacing: 4em;
+  min-height: 16px;
 }
 
 .message-list-section-title {
@@ -2830,7 +2831,7 @@ StEntry:insensitive StIcon,
 
 .message-list-section-close {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 30px;
 }
 
 .message-list-section-close > StIcon {
@@ -2922,8 +2923,8 @@ StEntry:insensitive StIcon,
 
 .message-title {
   font-weight: bold;
-  font-size: 14px;
-  height: 1.2em;
+  font-size: 12px;
+  min-height: 16px;
 }
 
 .message-secondary-bin StIcon {

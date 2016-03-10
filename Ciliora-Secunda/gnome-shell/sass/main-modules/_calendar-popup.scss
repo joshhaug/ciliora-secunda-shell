@@ -392,6 +392,7 @@
 
     &-section-title-box {
         spacing: 4em;
+        min-height: 16px; // prevent jitter
     }
 
     &-section-title {
@@ -409,7 +410,7 @@
 
     &-section-close {
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 30px;
 
         > StIcon {
             color: $text-secondary;
@@ -500,8 +501,8 @@
 
     &-title {
         font-weight: bold;
-        font-size: 14px;
-        height: 1.2em;
+        font-size: 12px;
+        min-height: 16px; // prevent jitter
     }
 
     &-body {
