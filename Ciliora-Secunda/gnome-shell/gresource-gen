@@ -2,15 +2,16 @@
 
 
 #======================================
-#   Global Variables
+#   Variables
 #======================================
-declare -a asset_dirs=( "container--widgets"
-                        "button--widgets"
-                        "menu-icons"
-                        "misc--widgets"
-                        "overview--widgets"
-                        "panel--widgets"
-                        "control--widgets" )
+
+asset_dirs=( 'container--widgets'
+             'button--widgets'
+             'menu-icons'
+             'misc--widgets'
+             'overview--widgets'
+             'panel--widgets'
+             'control--widgets' )
 
 tmp_dir=".tmp"
 
@@ -27,57 +28,44 @@ gresource_dest="../../gnome-shell-theme.gresource"
 #   dir as the .xml file
 #======================================
 
+echo -e "\e[34mGenerating gresource file...\e[0m"
+
 trap 'rm -rf $tmp_dir; exit' INT TERM EXIT
 
 mkdir -p "$tmp_dir"
 
-find "${asset_dirs[@]}" -type f -execdir cp -f {} "${PWD}/${tmp_dir}/" \;
+find "${asset_dirs[@]}" -type f -execdir cp -f {} "$PWD/$tmp_dir/" \;
 
 
 #======================================
-#   Modify urls in css file
+#   Modify urls paths in css file
 #======================================
 
-#
-# Patterns
-#
 printf -v regex "%s/|" "${asset_dirs[@]}"
 
 regex=${regex%|}  # remove trailing "|"
 
-#
-# Create modified gnome-shell.css file
-#
-sed -r "s:${regex}::" "$css_file" > "${tmp_dir}"/gnome-shell.css
+sed -r "s:$regex::" "$css_file" > "$tmp_dir/gnome-shell.css"
 
 
 #======================================
 #   Create gresource.xml file
 #======================================
 
-#
-# Add header
-#
 echo "<?xml version='1.0' encoding='UTF-8'?><gresources><gresource prefix='/org/gnome/shell/theme'>" \
-     > "${tmp_dir}"/gnome-shell-theme.gresource.xml
+     > "$tmp_dir/gnome-shell-theme.gresource.xml"
 
-#
-# Append the files to the xml file
-#
-for i in "${tmp_dir}"/*; do
 
-    # Only loop over png's & svg's
+for i in "$tmp_dir"/*; do
     [ "${i##*.}" != "svg" ] && [ "${i##*.}" != "png" ] && continue
 
     echo "<file preprocess='to-pixdata'>${i##*/}</file>" \
-         >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
+         >> "$tmp_dir/gnome-shell-theme.gresource.xml"
 done
 
-#
-# Close outer tags
-#
+
 echo "<file>gnome-shell.css</file></gresource></gresources>" \
-     >> "${tmp_dir}"/gnome-shell-theme.gresource.xml
+     >> "$tmp_dir/gnome-shell-theme.gresource.xml"
 
 
 #======================================
@@ -86,7 +74,7 @@ echo "<file>gnome-shell.css</file></gresource></gresources>" \
 
 glib-compile-resources --sourcedir="$tmp_dir" \
                        --target="$gresource_dest" \
-                       "${tmp_dir}"/gnome-shell-theme.gresource.xml
+                       "$tmp_dir/gnome-shell-theme.gresource.xml"
 
 
-exit
+echo -e "\e[32mGresource file generated!\e[0m"
