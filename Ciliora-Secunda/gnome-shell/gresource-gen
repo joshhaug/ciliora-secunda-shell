@@ -4,14 +4,15 @@
 #======================================
 #   Variables
 #======================================
-
-asset_dirs=( 'container--widgets'
-             'button--widgets'
-             'menu-icons'
-             'misc--widgets'
-             'overview--widgets'
-             'panel--widgets'
-             'control--widgets' )
+asset_dirs=(
+    'container--widgets'
+    'button--widgets'
+    'menu-icons'
+    'misc--widgets'
+    'overview--widgets'
+    'panel--widgets'
+    'control--widgets'
+)
 
 tmp_dir=".tmp"
 
@@ -23,11 +24,18 @@ gresource_dest="../../gnome-shell-theme.gresource"
 #======================================
 #   Copy all assets into tmp_dir
 #
-#   GDM seems to have some trouble
-#   when the assets aren't in the same
-#   dir as the .xml file
+#   Some assets urls are hardcoded in the
+#   gnome-shells .js files and point to
+#   the themes root dir.
+#
+#   In particular, the "spinner" asset
+#   hangs gdm when trying to log in,
+#   because it's not in the themes root dir.
+#
+#   To prevent this for now, copy all assets
+#   into one dir before generating
+#   gresource
 #======================================
-
 echo -e "\e[34mGenerating gresource file...\e[0m"
 
 trap 'rm -rf $tmp_dir; exit' INT TERM EXIT
@@ -40,7 +48,6 @@ find "${asset_dirs[@]}" -type f -execdir cp -f {} "$PWD/$tmp_dir/" \;
 #======================================
 #   Modify urls paths in css file
 #======================================
-
 printf -v regex "%s/|" "${asset_dirs[@]}"
 
 regex=${regex%|}  # remove trailing "|"
@@ -51,7 +58,6 @@ sed -r "s:$regex::" "$css_file" > "$tmp_dir/gnome-shell.css"
 #======================================
 #   Create gresource.xml file
 #======================================
-
 echo "<?xml version='1.0' encoding='UTF-8'?><gresources><gresource prefix='/org/gnome/shell/theme'>" \
      > "$tmp_dir/gnome-shell-theme.gresource.xml"
 
@@ -71,7 +77,6 @@ echo "<file>gnome-shell.css</file></gresource></gresources>" \
 #======================================
 #   Create gresource file
 #======================================
-
 glib-compile-resources --sourcedir="$tmp_dir" \
                        --target="$gresource_dest" \
                        "$tmp_dir/gnome-shell-theme.gresource.xml"
