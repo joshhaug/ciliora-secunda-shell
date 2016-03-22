@@ -106,7 +106,6 @@ Make sure to update the `asset_dirs` variable in case you change your dirs.
 
 **Script dependencies:**
 
-* gjs
 * glib-compile-schemas
 * gdk-pixbuf-pixdata
 
