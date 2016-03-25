@@ -2919,6 +2919,8 @@ StEntry:insensitive StIcon,
 
 .message-content > *:first-child StIcon {
   color: #f45f5f;
+  width: 16px;
+  height: 16px;
 }
 
 .message-title {

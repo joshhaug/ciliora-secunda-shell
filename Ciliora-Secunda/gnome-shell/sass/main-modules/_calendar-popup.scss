@@ -493,9 +493,10 @@
         padding: 10px;
         font-size: 12px;
 
-        // the close icon
+        // the title icon (close, chat-status, etc..)
         > *:first-child StIcon {
             color: $text-danger;
+            @include size(16px);
         }
     }
 
