@@ -354,7 +354,6 @@
     padding: .9em .4em 0 0;
 }
 
-
 /* =====================================================
    ! Message List
    ===================================================== */
@@ -364,9 +363,7 @@
     margin: 0;
 
     &-placeholder {
-        StIcon {
-            @include size(0);
-        }
+        StIcon { @include size(0); }
 
         StLabel {
             color: $text-disabled;
@@ -422,12 +419,12 @@
         &:hover > StIcon,
         &:focus > StIcon {
             background-color: transparent;
-            color: $accent-danger;
+            color: $text-danger;
         }
     }
 
     StScrollBar {
-        padding: 8px 0 10px 0;
+        padding: 8px 0 12px 0;
     }
 }
 
@@ -479,15 +476,6 @@
         background-color: transparent !important;
     }
 
-    &-icon-bin {
-        padding: 8px 0 8px 8px;
-        &:rtl { padding: 8px 8px 8px 0; }
-
-        > StIcon {
-            icon-size: 32px;
-        }
-    }
-
     &-content {
         spacing: .4em;
         padding: 10px;
@@ -497,6 +485,15 @@
         > *:first-child StIcon {
             color: $text-danger;
             @include size(16px);
+        }
+    }
+
+    &-icon-bin {
+        padding: 8px 0 8px 8px;
+        &:rtl { padding: 8px 8px 8px 0; }
+
+        > StIcon {
+            icon-size: 32px;
         }
     }
 
@@ -510,9 +507,6 @@
     }
 
     &-secondary-bin {
-        StIcon {
-            icon-size: 16px;
-        }
     }
 
     .event-time {

@@ -25,17 +25,17 @@ stage {
    ! Scrollbars
    ===================================================== */
 StScrollView.vfade {
-  -st-vfade-offset: 0;
+  -st-vfade-offset: 0 !important;
 }
 
 StScrollView.hfade {
-  -st-hfade-offset: 0;
+  -st-hfade-offset: 0 !important;
 }
 
 StScrollBar {
   padding: 6px;
-  min-width: 12px;
-  min-height: 12px;
+  min-width: 10px;
+  min-height: 10px;
 }
 
 StScrollView.vfade StScrollBar {
@@ -2843,11 +2843,11 @@ StEntry:insensitive StIcon,
 .message-list-section-close:hover > StIcon,
 .message-list-section-close:focus > StIcon {
   background-color: transparent;
-  color: #E66464;
+  color: #f85c5c;
 }
 
 .message-list StScrollBar {
-  padding: 8px 0 10px 0;
+  padding: 8px 0 12px 0;
 }
 
 /* =====================================================
@@ -2898,18 +2898,6 @@ StEntry:insensitive StIcon,
   background-color: transparent !important;
 }
 
-.message-icon-bin {
-  padding: 8px 0 8px 8px;
-}
-
-.message-icon-bin:rtl {
-  padding: 8px 8px 8px 0;
-}
-
-.message-icon-bin > StIcon {
-  icon-size: 32px;
-}
-
 .message-content {
   spacing: .4em;
   padding: 10px;
@@ -2922,14 +2910,22 @@ StEntry:insensitive StIcon,
   height: 16px;
 }
 
+.message-icon-bin {
+  padding: 8px 0 8px 8px;
+}
+
+.message-icon-bin:rtl {
+  padding: 8px 8px 8px 0;
+}
+
+.message-icon-bin > StIcon {
+  icon-size: 32px;
+}
+
 .message-title {
   font-weight: bold;
   font-size: 12px;
   min-height: 16px;
-}
-
-.message-secondary-bin StIcon {
-  icon-size: 16px;
 }
 
 .message .event-time {
@@ -3000,14 +2996,19 @@ StEntry:insensitive StIcon,
 /* =====================================================
    ! Notifications
    ===================================================== */
+/*
+    The url highlighter gets
+    the opacity from the color property
+    Tweak default $text-link color to FIX
+ */
 .url-highlighter {
-  link-color: #72a9ee;
+  link-color: #2385ff;
 }
 
 .notification-banner {
   color: white;
   font-size: 12px;
-  margin: 5px;
+  margin: 0px;
   width: 34em;
   border-radius: 0 !important;
   background-color: transparent !important;
@@ -3016,7 +3017,7 @@ StEntry:insensitive StIcon,
 
 .notification-banner > StBoxLayout {
   border-image: url("container--widgets/popup.svg") 7;
-  padding: 3px 3px 0px 3px;
+  padding: 4px 4px 1px 4px;
 }
 
 .notification-banner:hover, .notification-banner:focus {
@@ -3024,12 +3025,8 @@ StEntry:insensitive StIcon,
   background-color: transparent !important;
 }
 
-.notification-banner:hover .url-highlighter, .notification-banner:focus .url-highlighter {
-  link-color: #72a9ee;
-}
-
 .notification-banner:hover .message-content StIcon, .notification-banner:focus .message-content StIcon {
-  color: #E66464;
+  color: #f85c5c;
 }
 
 .notification-banner StEntry {
@@ -3307,7 +3304,7 @@ StEntry:insensitive StIcon,
   color: white;
   font-size: 12px;
   text-shadow: 0 0 transparent !important;
-  padding: .8em;
+  padding: .7em 1em 1em 1em;
 }
 
 .hotplug-notification-item StIcon {
@@ -3329,29 +3326,17 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-.hotplug-notification-item:hover {
-  border-image: url("button--widgets/dialog-button-primary__s--hover.svg") 10;
+.hotplug-notification-item:hover, .hotplug-notification-item:focus, .hotplug-notification-item:focus:hover {
+  border-image: url("button--widgets/dialog-button-primary__s.svg") 10;
+  color: #72a9ee;
 }
 
-.hotplug-notification-item:active, .hotplug-notification-item:pressed, .hotplug-notification-item:selected {
+.hotplug-notification-item:hover StIcon, .hotplug-notification-item:focus StIcon, .hotplug-notification-item:focus:hover StIcon {
+  color: #72a9ee;
+}
+
+.hotplug-notification-item:active, .hotplug-notification-item:pressed, .hotplug-notification-item:selected, .hotplug-notification-item:focus:active, .hotplug-notification-item:focus:pressed, .hotplug-notification-item:focus:selected {
   border-image: url("button--widgets/dialog-button-primary__s--pressed.svg") 10;
-}
-
-.hotplug-notification-item:focus {
-  border-image: url("button--widgets/dialog-button-blue__s.svg") 10;
-  color: white;
-}
-
-.hotplug-notification-item:focus StIcon {
-  color: white;
-}
-
-.hotplug-notification-item:focus:hover {
-  border-image: url("button--widgets/dialog-button-blue__s--hover.svg") 10;
-}
-
-.hotplug-notification-item:focus:active, .hotplug-notification-item:focus:pressed, .hotplug-notification-item:focus:selected {
-  border-image: url("button--widgets/dialog-button-blue__s--pressed.svg") 10;
 }
 
 .hotplug-notification-item-icon {
@@ -3364,8 +3349,8 @@ StEntry:insensitive StIcon,
 
 /* ! Chat Bubble */
 .chat-scrollview {
-  border: 10px;
-  padding: 4px 6px;
+  border: 1px;
+  padding: 0 6px;
 }
 
 .chat-scrollview StScrollBar {
@@ -3390,7 +3375,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-received {
-  border-image: url("container--widgets/light-bg-bubble-right.svg") 7 11 7 9;
+  border-image: url("container--widgets/bubble-active.svg") 7 11 7 9;
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
   font-weight: bold;
@@ -3403,7 +3388,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-sent {
-  border-image: url("container--widgets/light-bg-bubble-left.svg") 11 7 9 7;
+  border-image: url("container--widgets/bubble.svg") 11 7 9 7;
   padding: 1em 1em 1em 1.6em;
   margin-left: 0;
   color: white;
@@ -4342,7 +4327,7 @@ StEntry:insensitive StIcon,
 }
 
 #uiGroup > StScrollView StScrollBar {
-  padding: 9px 4px;
+  padding: 10px 4px;
 }
 
 #LookingGlassPropertyInspector {

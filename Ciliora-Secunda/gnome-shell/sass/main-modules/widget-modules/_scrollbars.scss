@@ -3,14 +3,14 @@
    ===================================================== */
 
 StScrollView {
-    &.vfade { -st-vfade-offset: 0; }
-    &.hfade { -st-hfade-offset: 0; }
+    &.vfade { -st-vfade-offset: 0 !important; }
+    &.hfade { -st-hfade-offset: 0 !important; }
 }
 
 StScrollBar {
     padding: 6px;
-    min-width: 12px;
-    min-height: 12px;
+    min-width: 10px;
+    min-height: 10px;
 
     StScrollView.vfade & { padding: 0 6px; }
     StScrollView.hfade & { padding: 6px 0; }
