@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.002615"
-     inkscape:cx="-8.2381443"
-     inkscape:cy="18.573037"
+     inkscape:cx="8.9573593"
+     inkscape:cy="18.373089"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -136,22 +136,17 @@
        id="rect4238-3-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" />
-    <path
-       inkscape:connector-curvature="0"
-       id="rect4238-3-8-8"
-       d="m 15,279 0,1 -15,0 0,-1 15,0 z"
-       style="display:inline;opacity:0.04;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
-    <path
-       inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 15,280 0,1 -14,0 0,-1 14,0 z"
-       id="path4169" />
     <rect
        y="281"
        x="1"
        height="14"
        width="14"
        id="rect4270"
-       style="fill:#d06666;fill-opacity:1;stroke:none" />
+       style="fill:#e66464;fill-opacity:1;stroke:none" />
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 15,280 0,1 -14,0 0,-1 14,0 z"
+       id="path4169-0" />
   </g>
 </svg>

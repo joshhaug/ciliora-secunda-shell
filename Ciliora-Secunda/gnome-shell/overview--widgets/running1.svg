@@ -29,16 +29,16 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="9.8847635"
-     inkscape:cx="2.6970508"
-     inkscape:cy="-5.3380834"
+     inkscape:zoom="19.769527"
+     inkscape:cx="6.2303005"
+     inkscape:cy="-4.943889"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -131,14 +131,15 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-296)">
-    <path
-       sodipodi:nodetypes="cccccccccc"
-       inkscape:connector-curvature="0"
-       id="rect5319-7"
-       d="m 9,296 0,4 10,0 0,-4 z m 1,1 8,0 0,2 -8,0 z"
-       style="opacity:0.65;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
-       style="opacity:1;fill:#7998b3;fill-opacity:1;stroke:none"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="rect4136"
+       width="10"
+       height="4"
+       x="9"
+       y="296" />
+    <rect
+       style="opacity:1;fill:#6a98d2;fill-opacity:1;stroke:none"
        id="rect4270-9"
        width="8"
        height="2"

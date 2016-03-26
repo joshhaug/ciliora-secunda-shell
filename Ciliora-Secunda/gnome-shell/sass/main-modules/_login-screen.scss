@@ -189,13 +189,13 @@
     // buttons
 
     .modal-dialog-button-box {
-        spacing: 3px;
+        spacing: 0;
     }
 
     .modal-dialog-button:default,
     .modal-dialog-button {
         @include btn-overview;
-        padding: .8em 2em;
+        @include btn-width(wide);
     }
 
 

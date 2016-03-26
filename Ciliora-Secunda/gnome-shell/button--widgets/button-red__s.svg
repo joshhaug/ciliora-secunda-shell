@@ -17,7 +17,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="button-red.svg"
+   sodipodi:docname="button-red__s.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -31,7 +31,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.901141"
-     inkscape:cx="6.7468881"
+     inkscape:cx="-7.3800735"
      inkscape:cy="6.033482"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -39,7 +39,7 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -125,7 +125,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -179,7 +179,7 @@
        id="rect4272"
        style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.75" />
     <rect
-       style="fill:#d06666;fill-opacity:1;stroke:none"
+       style="fill:#e66464;fill-opacity:1;stroke:none"
        id="rect4270"
        width="14"
        height="14"

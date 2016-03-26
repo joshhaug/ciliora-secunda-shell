@@ -171,7 +171,7 @@
 
     // Include common properties
     @include btn-common;
-    padding: 1.1em 0;
+    padding: 1em .4em;
 
 
     &:grayed,
@@ -251,11 +251,11 @@
 // ===================================================================
 @mixin btn-width($btn-width) {
     @if $btn-width == "small" {
-        padding: .9em;
+        padding: 1em;
     }
 
     @if $btn-width == "wide" {
-        padding: .9em 2em .9em 2em;
+        padding: 1em 2em;
     }
 }
 

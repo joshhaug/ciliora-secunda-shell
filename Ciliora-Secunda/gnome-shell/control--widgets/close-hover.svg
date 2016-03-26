@@ -16,7 +16,7 @@
    height="61"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="close-hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -31,17 +31,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="8.2804881"
-     inkscape:cx="0.057442863"
-     inkscape:cy="18.371848"
+     inkscape:cx="3.5564794"
+     inkscape:cy="20.086024"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="849"
+     inkscape:window-height="848"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -158,7 +158,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -233,11 +233,17 @@
        id="circle4191"
        style="display:inline;opacity:0.8;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
     <circle
-       style="display:inline;fill:#d57575;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;fill:#e66464;fill-opacity:1;stroke:none;enable-background:new"
        id="path5700-0"
        cx="20.5"
        cy="279.5"
        r="13.5" />
+    <circle
+       r="13.5"
+       cy="279.5"
+       cx="20.5"
+       id="circle4186"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;enable-background:new;opacity:0.1" />
     <path
        sodipodi:nodetypes="ccccccccccccccccc"
        inkscape:connector-curvature="0"

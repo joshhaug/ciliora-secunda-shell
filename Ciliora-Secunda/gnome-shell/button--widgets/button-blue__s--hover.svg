@@ -17,7 +17,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="button-focused-hover.svg"
+   sodipodi:docname="button-blue__s--hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -31,15 +31,15 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.901141"
-     inkscape:cx="-26.167408"
-     inkscape:cy="9.8862897"
+     inkscape:cx="1.2609134"
+     inkscape:cy="10.987092"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="848"
      inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
@@ -179,7 +179,7 @@
        id="rect4272"
        style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.85" />
     <rect
-       style="fill:#86a2ba;fill-opacity:1;stroke:none"
+       style="fill:#6a98d2;fill-opacity:1;stroke:none"
        id="rect4270"
        width="14"
        height="14"
@@ -194,5 +194,12 @@
        id="rect5197-0"
        style="display:inline;opacity:0.4;fill:url(#linearGradient4289);fill-opacity:1;stroke:none;enable-background:new"
        rx="2" />
+    <rect
+       y="281"
+       x="5"
+       height="14"
+       width="14"
+       id="rect8044"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;opacity:0.1" />
   </g>
 </svg>

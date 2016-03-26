@@ -12,7 +12,7 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
-   width="24"
+   width="16"
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
@@ -31,8 +31,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.769527"
-     inkscape:cx="2.9812196"
-     inkscape:cy="14.270681"
+     inkscape:cx="1.7248144"
+     inkscape:cy="8.4258976"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -44,7 +44,7 @@
      inkscape:window-y="24"
      width="400px"
      height="300px"
-     inkscape:snap-nodes="false"
+     inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
      inkscape:object-nodes="true"
@@ -75,7 +75,7 @@
   <defs
      id="defs3">
     <linearGradient
-       gradientTransform="matrix(1.375,0,0,1,-4.4999988,3.0000152)"
+       gradientTransform="translate(-3.9999993,2e-5)"
        inkscape:collect="always"
        xlink:href="#linearGradient5235"
        id="linearGradient5205"
@@ -125,7 +125,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -169,23 +169,23 @@
        sodipodi:nodetypes="cccccccccc"
        inkscape:connector-curvature="0"
        id="rect5319-7"
-       d="m 1,277 0,22 22,0 0,-22 z m 1,1 20,0 0,20 -20,0 z"
+       d="m 0,280 0,16 16,0 0,-16 z m 1,1 14,0 0,14 -14,0 z"
        style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        style="opacity:0.9;fill:#1e2328;fill-opacity:1;stroke:none"
        id="rect5315-7-0"
-       width="20"
-       height="20"
-       x="2"
-       y="278" />
+       width="14"
+       height="14"
+       x="1"
+       y="281" />
     <rect
-       rx="2"
+       rx="1.4545455"
        style="display:inline;opacity:0.5;fill:url(#linearGradient5205);fill-opacity:1;stroke:none;enable-background:new"
        id="rect5197"
-       width="22"
+       width="16"
        height="1"
-       x="1"
-       y="299"
+       x="0"
+       y="296"
        ry="2" />
   </g>
 </svg>

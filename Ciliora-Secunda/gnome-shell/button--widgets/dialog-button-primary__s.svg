@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.975767"
-     inkscape:cx="7.6489689"
+     inkscape:cx="-0.060372123"
      inkscape:cy="15.904731"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -90,7 +90,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -131,7 +131,7 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       style="display:inline;opacity:1;fill:#272d33;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.95;fill:#2c343c;fill-opacity:1;stroke:none;enable-background:new"
        id="rect4270-9-3-2-7"
        width="15"
        height="14"

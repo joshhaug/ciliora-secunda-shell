@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.975767"
-     inkscape:cx="-11.021836"
+     inkscape:cx="-7.817954"
      inkscape:cy="12.150183"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -90,7 +90,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -147,7 +147,7 @@
        inkscape:connector-curvature="0" />
     <rect
        transform="scale(-1,1)"
-       style="display:inline;fill:#242a30;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;fill:#2c343c;fill-opacity:1;stroke:none;enable-background:new;opacity:0.95"
        id="rect4270-3"
        width="14"
        height="14"
@@ -211,5 +211,13 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
     </g>
+    <rect
+       y="281"
+       x="-15"
+       height="14"
+       width="14"
+       id="rect6381"
+       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       transform="scale(-1,1)" />
   </g>
 </svg>

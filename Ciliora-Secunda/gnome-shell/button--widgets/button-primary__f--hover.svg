@@ -16,8 +16,8 @@
    height="24"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
-   sodipodi:docname="linked-button-left-hover.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="button-primary__f--hover.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -31,17 +31,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="20.005229"
-     inkscape:cx="-13.728825"
-     inkscape:cy="13.376238"
+     inkscape:cx="3.5166656"
+     inkscape:cy="12.376499"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="849"
+     inkscape:window-height="848"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="true"
@@ -85,7 +85,7 @@
        id="linearGradient5205"
        xlink:href="#linearGradient5235"
        inkscape:collect="always"
-       gradientTransform="translate(-2.9999993,-1.3417969e-5)" />
+       gradientTransform="translate(-2.9999992,1e-5)" />
     <linearGradient
        id="linearGradient5235">
       <stop
@@ -167,25 +167,32 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.04;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="m 2.000529,278.99908 c -1.108,-7e-5 -2,0.892 -2,2 l 0,14 c 0,1.108 0.892,2 2,2 L 17,297 l 0,-1 -15.999471,-9.2e-4 0,-16 L 17,280 l 0,-1 z"
        id="rect4136"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ssssccccccs" />
+    <path
+       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none"
+       d="M 1 4 L 1 20 L 17 20 L 17 4 L 1 4 z M 2 5 L 16 5 L 16 19 L 2 19 L 2 5 z "
+       transform="translate(0,276)"
+       id="rect4272" />
     <rect
-       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4272"
-       width="16"
-       height="16"
-       x="1"
-       y="280" />
-    <rect
-       y="281"
+       y="-295"
        x="2"
        height="14"
        width="14"
        id="rect4270"
-       style="fill:#2f373f;fill-opacity:1;stroke:none" />
+       style="fill:#2c343c;fill-opacity:1;stroke:none;opacity:0.95"
+       transform="scale(1,-1)" />
+    <rect
+       transform="scale(1,-1)"
+       style="opacity:0.05;fill:#ffffff;fill-opacity:1;stroke:none"
+       id="rect7473"
+       width="14"
+       height="14"
+       x="2"
+       y="-295" />
     <rect
        ry="2"
        y="296"
@@ -194,6 +201,6 @@
        width="16"
        id="rect5197"
        style="display:inline;opacity:0.5;fill:url(#linearGradient5205);fill-opacity:1;stroke:none;enable-background:new"
-       rx="2" />
+       rx="2.2857141" />
   </g>
 </svg>

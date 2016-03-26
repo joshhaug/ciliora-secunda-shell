@@ -27,7 +27,7 @@
         background-color: transparent;
 
         .day-label, .date-label {
-            color: $link;
+            color: $text-link;
             text-decoration: underline;
         }
     }
@@ -71,7 +71,7 @@
         background-color: transparent !important;
 
         .world-clocks-header {
-            color: $link;
+            color: $text-link;
             text-decoration: underline;
         }
     }
@@ -167,7 +167,7 @@
     padding: .7em .8em;
 
     &:focus  {
-        color: $link;
+        color: $text-link;
     }
 }
 
@@ -195,7 +195,7 @@
 
     &:focus {
         background-color: transparent;
-        color: $link;
+        color: $text-link;
     }
 }
 
@@ -224,7 +224,7 @@
     &.calendar-day-with-events {
         border-image: url("misc--widgets/calendar-work-day-events.svg") 7;
         background-image: none !important;
-        color: $text-info;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active-events.svg") 7;
@@ -234,7 +234,7 @@
 
     &.calendar-today {
         border-image: url("misc--widgets/calendar-work-day-today.svg") 7;
-        color: $link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active.svg") 7;
@@ -244,7 +244,7 @@
 
         &.calendar-day-with-events.calendar-today {
         border-image: url("misc--widgets/calendar-work-day-today-events.svg") 7;
-        color: $link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active.svg") 7;
@@ -273,7 +273,7 @@
     &.calendar-day-with-events {
         border-image: url("misc--widgets/calendar-nonwork-day-events.svg") 7;
         background-image: none !important;
-        color: $text-info;
+        color: $text-secondary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active-events.svg") 7;
@@ -283,7 +283,7 @@
 
     &.calendar-today {
         border-image: url("misc--widgets/calendar-nonwork-day-today.svg") 7;
-        color: $link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active.svg") 7;
@@ -293,7 +293,7 @@
 
     &.calendar-day-with-events.calendar-today {
         border-image: url("misc--widgets/calendar-nonwork-day-today-events.svg") 7;
-        color: $link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("misc--widgets/calendar-day-active.svg") 7;
@@ -402,7 +402,7 @@
 
         &:hover, &:focus, &:active {
             background-color: transparent !important;
-            color: $link;
+            color: $text-link;
             text-decoration: underline;
 
         }

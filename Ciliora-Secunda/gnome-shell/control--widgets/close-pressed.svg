@@ -16,7 +16,7 @@
    height="61"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="close-pressed.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -31,17 +31,17 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="16.560976"
-     inkscape:cx="36.950781"
-     inkscape:cy="5.8012677"
+     inkscape:cx="19.017055"
+     inkscape:cy="20.232784"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="849"
+     inkscape:window-height="848"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="24"
      width="400px"
      height="300px"
      inkscape:snap-nodes="false"
@@ -188,7 +188,7 @@
        id="circle4191"
        style="display:inline;opacity:0.9;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
     <circle
-       style="display:inline;fill:#cb5757;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;fill:#e66464;fill-opacity:1;stroke:none;enable-background:new"
        id="path5700-0"
        cx="20.5"
        cy="279.5"
@@ -204,7 +204,7 @@
        transform="translate(41.5,1)">
       <path
          inkscape:connector-curvature="0"
-         style="display:inline;opacity:0.25;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+         style="display:inline;opacity:0.37;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
          d="m -21,265 c -7.455844,0 -13.5,6.04416 -13.5,13.5 0,7.45585 6.044156,13.5 13.5,13.5 7.455844,0 13.5,-6.04415 13.5,-13.5 0,-7.45584 -6.044156,-13.5 -13.5,-13.5 z m 0,1 c 6.90356,0 12.5,5.59644 12.5,12.5 0,6.90356 -5.59644,12.5 -12.5,12.5 -6.90356,0 -12.5,-5.59644 -12.5,-12.5 0,-6.90356 5.59644,-12.5 12.5,-12.5 z"
          id="path4146" />
       <path

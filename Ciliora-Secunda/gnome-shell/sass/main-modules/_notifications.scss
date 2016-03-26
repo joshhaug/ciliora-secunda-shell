@@ -3,7 +3,7 @@
    ===================================================== */
 
 .url-highlighter {
-    link-color: $link;
+    link-color: $text-link;
 }
 
 .notification-banner {
@@ -25,7 +25,7 @@
         background-color: transparent !important;
 
         .url-highlighter {
-            link-color: $link;
+            link-color: $text-link;
         }
 
         .message-content StIcon {

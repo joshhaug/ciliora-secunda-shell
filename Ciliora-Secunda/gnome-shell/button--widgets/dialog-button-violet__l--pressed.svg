@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="10.002615"
-     inkscape:cx="-22.139773"
-     inkscape:cy="18.573037"
+     inkscape:cx="-16.641211"
+     inkscape:cy="12.874527"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -90,7 +90,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -131,12 +131,6 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 1,280 -1,0 0,15 1,0 z"
-       id="rect4238-3-8"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
-    <path
        inkscape:connector-curvature="0"
        id="rect4238-3-8-8"
        d="m 15,279 0,1 -15,0 0,-1 15,0 z"
@@ -144,7 +138,7 @@
     <path
        inkscape:connector-curvature="0"
        style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 15,280 0,1 -14,0 0,-1 14,0 z"
+       d="m 15,280 0,1 -15,0 0,-1 15,0 z"
        id="path4169" />
     <rect
        y="281"
@@ -152,7 +146,7 @@
        height="14"
        width="14"
        id="rect4270-3"
-       style="fill:#8b67b1;fill-opacity:1;stroke:none" />
+       style="fill:#9b75ff;fill-opacity:1;stroke:none" />
     <g
        transform="translate(27,3)"
        id="g3824-5"
@@ -211,5 +205,10 @@
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
     </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 1,295 -1,0 0,-14 1,0 0,14 z"
+       id="path4161" />
   </g>
 </svg>
