@@ -4,15 +4,7 @@
 #======================================
 #   Variables
 #======================================
-asset_dirs=(
-    'container--widgets'
-    'button--widgets'
-    'menu-icons'
-    'misc--widgets'
-    'overview--widgets'
-    'panel--widgets'
-    'control--widgets'
-)
+asset_dirs="img"
 
 tmp_dir=".tmp"
 
@@ -21,17 +13,17 @@ css_file="gnome-shell.css"
 gresource_dest="../../gnome-shell-theme.gresource"
 
 
-#======================================
+# ======================================
 #   Copy all assets into tmp_dir
-#
+
 #   Some assets urls are hardcoded in the
 #   gnome-shells .js files and point to
 #   the themes root dir.
-#
+
 #   In particular, the "spinner" asset
 #   hangs gdm when trying to log in,
 #   because it's not in the themes root dir.
-#
+
 #   To prevent this for now, copy all assets
 #   into one dir before generating
 #   gresource
@@ -42,17 +34,15 @@ trap 'rm -rf $tmp_dir; exit' INT TERM EXIT
 
 mkdir -p "$tmp_dir"
 
-find "${asset_dirs[@]}" -type f -execdir cp -f {} "$PWD/$tmp_dir/" \;
+find "${asset_dirs}" -type f -execdir cp -f {} "$PWD/$tmp_dir/" \;
 
 
 #======================================
 #   Modify urls paths in css file
 #======================================
-printf -v regex "%s/|" "${asset_dirs[@]}"
+regex="(url\([\"\']*).*/(.*\))"
 
-regex=${regex%|}  # remove trailing "|"
-
-sed -r "s:$regex::" "$css_file" > "$tmp_dir/gnome-shell.css"
+sed -r "s:$regex:\1\2:" "$css_file" > "$tmp_dir/gnome-shell.css"
 
 
 #======================================

@@ -9,8 +9,9 @@ var gulp        = require("gulp"),
     sass        = require("gulp-sass");
 
 
-var themesDir   = process.env.HOME+"/.themes/",
-    theme       = "Ciliora-Secunda";
+var themesDir    = process.env.HOME+"/.themes/",
+    theme        = "Ciliora-Secunda",
+    sass_modules = "scss/gnome-shell.scss";
 
 
 // Error handler
@@ -34,7 +35,7 @@ var onError = function (err) {
 
 // Compile sass
 gulp.task("sass", function () {
-    return gulp.src("sass/gnome-shell.scss")
+    return gulp.src(sass_modules)
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass({ outputStyle: "expanded" }))
         .pipe(gulp.dest("."));
@@ -86,14 +87,8 @@ gulp.task("install", function () {
 
 // Watch
 gulp.task('watch', function () {
-    gulp.watch(['sass/**/*',
-                'container--widgets/**/*',
-                'button--widgets/**/*',
-                'misc--widgets/**/*',
-                'overview--widgets/**/*',
-                'panel--widgets/**/*',
-                'control--widgets/**/*',
-                'menu-icons/**/*',
+    gulp.watch(['scss/**/*',
+                'img/**/*',
                 'extensions/**/*'], ['reloadTheme']);
 });
 

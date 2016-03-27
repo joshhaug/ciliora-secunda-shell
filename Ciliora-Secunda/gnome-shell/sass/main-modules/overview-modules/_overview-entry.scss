@@ -1,6 +1,0 @@
-/* ! Search entry in overview */
-.search-entry {
-    @include entry(overview--normal, $width: 320px);
-
-    &:focus { @include entry(overview--focus, $width: 320px); }
-}
