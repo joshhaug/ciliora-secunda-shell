@@ -79,7 +79,7 @@ StEntry,
   border-image: url("img/controls/entry.svg") 6;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -101,7 +101,7 @@ StEntry:focus,
   font-weight: bold;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   color: white;
   caret-color: white;
   caret-size: 1px;
@@ -661,7 +661,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   width: 320px;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -681,7 +681,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-light-bg.svg") 7;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   width: 320px;
   color: white;
   caret-color: white;
@@ -693,6 +693,10 @@ StEntry:insensitive StIcon,
 
 .search-entry:focus StIcon {
   color: white;
+}
+
+.search-entry:focus StIcon.capslock-warning {
+  color: white !important;
 }
 
 .search-entry:focus:hover StIcon {
@@ -4705,7 +4709,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   width: 320px;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -4725,7 +4729,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-light-bg.svg") 7;
   font-size: 12px;
   padding: .7em !important;
-  min-height: 1em;
+  min-height: 16px;
   width: 320px;
   color: white;
   caret-color: white;
@@ -4737,6 +4741,10 @@ StEntry:insensitive StIcon,
 
 .login-dialog StEntry:focus StIcon {
   color: white;
+}
+
+.login-dialog StEntry:focus StIcon.capslock-warning {
+  color: white !important;
 }
 
 .login-dialog StEntry:focus:hover StIcon {

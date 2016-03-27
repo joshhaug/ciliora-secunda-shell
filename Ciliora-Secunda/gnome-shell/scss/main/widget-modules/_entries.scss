@@ -10,7 +10,7 @@
         border-image: url("img/controls/entry.svg") 6;
         font-size: 12px;
         padding: .7em !important;
-        min-height: 1em;
+        min-height: 16px; // ensure space for icon
         width: $width;
         font-weight: normal;
         color: $text-secondary;
@@ -30,7 +30,7 @@
         font-weight: bold;
         font-size: 12px;
         padding: .7em !important;
-        min-height: 1em;
+        min-height: 16px; // ensure space for icon
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -58,7 +58,7 @@
         border-radius: 0;
         font-size: 12px;
         padding: .7em !important;
-        min-height: 1em;
+        min-height: 16px; // ensure space for icon
         width: $width;
         color: $text-secondary;
 
@@ -79,7 +79,7 @@
         border-image: url("img/overview/overview-light-bg.svg") 7;
         font-size: 12px;
         padding: .7em !important;
-        min-height: 1em;
+        min-height: 16px; // ensure space for icon
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -90,6 +90,10 @@
 
         StIcon {
             color: $text-primary;
+
+            &.capslock-warning {
+                color: $text-primary !important;
+            }
         }
 
         &:hover StIcon {
