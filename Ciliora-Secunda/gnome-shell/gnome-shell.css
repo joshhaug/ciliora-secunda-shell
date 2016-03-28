@@ -3381,7 +3381,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-received {
-  border-image: url("img/containers/bubble-active.svg") 7 11 7 9;
+  border-image: url("img/containers/bubble-right-blue.svg") 7 11 7 9;
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
   font-weight: bold;
@@ -3394,7 +3394,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-sent {
-  border-image: url("img/containers/bubble.svg") 11 7 9 7;
+  border-image: url("img/containers/bubble-left-light-bg.svg") 11 7 9 7;
   padding: 1em 1em 1em 1.6em;
   margin-left: 0;
   color: white;
