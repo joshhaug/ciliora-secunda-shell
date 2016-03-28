@@ -4439,7 +4439,7 @@ StEntry:insensitive StIcon,
    ! Login and Lock Screen
    ===================================================================*/
 #lockDialogGroup {
-  background: #303030 url("img/overview/overview-pattern.svg");
+  background: #333 url("img/overview/overview-pattern.svg");
   background-repeat: repeat;
 }
 
