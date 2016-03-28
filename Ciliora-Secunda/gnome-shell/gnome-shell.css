@@ -1991,7 +1991,7 @@ StEntry:insensitive StIcon,
    ===================================================== */
 .popup-menu {
   padding: 3px;
-  min-width: 100px;
+  min-width: 10em;
 }
 
 .popup-menu > * > * > * {
@@ -2037,6 +2037,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-item:ltr {
+  min-height: 16px;
   padding: .5em 1em .5em 0;
 }
 
@@ -2049,6 +2050,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-item:rtl {
+  min-height: 16px;
   padding: .5em 0 .5em 1em;
 }
 
@@ -2106,16 +2108,6 @@ StEntry:insensitive StIcon,
   padding: 12px 0;
 }
 
-.popup-sub-menu .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.popup-sub-menu .popup-menu-item:active,
-.popup-sub-menu .popup-menu-item.selected {
-  border-image: url("img/containers/hover-popup.svg") 9;
-  color: white;
-}
-
 .popup-separator-menu-item {
   background-image: url("img/misc/separator.svg");
   background-repeat: repeat;
@@ -2130,10 +2122,6 @@ StEntry:insensitive StIcon,
   -arrow-rise: 0;
 }
 
-/*.window-menu {
-    .popup-menu-content {
-    }
-}*/
 /* =====================================================
    ! OSD
    ===================================================== */
