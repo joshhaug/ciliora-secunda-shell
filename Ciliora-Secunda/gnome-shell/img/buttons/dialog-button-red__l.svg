@@ -131,7 +131,7 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="m 1,280 -1,0 0,15 1,0 z"
        id="rect4238-3-8"
        inkscape:connector-curvature="0"
@@ -145,7 +145,7 @@
        style="fill:#e66464;fill-opacity:1;stroke:none" />
     <path
        inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="m 15,280 0,1 -14,0 0,-1 14,0 z"
        id="path4169-0" />
   </g>

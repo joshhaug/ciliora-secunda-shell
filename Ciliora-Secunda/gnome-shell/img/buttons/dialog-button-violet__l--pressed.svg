@@ -137,7 +137,7 @@
        style="display:inline;opacity:0.04;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
     <path
        inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="m 15,280 0,1 -15,0 0,-1 15,0 z"
        id="path4169" />
     <rect
@@ -207,7 +207,7 @@
     </g>
     <path
        inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="m 1,295 -1,0 0,-14 1,0 0,14 z"
        id="path4161" />
   </g>
