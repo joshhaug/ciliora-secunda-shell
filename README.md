@@ -14,7 +14,7 @@
 
 ####Installation
 
-* Put the `Ciliora-Secunda` folder into your `~/.themes` directory.
+* Move the `Ciliora-Secunda` directory into `~/.themes`.
 
 * Install the user-themes extension, and apply the theme in gnome-tweak-tool.
 
