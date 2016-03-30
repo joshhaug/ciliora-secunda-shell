@@ -1,21 +1,85 @@
-#workspacestodockContainerWrapper {
+/* =====================================================
+ * ! Floating bg
+   ===================================================== */
+
+#workspacestodockDock.right .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-right.svg") 7 !important;
+    padding: 10px 10px 10px 12px;
 }
 
-#workspacestodockContainer {
+#workspacestodockDock.left .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-left.svg") 7 !important;
+    padding: 10px 12px 10px 10px;
 }
 
-/*.right .workspace-thumbnails,
-.left .workspace-thumbnails {
-    border-image: none;
-}*/
-
-.right .workspace-thumbnails-fullheight {
-    border-image: url("../../panel-assets/panel-right.svg") 7;
+#workspacestodockDock.top .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-top.svg") 7 !important;
+    padding: 10px 10px 12px 12px;
 }
 
-.left .workspace-thumbnails-fullheight {
-    border-image: url("../../panel-assets/panel-left.svg") 7;
+#workspacestodockDock.bottom .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-bottom.svg") 7 !important;
+    padding: 12px 10px 10px 12px;
 }
+
+
+/* =====================================================
+ * ! Extended bg
+   ===================================================== */
+
+#workspacestodockDock.right.fullheight .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-right-extended.svg") 7 !important;
+    padding: 10px 10px 10px 12px;
+}
+
+#workspacestodockDock.left.fullheight .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-left-extended.svg") 7 !important;
+    padding: 10px 12px 10px 10px;
+}
+
+#workspacestodockDock.top.fullheight .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-top-extended.svg") 7 !important;
+    padding: 10px 10px 12px 10px;
+}
+
+#workspacestodockDock.bottom.fullheight .workspace-thumbnails {
+    border-image: url("../../img/overview/workspace-bg-bottom-extended.svg") 7 !important;
+    padding: 12px 10px 10px 10px;
+}
+
+
+/* =====================================================
+ * ! Indicator
+   ===================================================== */
+
+#workspacestodockDock.right .workspace-thumbnail-indicator {
+    border-image: url("../../img/overview/workspace-indicator-right.svg") 7 !important;
+    border-width: 12px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+#workspacestodockDock.left .workspace-thumbnail-indicator {
+    border-image: url("../../img/overview/workspace-indicator-left.svg") 7 !important;
+    border-width: 12px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+#workspacestodockDock.top .workspace-thumbnail-indicator {
+    border-image: url("../../img/overview/workspace-indicator-top.svg") 7 !important;
+    border-width: 12px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
+#workspacestodockDock.bottom .workspace-thumbnail-indicator {
+    border-image: url("../../img/overview/workspace-indicator-bottom.svg") 7 !important;
+    border-width: 12px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+}
+
 
 .workspacestodock-shortcuts-panel {
     padding: 2px;
@@ -97,11 +161,11 @@
 }
 
 .workspacestodock-caption-windowapps-menu-item:active .window-close {
-    background-image: url("../../widget-assets/close-simple-active.svg");
+    background-image: url("../../img/controls/close-simple-active.svg");
 }
 
 .workspacestodock-caption-windowapps-menu-item .window-close {
-    background-image: url("../../widget-assets/close-simple.svg");
+    background-image: url("../../img/controls/close-simple.svg");
     background-size: 24px;
     height: 24px;
     width: 24px;
