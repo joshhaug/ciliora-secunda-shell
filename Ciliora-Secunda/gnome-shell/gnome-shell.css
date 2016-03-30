@@ -92,7 +92,7 @@ StEntry StIcon,
 
 StEntry StIcon.capslock-warning,
 .popup-menu .search-entry StIcon.capslock-warning {
-  color: #ff8c51 !important;
+  color: #ffa959 !important;
 }
 
 StEntry:focus,
@@ -1245,7 +1245,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .check-box StLabel {
   font-weight: bold;
-  color: #ff8c51;
+  color: #ffa959;
   padding-left: .4em;
 }
 
@@ -4476,7 +4476,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-warning {
-  color: #ff8c51;
+  color: #ffa959;
 }
 
 .login-dialog-message-hint {
