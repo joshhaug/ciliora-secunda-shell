@@ -2,21 +2,17 @@
    ! Slider
    ===================================================== */
 .slider {
-    -slider-height: 2px;
-    -slider-background-color: rgba(0, 0, 0, 0);
+    -slider-height: 4px;
+    -slider-background-color: alpha(#080d18, .3);
     -slider-border-color: rgba(0, 0, 0, 0);
     -slider-active-background-color: $accent-primary;
-    -slider-active-border-color: rgba(0, 0, 0, 0);
-    -slider-border-width: 1px;
-    -slider-handle-radius: 4px;
-    color: $text-primary;
+    -slider-active-border-color: $accent-primary;
+    -slider-border-width: 0;
+    -slider-handle-radius: 0;
     border-image: url("img/controls/slider.svg") 9 6 8 8;
-    border: 0 solid transparent;
-    border-right-width: 1px;
-    border-left-width: 1px;
-    height: 16px;
 
     .popup-menu-item.selected & {
-       -slider-handle-radius: 5px;
+        -slider-background-color: alpha(#080d18, .5);
+        border-image: url("img/controls/slider-hover.svg") 9 6 8 8;
     }
 }

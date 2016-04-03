@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.609375"
-     inkscape:cx="11.237847"
-     inkscape:cy="-3.4736556"
+     inkscape:zoom="21.21875"
+     inkscape:cx="1.6440057"
+     inkscape:cy="7.4187702"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -131,30 +131,10 @@
      id="layer1"
      transform="translate(0,-284)">
     <path
-       id="rect4145"
-       d="m 2,289 c -1.108,0 -2,0.892 -2,2 l 0,2 c 0,1.108 0.892,2 2,2 l 9,0 c 1.108,0 2,-0.892 2,-2 l 0,-2 c 0,-1.108 -0.892,-2 -2,-2 z m -1,1 11,0 0,4 -11,0 z"
-       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke:none"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="sssssssssccccc" />
-    <rect
-       y="291"
-       x="2"
-       height="2"
-       width="9"
-       id="rect2998-2"
-       style="opacity:0.3;fill:#080d18;fill-opacity:1;stroke:none" />
-    <path
        sodipodi:nodetypes="cccccccccc"
        inkscape:connector-curvature="0"
-       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 1,290 0,4 11,0 0,-4 z m 1,1 9,0 0,2 -9,0 z"
+       style="opacity:1;fill:#040404;fill-opacity:1;stroke:none"
+       d="m 0,290 0,4 16,0 0,-4 z m 1,1 14,0 0,2 -14,0 z"
        id="rect5190-1" />
-    <rect
-       style="display:inline;fill:#3871ba;fill-opacity:1;stroke:none;enable-background:new"
-       id="rect4270-9-6"
-       width="1"
-       height="2"
-       x="2"
-       y="291" />
   </g>
 </svg>

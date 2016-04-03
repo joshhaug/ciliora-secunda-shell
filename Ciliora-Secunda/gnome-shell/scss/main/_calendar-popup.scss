@@ -13,6 +13,7 @@
 
 .datemenu-calendar-column {
     spacing: 0;
+    margin: 0;
 }
 
 /* =====================================================
@@ -20,8 +21,8 @@
    ===================================================== */
 
 .datemenu-today-button {
-    margin: 0 6px .3em 6px;
-    padding: .7em 1.2em;
+    margin: 0 6px 2px 6px;
+    padding: .7em 12px;
 
     &:hover, &:focus, &:active {
         background-color: transparent;
@@ -49,23 +50,23 @@
    ! World Clocks
    ===================================================== */
 
+.datemenu-displays-box {
+    margin: 0 18px;
+}
+
 .datemenu-displays-section {
-    padding-bottom: 0;
-    margin: .2em 3px 0 3px;
+    padding: 0;
+    margin: .2em 0 0 0;
 
     StScrollBar {
         padding: 0;
     }
-
-    .datemenu-displays-box {
-        padding: 0 15px;
-    }
-
 }
 
 .world-clocks-button {
     color: $text-primary;
     border-radius: 0;
+    padding: 0;
 
     &:hover, &:focus, &:active {
         background-color: transparent !important;
@@ -84,25 +85,24 @@
 }
 
 .world-clocks-grid {
-    spacing-rows: .6em;
+    spacing-rows: .8em;
     padding: .4em 0;
     font-size: 12px;
 }
 
-
 .world-clocks-city {
     font-size: 12px;
-    margin: 0 ;
+    margin: 0;
 }
 
 .world-clocks-time {
     font-size: 12px;
     font-weight: bold;
-    margin: 0 ;
+    margin: 0;
 }
 
 /* =====================================================
-   ! Change Month
+   ! Change Month Bar
    ===================================================== */
 
 .calendar {
@@ -164,7 +164,7 @@
 .calendar-month-label {
     color: $text-secondary;
     font-weight: bold;
-    padding: .7em .8em;
+    padding: .7em;
 
     &:focus  {
         color: $text-link;
@@ -273,7 +273,7 @@
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
         background-image: none !important;
-        color: $text-secondary;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/misc/calendar-day-active-events.svg") 7;
@@ -338,6 +338,25 @@
             border-image: url("img/misc/calendar-day-active.svg") 7;
             color: $text-primary;
         }
+    }
+}
+
+/*  ! Events Day */
+
+.calendar-day-with-events {
+    &:hover, &:focus {
+        border-image: none;
+        background-image: none !important;
+        color: $text-primary;
+    }
+}
+
+/*  ! Today */
+
+.calendar-today {
+    &:hover, &:focus {
+        border-image: url("img/misc/calendar-hover.svg") 7;
+        color: $text-primary;
     }
 }
 
@@ -438,40 +457,6 @@
     margin: 0;
     padding: .2em .2em .2em .6em;
 
-    .message-list-section:first-child & {
-        border-image: url("img/containers/light-bg-marked-blue.svg") 7;
-    }
-
-    .message-list-section:last-child & {
-        border-image: url("img/containers/light-bg-marked-violet.svg") 7;
-    }
-
-    &:focus {
-        background-color: transparent !important;
-        border-image: url("img/containers/hover.svg") 7;
-        color: $text-primary;
-
-        .message-list-section:first-child & {
-            border-image: url("img/containers/hover.svg") 7;
-        }
-
-        .message-list-section:last-child & {
-            border-image: url("img/containers/hover-violet.svg") 7;
-        }
-
-        > *:first-child StIcon {
-            color: $text-primary;
-        }
-
-        .event-time {
-            color: $text-primary;
-        }
-
-        .url-highlighter {
-            link-color: $text-primary;
-        }
-    }
-
     &:hover {
         background-color: transparent !important;
     }
@@ -514,3 +499,70 @@
         font-size: 12px;
     }
 }
+
+/*
+    notifications
+*/
+.message-list-section .message {
+    border-image: url("img/containers/light-bg-marked-blue.svg") 7;
+
+    &:focus {
+        border-image: url("img/containers/hover.svg") 7;
+        * { color: $text-primary !important; }
+    }
+}
+
+/*
+    events
+*/
+.message-list-section:last-child .message {
+    border-image: url("img/containers/light-bg-marked-violet.svg") 7;
+
+    &:focus {
+        border-image: url("img/containers/hover-violet.svg") 7;
+        * { color: $text-primary !important; }
+    }
+}
+
+/*
+    media
+*/
+.message-list-section:first-child .message {
+    border-image: url("img/containers/light-bg-marked-green.svg") 7;
+
+    &:focus {
+        background-color: transparent !important;
+        border-image: url("img/containers/hover-green.svg") 7;
+
+        * {
+            color: $text-primary !important;
+        }
+
+        .message-media-control:hover StIcon {
+            color: $text-primary-invert !important;
+        }
+    }
+
+    .message-media-control {
+        padding: 6px;
+
+        &:hover StIcon { color: $text-link; }
+
+        &:last-child:ltr { padding-right: 18px; }
+        &:last-child:rtl { padding-left: 18px; }
+    }
+
+    .media-message-cover-icon {
+        icon-size: 32px;
+
+        &.fallback {
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 0;
+            padding: 0;
+            border: 0;
+            color: $text-primary;
+            icon-size: 32px;
+        }
+    }
+}
+

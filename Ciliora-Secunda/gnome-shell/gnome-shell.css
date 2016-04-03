@@ -238,23 +238,19 @@ StEntry:insensitive StIcon,
    ! Slider
    ===================================================== */
 .slider {
-  -slider-height: 2px;
-  -slider-background-color: transparent;
+  -slider-height: 4px;
+  -slider-background-color: rgba(8, 13, 24, 0.3);
   -slider-border-color: transparent;
   -slider-active-background-color: #6A98D2;
-  -slider-active-border-color: transparent;
-  -slider-border-width: 1px;
-  -slider-handle-radius: 4px;
-  color: white;
+  -slider-active-border-color: #6A98D2;
+  -slider-border-width: 0;
+  -slider-handle-radius: 0;
   border-image: url("img/controls/slider.svg") 9 6 8 8;
-  border: 0 solid transparent;
-  border-right-width: 1px;
-  border-left-width: 1px;
-  height: 16px;
 }
 
 .popup-menu-item.selected .slider {
-  -slider-handle-radius: 5px;
+  -slider-background-color: rgba(8, 13, 24, 0.5);
+  border-image: url("img/controls/slider-hover.svg") 9 6 8 8;
 }
 
 /* =====================================================
@@ -482,6 +478,7 @@ StEntry:insensitive StIcon,
 }
 
 .workspace-thumbnail-indicator {
+  padding: 0 !important;
   border-width: 12px;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1279,6 +1276,12 @@ StEntry:insensitive StIcon,
   margin-top: 1em;
 }
 
+.end-session-dialog-list .framed-user-icon {
+  border: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
 .end-session-dialog-inhibitor-layout {
   padding: 0;
   spacing: 0;
@@ -1637,7 +1640,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-info-label {
   font-size: 12px;
   font-weight: bold;
-  color: #a684ff;
+  color: #b599ff;
   padding-bottom: 0;
 }
 
@@ -2455,14 +2458,15 @@ StEntry:insensitive StIcon,
 
 .datemenu-calendar-column {
   spacing: 0;
+  margin: 0;
 }
 
 /* =====================================================
    ! Day & Date
    ===================================================== */
 .datemenu-today-button {
-  margin: 0 6px .3em 6px;
-  padding: .7em 1.2em;
+  margin: 0 6px 2px 6px;
+  padding: .7em 12px;
 }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus, .datemenu-today-button:active {
@@ -2489,22 +2493,23 @@ StEntry:insensitive StIcon,
 /* =====================================================
    ! World Clocks
    ===================================================== */
+.datemenu-displays-box {
+  margin: 0 18px;
+}
+
 .datemenu-displays-section {
-  padding-bottom: 0;
-  margin: .2em 3px 0 3px;
+  padding: 0;
+  margin: .2em 0 0 0;
 }
 
 .datemenu-displays-section StScrollBar {
   padding: 0;
 }
 
-.datemenu-displays-section .datemenu-displays-box {
-  padding: 0 15px;
-}
-
 .world-clocks-button {
   color: white;
   border-radius: 0;
+  padding: 0;
 }
 
 .world-clocks-button:hover, .world-clocks-button:focus, .world-clocks-button:active {
@@ -2523,7 +2528,7 @@ StEntry:insensitive StIcon,
 }
 
 .world-clocks-grid {
-  spacing-rows: .6em;
+  spacing-rows: .8em;
   padding: .4em 0;
   font-size: 12px;
 }
@@ -2540,7 +2545,7 @@ StEntry:insensitive StIcon,
 }
 
 /* =====================================================
-   ! Change Month
+   ! Change Month Bar
    ===================================================== */
 .calendar > StBoxLayout:first-child {
   border-image: url("img/containers/dark-bg.svg") 7;
@@ -2595,7 +2600,7 @@ StEntry:insensitive StIcon,
 .calendar-month-label {
   color: rgba(255, 255, 255, 0.45);
   font-weight: bold;
-  padding: .7em .8em;
+  padding: .7em;
 }
 
 .calendar-month-label:focus {
@@ -2694,7 +2699,7 @@ StEntry:insensitive StIcon,
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
@@ -2757,6 +2762,19 @@ StEntry:insensitive StIcon,
 
 .calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
   border-image: url("img/misc/calendar-day-active.svg") 7;
+  color: white;
+}
+
+/*  ! Events Day */
+.calendar-day-with-events:hover, .calendar-day-with-events:focus {
+  border-image: none;
+  background-image: none !important;
+  color: white;
+}
+
+/*  ! Today */
+.calendar-today:hover, .calendar-today:focus {
+  border-image: url("img/misc/calendar-hover.svg") 7;
   color: white;
 }
 
@@ -2854,40 +2872,6 @@ StEntry:insensitive StIcon,
   padding: .2em .2em .2em .6em;
 }
 
-.message-list-section:first-child .message {
-  border-image: url("img/containers/light-bg-marked-blue.svg") 7;
-}
-
-.message-list-section:last-child .message {
-  border-image: url("img/containers/light-bg-marked-violet.svg") 7;
-}
-
-.message:focus {
-  background-color: transparent !important;
-  border-image: url("img/containers/hover.svg") 7;
-  color: white;
-}
-
-.message-list-section:first-child .message:focus {
-  border-image: url("img/containers/hover.svg") 7;
-}
-
-.message-list-section:last-child .message:focus {
-  border-image: url("img/containers/hover-violet.svg") 7;
-}
-
-.message:focus > *:first-child StIcon {
-  color: white;
-}
-
-.message:focus .event-time {
-  color: white;
-}
-
-.message:focus .url-highlighter {
-  link-color: white;
-}
-
 .message:hover {
   background-color: transparent !important;
 }
@@ -2925,6 +2909,85 @@ StEntry:insensitive StIcon,
 .message .event-time {
   color: rgba(255, 255, 255, 0.45);
   font-size: 12px;
+}
+
+/*
+    notifications
+*/
+.message-list-section .message {
+  border-image: url("img/containers/light-bg-marked-blue.svg") 7;
+}
+
+.message-list-section .message:focus {
+  border-image: url("img/containers/hover.svg") 7;
+}
+
+.message-list-section .message:focus * {
+  color: white !important;
+}
+
+/*
+    events
+*/
+.message-list-section:last-child .message {
+  border-image: url("img/containers/light-bg-marked-violet.svg") 7;
+}
+
+.message-list-section:last-child .message:focus {
+  border-image: url("img/containers/hover-violet.svg") 7;
+}
+
+.message-list-section:last-child .message:focus * {
+  color: white !important;
+}
+
+/*
+    media
+*/
+.message-list-section:first-child .message {
+  border-image: url("img/containers/light-bg-marked-green.svg") 7;
+}
+
+.message-list-section:first-child .message:focus {
+  background-color: transparent !important;
+  border-image: url("img/containers/hover-green.svg") 7;
+}
+
+.message-list-section:first-child .message:focus * {
+  color: white !important;
+}
+
+.message-list-section:first-child .message:focus .message-media-control:hover StIcon {
+  color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.message-list-section:first-child .message .message-media-control {
+  padding: 6px;
+}
+
+.message-list-section:first-child .message .message-media-control:hover StIcon {
+  color: #72a9ee;
+}
+
+.message-list-section:first-child .message .message-media-control:last-child:ltr {
+  padding-right: 18px;
+}
+
+.message-list-section:first-child .message .message-media-control:last-child:rtl {
+  padding-left: 18px;
+}
+
+.message-list-section:first-child .message .media-message-cover-icon {
+  icon-size: 32px;
+}
+
+.message-list-section:first-child .message .media-message-cover-icon.fallback {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+  color: white;
+  icon-size: 32px;
 }
 
 /* =====================================================
@@ -2996,7 +3059,7 @@ StEntry:insensitive StIcon,
     Tweak default $text-link color to FIX
  */
 .url-highlighter {
-  link-color: #2385ff;
+  link-color: #2485ff;
 }
 
 .notification-banner {
@@ -3414,57 +3477,71 @@ StEntry:insensitive StIcon,
   padding: 0;
 }
 
-.legacy-tray:ltr > StBoxLayout {
+.legacy-tray:ltr {
   border-image: url("img/containers/legacy-tray-bg-ltr.svg") 10;
 }
 
-.legacy-tray:rtl > StBoxLayout {
+.legacy-tray:rtl {
   border-image: url("img/containers/legacy-tray-bg-rtl.svg") 10;
 }
 
-.legacy-tray-handle,
-.legacy-tray-icon {
-  padding: 0;
-}
-
-.legacy-tray-handle StIcon,
-.legacy-tray-icon StIcon {
-  icon-size: 16px;
-  padding: 8px 8px 4px 8px;
-  color: white;
-}
-
-.legacy-tray-handle:hover, .legacy-tray-handle:focus,
-.legacy-tray-icon:hover,
-.legacy-tray-icon:focus {
+.legacy-tray-handle {
   background-color: transparent !important;
 }
 
-.legacy-tray-handle:hover StIcon, .legacy-tray-handle:focus StIcon,
-.legacy-tray-icon:hover StIcon,
-.legacy-tray-icon:focus StIcon {
-  color: #72a9ee;
+.legacy-tray-handle:ltr:first-child {
+  border-image: url("img/misc/legacy-tray-handle-ltr.svg") 10;
+  margin-right: 1px;
+}
+
+.legacy-tray-handle:rtl:first-child {
+  border-image: url("img/misc/legacy-tray-handle-rtl.svg") 10;
+  margin-left: 1px;
+}
+
+.legacy-tray-handle:ltr StIcon {
+  icon-size: 16px;
+  color: white;
+  padding: 8px 8px 4px 8px !important;
+  margin-right: 3px !important;
+}
+
+.legacy-tray-handle:hover StIcon, .legacy-tray-handle:focus StIcon, .legacy-tray-handle:active StIcon {
+  color: #72a9ee !important;
+}
+
+.legacy-tray-handle:ltr:first-child StIcon {
+  padding: 8px 8px 4px 8px !important;
+  margin-right: 0 !important;
+}
+
+.legacy-tray-handle:rtl StIcon {
+  margin-left: 3px !important;
+}
+
+.legacy-tray-handle:rtl:first-child StIcon {
+  margin-left: 0 !important;
 }
 
 .legacy-tray-icon-box {
-  spacing: 8px;
+  spacing: 0 !important;
 }
 
 .legacy-tray-icon-box:ltr {
-  padding: 6px 7px 2px 10px;
+  padding: 6px 6px 1px 0;
 }
 
 .legacy-tray-icon-box:rtl {
-  padding: 6px 10px 2px 7px;
+  padding: 6px 0 1px 6px;
 }
 
-.legacy-tray-icon-box StButton {
+.legacy-tray-icon-box .legacy-tray-icon {
   width: 24px;
   height: 24px;
   padding: 4px;
 }
 
-.legacy-tray-icon-box StButton:hover, .legacy-tray-icon-box StButton:focus {
+.legacy-tray-icon-box .legacy-tray-icon:hover, .legacy-tray-icon-box .legacy-tray-icon:focus {
   border-image: url("img/containers/hover.svg") 6;
 }
 
@@ -4292,7 +4369,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extension-state {
   font-weight: bold;
-  color: #a684ff;
+  color: #b599ff;
 }
 
 .lg-dialog #EntryArea StLabel {
