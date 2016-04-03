@@ -495,9 +495,60 @@ StEntry:insensitive StIcon,
 /* =====================================================
  * ! Search Results
    ===================================================== */
+.search-entry {
+  border-image: url("img/overview/overview-dark-bg.svg") 7;
+  border-radius: 0;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 16px;
+  width: 320px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry StIcon {
+  icon-size: 16px;
+  padding: 0 4px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry:hover StIcon {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.search-entry:focus {
+  border-width: 0;
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+  font-size: 12px;
+  padding: .7em !important;
+  min-height: 16px;
+  width: 320px;
+  color: white;
+  caret-color: white;
+  caret-size: 1px;
+  selected-color: white;
+  selection-background-color: #6A98D2;
+  font-weight: bold;
+}
+
+.search-entry:focus StIcon {
+  color: white;
+}
+
+.search-entry:focus StIcon.capslock-warning {
+  color: white !important;
+}
+
+.search-entry:focus:hover StIcon {
+  color: white;
+}
+
 #searchResults {
-  padding: 20px 10px 0px 10px;
-  spacing: 16px;
+  padding: 10px;
+  spacing: 0;
+}
+
+#searchResults > * > * {
+  padding: 0;
 }
 
 #searchResultsBin {
@@ -648,56 +699,6 @@ StEntry:insensitive StIcon,
 
 .search-provider-icon:hover, .search-provider-icon:focus, .search-provider-icon:selected, .search-provider-icon:active {
   border-image: url("img/overview/search-provider-hover.svg") 6;
-}
-
-/* =====================================================
- * ! Search Entry
-   ===================================================== */
-.search-entry {
-  border-image: url("img/overview/overview-dark-bg.svg") 7;
-  border-radius: 0;
-  font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
-  width: 320px;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.search-entry StIcon {
-  icon-size: 16px;
-  padding: 0 4px;
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.search-entry:hover StIcon {
-  color: rgba(255, 255, 255, 0.45);
-}
-
-.search-entry:focus {
-  border-width: 0;
-  border-image: url("img/overview/overview-light-bg.svg") 7;
-  font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
-  width: 320px;
-  color: white;
-  caret-color: white;
-  caret-size: 1px;
-  selected-color: white;
-  selection-background-color: #6A98D2;
-  font-weight: bold;
-}
-
-.search-entry:focus StIcon {
-  color: white;
-}
-
-.search-entry:focus StIcon.capslock-warning {
-  color: white !important;
-}
-
-.search-entry:focus:hover StIcon {
-  color: white;
 }
 
 /* =====================================================

@@ -2,9 +2,16 @@
  * ! Search Results
    ===================================================== */
 
+.search-entry {
+    @include entry(overview--normal, $width: 320px);
+
+    &:focus { @include entry(overview--focus, $width: 320px); }
+}
+
 #searchResults {
-    padding: 20px 10px 0px 10px;
-    spacing: 16px;
+    padding: 10px;
+    spacing: 0;
+    > * > * { padding: 0; }
 }
 
 #searchResultsBin {
@@ -154,13 +161,4 @@
     &:hover, &:focus, &:selected, &:active {
         border-image: url("img/overview/search-provider-hover.svg") 6;
     }
-}
-/* =====================================================
- * ! Search Entry
-   ===================================================== */
-
-.search-entry {
-    @include entry(overview--normal, $width: 320px);
-
-    &:focus { @include entry(overview--focus, $width: 320px); }
 }
