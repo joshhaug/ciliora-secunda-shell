@@ -2859,7 +2859,7 @@ StEntry:insensitive StIcon,
   color: #f85c5c;
 }
 
-.message-list StScrollBar {
+.message-list StScrollView StScrollBar {
   padding: 8px 0 12px 0;
 }
 
