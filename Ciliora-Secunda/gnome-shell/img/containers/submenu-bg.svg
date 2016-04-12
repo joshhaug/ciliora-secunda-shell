@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145833"
-     inkscape:cx="4.4359351"
-     inkscape:cy="12.63764"
+     inkscape:cx="17.16053"
+     inkscape:cy="11.789334"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -130,14 +130,9 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.1"
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.04"
        d="m 1,278 0,1 22,0 0,-1 -22,0 z"
        id="path4238" />
-    <path
-       style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 1,297 0,1 22,0 0,-1 -22,0 z"
-       id="rect4185"
-       inkscape:connector-curvature="0" />
     <rect
        y="280"
        x="1"
@@ -151,7 +146,7 @@
        height="1"
        width="22"
        id="rect4719"
-       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.8" />
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.85" />
     <path
        style="opacity:0.45;fill:#000000;fill-opacity:1;stroke:none"
        d="m 1,280 22,0 0,1 -22,0 z"
@@ -178,7 +173,7 @@
        id="rect3820"
        inkscape:connector-curvature="0" />
     <rect
-       style="opacity:0.7;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
        id="rect3090"
        width="22"
        height="1"
