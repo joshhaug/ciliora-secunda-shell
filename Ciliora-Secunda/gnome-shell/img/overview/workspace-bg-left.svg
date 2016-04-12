@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.895833"
-     inkscape:cx="3.8601387"
+     inkscape:cx="-6.4783231"
      inkscape:cy="15.893706"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -132,23 +132,16 @@
     <rect
        style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        id="rect5315-7-0-3"
-       width="19"
-       height="22"
+       width="24"
+       height="24"
        x="0"
-       y="277" />
+       y="276" />
     <path
        sodipodi:nodetypes="ccccccccc"
        inkscape:connector-curvature="0"
        style="opacity:0.89999999;fill:#000000;fill-opacity:1;stroke:none"
        d="m 20,300 0,-24 -20,0 0,1 19,0 0,22 -19,0 0,1 z"
        id="path4074-9" />
-    <rect
-       y="277"
-       x="20"
-       height="22"
-       width="3"
-       id="rect4136-1"
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none" />
     <path
        id="path4138-2"
        d="m 24,300 0,-24 -4,0 0,1 3,0 0,22 -3,0 0,1 z"

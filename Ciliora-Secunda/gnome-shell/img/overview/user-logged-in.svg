@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.002614"
-     inkscape:cx="18.494993"
-     inkscape:cy="21.706057"
+     inkscape:zoom="14.145832"
+     inkscape:cx="8.2678686"
+     inkscape:cy="13.802317"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -129,19 +129,19 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
+    <rect
+       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
+       id="rect5315-7-0"
+       width="24"
+       height="24"
+       x="8.8817842e-16"
+       y="276" />
     <path
        sodipodi:nodetypes="cccccccccc"
        inkscape:connector-curvature="0"
        id="rect5319-7"
        d="m 0,276 0,24 24,0 0,-24 z m 1,1 22,0 0,22 -22,0 z"
        style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
-    <rect
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
-       id="rect5315-7-0"
-       width="22"
-       height="22"
-       x="1"
-       y="277" />
     <rect
        style="fill:#6a98d2;fill-opacity:1;stroke:none"
        id="rect4270-9-0"
@@ -151,7 +151,7 @@
        y="277"
        transform="scale(-1,1)" />
     <path
-       style="opacity:0.45;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"
        d="m 20,277 -1,0 0,22 1,0 z"
        id="rect4238-6"
        inkscape:connector-curvature="0"

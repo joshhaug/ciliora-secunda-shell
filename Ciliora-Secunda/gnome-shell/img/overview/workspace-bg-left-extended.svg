@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.895833"
-     inkscape:cx="3.4573416"
+     inkscape:cx="-6.8811202"
      inkscape:cy="15.75944"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -132,18 +132,10 @@
     <rect
        style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        id="rect5315-7-0-3"
-       width="19"
+       width="24"
        height="24"
        x="0"
        y="-300"
-       transform="scale(1,-1)" />
-    <rect
-       y="-300"
-       x="20"
-       height="24"
-       width="3"
-       id="rect4136-1"
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
        style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"

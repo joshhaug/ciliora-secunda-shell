@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.895833"
-     inkscape:cx="-18.897904"
-     inkscape:cy="11.597202"
+     inkscape:cx="4.4643343"
+     inkscape:cy="12.671328"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -130,10 +130,10 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       y="1"
+       y="8.8817842e-16"
        x="276"
-       height="22"
-       width="23"
+       height="24"
+       width="24"
        id="rect5315-7-0"
        style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
        transform="matrix(0,1,1,0,0,0)" />
