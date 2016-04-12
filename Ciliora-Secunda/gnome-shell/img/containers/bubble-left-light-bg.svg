@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="light-bg-bubble-left.svg"
+   sodipodi:docname="bubble-left-light-bg.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.769527"
-     inkscape:cx="-9.1036482"
-     inkscape:cy="13.144"
+     inkscape:zoom="9.8847635"
+     inkscape:cx="-2.3727868"
+     inkscape:cy="14.546151"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -140,7 +140,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccccccccc" />
     <path
-       style="opacity:0.95;fill:#2c343c;fill-opacity:1;stroke:none"
+       style="opacity:0.5;fill:#343e48;fill-opacity:1;stroke:none"
        d="m 9.0000006,278 0,15.32813 -5.33915,4.67187 18.3392174,0 0,-20 z"
        id="rect5188-0"
        inkscape:connector-curvature="0"

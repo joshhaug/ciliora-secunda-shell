@@ -2569,15 +2569,27 @@ StEntry:insensitive StIcon,
   border-image: url("img/misc/change-month-btn-l.svg") 7;
 }
 
-.pager-button:hover, .pager-button:focus, .pager-button:active {
+.pager-button:focus {
   background-color: transparent !important;
 }
 
-.pager-button:hover:first-child, .pager-button:focus:first-child, .pager-button:active:first-child {
+.pager-button:focus:first-child {
+  border-image: url("img/misc/change-month-btn-f.svg") 7;
+}
+
+.pager-button:focus:last-child {
+  border-image: url("img/misc/change-month-btn-l.svg") 7;
+}
+
+.pager-button:hover, .pager-button:active {
+  background-color: transparent !important;
+}
+
+.pager-button:hover:first-child, .pager-button:active:first-child {
   border-image: url("img/misc/change-month-btn-f-hover.svg") 7;
 }
 
-.pager-button:hover:last-child, .pager-button:focus:last-child, .pager-button:active:last-child {
+.pager-button:hover:last-child, .pager-button:active:last-child {
   border-image: url("img/misc/change-month-btn-l-hover.svg") 7;
 }
 
@@ -2585,15 +2597,23 @@ StEntry:insensitive StIcon,
   background-image: url("img/controls/calendar-arrow-left.svg");
 }
 
+.pager-button.calendar-change-month-back:focus, .pager-button.calendar-change-month-forward:rtl:focus {
+  background-image: url("img/controls/calendar-arrow-left-active.svg");
+}
+
+.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-forward:rtl:hover {
+  background-image: url("img/controls/calendar-arrow-left-hover.svg");
+}
+
 .pager-button.calendar-change-month-forward, .pager-button.calendar-change-month-back:rtl {
   background-image: url("img/controls/calendar-arrow-right.svg");
 }
 
-.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-back:focus, .pager-button.calendar-change-month-forward:hover:rtl, .pager-button.calendar-change-month-forward:focus:rtl {
-  background-image: url("img/controls/calendar-arrow-left-hover.svg");
+.pager-button.calendar-change-month-forward:focus, .pager-button.calendar-change-month-back:rtl:focus {
+  background-image: url("img/controls/calendar-arrow-right-active.svg");
 }
 
-.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-forward:focus, .pager-button.calendar-change-month-back:focus:rtl, .pager-button.calendar-change-month-back:hover:rtl {
+.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-back:rtl:hover {
   background-image: url("img/controls/calendar-arrow-right-hover.svg");
 }
 
@@ -4013,7 +4033,7 @@ StEntry:insensitive StIcon,
   font-weight: normal !important;
   font-size: 12px !important;
   spacing: 4px;
-  margin: 7px;
+  margin: 2px;
   padding: 16px 12px 16px 24px !important;
   color: white;
 }
@@ -4289,7 +4309,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog StScrollBar {
-  padding: 0 0 4px 0;
+  padding: 0 0 4px 1px;
 }
 
 .lg-dialog #EvalBox {
@@ -4379,7 +4399,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #EntryArea StEntry {
   selection-background-color: #6A98D2;
-  selected-color: rgba(0, 0, 0, 0.75);
+  selected-color: white;
 }
 
 .lg-dialog #LookingGlassAutoCompletionText {
@@ -4399,7 +4419,7 @@ StEntry:insensitive StIcon,
 }
 
 #uiGroup > StScrollView StScrollBar {
-  padding: 10px 4px;
+  padding: 12px 6px 12px 3px;
 }
 
 #LookingGlassPropertyInspector {

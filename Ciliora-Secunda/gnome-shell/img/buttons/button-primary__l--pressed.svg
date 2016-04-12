@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.183741"
-     inkscape:cx="-1.7188363"
-     inkscape:cy="11.494817"
+     inkscape:cx="5.503684"
+     inkscape:cy="12.910997"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -137,7 +137,7 @@
        d="m 14,279 c 1.108,-7e-5 2,0.892 2,2 l 0,14 c 0,1.108 -0.892,2 -2,2 l -13.999471,9.2e-4 0,-1 L 15,296 l 0,-16 -14.999471,9.2e-4 0,-1 z"
        style="display:inline;opacity:0.03999999;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
     <path
-       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.85;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="M 0 4 L 0 5 L 14 5 L 14 19 L 0 19 L 0 20 L 15 20 L 15 4 L 0 4 z "
        transform="translate(0,276)"
        id="rect4272-9" />
@@ -147,49 +147,49 @@
        height="14"
        width="14"
        id="rect4270-3"
-       style="display:inline;fill:#2c343c;fill-opacity:1;stroke:none;enable-background:new;opacity:0.95"
+       style="display:inline;fill:#080d18;fill-opacity:1;stroke:none;enable-background:new;opacity:0.5"
        transform="scale(-1,1)" />
     <g
        style="display:inline;enable-background:new"
        id="g3824"
        transform="translate(26,3)">
       <path
-         style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
          d="m -26,278 14,0 0,1 -14,0 z"
          id="rect2996"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
       <path
          transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
          d="m 278,25 14,0 0,1 -14,0 z"
          id="rect2998"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
       <path
          transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none"
          d="m 278,12 14,0 0,1 -14,0 z"
          id="rect3000"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
       <path
          transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.05;fill:#000000;fill-opacity:1;stroke:none"
          d="m 278,24 14,0 0,1 -14,0 z"
          id="rect3004"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
       <path
          transform="matrix(0,1,-1,0,0,0)"
-         style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.05;fill:#000000;fill-opacity:1;stroke:none"
          d="m 278,13 14,0 0,1 -14,0 z"
          id="rect3006"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />
       <path
          transform="scale(-1,-1)"
-         style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+         style="opacity:0.05;fill:#000000;fill-opacity:1;stroke:none"
          d="m 12,-280 14,0 0,1 -14,0 z"
          id="rect3818"
          inkscape:connector-curvature="0"
@@ -199,21 +199,13 @@
          inkscape:connector-curvature="0"
          id="path4189"
          d="m -26,292 14,0 0,-1 -14,0 z"
-         style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none" />
+         style="opacity:0.25;fill:#000000;fill-opacity:1;stroke:none" />
       <path
          sodipodi:nodetypes="ccccc"
          inkscape:connector-curvature="0"
          id="path4191"
          d="m -12,290 -14,0 0,1 14,0 z"
-         style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none" />
+         style="opacity:0.05;fill:#000000;fill-opacity:1;stroke:none" />
     </g>
-    <rect
-       transform="scale(-1,1)"
-       style="display:inline;opacity:0.1;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       id="rect7513"
-       width="14"
-       height="14"
-       x="-14"
-       y="281" />
   </g>
 </svg>

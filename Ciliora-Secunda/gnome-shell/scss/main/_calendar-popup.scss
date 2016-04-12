@@ -105,6 +105,7 @@
    ! Change Month Bar
    ===================================================== */
 
+// pager bar
 .calendar {
     > StBoxLayout:first-child {
         border-image: url("img/containers/dark-bg.svg") 7;
@@ -128,7 +129,19 @@
         border-image: url("img/misc/change-month-btn-l.svg") 7;
     }
 
-    &:hover, &:focus, &:active {
+    &:focus {
+        background-color: transparent !important;
+
+        &:first-child {
+            border-image: url("img/misc/change-month-btn-f.svg") 7;
+        }
+
+        &:last-child {
+            border-image: url("img/misc/change-month-btn-l.svg") 7;
+        }
+    }
+
+    &:hover, &:active {
         background-color: transparent !important;
 
         &:first-child {
@@ -140,23 +153,30 @@
         }
     }
 
+    // arrows
     &.calendar-change-month {
         &-back, &-forward:rtl {
             background-image: url("img/controls/calendar-arrow-left.svg");
+
+            &:focus {
+                background-image: url("img/controls/calendar-arrow-left-active.svg");
+            }
+
+            &:hover {
+                background-image: url("img/controls/calendar-arrow-left-hover.svg");
+            }
         }
 
         &-forward, &-back:rtl {
             background-image: url("img/controls/calendar-arrow-right.svg");
-        }
 
-        &-back:hover, &-back:focus,
-        &-forward:hover:rtl, &-forward:focus:rtl {
-            background-image: url("img/controls/calendar-arrow-left-hover.svg");
-        }
+            &:focus {
+                background-image: url("img/controls/calendar-arrow-right-active.svg");
+            }
 
-        &-forward:hover, &-forward:focus,
-        &-back:focus:rtl, &-back:hover:rtl {
-            background-image: url("img/controls/calendar-arrow-right-hover.svg");
+            &:hover {
+                background-image: url("img/controls/calendar-arrow-right-hover.svg");
+            }
         }
     }
 }
