@@ -9,11 +9,11 @@
 
         border-image: url("img/controls/entry.svg") 6;
         font-size: 12px;
-        padding: .7em !important;
-        min-height: 16px; // ensure space for icon
+        padding: .3em .6em !important;
+        height: 2em;
         width: $width;
         font-weight: normal;
-        color: $text-secondary;
+        color: $text-primary;
 
         StIcon {
             color: $text-primary;
@@ -27,10 +27,10 @@
 
     @else if $t==focus {
         border-image: url("img/controls/entry-focused.svg") 6;
-        font-weight: bold;
         font-size: 12px;
-        padding: .7em !important;
-        min-height: 16px; // ensure space for icon
+        font-weight: bold;
+        padding: .3em .6em !important;
+        height: 2em;
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -46,10 +46,10 @@
     @else if $t==insensitive {
         border-image: url("img/controls/entry-insensitive.svg") 6;
         width: $width;
-        color: $text-secondary;
+        color: $text-disabled;
 
         StIcon {
-            color: $text-secondary;
+            color: $text-disabled;
         }
     }
 
@@ -57,8 +57,8 @@
         border-image: url("img/overview/overview-dark-bg.svg") 7;
         border-radius: 0;
         font-size: 12px;
-        padding: .7em !important;
-        min-height: 16px; // ensure space for icon
+        padding: .3em .6em !important;
+        height: 2em;
         width: $width;
         color: $text-secondary;
 
@@ -69,17 +69,16 @@
         }
 
         &:hover StIcon {
-            color: $text-secondary;
+            color: $text-primary;
         }
     }
 
     @else if $t==overview--focus {
         border-width: 0;
-
         border-image: url("img/overview/overview-light-bg.svg") 7;
         font-size: 12px;
-        padding: .7em !important;
-        min-height: 16px; // ensure space for icon
+        padding: .3em .6em !important;
+        height: 2em;
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
@@ -102,10 +101,9 @@
     }
 }
 /* =====================================================
-   ! Entries
+   ! Entries (global)
    ===================================================== */
 
-/* ! Standard light entries */
 StEntry,
 .popup-menu .search-entry {
     @include entry(normal);

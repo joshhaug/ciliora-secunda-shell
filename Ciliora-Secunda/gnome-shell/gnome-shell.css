@@ -65,9 +65,8 @@ StScrollBar StButton#hhandle:active {
 }
 
 /* =====================================================
-   ! Entries
+   ! Entries (global)
    ===================================================== */
-/* ! Standard light entries */
 StEntry,
 .popup-menu .search-entry {
   background-gradient-direction: none;
@@ -78,10 +77,10 @@ StEntry,
   border: 0;
   border-image: url("img/controls/entry.svg") 6;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  padding: .3em .6em !important;
+  height: 2em;
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 StEntry StIcon,
@@ -98,10 +97,10 @@ StEntry StIcon.capslock-warning,
 StEntry:focus,
 .popup-menu .search-entry:focus {
   border-image: url("img/controls/entry-focused.svg") 6;
-  font-weight: bold;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  font-weight: bold;
+  padding: .3em .6em !important;
+  height: 2em;
   color: white;
   caret-color: white;
   caret-size: 1px;
@@ -117,12 +116,12 @@ StEntry:focus StIcon,
 StEntry:insensitive,
 .popup-menu .search-entry:insensitive {
   border-image: url("img/controls/entry-insensitive.svg") 6;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 StEntry:insensitive StIcon,
 .popup-menu .search-entry:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 /* =====================================================
@@ -499,8 +498,8 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   border-radius: 0;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  padding: .3em .6em !important;
+  height: 2em;
   width: 320px;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -512,15 +511,15 @@ StEntry:insensitive StIcon,
 }
 
 .search-entry:hover StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .search-entry:focus {
   border-width: 0;
   border-image: url("img/overview/overview-light-bg.svg") 7;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  padding: .3em .6em !important;
+  height: 2em;
   width: 320px;
   color: white;
   caret-color: white;
@@ -4775,8 +4774,8 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   border-radius: 0;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  padding: .3em .6em !important;
+  height: 2em;
   width: 320px;
   color: rgba(255, 255, 255, 0.45);
 }
@@ -4788,15 +4787,15 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog StEntry:hover StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: white;
 }
 
 .login-dialog StEntry:focus {
   border-width: 0;
   border-image: url("img/overview/overview-light-bg.svg") 7;
   font-size: 12px;
-  padding: .7em !important;
-  min-height: 16px;
+  padding: .3em .6em !important;
+  height: 2em;
   width: 320px;
   color: white;
   caret-color: white;

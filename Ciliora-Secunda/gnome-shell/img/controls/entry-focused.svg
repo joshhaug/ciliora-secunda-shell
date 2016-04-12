@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="10.002615"
-     inkscape:cx="2.1847479"
-     inkscape:cy="7.7208424"
+     inkscape:zoom="20.00523"
+     inkscape:cx="8.7802333"
+     inkscape:cy="12.405513"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -133,7 +133,7 @@
     <path
        id="rect4145"
        d="m 2,276 c -1.108,0 -2,0.892 -2,2 l 0,20 c 0,1.108 0.892,2 2,2 l 20,0 c 1.108,0 2,-0.892 2,-2 l 0,-20 c 0,-1.108 -0.892,-2 -2,-2 l -20,0 z m -1,1 22,0 0,22 -22,0 0,-22 z"
-       style="opacity:0.1;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
     <rect
        style="opacity:0.4;fill:#080c16;fill-opacity:1;stroke:none"
