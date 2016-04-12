@@ -2565,32 +2565,32 @@ StEntry:insensitive StIcon,
   border-image: url("img/misc/change-month-btn-f.svg") 7;
 }
 
+.pager-button:first-child:focus {
+  background-color: transparent !important;
+}
+
+.pager-button:first-child:hover {
+  border-image: url("img/misc/change-month-btn-f-hover.svg") 7;
+}
+
+.pager-button:first-child:active {
+  border-image: url("img/misc/change-month-btn-f-pressed.svg") 7;
+}
+
 .pager-button:last-child {
   border-image: url("img/misc/change-month-btn-l.svg") 7;
 }
 
-.pager-button:focus {
+.pager-button:last-child:focus {
   background-color: transparent !important;
 }
 
-.pager-button:focus:first-child {
-  border-image: url("img/misc/change-month-btn-f.svg") 7;
-}
-
-.pager-button:focus:last-child {
-  border-image: url("img/misc/change-month-btn-l.svg") 7;
-}
-
-.pager-button:hover, .pager-button:active {
-  background-color: transparent !important;
-}
-
-.pager-button:hover:first-child, .pager-button:active:first-child {
-  border-image: url("img/misc/change-month-btn-f-hover.svg") 7;
-}
-
-.pager-button:hover:last-child, .pager-button:active:last-child {
+.pager-button:last-child:hover {
   border-image: url("img/misc/change-month-btn-l-hover.svg") 7;
+}
+
+.pager-button:last-child:active {
+  border-image: url("img/misc/change-month-btn-l-pressed.svg") 7;
 }
 
 .pager-button.calendar-change-month-back, .pager-button.calendar-change-month-forward:rtl {
