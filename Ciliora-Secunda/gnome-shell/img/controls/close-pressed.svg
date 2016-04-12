@@ -13,7 +13,7 @@
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
    width="41"
-   height="61"
+   height="41"
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
@@ -30,9 +30,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="33.121952"
-     inkscape:cx="23.307202"
-     inkscape:cy="31.97343"
+     inkscape:zoom="11.710378"
+     inkscape:cx="11.40552"
+     inkscape:cy="31.783677"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -113,7 +113,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -152,7 +152,7 @@
      inkscape:groupmode="layer"
      inkscape:label="Base"
      id="layer1"
-     transform="translate(0,-239)">
+     transform="translate(0,-259)">
     <path
        inkscape:connector-curvature="0"
        style="display:inline;opacity:0.02000002;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
@@ -204,7 +204,7 @@
        transform="translate(41.5,1)">
       <path
          inkscape:connector-curvature="0"
-         style="display:inline;opacity:0.37;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+         style="display:inline;opacity:0.37000002;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
          d="m -21,265 c -7.455844,0 -13.5,6.04416 -13.5,13.5 0,7.45585 6.044156,13.5 13.5,13.5 7.455844,0 13.5,-6.04415 13.5,-13.5 0,-7.45584 -6.044156,-13.5 -13.5,-13.5 z m 0,1 c 6.90356,0 12.5,5.59644 12.5,12.5 0,6.90356 -5.59644,12.5 -12.5,12.5 -6.90356,0 -12.5,-5.59644 -12.5,-12.5 0,-6.90356 5.59644,-12.5 12.5,-12.5 z"
          id="path4146" />
       <path
