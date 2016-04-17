@@ -77,54 +77,18 @@
    ! Dash-to-Dock
    ===================================================== */
 
-#dashtodockContainer {
-
-    &.left #dash {
-        border-image: url("img/overview/overview-dark-bg-left.svg") 7;
+@each $v in left, right, top, bottom {
+    #dashtodockContainer.#{$v} #dash {
+        border-image: url("img/overview/overview-dark-bg-#{$v}.svg") 7;
     }
 
-    &.right #dash {
-        border-image: url("img/overview/overview-dark-bg-right.svg") 7;
-    }
-
-    &.top #dash {
-        border-image: url("img/overview/overview-dark-bg-top.svg") 7;
-    }
-
-    &.bottom #dash {
-        border-image: url("img/overview/overview-dark-bg-bottom.svg") 7;
-    }
-
-
-
-    &.left.extended #dash {
-        border-image: url("img/panel/panel-left.svg") 7;
-    }
-
-    &.right.extended #dash {
-        border-image: url("img/panel/panel-right.svg") 7;
-    }
-
-    &.top.extended #dash {
-        border-image: url("img/panel/panel-top.svg") 7;
-    }
-
-    &.bottom.extended #dash {
-        border-image: url("img/panel/panel-bottom.svg") 7;
-    }
-
-
-
-    .app-well-app-running-dot {
-        background-image: none;
-        @include size(28px, 4px);
-    }
-
-    @each $var in 1, 2, 3, 4 {
-        .running#{$var} .app-well-app-running-dot {
-            background-image: url("img/overview/running#{$var}.svg");
-        }
+    #dashtodockContainer.#{$v}.extended #dash {
+        border-image: url("img/panel/panel-#{$v}.svg") 7;
     }
 }
 
-
+@each $v in 1, 2, 3, 4 {
+    .running#{$v} .app-well-app-running-dot {
+        background-image: url("img/overview/running#{$v}.svg");
+    }
+}
