@@ -27,8 +27,8 @@
     font-weight: normal !important;
     font-size: 12px !important;
     spacing: 4px;
-    margin: 2px;
-    padding: 16px 12px 16px 24px !important;
+    margin: 7px;
+    padding: 16px 10px 16px 22px !important;
     color: $text-primary;
 
 
@@ -65,7 +65,7 @@
 
 
     StScrollBar {
-        padding: 0 0 4px 1px;
+        padding: 0 1px 4px 1px;
     }
 
 
@@ -172,22 +172,21 @@
 }
 
 
-/* Lg Inspector */
+/*  Lg Inspector
 
-/* This box has no id's or classes and is
-   the direct child of the global container
+    This box has no id's or classes and is
+    the direct child of the global container
 
-   We assume that there is no
-   uiGroup > StScrollView used elsewhere
+    We assume that there is no
+    uiGroup > StScrollView used elsewhere
 */
-
 #uiGroup {
     > StScrollView {
         border-image: url("img/containers/popup.svg") 7;
-        padding: 6px;
+        padding: 6px 0px 6px 6px;
 
         StScrollBar {
-            padding: 12px 6px 12px 3px;
+            padding: 17px 12px 17px 0;
         }
     }
 }
