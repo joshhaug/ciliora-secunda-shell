@@ -1574,7 +1574,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog > *:last-child {
   spacing: 0;
   margin: 0;
-  padding: 0 4px 1px 4px;
+  padding: 0 3px 0 3px;
 }
 
 .prompt-dialog-main-layout {
