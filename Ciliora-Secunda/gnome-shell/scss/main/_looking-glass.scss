@@ -231,6 +231,6 @@
 
     .lg-obj-inspector-button {
         @include btn-primary;
-        @include btn-width(small);
+        @include btn-width(wide);
     }
 }

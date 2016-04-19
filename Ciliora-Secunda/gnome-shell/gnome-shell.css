@@ -4467,7 +4467,7 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   border-image: url("img/buttons/button-primary__s.svg") 10;
   color: white;
-  padding: 1em;
+  padding: 1em 2em;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button StIcon {
