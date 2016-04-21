@@ -53,7 +53,7 @@ echo "<?xml version='1.0' encoding='UTF-8'?><gresources><gresource prefix='/org/
 
 
 for i in "$tmp_dir"/*; do
-    [ "${i##*.}" != "svg" ] && [ "${i##*.}" != "png" ] && continue
+    [[ ${i##*.} =~ svg|png ]] || continue
 
     echo "<file preprocess='to-pixdata'>${i##*/}</file>" \
          >> "$tmp_dir/gnome-shell-theme.gresource.xml"
