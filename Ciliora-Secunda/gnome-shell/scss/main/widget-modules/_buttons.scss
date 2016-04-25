@@ -1,6 +1,6 @@
-// ===================================================================
-//  Button common
-// ===================================================================
+// =====================================================
+// Common button properties
+// =====================================================
 @mixin btn-common {
     background-color: rgba(0, 0, 0, 0);
     background-gradient-direction: none;
@@ -11,10 +11,8 @@
     border-width: 0;
     border-radius: 0;
 
-
     font-weight: bold;
     font-size: 12px;
-
 
     StIcon {
         @include size(16px, $important:true);
@@ -23,53 +21,80 @@
 }
 
 
-// ===================================================================
-//  Generate buttons
+// =====================================================
+// Generate simple buttons
 //
 //
 //  Provide a $position parameter:
-//      s (single)
+//      s (single-child)
 //      f (first-child)
 //      l (last-child)
-//      m (middle)
+//      m (middle: between first and last)
 //
 //
-//  Provide 2 color parameters to modify text-color and bg
+//  $color-primary & $bg-primary modify text and bg color.
 //
 //
-//  Provide 2 additional color parameters to modify
-//  text & bg colors of focused states
-//  independently from normal/hover/pressed states
+//  $color-secondary & $bg-secondary are optional and
+//  modify text & bg colors of focused states (focus, focus:hover
+//  focus:active).
 //
 //
-//  Provide $mod:true to modify normal state
-//  independently from all other states
-//
-//
-//  The $position & $bg parameteres modify image URL's
-//  Name pattern for button assets:
+//  $bg & $position parameteres are not css values, but
+//  modify image URL's instead.
+//  Name format:
 //      button-{$bg}__{$position}.svg
 //      button-{$bg}__{$position}--hover.svg
 //      button-{$bg}__{$position}--pressed.svg
-// ===================================================================
-@mixin btn( $position,
-            $color,
-            $bg,
-            $color-focus:$color,
-            $bg-focus:$bg,
-            $mod:false ) {
-
+// =====================================================
+@mixin btn(
+    $position,
+    $color-primary,
+    $bg-primary,
+    $color-secondary:$color-primary,
+    $bg-secondary:$bg-primary,
+    $color-disabled:$color-primary
+){
 
     // Parameters in this case are strings, not css colors
     // Quote them to prevent conversion to hex values
-    $position: quote($position);
-    $bg:       quote($bg);
-    $bg-focus: quote($bg-focus);
+    $bg-primary:   quote($bg-primary);
+    $bg-secondary: quote($bg-secondary);
 
 
     // Include common properties
     @include btn-common;
 
+
+    border-image: url("img/buttons/button-#{$bg-primary}__#{$position}.svg") 10;
+    color: $color-primary;
+    StIcon { color: $color-primary; }
+
+    &:hover {
+        border-image: url("img/buttons/button-#{$bg-primary}__#{$position}--hover.svg") 10;
+    }
+
+    &:active,
+    &:pressed,
+    &:selected {
+        border-image: url("img/buttons/button-#{$bg-primary}__#{$position}--pressed.svg") 10;
+    }
+
+    &:focus {
+        border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}.svg") 10;
+        color: $color-secondary;
+        StIcon { color: $color-primary; }
+    }
+
+    &:focus:hover {
+        border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--hover.svg") 10;
+    }
+
+    &:focus:active,
+    &:focus:pressed,
+    &:focus:selected {
+        border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+    }
 
     &:grayed,
     &:disabled,
@@ -77,102 +102,70 @@
     &:focus:grayed,
     &:focus:disabled,
     &:focus:insensitive {
-        border-image: url("img/buttons/button-#{$bg}__#{$position}.svg") 10;
-        color: $text-disabled;
-        StIcon { color: $text-disabled; }
-    }
-
-
-    // No mod
-    @if $mod == false {
-        border-image: url("img/buttons/button-#{$bg}__#{$position}.svg") 10;
-        color: $color;
-        StIcon { color: $color; }
-
-        &:hover {
-            border-image: url("img/buttons/button-#{$bg}__#{$position}--hover.svg") 10;
-        }
-
-        &:active,
-        &:pressed,
-        &:selected {
-            border-image: url("img/buttons/button-#{$bg}__#{$position}--pressed.svg") 10;
-        }
-
-        &:focus {
-            border-image: url("img/buttons/button-#{$bg-focus}__#{$position}.svg") 10;
-            color: $color-focus;
-            StIcon { color: $color; }
-        }
-
-        &:focus:hover {
-            border-image: url("img/buttons/button-#{$bg-focus}__#{$position}--hover.svg") 10;
-        }
-
-        &:focus:active,
-        &:focus:pressed,
-        &:focus:selected {
-            border-image: url("img/buttons/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
-        }
-    }
-
-
-    // Mod style
-    @if $mod == true {
-        border-image: url("img/buttons/button-#{$bg}__#{$position}.svg") 10;
-        color: $color;
-        StIcon { color: $color; }
-
-        &:hover,
-        &:focus,
-        &:focus:hover {
-            border-image: url("img/buttons/button-#{$bg-focus}__#{$position}--hover.svg") 10;
-            color: $color-focus;
-            StIcon { color: $color-focus; }
-        }
-
-        &:active,
-        &:pressed,
-        &:selected,
-        &:focus:active,
-        &:focus:pressed,
-        &:focus:selected {
-            border-image: url("img/buttons/button-#{$bg-focus}__#{$position}--pressed.svg") 10;
-            color: $color-focus;
-            StIcon { color: $color-focus; }
-        }
+        border-image: url("img/buttons/button-#{$bg-primary}__#{$position}.svg") 10;
+        color: $color-disabled;
+        StIcon { color: $color-disabled; }
     }
 }
 
 
-// ===================================================================
-//  Generate dialog buttons
+// =====================================================
+// Generate dialog buttons
 //
-//
-//  Name pattern for button assets:
+//  Name format:
 //      dialog-button-{$bg}__{$position}.svg
 //      dialog-button-{$bg}__{$position}--hover.svg
 //      dialog-button-{$bg}__{$position}--pressed.svg
-// ===================================================================
-@mixin btn-dlg( $position,
-                $color,
-                $bg,
-                $color-focus:$color,
-                $bg-focus:$bg,
-                $mod:false ) {
-
+// =====================================================
+@mixin btn-dialog(
+    $position,
+    $color-primary,
+    $bg-primary,
+    $color-secondary:$color-primary,
+    $bg-secondary:$bg-primary,
+    $color-disabled:$color-primary
+){
 
     // Parameters in this case are strings, not css colors
     // Quote them to prevent conversion to hex values
-    $position: quote($position);
-    $bg:       quote($bg);
-    $bg-focus: quote($bg-focus);
+    $bg-primary:   quote($bg-primary);
+    $bg-secondary: quote($bg-secondary);
 
 
     // Include common properties
     @include btn-common;
+
+
+    border-image: url("img/buttons/dialog-button-#{$bg-primary}__#{$position}.svg") 10;
+    color: $color-primary;
+    StIcon { color: $color-primary; }
     padding: 1em .4em;
 
+    &:hover {
+        border-image: url("img/buttons/dialog-button-#{$bg-primary}__#{$position}--hover.svg") 10;
+    }
+
+    &:active,
+    &:pressed,
+    &:selected {
+        border-image: url("img/buttons/dialog-button-#{$bg-primary}__#{$position}--pressed.svg") 10;
+    }
+
+    &:focus {
+        border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}.svg") 10;
+        color: $color-secondary;
+        StIcon { color: $color-primary; }
+    }
+
+    &:focus:hover {
+        border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--hover.svg") 10;
+    }
+
+    &:focus:active,
+    &:focus:pressed,
+    &:focus:selected {
+        border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+    }
 
     &:grayed,
     &:disabled,
@@ -180,144 +173,112 @@
     &:focus:grayed,
     &:focus:disabled,
     &:focus:insensitive {
-        border-image: url("img/buttons/dialog-button-#{$bg}__#{$position}.svg") 10;
-        color: $text-disabled;
-        StIcon { color: $text-disabled; }
-    }
-
-
-    // No mod
-    @if $mod == false {
-        border-image: url("img/buttons/dialog-button-#{$bg}__#{$position}.svg") 10;
-        color: $color;
-        StIcon { color: $color; }
-
-        &:hover {
-            border-image: url("img/buttons/dialog-button-#{$bg}__#{$position}--hover.svg") 10;
-        }
-
-        &:active,
-        &:pressed,
-        &:selected {
-            border-image: url("img/buttons/dialog-button-#{$bg}__#{$position}--pressed.svg") 10;
-        }
-
-        &:focus {
-            border-image: url("img/buttons/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
-            color: $color-focus;
-            StIcon { color: $color; }
-        }
-
-        &:focus:hover {
-            border-image: url("img/buttons/dialog-button-#{$bg-focus}__#{$position}--hover.svg") 10;
-        }
-
-        &:focus:active,
-        &:focus:pressed,
-        &:focus:selected {
-            border-image: url("img/buttons/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
-        }
-    }
-
-
-    // Mod style
-    @if $mod == true {
-        border-image: url("img/buttons/dialog-button-#{$bg}__#{$position}.svg") 10;
-        color: $color;
-        StIcon { color: $color; }
-
-        &:hover,
-        &:focus,
-        &:focus:hover {
-            border-image: url("img/buttons/dialog-button-#{$bg-focus}__#{$position}.svg") 10;
-            color: $color-focus;
-            StIcon { color: $color-focus; }
-        }
-
-        &:active,
-        &:pressed,
-        &:selected,
-        &:focus:active,
-        &:focus:pressed,
-        &:focus:selected {
-            border-image: url("img/buttons/dialog-button-#{$bg-focus}__#{$position}--pressed.svg") 10;
-        }
+        border-image: url("img/buttons/dialog-button-#{$bg-primary}__#{$position}.svg") 10;
+        color: $color-disabled;
+        StIcon { color: $color-disabled; }
     }
 }
 
 
-// ===================================================================
+// =====================================================
 // Standard button widths
-// ===================================================================
+// =====================================================
 @mixin btn-width($btn-width) {
-    @if $btn-width == "small" {
-        padding: 1em;
-    }
+    @if $btn-width == "small" { padding: 1em; }
 
-    @if $btn-width == "wide" {
-        padding: 1em 2em;
-    }
+    @if $btn-width == "wide" { padding: 1em 2em; }
 }
 
 
-// ===================================================================
+// =====================================================
 // Standard buttons
-// ===================================================================
+// =====================================================
 @mixin btn-primary {
-    @include btn(s, $text-primary, primary, $text-primary, blue);
+    @include btn(
+        s,
+        $text-primary, primary,
+        $text-primary, blue,
+        $text-disabled
+    );
 }
-
 
 @mixin btn-secondary {
-    @include btn(s, $text-primary, secondary, $text-primary, blue);
+    @include btn(
+        s,
+        $text-primary, secondary,
+        $text-primary, blue,
+        $text-disabled
+    );
 }
 
-
 @mixin btn-linked-primary {
-    @include btn(m, $text-primary, primary, $bg-focus:blue);
+    @include btn(m, $text-primary, primary);
 
     &:first-child {
-        @include btn(f, $text-primary, primary, $bg-focus:blue);
+        @include btn(f, $text-primary, primary);
     }
 
     &:last-child {
-        @include btn(l, $text-primary, primary, $bg-focus:blue);
+        @include btn(l, $text-primary, primary);
     }
 
     &:last-child:first-child {
-        @include btn(s, $text-primary, primary, $bg-focus:blue);
+        @include btn(s, $text-primary, primary);
     }
 }
 
-
 @mixin btn-overview {
-    @include btn(s, $text-primary, overview, $text-primary, overview-blue);
+    @include btn(
+        s,
+        $text-primary, overview,
+        $text-primary, overview-blue,
+        $text-disabled
+    );
 }
 
 
-// ===================================================================
+// =====================================================
 // Standard dialog buttons
-// ===================================================================
-
+// =====================================================
 @mixin btn-dialog-primary {
-    @include btn-dlg(m, $text-primary, primary, $text-primary, blue);
+    @include btn-dialog(
+        m,
+        $text-primary, primary,
+        $text-primary, blue,
+        $text-disabled
+    );
 
     &:first-child {
-        @include btn-dlg(f, $text-primary, primary, $text-primary, blue);
+        @include btn-dialog(
+            f,
+            $text-primary, primary,
+            $text-primary, blue,
+            $text-disabled
+        );
     }
 
     &:last-child {
-        @include btn-dlg(l, $text-primary, primary, $text-primary, blue);
+        @include btn-dialog(
+            l,
+            $text-primary, primary,
+            $text-primary, blue,
+            $text-disabled
+        );
     }
 
-    &:first-child:last-child {
-        @include btn-dlg(s, $text-primary, primary, $text-primary, blue);
+    &:last-child:first-child {
+        @include btn-dialog(
+            s,
+            $text-primary, primary,
+            $text-primary, blue,
+            $text-disabled
+        );
     }
 }
 
 
 /* =====================================================
-   ! Button global selector
+   ! Button (global selector)
    ===================================================== */
 .button {
     @include btn-primary;

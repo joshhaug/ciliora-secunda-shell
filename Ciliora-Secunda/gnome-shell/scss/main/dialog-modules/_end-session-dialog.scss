@@ -136,13 +136,25 @@
    ===================================================== */
 
 .end-session-dialog .modal-dialog-linked-button {
-    @include btn-dlg(m, $text-primary, primary, $text-primary, red, $mod:true);
+    @include btn-dialog(
+        m,
+        $text-danger, primary,
+        $text-primary, red
+    );
 
     &:first-child {
-        @include btn-dlg(f, $text-primary, primary, $text-primary, green, $mod:true);
+        @include btn-dialog(
+            f,
+            $text-success, primary,
+            $text-primary, green
+        );
     }
 
     &:last-child {
-        @include btn-dlg(l, $text-primary, primary, $text-primary, red, $mod:true);
+        @include btn-dialog(
+            l,
+            $text-danger, primary,
+            $text-primary, red
+        );
     }
 }
