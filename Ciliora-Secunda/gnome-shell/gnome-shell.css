@@ -237,6 +237,7 @@ StEntry:insensitive StIcon,
    ! Slider
    ===================================================== */
 .slider {
+  min-height: 16px;
   -slider-height: 4px;
   -slider-background-color: rgba(8, 13, 24, 0.3);
   -slider-border-color: transparent;
