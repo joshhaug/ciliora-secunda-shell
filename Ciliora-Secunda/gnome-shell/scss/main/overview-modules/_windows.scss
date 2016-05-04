@@ -27,7 +27,7 @@
     border-radius: 0;
     color: $text-primary;
     font-weight: bold;
-    font-size: 12px;
+    font-size: $font-size-base;
 
     &:hover {
         border-image: url("img/overview/overview-highlight-bg.svg") 7;

@@ -20,7 +20,7 @@
 
     &-prompt-label {
         color: $text-secondary;
-        font-size: 12px;
+        font-size: $font-size-base;
         padding-top: 1em;
     }
 
@@ -34,7 +34,7 @@
     &-username,
     .user-widget-label {
         color: #fff;
-        font-size: 14px;
+        font-size: $font-size-lg;
         font-weight: bold;
         text-align: left;
         padding-left: 15px;
@@ -64,7 +64,7 @@
 
     &-banner {
         color: $text-primary;
-        font-size: 14px;
+        font-size: $font-size-lg;
     }
 
     &-logo-bin {
@@ -90,7 +90,7 @@
 
     &-not-listed-label {
         padding-top: 1em;
-        font-size: 12px;
+        font-size: $font-size-base;
         font-weight: normal;
     }
 
@@ -246,12 +246,12 @@
 
 .screen-shield-clock-time {
     color: $text-primary;
-    font-size: 74px;
+    font-size: $font-size-mega;
 }
 
 .screen-shield-clock-date {
     color: $text-secondary;
-    font-size: 22px;
+    font-size: $font-size-xxl;
     padding: 0 10px;
 }
 
@@ -279,7 +279,7 @@
 
 .screen-shield-notification-label {
     font-weight: bold;
-    font-size: 16px;
+    font-size: $font-size-xl;
     padding: .2em 0 0 0;
 }
 

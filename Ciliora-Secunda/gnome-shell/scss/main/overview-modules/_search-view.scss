@@ -26,7 +26,7 @@
 
 .search-statustext {
     color: $text-secondary;
-    font-size: 20px;
+    font-size: $font-size-xxl;
     font-weight: bold;
 }
 
@@ -115,7 +115,7 @@
 .list-search-result-title {
     text-shadow: 0 0 rgba(0, 0, 0, 0);
     font-weight: bold;
-    font-size: 16px;
+    font-size: $font-size-xl;
     color: $text-primary;
     padding-bottom: 5px;
 
@@ -131,7 +131,7 @@
 .list-search-result-description {
     text-shadow: 0 0 rgba(0, 0, 0, 0);
     font-weight: normal;
-    font-size: 12px;
+    font-size: $font-size-base;
     color: $text-primary;
 
     .list-search-result:hover &,

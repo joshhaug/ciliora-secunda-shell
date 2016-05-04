@@ -17,7 +17,7 @@
 }
 
 .osd-window .osd-monitor-label {
-    font-size: 5em;
+    font-size: $font-size-mega;
     padding-top: 0;
 }
 
@@ -33,7 +33,7 @@
     border-image: url("img/overview/overview-dark-bg.svg") 7;
     color: $text-primary;
     font-weight: bold;
-    font-size: 14px;
+    font-size: $font-size-lg;
     padding: 8px;
     background-color: transparent !important;
     border: 0 solid rgba(0, 0, 0, 0) !important;

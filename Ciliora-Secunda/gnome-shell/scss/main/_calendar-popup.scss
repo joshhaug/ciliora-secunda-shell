@@ -35,13 +35,13 @@
 
     .day-label {
         padding-bottom: .2em;
-        font-size: 12px;
+        font-size: $font-size-base;
         color: $text-secondary;
     }
 
     .date-label {
         text-align: center !important;
-        font-size: 18px;
+        font-size: $font-size-xl;
         color: $text-primary;
     }
 }
@@ -81,22 +81,22 @@
 .world-clocks-header {
     color: $text-secondary;
     font-weight: bold;
-    font-size: 12px;
+    font-size: $font-size-base;
 }
 
 .world-clocks-grid {
     spacing-rows: .8em;
     padding: .4em 0;
-    font-size: 12px;
+    font-size: $font-size-base;
 }
 
 .world-clocks-city {
-    font-size: 12px;
+    font-size: $font-size-base;
     margin: 0;
 }
 
 .world-clocks-time {
-    font-size: 12px;
+    font-size: $font-size-base;
     font-weight: bold;
     margin: 0;
 }
@@ -199,7 +199,7 @@
 }
 
 .calendar-day-base {
-    font-size: 12px;
+    font-size: $font-size-base;
     font-weight: bold;
     text-align: center;
     margin: 1px;
@@ -406,7 +406,7 @@
 
         StLabel {
             color: $text-disabled;
-            font-size: 12px;
+            font-size: $font-size-base;
             font-weight: bold;
         }
     }
@@ -484,7 +484,7 @@
     &-content {
         spacing: .4em;
         padding: 10px;
-        font-size: 12px;
+        font-size: $font-size-base;
 
         // the title icon (close, chat-status, etc..)
         > *:first-child StIcon {
@@ -504,7 +504,7 @@
 
     &-title {
         font-weight: bold;
-        font-size: 12px;
+        font-size: $font-size-base;
         min-height: 16px; // prevent jitter
     }
 
@@ -516,7 +516,7 @@
 
     .event-time {
         color: $text-secondary;
-        font-size: 12px;
+        font-size: $font-size-base;
     }
 }
 

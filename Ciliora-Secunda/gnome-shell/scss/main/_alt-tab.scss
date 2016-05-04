@@ -12,7 +12,7 @@
     color: $text-primary;
     padding: 2px;
     margin: 2px;
-    font-size: 12px;
+    font-size: $font-size-base;
     font-weight: bold;
 
     &-item-container {
@@ -66,5 +66,5 @@
 }
 
 .input-source-switcher-symbol {
-    font-size: 32px;
+    font-size: $font-size-xxxl;
 }

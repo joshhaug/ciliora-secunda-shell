@@ -19,7 +19,7 @@
 
     &-header {
         font-weight: bold;
-        font-size: 16px;
+        font-size: $font-size-xl;
         color: $text-primary;
     }
 
@@ -34,7 +34,7 @@
 
     &-airplane-headline {
         font-weight: bold;
-        font-size: 16px;
+        font-size: $font-size-xl;
         text-align: center;
     }
 
@@ -59,12 +59,12 @@
 
     &-header {
         font-weight: bold;
-        font-size: 16px;
+        font-size: $font-size-xl;
         color: $text-primary;
     }
 
     &-item {
-        font-size: 14px;
+        font-size: $font-size-lg;
         font-weight: bold;
         padding: 14px;
         spacing: 20px;
@@ -90,7 +90,7 @@
 
 .no-networks-label {
     color: $text-primary;
-    font-size: 16px;
+    font-size: $font-size-xl;
     font-weight: bold;
 }
 

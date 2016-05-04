@@ -556,7 +556,7 @@ StEntry:insensitive StIcon,
 
 .search-statustext {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -644,7 +644,7 @@ StEntry:insensitive StIcon,
 .list-search-result-title {
   text-shadow: 0 0 transparent;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
   padding-bottom: 5px;
 }
@@ -720,7 +720,7 @@ StEntry:insensitive StIcon,
 
 .no-frequent-applications-label {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -873,7 +873,7 @@ StEntry:insensitive StIcon,
 }
 
 .headline {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -1224,7 +1224,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog-subject {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
 }
@@ -1637,7 +1637,7 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-headline {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
 }
@@ -1742,7 +1742,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-header {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
 }
 
@@ -1757,7 +1757,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-airplane-headline {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -1784,7 +1784,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-header {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   color: white;
 }
 
@@ -1816,7 +1816,7 @@ StEntry:insensitive StIcon,
 
 .no-networks-label {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -2187,7 +2187,7 @@ StEntry:insensitive StIcon,
 }
 
 .osd-window .osd-monitor-label {
-  font-size: 5em;
+  font-size: 72px;
   padding-top: 0;
 }
 
@@ -2279,7 +2279,7 @@ StEntry:insensitive StIcon,
 }
 
 .input-source-switcher-symbol {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /* =====================================================
@@ -3660,7 +3660,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/buttons/button-primary__s.svg") 10;
   color: white;
   padding: 1em;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .keyboard-key StIcon {
@@ -3724,7 +3724,7 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   border-image: url("img/buttons/button-secondary__s.svg") 10;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child StIcon,
@@ -4399,7 +4399,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Windows > StBoxLayout StButton:first-child {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .lg-dialog #lookingGlassExtensions {
@@ -4412,7 +4412,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extensions-none {
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.45);
 }
 
@@ -4427,7 +4427,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extension-name {
   color: white;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   padding-bottom: 2px;
 }
@@ -4928,12 +4928,12 @@ StEntry:insensitive StIcon,
 
 .screen-shield-clock-time {
   color: white;
-  font-size: 74px;
+  font-size: 72px;
 }
 
 .screen-shield-clock-date {
   color: rgba(255, 255, 255, 0.45);
-  font-size: 22px;
+  font-size: 24px;
   padding: 0 10px;
 }
 
@@ -4961,7 +4961,7 @@ StEntry:insensitive StIcon,
 
 .screen-shield-notification-label {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   padding: .2em 0 0 0;
 }
 
