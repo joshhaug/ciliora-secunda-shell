@@ -1,12 +1,12 @@
-/* =====================================================
-   ! Looking Glass
-   ===================================================== */
+/* ======================================
+ * ! Looking Glass
+ * ====================================== */
 
-/* Dialog when picker is active is targeted with an id
-   because it only has an id
-   The main dialog has the same id and the "lg-dialog" class
+/*
+    Dialog when picker is active is targeted with an id
+    because it only has an id
+    The main dialog has the same id and the "lg-dialog" class
 */
-
 #LookingGlassDialog {
     border-image: url("img/containers/popup-osd.svg") 7;
     font-weight: bold;
@@ -17,7 +17,6 @@
 
 
 /* Main dialog */
-
 .lg-dialog {
     background-color: rgba(0, 0, 0, 0) !important;
     border: 0 transparent !important;
@@ -172,13 +171,11 @@
 }
 
 
-/*  Lg Inspector
+/*
+    Lg Inspector
 
     This box has no id's or classes and is
     the direct child of the global container
-
-    We assume that there is no
-    uiGroup > StScrollView used elsewhere
 */
 #uiGroup {
     > StScrollView {

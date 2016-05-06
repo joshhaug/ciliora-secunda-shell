@@ -1,6 +1,4 @@
-// =====================================================
 // Standard font sizes
-// =====================================================
 $font-size-base: 12px;
 
 $font-size-mega: round($font-size-base*6);
@@ -10,10 +8,10 @@ $font-size-xl:   round($font-size-base*1.5);
 $font-size-lg:   round($font-size-base*1.2);
 $font-size-sm:   round($font-size-base*0.85);
 
+/* ======================================
+ * ! Font
+ * ====================================== */
 
-/* =====================================================
-   ! Font
-   ===================================================== */
 $font-family: Droid Sans, Sans-Serif;
 
 stage {

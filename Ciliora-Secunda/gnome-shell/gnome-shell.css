@@ -1,6 +1,6 @@
-/* =====================================================
-   ! Font
-   ===================================================== */
+/* ======================================
+ * ! Font
+ * ====================================== */
 stage {
   font-family: Droid Sans, Sans-Serif;
   font-size: 12px;
@@ -21,9 +21,9 @@ stage {
   color: transparent !important;
 }
 
-/* =====================================================
-   ! Scrollbars
-   ===================================================== */
+/* ======================================
+ * ! Scrollbars
+ * ====================================== */
 StScrollView.vfade {
   -st-vfade-offset: 0 !important;
 }
@@ -64,9 +64,9 @@ StScrollBar StButton#hhandle:active {
   border-image: url("img/controls/scroll-handle-hover.svg") 4;
 }
 
-/* =====================================================
-   ! Entries (global)
-   ===================================================== */
+/* ======================================
+ * ! Entries (global)
+ * ====================================== */
 StEntry,
 .popup-menu .search-entry {
   background-gradient-direction: none;
@@ -124,9 +124,9 @@ StEntry:insensitive StIcon,
   color: rgba(255, 255, 255, 0.15);
 }
 
-/* =====================================================
-   ! Switchers
-   ===================================================== */
+/* ======================================
+ * ! Switchers
+ * ====================================== */
 .toggle-switch-us,
 .toggle-switch-intl {
   width: 26px;
@@ -140,9 +140,9 @@ StEntry:insensitive StIcon,
   background-image: url("img/controls/on.svg");
 }
 
-/* =====================================================
-   ! Checkboxes
-   ===================================================== */
+/* ======================================
+ * ! Checkboxes
+ * ====================================== */
 .check-box StBoxLayout {
   spacing: .4em;
   min-height: 17px;
@@ -170,9 +170,9 @@ StEntry:insensitive StIcon,
   background-image: url("img/controls/check-box-focused-checked.svg");
 }
 
-/* =====================================================
-   ! Button (global selector)
-   ===================================================== */
+/* ======================================
+ * ! Button (global selector)
+ * ====================================== */
 .button {
   background-color: transparent;
   background-gradient-direction: none;
@@ -233,9 +233,9 @@ StEntry:insensitive StIcon,
   color: rgba(255, 255, 255, 0.15);
 }
 
-/* =====================================================
-   ! Slider
-   ===================================================== */
+/* ======================================
+ * ! Slider
+ * ====================================== */
 .slider {
   min-height: 16px;
   -slider-height: 4px;
@@ -253,9 +253,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/controls/slider-hover.svg") 9 6 8 8;
 }
 
-/* =====================================================
+/* ======================================
  * ! Overview Background
-   ===================================================== */
+ * ====================================== */
 #overview {
   background-color: rgba(0, 0, 0, 0.55);
   background: #333 url("img/overview/overview-pattern.svg");
@@ -263,9 +263,9 @@ StEntry:insensitive StIcon,
   spacing: 24px;
 }
 
-/* =====================================================
+/* ======================================
  * ! Overview Windows
-   ===================================================== */
+ * ====================================== */
 .window-picker {
   -horizontal-spacing: 33px;
   -vertical-spacing: 33px;
@@ -321,9 +321,9 @@ StEntry:insensitive StIcon,
   -st-background-image-shadow: 0 0 transparent !important;
 }
 
-/* =====================================================
-   ! Dash
-   ===================================================== */
+/* ======================================
+ * ! Dash
+ * ====================================== */
 #dash {
   border-image: url("img/overview/overview-dark-bg-left.svg") 7;
   font-size: 12px;
@@ -360,9 +360,9 @@ StEntry:insensitive StIcon,
   border-radius: 0 !important;
 }
 
-/* =====================================================
-   ! Dash Icons
-   ===================================================== */
+/* ======================================
+ * ! Dash Icons
+ * ====================================== */
 .show-apps-icon {
   color: white;
 }
@@ -397,9 +397,9 @@ StEntry:insensitive StIcon,
   padding: 2px 6px;
 }
 
-/* =====================================================
-   ! Dash-to-Dock
-   ===================================================== */
+/* ======================================
+ * ! Dash-to-Dock
+ * ====================================== */
 #dashtodockContainer.left #dash {
   border-image: url("img/overview/overview-dark-bg-left.svg") 7;
 }
@@ -448,9 +448,9 @@ StEntry:insensitive StIcon,
   background-image: url("img/overview/running4.svg");
 }
 
-/* =====================================================
+/* ======================================
  * ! Workspace Thumbnails
-   ===================================================== */
+ * ====================================== */
 .overview-controls {
   padding-bottom: 32px;
 }
@@ -486,9 +486,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/workspace-indicator-left.svg") 10;
 }
 
-/* =====================================================
+/* ======================================
  * ! Search Results
-   ===================================================== */
+ * ====================================== */
 .search-entry {
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   border-radius: 0;
@@ -600,9 +600,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/controls/overview-scroll-handle-hover.svg") 5;
 }
 
-/* =====================================================
+/* ======================================
  * ! List Search Results
-   ===================================================== */
+ * ====================================== */
 .list-search-results {
   spacing: 0;
   padding: 0;
@@ -673,9 +673,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
+/* ======================================
  * ! Search Provider Icon
-   ===================================================== */
+ * ====================================== */
 .search-provider-icon-more {
   width: 48px;
   height: 48px;
@@ -695,9 +695,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/search-provider-hover.svg") 6;
 }
 
-/* =====================================================
+/* ======================================
  * ! App View
-   ===================================================== */
+ * ====================================== */
 .icon-grid {
   spacing: 30px;
   -shell-grid-horizontal-item-size: 136px;
@@ -768,9 +768,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-light-bg.svg") 7;
 }
 
-/* =====================================================
+/* ======================================
  * ! App View Controls
-   ===================================================== */
+ * ====================================== */
 .app-view-controls {
   padding-bottom: 17px;
   spacing: 0;
@@ -798,9 +798,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
+/* ======================================
  * ! Popup Folder & Icons
-   ===================================================== */
+ * ====================================== */
 .app-folder-popup {
   padding: 0;
   -arrow-border-radius: 0;
@@ -844,9 +844,9 @@ StEntry:insensitive StIcon,
   text-align: center;
 }
 
-/* =====================================================
+/* ======================================
  * ! Paginator
-   ===================================================== */
+ * ====================================== */
 .page-indicator {
   padding: 10px 17px;
 }
@@ -866,9 +866,9 @@ StEntry:insensitive StIcon,
   background-image: url(img/overview/paginator-checked.svg);
 }
 
-/* =====================================================
-   ! Modal dialogs
-   ===================================================== */
+/* ======================================
+ * ! Modal dialogs
+ * ====================================== */
 #modalDialogGroup > * {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -1143,9 +1143,9 @@ StEntry:insensitive StIcon,
   color: rgba(255, 255, 255, 0.15);
 }
 
-/* =====================================================
-   ! Run dialog
-   ===================================================== */
+/* ======================================
+ * ! Run dialog
+ * ====================================== */
 .run-dialog .modal-dialog-linked-button,
 .run-dialog .modal-dialog-linked-button:hover,
 .run-dialog .modal-dialog-linked-button:focus,
@@ -1195,9 +1195,9 @@ StEntry:insensitive StIcon,
   margin-bottom: 0;
 }
 
-/* =====================================================
-   ! End Session dialog
-   ===================================================== */
+/* ======================================
+ * ! End Session dialog
+ * ====================================== */
 .end-session-dialog {
   spacing: 0 !important;
   border: 0 transparent !important;
@@ -1333,9 +1333,9 @@ StEntry:insensitive StIcon,
   font-size: 12px;
 }
 
-/* =====================================================
+/* ======================================
  * ! End-session & Logout dialog buttons
-   ===================================================== */
+ * ====================================== */
 .end-session-dialog .modal-dialog-linked-button {
   background-color: transparent;
   background-gradient-direction: none;
@@ -1516,9 +1516,9 @@ StEntry:insensitive StIcon,
   color: #f85c5c;
 }
 
-/* =====================================================
-   ! Shell-Mount-Operation dialog
-   ===================================================== */
+/* ======================================
+ * ! Shell-Mount-Operation dialog
+ * ====================================== */
 .shell-mount-operation-icon {
   icon-size: 48px;
 }
@@ -1596,9 +1596,9 @@ StEntry:insensitive StIcon,
   font-size: 14px;
 }
 
-/* =====================================================
-   ! Password or Authentication dialog
-   ===================================================== */
+/* ======================================
+ * ! Password or Authentication dialog
+ * ====================================== */
 .prompt-dialog {
   width: 500px;
   border: 0 transparent !important;
@@ -1722,9 +1722,9 @@ StEntry:insensitive StIcon,
   height: 48px;
 }
 
-/* =====================================================
-   ! Network dialog
-   ===================================================== */
+/* ======================================
+ * ! Network dialog
+ * ====================================== */
 .nm-dialog {
   min-height: 350px;
   max-height: 500px;
@@ -1825,9 +1825,9 @@ StEntry:insensitive StIcon,
   spacing: 12px;
 }
 
-/* =====================================================
-   ! Extension dialog
-   ===================================================== */
+/* ======================================
+ * ! Extension dialog
+ * ====================================== */
 .extension-dialog .headline {
   font-size: 14px;
 }
@@ -1838,9 +1838,9 @@ StEntry:insensitive StIcon,
   height: 32px;
 }
 
-/* =====================================================
-   ! Extension dialog buttons
-   ===================================================== */
+/* ======================================
+ * ! Extension dialog buttons
+ * ====================================== */
 .extension-dialog .modal-dialog-linked-button {
   background-color: transparent;
   background-gradient-direction: none;
@@ -2021,9 +2021,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
-   ! Lightbox + flashspot
-   ===================================================== */
+/* ======================================
+ * ! Lightbox + flashspot
+ * ====================================== */
 .lightbox {
   background-color: rgba(0, 0, 0, 0.45);
 }
@@ -2032,9 +2032,9 @@ StEntry:insensitive StIcon,
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* =====================================================
-   ! Popup Menus
-   ===================================================== */
+/* ======================================
+ * ! Popup Menus
+ * ====================================== */
 .popup-menu {
   padding: 3px;
   min-width: 10em;
@@ -2168,9 +2168,9 @@ StEntry:insensitive StIcon,
   -arrow-rise: 0;
 }
 
-/* =====================================================
-   ! OSD
-   ===================================================== */
+/* ======================================
+ * ! OSD
+ * ====================================== */
 .osd-window {
   text-align: center;
   font-weight: bold;
@@ -2211,9 +2211,9 @@ StEntry:insensitive StIcon,
   border-radius: 0 !important;
 }
 
-/* =====================================================
-   ! Alt Tab
-   ===================================================== */
+/* ======================================
+ * ! Alt Tab
+ * ====================================== */
 .switcher-popup {
   padding: 0;
   spacing: 0;
@@ -2283,9 +2283,9 @@ StEntry:insensitive StIcon,
   font-size: 30px;
 }
 
-/* =====================================================
-   ! Workspace Switcher
-   ===================================================== */
+/* ======================================
+ * ! Workspace Switcher
+ * ====================================== */
 .workspace-switcher {
   background: transparent !important;
   border-radius: 0 !important;
@@ -2320,9 +2320,9 @@ StEntry:insensitive StIcon,
   border-radius: 0 !important;
 }
 
-/* =====================================================
-   ! Tiled Window Preview
-   ===================================================== */
+/* ======================================
+ * ! Tiled Window Preview
+ * ====================================== */
 .tile-preview {
   background-color: transparent !important;
   border: 0 transparent !important;
@@ -2342,9 +2342,9 @@ StEntry:insensitive StIcon,
   border-radius: 0 !important;
 }
 
-/* =====================================================
-   ! Panel
-   ===================================================== */
+/* ======================================
+ * ! Panel
+ * ====================================== */
 #panel {
   background-gradient-direction: none !important;
   background-color: transparent !important;
@@ -2487,9 +2487,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
-   ! Calendar
-   ===================================================== */
+/* ======================================
+ * ! Calendar
+ * ====================================== */
 #calendarArea {
   padding: 0;
   max-height: 700px;
@@ -2504,9 +2504,9 @@ StEntry:insensitive StIcon,
   margin: 0;
 }
 
-/* =====================================================
-   ! Day & Date
-   ===================================================== */
+/* ======================================
+ * ! Day & Date
+ * ====================================== */
 .datemenu-today-button {
   margin: 0 6px 2px 6px;
   padding: .7em 12px;
@@ -2533,9 +2533,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
-   ! World Clocks
-   ===================================================== */
+/* ======================================
+ * ! World Clocks
+ * ====================================== */
 .datemenu-displays-box {
   margin: 0 18px;
 }
@@ -2587,9 +2587,9 @@ StEntry:insensitive StIcon,
   margin: 0;
 }
 
-/* =====================================================
-   ! Change Month Bar
-   ===================================================== */
+/* ======================================
+ * ! Change Month Bar
+ * ====================================== */
 .calendar > StBoxLayout:first-child {
   border-image: url("img/containers/dark-bg.svg") 7;
   padding: 0;
@@ -2670,9 +2670,9 @@ StEntry:insensitive StIcon,
   color: #72a9ee;
 }
 
-/* =====================================================
-   ! Calendar
-   ===================================================== */
+/* ======================================
+ * ! Calendar
+ * ====================================== */
 .calendar-day-base {
   font-size: 12px;
   font-weight: bold;
@@ -2853,9 +2853,9 @@ StEntry:insensitive StIcon,
   padding: .9em .4em 0 0;
 }
 
-/* =====================================================
-   ! Message List
-   ===================================================== */
+/* ======================================
+ * ! Message List
+ * ====================================== */
 .message-list {
   width: 34em;
   margin: 0;
@@ -2925,9 +2925,9 @@ StEntry:insensitive StIcon,
   padding: 8px 0 12px 0;
 }
 
-/* =====================================================
-   ! Message
-   ===================================================== */
+/* ======================================
+ * ! Message
+ * ====================================== */
 .message {
   background-color: transparent !important;
   border-radius: 0;
@@ -3053,9 +3053,9 @@ StEntry:insensitive StIcon,
   icon-size: 32px;
 }
 
-/* =====================================================
-   ! Aggregate Menu
-   ===================================================== */
+/* ======================================
+ * ! Aggregate Menu
+ * ====================================== */
 .system-switch-user-submenu-icon {
   border: 0 solid transparent !important;
   padding: 0;
@@ -3100,9 +3100,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/containers/hover.svg") 6;
 }
 
-/* =====================================================
-   ! Ripple Box
-   ===================================================== */
+/* ======================================
+ * ! Ripple Box
+ * ====================================== */
 .ripple-box {
   width: 12px;
   height: 12px;
@@ -3113,9 +3113,9 @@ StEntry:insensitive StIcon,
   background-image: url("img/misc/corner-ripple-rtla.svg");
 }
 
-/* =====================================================
-   ! Notifications
-   ===================================================== */
+/* ======================================
+ * ! Notifications
+ * ====================================== */
 /*
     The url highlighter gets
     the opacity from the color property
@@ -3543,9 +3543,9 @@ StEntry:insensitive StIcon,
   padding-right: 4px;
 }
 
-/* =====================================================
-   ! Legacy Tray
-   ===================================================== */
+/* ======================================
+ * ! Legacy Tray
+ * ====================================== */
 .legacy-tray {
   background-color: transparent !important;
   border: 0 transparent !important;
@@ -3620,9 +3620,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/containers/hover.svg") 6;
 }
 
-/* =====================================================
-   ! Magnifier
-   ===================================================== */
+/* ======================================
+ * ! Magnifier
+ * ====================================== */
 .magnifier-zoom-region {
   border: 3px #E66464;
 }
@@ -3631,9 +3631,9 @@ StEntry:insensitive StIcon,
   border: none;
 }
 
-/* ===================================================================
-   ! On screen keyboard
-   ===================================================================*/
+/* ======================================
+ * ! On screen keyboard
+ * ====================================== */
 #keyboard {
   border-image: url("img/panel/panel-bottom.svg") 7;
 }
@@ -3860,9 +3860,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/containers/popup-inside.svg") 7;
 }
 
-/* =====================================================
-   ! Candidate Popup
-   ===================================================== */
+/* ======================================
+ * ! Candidate Popup
+ * ====================================== */
 .candidate-popup-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
@@ -4064,12 +4064,13 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* =====================================================
-   ! Looking Glass
-   ===================================================== */
-/* Dialog when picker is active is targeted with an id
-   because it only has an id
-   The main dialog has the same id and the "lg-dialog" class
+/* ======================================
+ * ! Looking Glass
+ * ====================================== */
+/*
+    Dialog when picker is active is targeted with an id
+    because it only has an id
+    The main dialog has the same id and the "lg-dialog" class
 */
 #LookingGlassDialog {
   border-image: url("img/containers/popup-osd.svg") 7;
@@ -4461,13 +4462,11 @@ StEntry:insensitive StIcon,
   padding: 0 1em;
 }
 
-/*  Lg Inspector
+/*
+    Lg Inspector
 
     This box has no id's or classes and is
     the direct child of the global container
-
-    We assume that there is no
-    uiGroup > StScrollView used elsewhere
 */
 #uiGroup > StScrollView {
   border-image: url("img/containers/popup.svg") 7;
@@ -4576,9 +4575,9 @@ StEntry:insensitive StIcon,
   color: rgba(255, 255, 255, 0.15);
 }
 
-/* ===================================================================
-   ! Login and Lock Screen
-   ===================================================================*/
+/* ======================================
+ * ! Login and Lock Screen
+ * ====================================== */
 #lockDialogGroup {
   background: #333 url("img/overview/overview-pattern.svg");
   background-repeat: repeat;
@@ -4893,9 +4892,9 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/* ===================================================================
-   ! Screen Shield
-   ===================================================================*/
+/* ======================================
+ * ! Screen Shield
+ * ====================================== */
 #lockScreenContents {
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -4988,9 +4987,9 @@ StEntry:insensitive StIcon,
   border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
 }
 
-/* =====================================================
-   ! Apps menu extension
-   ===================================================== */
+/* ======================================
+ * ! Apps menu extension
+ * ====================================== */
 .calendar-vertical-separator {
   background-color: rgba(0, 0, 0, 0.05);
   width: 1px;
