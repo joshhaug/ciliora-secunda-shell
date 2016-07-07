@@ -2936,12 +2936,15 @@ StEntry:insensitive StIcon,
 
 /* ! Notification indicator */
 .clock-display > * > *:last-child {
-  color: #6A98D2;
-  margin-left: .3em;
+  color: transparent !important;
+  background-image: url("img/panel/notification-indicator.svg");
+  width: 6px;
+  height: 6px;
+  margin-left: .6em;
 }
 
 .clock-display:hover > * > *:last-child {
-  color: white;
+  background-image: url("img/panel/notification-indicator-hover.svg");
 }
 
 /* ======================================

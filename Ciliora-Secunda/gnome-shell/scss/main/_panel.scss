@@ -134,11 +134,14 @@
 /* ! Notification indicator */
 .clock-display {
     > * > *:last-child {
-        color: $accent-primary;
-        margin-left: .3em;
+        color: transparent !important;
+
+        background-image: url("img/panel/notification-indicator.svg");
+        @include size(6px);
+        margin-left: .6em;
     }
 
     &:hover > * > *:last-child {
-        color: $text-primary;
+        background-image: url("img/panel/notification-indicator-hover.svg");
     }
 }
