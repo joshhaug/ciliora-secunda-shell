@@ -374,7 +374,7 @@ StEntry:insensitive StIcon,
   border: 0 transparent !important;
   border-radius: 0 !important;
   transition-duration: 0ms !important;
-  padding: 6px !important;
+  padding: 9px !important;
 }
 
 .show-apps:hover .overview-icon,
@@ -398,54 +398,511 @@ StEntry:insensitive StIcon,
 }
 
 /* ======================================
- * ! Dash-to-Dock
+ * ! Dash-to-Dock extension
  * ====================================== */
-#dashtodockContainer.left #dash {
-  border-image: url("img/overview/overview-dark-bg-left.svg") 7;
+#dashtodockContainer .app-well-app-running-dot {
+  width: 0;
+  height: 0;
 }
 
-#dashtodockContainer.left.extended #dash {
-  border-image: url("img/panel/panel-left.svg") 7;
+#dashtodockContainer.left #dash {
+  padding: 0;
+}
+
+#dashtodockContainer.left .dash-item-container > * {
+  padding: 0 0 3px 0;
+}
+
+#dashtodockContainer.left .show-apps,
+#dashtodockContainer.left .app-well-app > * {
+  padding: 0 0 0 2px;
 }
 
 #dashtodockContainer.right #dash {
-  border-image: url("img/overview/overview-dark-bg-right.svg") 7;
+  padding: 0;
 }
 
-#dashtodockContainer.right.extended #dash {
-  border-image: url("img/panel/panel-right.svg") 7;
+#dashtodockContainer.right .dash-item-container > * {
+  padding: 0 0 3px 0;
+}
+
+#dashtodockContainer.right .show-apps,
+#dashtodockContainer.right .app-well-app > * {
+  padding: 0 2px 0 0;
 }
 
 #dashtodockContainer.top #dash {
-  border-image: url("img/overview/overview-dark-bg-top.svg") 7;
+  padding: 0;
 }
 
-#dashtodockContainer.top.extended #dash {
-  border-image: url("img/panel/panel-top.svg") 7;
+#dashtodockContainer.top .dash-item-container > * {
+  padding: 0 3px 0 0;
+}
+
+#dashtodockContainer.top .show-apps,
+#dashtodockContainer.top .app-well-app > * {
+  padding: 2px 0 0 0;
 }
 
 #dashtodockContainer.bottom #dash {
-  border-image: url("img/overview/overview-dark-bg-bottom.svg") 7;
+  padding: 0;
+}
+
+#dashtodockContainer.bottom .dash-item-container > * {
+  padding: 0 3px 0 0;
+}
+
+#dashtodockContainer.bottom .show-apps,
+#dashtodockContainer.bottom .app-well-app > * {
+  padding: 0 0 2px 0;
+}
+
+#dashtodockContainer.left #dash {
+  border-image: url("img/overview/dash-bg__left.svg") 7;
+}
+
+#dashtodockContainer.left.extended #dash {
+  border-image: url("img/overview/dash-bg__left--extended.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .app-well-app.running1.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app.running1 > * {
+  border-image: url("img/overview/app-indicator__1--left.svg") 14 !important;
+}
+
+#dashtodockContainer.left .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--left.svg") 14;
+}
+
+#dashtodockContainer.left #dash {
+  border-image: url("img/overview/dash-bg__left.svg") 7;
+}
+
+#dashtodockContainer.left.extended #dash {
+  border-image: url("img/overview/dash-bg__left--extended.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .app-well-app.running2.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app.running2 > * {
+  border-image: url("img/overview/app-indicator__2--left.svg") 14 !important;
+}
+
+#dashtodockContainer.left .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--left.svg") 14;
+}
+
+#dashtodockContainer.left #dash {
+  border-image: url("img/overview/dash-bg__left.svg") 7;
+}
+
+#dashtodockContainer.left.extended #dash {
+  border-image: url("img/overview/dash-bg__left--extended.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .app-well-app.running3.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app.running3 > * {
+  border-image: url("img/overview/app-indicator__3--left.svg") 14 !important;
+}
+
+#dashtodockContainer.left .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--left.svg") 14;
+}
+
+#dashtodockContainer.left #dash {
+  border-image: url("img/overview/dash-bg__left.svg") 7;
+}
+
+#dashtodockContainer.left.extended #dash {
+  border-image: url("img/overview/dash-bg__left--extended.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .app-well-app.running4.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.left .app-well-app.running4 > * {
+  border-image: url("img/overview/app-indicator__4--left.svg") 14 !important;
+}
+
+#dashtodockContainer.left .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--left.svg") 14;
+}
+
+#dashtodockContainer.left .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--left.svg") 14;
+}
+
+#dashtodockContainer.right #dash {
+  border-image: url("img/overview/dash-bg__right.svg") 7;
+}
+
+#dashtodockContainer.right.extended #dash {
+  border-image: url("img/overview/dash-bg__right--extended.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .app-well-app.running1.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app.running1 > * {
+  border-image: url("img/overview/app-indicator__1--right.svg") 14 !important;
+}
+
+#dashtodockContainer.right .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--right.svg") 14;
+}
+
+#dashtodockContainer.right #dash {
+  border-image: url("img/overview/dash-bg__right.svg") 7;
+}
+
+#dashtodockContainer.right.extended #dash {
+  border-image: url("img/overview/dash-bg__right--extended.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .app-well-app.running2.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app.running2 > * {
+  border-image: url("img/overview/app-indicator__2--right.svg") 14 !important;
+}
+
+#dashtodockContainer.right .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--right.svg") 14;
+}
+
+#dashtodockContainer.right #dash {
+  border-image: url("img/overview/dash-bg__right.svg") 7;
+}
+
+#dashtodockContainer.right.extended #dash {
+  border-image: url("img/overview/dash-bg__right--extended.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .app-well-app.running3.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app.running3 > * {
+  border-image: url("img/overview/app-indicator__3--right.svg") 14 !important;
+}
+
+#dashtodockContainer.right .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--right.svg") 14;
+}
+
+#dashtodockContainer.right #dash {
+  border-image: url("img/overview/dash-bg__right.svg") 7;
+}
+
+#dashtodockContainer.right.extended #dash {
+  border-image: url("img/overview/dash-bg__right--extended.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .app-well-app.running4.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.right .app-well-app.running4 > * {
+  border-image: url("img/overview/app-indicator__4--right.svg") 14 !important;
+}
+
+#dashtodockContainer.right .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--right.svg") 14;
+}
+
+#dashtodockContainer.right .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--right.svg") 14;
+}
+
+#dashtodockContainer.top #dash {
+  border-image: url("img/overview/dash-bg__top.svg") 7;
+}
+
+#dashtodockContainer.top.extended #dash {
+  border-image: url("img/overview/dash-bg__top--extended.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .app-well-app.running1.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app.running1 > * {
+  border-image: url("img/overview/app-indicator__1--top.svg") 14 !important;
+}
+
+#dashtodockContainer.top .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--top.svg") 14;
+}
+
+#dashtodockContainer.top #dash {
+  border-image: url("img/overview/dash-bg__top.svg") 7;
+}
+
+#dashtodockContainer.top.extended #dash {
+  border-image: url("img/overview/dash-bg__top--extended.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .app-well-app.running2.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app.running2 > * {
+  border-image: url("img/overview/app-indicator__2--top.svg") 14 !important;
+}
+
+#dashtodockContainer.top .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--top.svg") 14;
+}
+
+#dashtodockContainer.top #dash {
+  border-image: url("img/overview/dash-bg__top.svg") 7;
+}
+
+#dashtodockContainer.top.extended #dash {
+  border-image: url("img/overview/dash-bg__top--extended.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .app-well-app.running3.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app.running3 > * {
+  border-image: url("img/overview/app-indicator__3--top.svg") 14 !important;
+}
+
+#dashtodockContainer.top .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--top.svg") 14;
+}
+
+#dashtodockContainer.top #dash {
+  border-image: url("img/overview/dash-bg__top.svg") 7;
+}
+
+#dashtodockContainer.top.extended #dash {
+  border-image: url("img/overview/dash-bg__top--extended.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .app-well-app.running4.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.top .app-well-app.running4 > * {
+  border-image: url("img/overview/app-indicator__4--top.svg") 14 !important;
+}
+
+#dashtodockContainer.top .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--top.svg") 14;
+}
+
+#dashtodockContainer.top .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--top.svg") 14;
+}
+
+#dashtodockContainer.bottom #dash {
+  border-image: url("img/overview/dash-bg__bottom.svg") 7;
 }
 
 #dashtodockContainer.bottom.extended #dash {
-  border-image: url("img/panel/panel-bottom.svg") 7;
+  border-image: url("img/overview/dash-bg__bottom--extended.svg") 7;
 }
 
-.running1 .app-well-app-running-dot {
-  background-image: url("img/overview/running1.svg");
+#dashtodockContainer.bottom .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
 }
 
-.running2 .app-well-app-running-dot {
-  background-image: url("img/overview/running2.svg");
+#dashtodockContainer.bottom .app-well-app.running1.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
 }
 
-.running3 .app-well-app-running-dot {
-  background-image: url("img/overview/running3.svg");
+#dashtodockContainer.bottom .app-well-app.running1 > * {
+  border-image: url("img/overview/app-indicator__1--bottom.svg") 14 !important;
 }
 
-.running4 .app-well-app-running-dot {
-  background-image: url("img/overview/running4.svg");
+#dashtodockContainer.bottom .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom #dash {
+  border-image: url("img/overview/dash-bg__bottom.svg") 7;
+}
+
+#dashtodockContainer.bottom.extended #dash {
+  border-image: url("img/overview/dash-bg__bottom--extended.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .app-well-app.running2.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app.running2 > * {
+  border-image: url("img/overview/app-indicator__2--bottom.svg") 14 !important;
+}
+
+#dashtodockContainer.bottom .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom #dash {
+  border-image: url("img/overview/dash-bg__bottom.svg") 7;
+}
+
+#dashtodockContainer.bottom.extended #dash {
+  border-image: url("img/overview/dash-bg__bottom--extended.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .app-well-app.running3.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app.running3 > * {
+  border-image: url("img/overview/app-indicator__3--bottom.svg") 14 !important;
+}
+
+#dashtodockContainer.bottom .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom #dash {
+  border-image: url("img/overview/dash-bg__bottom.svg") 7;
+}
+
+#dashtodockContainer.bottom.extended #dash {
+  border-image: url("img/overview/dash-bg__bottom--extended.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app:hover > * {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .app-well-app.running4.focused .overview-icon {
+  border-image: url("img/overview/overview-light-bg.svg") 7;
+}
+
+#dashtodockContainer.bottom .app-well-app.running4 > * {
+  border-image: url("img/overview/app-indicator__4--bottom.svg") 14 !important;
+}
+
+#dashtodockContainer.bottom .show-apps:hover {
+  border-image: url("img/overview/app-indicator--hover--bottom.svg") 14;
+}
+
+#dashtodockContainer.bottom .show-apps:checked {
+  border-image: url("img/overview/app-indicator__1--bottom.svg") 14;
 }
 
 /* ======================================
@@ -730,11 +1187,11 @@ StEntry:insensitive StIcon,
 }
 
 .app-well-app-running-dot {
-  background-image: url("img/overview/running1.svg");
-  width: 28px;
-  height: 4px;
   background-color: transparent;
   margin-bottom: 0;
+  border-image: url("img/overview/app-indicator.svg") 2;
+  width: 5px;
+  height: 5px;
 }
 
 .app-well-app .overview-icon-with-label,
@@ -2369,7 +2826,7 @@ StEntry:insensitive StIcon,
   width: 24px;
   height: 24px;
   background-image: url("img/menu-icons/menu-6.svg");
-  padding: 0 8px;
+  padding: 0 6px;
 }
 
 #panelActivities:overview {
@@ -2378,7 +2835,7 @@ StEntry:insensitive StIcon,
   width: 24px;
   height: 24px;
   background-image: url("img/menu-icons/menu-6.svg");
-  padding: 0 8px;
+  padding: 0 6px;
 }
 
 #panel .panel-button {
@@ -2412,7 +2869,7 @@ StEntry:insensitive StIcon,
 
 #panel .panel-button .system-status-icon {
   icon-size: 16px;
-  padding: 0 7px;
+  padding: 0 6px;
 }
 
 #panel .panel-status-indicators-box,

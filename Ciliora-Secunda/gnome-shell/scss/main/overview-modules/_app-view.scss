@@ -32,10 +32,11 @@
 }
 
 .app-well-app-running-dot {
-    background-image: url("img/overview/running1.svg");
-    @include size(28px, 4px);
     background-color: transparent;
     margin-bottom: 0;
+
+    border-image: url("img/overview/app-indicator.svg") 2;
+    @include size(5px);
 }
 
 .overview-icon-with-label {

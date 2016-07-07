@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="hover.svg"
+   sodipodi:docname="dash-bg__right.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -27,11 +27,11 @@
      pagecolor="#8c8c8c"
      bordercolor="#ff5e00"
      borderopacity="1"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="18.102857"
-     inkscape:cx="6.7174462"
-     inkscape:cy="10.977151"
+     inkscape:zoom="14.895833"
+     inkscape:cx="-6.8139874"
+     inkscape:cy="12.671328"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -129,19 +129,23 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <rect
-       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       id="rect4136"
-       width="22"
-       height="22"
-       x="1"
-       y="277" />
-    <rect
-       y="278"
-       x="2"
-       height="20"
-       width="20"
-       id="rect4270-9-6"
-       style="display:inline;fill:#6a98d2;fill-opacity:1;stroke:none;enable-background:new" />
+    <g
+       id="g4209"
+       transform="matrix(0,1,-1,0,300,276)">
+      <rect
+         transform="matrix(0,1,-1,0,0,0)"
+         y="-24"
+         x="276"
+         height="24"
+         width="24"
+         id="rect5315-7-0-3"
+         style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none" />
+      <path
+         sodipodi:nodetypes="cccccccccccccc"
+         inkscape:connector-curvature="0"
+         id="path4074-9"
+         d="m 0,300 0,-24 1,0 0,2 22,0 0,-2 1,0 0,24 z m 1,-1 22,0 0,-20 -22,0 z"
+         style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
+    </g>
   </g>
 </svg>

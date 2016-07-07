@@ -15,12 +15,12 @@
         border-radius: 0;
     }
 
-    & .placeholder {
+    .placeholder {
         background-image: none;
         @include size(16px);
     }
 
-    & .empty-dash-drop-target {
+    .empty-dash-drop-target {
         @include size(24px);
     }
 }
@@ -35,6 +35,7 @@
     background-color: transparent !important;
     border-radius: 0 !important;
 }
+
 /* ======================================
  * ! Dash Icons
  * ====================================== */
@@ -50,7 +51,7 @@
         border: 0 transparent !important;
         border-radius: 0 !important;
         transition-duration: 0ms !important;
-        padding: 6px !important;
+        padding: 9px !important;
     }
 
     .show-apps:hover &,
@@ -73,22 +74,87 @@
 .dash-item-container > StWidget {
     padding: 2px 6px;
 }
+
 /* ======================================
- * ! Dash-to-Dock
+ * ! Dash-to-Dock extension
  * ====================================== */
 
-@each $v in left, right, top, bottom {
-    #dashtodockContainer.#{$v} #dash {
-        border-image: url("img/overview/overview-dark-bg-#{$v}.svg") 7;
+#dashtodockContainer {
+    .app-well-app-running-dot { @include size(0); }
+
+    &.left {
+        #dash { padding: 0; }
+
+        .dash-item-container > * { padding: 0 0 3px 0; }
+
+        .show-apps,
+        .app-well-app > * { padding: 0 0 0 2px; }
     }
 
-    #dashtodockContainer.#{$v}.extended #dash {
-        border-image: url("img/panel/panel-#{$v}.svg") 7;
+    &.right {
+        #dash { padding: 0; }
+
+        .dash-item-container > * { padding: 0 0 3px 0; }
+
+        .show-apps,
+        .app-well-app > * { padding: 0 2px 0 0; }
+    }
+
+    &.top {
+        #dash { padding: 0; }
+
+        .dash-item-container > * { padding: 0 3px 0 0; }
+
+        .show-apps,
+        .app-well-app > * { padding: 2px 0 0 0; }
+    }
+
+    &.bottom {
+        #dash { padding: 0; }
+
+        .dash-item-container > * { padding: 0 3px 0 0; }
+
+        .show-apps,
+        .app-well-app > * { padding: 0 0 2px 0; }
     }
 }
 
-@each $v in 1, 2, 3, 4 {
-    .running#{$v} .app-well-app-running-dot {
-        background-image: url("img/overview/running#{$v}.svg");
+@each $d in left, right, top, bottom {
+@each $c in 1, 2, 3, 4 {
+    #dashtodockContainer.#{$d} {
+        #dash {
+            border-image: url("img/overview/dash-bg__#{$d}.svg") 7;
+        }
+
+        &.extended #dash {
+            border-image: url("img/overview/dash-bg__#{$d}--extended.svg") 7;
+        }
+
+        .app-well-app {
+            &:hover > * {
+                border-image: url("img/overview/app-indicator--hover--#{$d}.svg") 14;
+            }
+
+            &.running#{$c} {
+                &.focused .overview-icon {
+                    border-image: url("img/overview/overview-light-bg.svg") 7;
+                }
+
+                > * {
+                    border-image: url("img/overview/app-indicator__#{$c}--#{$d}.svg") 14 !important;
+                }
+            }
+        }
+
+        .show-apps {
+            &:hover {
+                border-image: url("img/overview/app-indicator--hover--#{$d}.svg") 14;
+            }
+
+            &:checked {
+                border-image: url("img/overview/app-indicator__1--#{$d}.svg") 14;
+            }
+        }
     }
+}
 }

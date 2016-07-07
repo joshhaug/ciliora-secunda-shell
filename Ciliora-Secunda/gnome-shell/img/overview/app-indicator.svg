@@ -11,12 +11,12 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    inkscape:export-ydpi="90.000000"
    inkscape:export-xdpi="90.000000"
-   width="28"
+   width="4"
    height="4"
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="running1.svg"
+   sodipodi:docname="app-indicator.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="19.769527"
-     inkscape:cx="-9.3492325"
-     inkscape:cy="-4.943889"
+     inkscape:zoom="13.979167"
+     inkscape:cx="-20.082513"
+     inkscape:cy="10.107605"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -134,16 +134,16 @@
     <rect
        style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        id="rect4136"
-       width="10"
+       width="4"
        height="4"
-       x="9"
+       x="3.3306691e-16"
        y="296" />
     <rect
-       style="opacity:1;fill:#6a98d2;fill-opacity:1;stroke:none"
-       id="rect4270-9"
-       width="8"
+       y="297"
+       x="1"
        height="2"
-       x="10"
-       y="297" />
+       width="2"
+       id="rect4270-9-6"
+       style="display:inline;fill:#6a98d2;fill-opacity:1;stroke:none;enable-background:new" />
   </g>
 </svg>
