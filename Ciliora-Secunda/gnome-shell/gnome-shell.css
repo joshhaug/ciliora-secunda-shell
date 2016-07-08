@@ -5174,17 +5174,9 @@ StEntry:insensitive StIcon,
   width: 23em;
 }
 
-.login-dialog-user-list:expanded .login-dialog-user-list-item:focus {
-  border-image: url("img/overview/overview-light-bg.svg") 6;
-}
-
-.login-dialog-user-list:expanded .login-dialog-user-list-item:logged-in {
-  border-image: url("img/overview/user-logged-in.svg") 6;
-}
-
 .login-dialog-user-list-item {
   border-image: url("img/overview/overview-dark-bg.svg") 6;
-  padding: 2px 2px 0 2px;
+  padding: 4px;
   color: #fff;
 }
 
@@ -5196,8 +5188,16 @@ StEntry:insensitive StIcon,
   padding-left: 1em;
 }
 
-.login-dialog-user-list-item:hover {
+.login-dialog-user-list-item:hover, .login-dialog-user-list-item:focus {
   border-image: url("img/overview/overview-light-bg.svg") 6;
+}
+
+.login-dialog-user-list-item:logged-in {
+  border-image: url("img/overview/user-logged-in.svg") 6;
+}
+
+.login-dialog-user-list-item:logged-in:hover, .login-dialog-user-list-item:logged-in:focus {
+  border-image: url("img/overview/user-logged-in-hover.svg") 6;
 }
 
 .login-dialog-user-list-item .login-dialog-timed-login-indicator {

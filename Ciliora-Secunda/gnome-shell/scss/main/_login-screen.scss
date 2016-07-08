@@ -111,7 +111,6 @@
 
 
     // User List
-
     &-user-list-view {
         -st-vfade-offset: 0;
         max-height: 600px;
@@ -139,33 +138,28 @@
         spacing: 12px;
         padding: 0;
         width: 23em;
-
-        &:expanded {
-            .login-dialog-user-list-item:focus {
-                border-image: url("img/overview/overview-light-bg.svg") 6;
-            }
-
-            .login-dialog-user-list-item:logged-in {
-                border-image: url("img/overview/user-logged-in.svg") 6;
-            }
-        }
     }
 
     &-user-list-item {
         border-image: url("img/overview/overview-dark-bg.svg") 6;
-        padding: 2px 2px 0 2px;
+        padding: 4px;
         color: #fff;
 
-        &:ltr {
-            padding-right: 1em;
-        }
+        &:ltr { padding-right: 1em; }
 
-        &:rtl {
-            padding-left: 1em;
-        }
+        &:rtl { padding-left: 1em; }
 
-        &:hover {
+        &:hover,
+        &:focus {
             border-image: url("img/overview/overview-light-bg.svg") 6;
+        }
+
+        &:logged-in {
+            border-image: url("img/overview/user-logged-in.svg") 6;
+
+            &:hover, &:focus {
+                border-image: url("img/overview/user-logged-in-hover.svg") 6;
+            }
         }
 
         .login-dialog-timed-login-indicator {
@@ -187,7 +181,6 @@
 
 
     // buttons
-
     .modal-dialog-button-box {
         spacing: 0;
     }
@@ -200,7 +193,6 @@
 
 
     // entry
-
     StEntry {
         @include entry(overview--normal, $width: 320px);
 
