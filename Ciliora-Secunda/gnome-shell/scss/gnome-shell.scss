@@ -1,12 +1,12 @@
 // Base
-@import "base/tools";
+@import "base/utils";
 @import "base/colors";
 @import "base/font";
 
-// Main modules
-@import "main/widget-modules/0-INDEX.scss";
-@import "main/overview-modules/0-INDEX.scss";
-@import "main/dialog-modules/0-INDEX.scss";
+// Main
+@import "main/widgets/0-INDEX.scss";
+@import "main/overview/0-INDEX.scss";
+@import "main/dialogs/0-INDEX.scss";
 @import "main/popup-menus";
 @import "main/OSD";
 @import "main/alt-tab";
