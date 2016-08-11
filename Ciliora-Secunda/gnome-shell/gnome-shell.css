@@ -7,13 +7,13 @@ stage {
 }
 
 .shell-link {
-  color: #72a9ee;
+  color: #63a5f7;
   font-weight: normal;
   text-decoration: none;
 }
 
 .shell-link:hover {
-  color: #72a9ee;
+  color: #63a5f7;
   text-decoration: underline;
 }
 
@@ -80,18 +80,18 @@ StEntry,
   padding: .3em .6em !important;
   height: 2em;
   font-weight: normal;
-  color: white;
+  color: #fff;
 }
 
 StEntry StIcon,
 .popup-menu .search-entry StIcon {
-  color: white;
+  color: #fff;
   icon-size: 16px;
 }
 
 StEntry StIcon.capslock-warning,
 .popup-menu .search-entry StIcon.capslock-warning {
-  color: #ffa959 !important;
+  color: #ff6a37 !important;
 }
 
 StEntry:focus,
@@ -101,27 +101,27 @@ StEntry:focus,
   font-weight: bold;
   padding: .3em .6em !important;
   height: 2em;
-  color: white;
-  caret-color: white;
+  color: #fff;
+  caret-color: #fff;
   caret-size: 2px;
-  selected-color: white;
-  selection-background-color: #6A98D2;
+  selected-color: #fff;
+  selection-background-color: #5A94DC;
 }
 
 StEntry:focus StIcon,
 .popup-menu .search-entry:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 StEntry:insensitive,
 .popup-menu .search-entry:insensitive {
   border-image: url("img/controls/entry-insensitive.svg") 6;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 StEntry:insensitive StIcon,
 .popup-menu .search-entry:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ======================================
@@ -185,7 +185,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em 2em;
 }
 
@@ -196,15 +196,15 @@ StEntry:insensitive StIcon,
 }
 
 .button StIcon {
-  color: white;
+  color: #fff;
 }
 
 .button:hover, .button:active, .button:pressed, .button:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .button:hover StIcon, .button:active StIcon, .button:pressed StIcon, .button:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .button:hover {
@@ -217,11 +217,11 @@ StEntry:insensitive StIcon,
 
 .button:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .button:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .button:focus:hover {
@@ -234,11 +234,11 @@ StEntry:insensitive StIcon,
 
 .button:grayed, .button:disabled, .button:insensitive, .button:focus:grayed, .button:focus:disabled, .button:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .button:grayed StIcon, .button:disabled StIcon, .button:insensitive StIcon, .button:focus:grayed StIcon, .button:focus:disabled StIcon, .button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ======================================
@@ -249,8 +249,8 @@ StEntry:insensitive StIcon,
   -slider-height: 4px;
   -slider-background-color: rgba(8, 13, 24, 0.3);
   -slider-border-color: transparent;
-  -slider-active-background-color: #6A98D2;
-  -slider-active-border-color: #6A98D2;
+  -slider-active-background-color: #5A94DC;
+  -slider-active-border-color: #5A94DC;
   -slider-border-width: 0;
   -slider-handle-radius: 0;
   border-image: url("img/controls/slider.svg") 9 6 8 8;
@@ -298,14 +298,14 @@ StEntry:insensitive StIcon,
   -shell-caption-spacing: 10px;
   background-color: transparent;
   border-radius: 0;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 12px;
 }
 
 .window-caption:hover {
   border-image: url("img/overview/overview-highlight-bg.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .window-close {
@@ -361,7 +361,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   padding: 4px 10px;
   -x-offset: 8px;
-  color: white;
+  color: #fff;
   font-weight: bold;
   text-align: center;
   background-color: transparent !important;
@@ -372,7 +372,7 @@ StEntry:insensitive StIcon,
  * ! Dash Icons
  * ====================================== */
 .show-apps-icon {
-  color: white;
+  color: #fff;
 }
 
 .show-apps .overview-icon,
@@ -1159,7 +1159,7 @@ StEntry:insensitive StIcon,
   border: none !important;
   spacing: 0;
   padding: 0;
-  color: white;
+  color: #fff;
   margin-bottom: 10px;
   border-image: url("img/overview/overview-light-bg.svg") 6;
 }
@@ -1171,16 +1171,16 @@ StEntry:insensitive StIcon,
   padding: .3em .6em !important;
   height: 2em;
   width: 320px;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .search-entry StIcon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .search-entry:hover StIcon {
-  color: white;
+  color: #fff;
 }
 
 .search-entry:focus {
@@ -1190,28 +1190,28 @@ StEntry:insensitive StIcon,
   padding: .3em .6em !important;
   height: 2em;
   width: 320px;
-  color: white;
-  caret-color: white;
+  color: #fff;
+  caret-color: #fff;
   caret-size: 2px;
-  selected-color: white;
-  selection-background-color: #6A98D2;
+  selected-color: #fff;
+  selection-background-color: #5A94DC;
   font-weight: bold;
 }
 
 .search-entry:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .search-entry:focus StIcon.capslock-warning {
-  color: white !important;
+  color: #fff !important;
 }
 
 .search-entry:focus:hover StIcon {
-  color: white;
+  color: #fff;
 }
 
 .search-statustext {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1262,7 +1262,7 @@ StEntry:insensitive StIcon,
   text-shadow: 0 0 transparent;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: #fff;
   padding-bottom: 5px;
 }
 
@@ -1271,14 +1271,14 @@ StEntry:insensitive StIcon,
 .list-search-result:selected .list-search-result-title,
 .list-search-result:pressed .list-search-result-title,
 .list-search-result:active .list-search-result-title {
-  color: white;
+  color: #fff;
 }
 
 .list-search-result-description {
   text-shadow: 0 0 transparent;
   font-weight: normal;
   font-size: 12px;
-  color: white;
+  color: #fff;
 }
 
 .list-search-result:hover .list-search-result-description,
@@ -1286,7 +1286,7 @@ StEntry:insensitive StIcon,
 .list-search-result:selected .list-search-result-description,
 .list-search-result:pressed .list-search-result-description,
 .list-search-result:active .list-search-result-description {
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -1336,7 +1336,7 @@ StEntry:insensitive StIcon,
 }
 
 .no-frequent-applications-label {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1367,7 +1367,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   transition-duration: 0ms;
   padding: 6px;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
@@ -1396,22 +1396,22 @@ StEntry:insensitive StIcon,
   box-shadow: 0 0 transparent;
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   padding: 6px 12px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .app-view-control:hover, .app-view-control:focus, .app-view-control:focus:active, .app-view-control:checked {
   border-image: url("img/overview/overview-light-bg.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .app-view-control:last-child:checked {
   border-image: url("img/overview/overview-highlight-bg-last.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .app-view-control:first-child:checked {
   border-image: url("img/overview/overview-highlight-bg-first.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -1437,7 +1437,7 @@ StEntry:insensitive StIcon,
 }
 
 .app-folder-popup-bin .overview-icon {
-  color: white;
+  color: #fff;
 }
 
 .app-folder-popup-bin .app-well-app:hover .overview-icon,
@@ -1446,7 +1446,7 @@ StEntry:insensitive StIcon,
 .app-folder-popup-bin .app-well-app:active .overview-icon,
 .app-folder-popup-bin .app-well-app:checked .overview-icon {
   border-image: url("img/containers/hover-popup.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .app-folder-icon {
@@ -1499,7 +1499,7 @@ StEntry:insensitive StIcon,
   background-color: transparent !important;
   border: 0 transparent !important;
   border-radius: 0;
-  color: white;
+  color: #fff;
   padding: 0;
 }
 
@@ -1516,7 +1516,7 @@ StEntry:insensitive StIcon,
 
 .modal-dialog .framed-user-icon {
   border-image: none;
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button {
@@ -1531,7 +1531,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -1542,7 +1542,7 @@ StEntry:insensitive StIcon,
 }
 
 .modal-dialog-linked-button StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:hover {
@@ -1555,11 +1555,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:focus {
   border-image: url("img/buttons/dialog-button-blue__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:focus:hover {
@@ -1572,11 +1572,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:grayed, .modal-dialog-linked-button:disabled, .modal-dialog-linked-button:insensitive, .modal-dialog-linked-button:focus:grayed, .modal-dialog-linked-button:focus:disabled, .modal-dialog-linked-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:grayed StIcon, .modal-dialog-linked-button:disabled StIcon, .modal-dialog-linked-button:insensitive StIcon, .modal-dialog-linked-button:focus:grayed StIcon, .modal-dialog-linked-button:focus:disabled StIcon, .modal-dialog-linked-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:first-child {
@@ -1591,7 +1591,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -1602,7 +1602,7 @@ StEntry:insensitive StIcon,
 }
 
 .modal-dialog-linked-button:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:first-child:hover {
@@ -1615,11 +1615,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:first-child:focus {
   border-image: url("img/buttons/dialog-button-blue__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:first-child:focus:hover {
@@ -1632,11 +1632,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:first-child:grayed, .modal-dialog-linked-button:first-child:disabled, .modal-dialog-linked-button:first-child:insensitive, .modal-dialog-linked-button:first-child:focus:grayed, .modal-dialog-linked-button:first-child:focus:disabled, .modal-dialog-linked-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:first-child:grayed StIcon, .modal-dialog-linked-button:first-child:disabled StIcon, .modal-dialog-linked-button:first-child:insensitive StIcon, .modal-dialog-linked-button:first-child:focus:grayed StIcon, .modal-dialog-linked-button:first-child:focus:disabled StIcon, .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:last-child {
@@ -1651,7 +1651,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -1662,7 +1662,7 @@ StEntry:insensitive StIcon,
 }
 
 .modal-dialog-linked-button:last-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:hover {
@@ -1675,11 +1675,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:focus {
   border-image: url("img/buttons/dialog-button-blue__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:focus:hover {
@@ -1692,11 +1692,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:grayed, .modal-dialog-linked-button:last-child:disabled, .modal-dialog-linked-button:last-child:insensitive, .modal-dialog-linked-button:last-child:focus:grayed, .modal-dialog-linked-button:last-child:focus:disabled, .modal-dialog-linked-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:last-child:grayed StIcon, .modal-dialog-linked-button:last-child:disabled StIcon, .modal-dialog-linked-button:last-child:insensitive StIcon, .modal-dialog-linked-button:last-child:focus:grayed StIcon, .modal-dialog-linked-button:last-child:focus:disabled StIcon, .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:last-child:first-child {
@@ -1711,7 +1711,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -1722,7 +1722,7 @@ StEntry:insensitive StIcon,
 }
 
 .modal-dialog-linked-button:last-child:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:first-child:hover {
@@ -1735,11 +1735,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:first-child:focus {
   border-image: url("img/buttons/dialog-button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .modal-dialog-linked-button:last-child:first-child:focus:hover {
@@ -1752,11 +1752,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:first-child:grayed, .modal-dialog-linked-button:last-child:first-child:disabled, .modal-dialog-linked-button:last-child:first-child:insensitive, .modal-dialog-linked-button:last-child:first-child:focus:grayed, .modal-dialog-linked-button:last-child:first-child:focus:disabled, .modal-dialog-linked-button:last-child:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .modal-dialog-linked-button:last-child:first-child:grayed StIcon, .modal-dialog-linked-button:last-child:first-child:disabled StIcon, .modal-dialog-linked-button:last-child:first-child:insensitive StIcon, .modal-dialog-linked-button:last-child:first-child:focus:grayed StIcon, .modal-dialog-linked-button:last-child:first-child:focus:disabled StIcon, .modal-dialog-linked-button:last-child:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ======================================
@@ -1791,14 +1791,14 @@ StEntry:insensitive StIcon,
   padding: .3em .1em .3em .2em;
   margin-top: 6px;
   spacing: 0;
-  color: #f85c5c;
+  color: #fb4545;
   font-weight: bold;
 }
 
 .run-dialog-error-box StIcon {
   width: 0;
   height: 0;
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .run-dialog-label {
@@ -1843,7 +1843,7 @@ StEntry:insensitive StIcon,
 .end-session-dialog-subject {
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .end-session-dialog .check-box {
@@ -1853,13 +1853,13 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .check-box StLabel {
   font-weight: bold;
-  color: #ffa959;
+  color: #ff6a37;
   padding-left: .4em;
 }
 
 .end-session-dialog-warning {
   width: 28em;
-  color: #f85c5c;
+  color: #fb4545;
   padding-top: 0;
 }
 
@@ -1875,7 +1875,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog-shutdown-icon {
-  color: white;
+  color: #fff;
   width: 32px;
   height: 32px;
 }
@@ -1914,7 +1914,7 @@ StEntry:insensitive StIcon,
 .end-session-dialog-list-header {
   font-weight: bold;
   padding-bottom: .5em;
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog-list-header:rtl {
@@ -1945,7 +1945,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
 }
 
@@ -1964,7 +1964,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: #f85c5c;
+  color: #fb4545;
   padding: 1em .4em;
 }
 
@@ -1975,7 +1975,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:hover {
@@ -1988,11 +1988,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:focus {
   border-image: url("img/buttons/dialog-button-red__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:focus StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:focus:hover {
@@ -2005,11 +2005,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:grayed, .end-session-dialog .modal-dialog-linked-button:disabled, .end-session-dialog .modal-dialog-linked-button:insensitive, .end-session-dialog .modal-dialog-linked-button:focus:grayed, .end-session-dialog .modal-dialog-linked-button:focus:disabled, .end-session-dialog .modal-dialog-linked-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:focus:insensitive StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child {
@@ -2024,7 +2024,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: #4fc482;
+  color: #3dc27f;
   padding: 1em .4em;
 }
 
@@ -2035,7 +2035,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child StIcon {
-  color: #4fc482;
+  color: #3dc27f;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:hover {
@@ -2048,11 +2048,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:first-child:focus {
   border-image: url("img/buttons/dialog-button-green__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:focus StIcon {
-  color: #4fc482;
+  color: #3dc27f;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:focus:hover {
@@ -2065,11 +2065,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:first-child:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: #4fc482;
+  color: #3dc27f;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
-  color: #4fc482;
+  color: #3dc27f;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child {
@@ -2084,7 +2084,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: #f85c5c;
+  color: #fb4545;
   padding: 1em .4em;
 }
 
@@ -2095,7 +2095,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:hover {
@@ -2108,11 +2108,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:last-child:focus {
   border-image: url("img/buttons/dialog-button-red__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:focus StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:focus:hover {
@@ -2125,11 +2125,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:last-child:grayed, .end-session-dialog .modal-dialog-linked-button:last-child:disabled, .end-session-dialog .modal-dialog-linked-button:last-child:insensitive, .end-session-dialog .modal-dialog-linked-button:last-child:focus:grayed, .end-session-dialog .modal-dialog-linked-button:last-child:focus:disabled, .end-session-dialog .modal-dialog-linked-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 /* ======================================
@@ -2250,7 +2250,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-headline {
   font-size: 18px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .prompt-dialog-description {
@@ -2268,20 +2268,20 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-password-label {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .prompt-dialog-error-label {
   font-size: 12px;
   font-weight: bold;
-  color: #ffa959;
+  color: #ff6a37;
   padding-bottom: 0;
 }
 
 .prompt-dialog-info-label {
   font-size: 12px;
   font-weight: bold;
-  color: #b599ff;
+  color: #a47fff;
   padding-bottom: 0;
 }
 
@@ -2317,12 +2317,12 @@ StEntry:insensitive StIcon,
 }
 
 .polkit-dialog-user-root-label {
-  color: #f85c5c;
+  color: #fb4545;
   font-weight: bold;
 }
 
 .polkit-dialog-user-label {
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -2355,7 +2355,7 @@ StEntry:insensitive StIcon,
 .nm-dialog-header {
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: #fff;
 }
 
 .nm-dialog-subheader {
@@ -2374,13 +2374,13 @@ StEntry:insensitive StIcon,
 }
 
 .nm-dialog-airplane-text {
-  color: white;
+  color: #fff;
   padding-bottom: 20px;
 }
 
 .nm-dialog-header-icon {
   icon-size: 32px;
-  color: white;
+  color: #fff;
 }
 
 .nm-dialog-scroll-view {
@@ -2397,7 +2397,7 @@ StEntry:insensitive StIcon,
 .nm-dialog-header {
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: #fff;
 }
 
 .nm-dialog-item {
@@ -2409,12 +2409,12 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-item:selected {
   background-color: transparent !important;
-  color: white;
+  color: #fff;
   border-image: url("img/containers/hover.svg") 6;
 }
 
 .nm-dialog-item:selected .nm-dialog-icon {
-  color: white;
+  color: #fff;
 }
 
 .nm-dialog-icons {
@@ -2423,11 +2423,11 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-icon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .no-networks-label {
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
 }
@@ -2464,7 +2464,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -2475,7 +2475,7 @@ StEntry:insensitive StIcon,
 }
 
 .extension-dialog .modal-dialog-linked-button StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:hover {
@@ -2488,11 +2488,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:focus {
   border-image: url("img/buttons/dialog-button-blue__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:focus:hover {
@@ -2505,11 +2505,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:grayed, .extension-dialog .modal-dialog-linked-button:disabled, .extension-dialog .modal-dialog-linked-button:insensitive, .extension-dialog .modal-dialog-linked-button:focus:grayed, .extension-dialog .modal-dialog-linked-button:focus:disabled, .extension-dialog .modal-dialog-linked-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:grayed StIcon, .extension-dialog .modal-dialog-linked-button:disabled StIcon, .extension-dialog .modal-dialog-linked-button:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child {
@@ -2524,7 +2524,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -2535,7 +2535,7 @@ StEntry:insensitive StIcon,
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child:hover {
@@ -2548,11 +2548,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:first-child:focus {
   border-image: url("img/buttons/dialog-button-blue__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child:focus:hover {
@@ -2565,11 +2565,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:first-child:grayed, .extension-dialog .modal-dialog-linked-button:first-child:disabled, .extension-dialog .modal-dialog-linked-button:first-child:insensitive, .extension-dialog .modal-dialog-linked-button:first-child:focus:grayed, .extension-dialog .modal-dialog-linked-button:first-child:focus:disabled, .extension-dialog .modal-dialog-linked-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:first-child:grayed StIcon, .extension-dialog .modal-dialog-linked-button:first-child:disabled StIcon, .extension-dialog .modal-dialog-linked-button:first-child:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child {
@@ -2584,7 +2584,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -2595,7 +2595,7 @@ StEntry:insensitive StIcon,
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child:hover {
@@ -2608,11 +2608,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:last-child:focus {
   border-image: url("img/buttons/dialog-button-violet__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child:focus:hover {
@@ -2625,11 +2625,11 @@ StEntry:insensitive StIcon,
 
 .extension-dialog .modal-dialog-linked-button:last-child:grayed, .extension-dialog .modal-dialog-linked-button:last-child:disabled, .extension-dialog .modal-dialog-linked-button:last-child:insensitive, .extension-dialog .modal-dialog-linked-button:last-child:focus:grayed, .extension-dialog .modal-dialog-linked-button:last-child:focus:disabled, .extension-dialog .modal-dialog-linked-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child:grayed StIcon, .extension-dialog .modal-dialog-linked-button:last-child:disabled StIcon, .extension-dialog .modal-dialog-linked-button:last-child:insensitive StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:grayed StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:disabled StIcon, .extension-dialog .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -2668,25 +2668,25 @@ StEntry:insensitive StIcon,
 
 .popup-menu-content {
   padding: .7em .2em;
-  color: white;
+  color: #fff;
 }
 
 .popup-menu-ornament {
   text-align: center;
   width: 1em;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .popup-menu-arrow {
   width: 14px;
   height: 14px;
   padding: 0;
-  color: white;
+  color: #fff;
 }
 
 .popup-menu-icon {
   icon-size: 16px;
-  color: white !important;
+  color: #fff !important;
 }
 
 .popup-menu-item {
@@ -2730,29 +2730,29 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-item:active *, .popup-menu-item.selected * {
-  color: white !important;
+  color: #fff !important;
 }
 
 .popup-menu-item:insensitive {
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .popup-menu .popup-inactive-menu-item {
-  color: white;
+  color: #fff;
 }
 
 .popup-menu .popup-inactive-menu-item:insensitive {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .popup-menu .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .popup-menu:active .popup-status-menu-item,
 .popup-menu.selected .popup-status-menu-item {
-  color: white;
+  color: #fff;
 }
 
 .popup-menu.panel-menu {
@@ -2785,7 +2785,7 @@ StEntry:insensitive StIcon,
 .osd-window {
   text-align: center;
   font-weight: bold;
-  color: white;
+  color: #fff;
   spacing: 1em;
   padding: 18px;
   margin: 32px;
@@ -2795,7 +2795,7 @@ StEntry:insensitive StIcon,
 }
 
 .osd-window StIcon {
-  color: white;
+  color: #fff;
 }
 
 .osd-window .osd-monitor-label {
@@ -2806,14 +2806,14 @@ StEntry:insensitive StIcon,
 .osd-window .level {
   border-radius: 0 !important;
   border-image: url("img/controls/slider-OSD.svg") 9 6 8 8;
-  color: #6A98D2;
+  color: #5A94DC;
   height: 6px;
   padding: 6px;
 }
 
 .resize-popup {
   border-image: url("img/overview/overview-dark-bg.svg") 7;
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 14px;
   padding: 8px;
@@ -2832,7 +2832,7 @@ StEntry:insensitive StIcon,
 
 .switcher-list {
   border-image: url("img/containers/popup-outside.svg") 9;
-  color: white;
+  color: #fff;
   padding: 2px;
   margin: 2px;
   font-size: 12px;
@@ -2995,7 +2995,7 @@ StEntry:insensitive StIcon,
   -natural-hpadding: 8px;
   -minimum-hpadding: 6px;
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 #panel .panel-button:hover {
@@ -3023,7 +3023,7 @@ StEntry:insensitive StIcon,
 }
 
 #panel .screencast-indicator {
-  color: #E66464;
+  color: #E74F4F;
 }
 
 #panel .panel-corner {
@@ -3112,20 +3112,20 @@ StEntry:insensitive StIcon,
 }
 
 .datemenu-today-button:hover .day-label, .datemenu-today-button:hover .date-label, .datemenu-today-button:focus .day-label, .datemenu-today-button:focus .date-label, .datemenu-today-button:active .day-label, .datemenu-today-button:active .date-label {
-  color: #72a9ee;
+  color: #63a5f7;
   text-decoration: underline;
 }
 
 .datemenu-today-button .day-label {
   padding-bottom: .2em;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .datemenu-today-button .date-label {
   text-align: center !important;
   font-size: 18px;
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -3145,7 +3145,7 @@ StEntry:insensitive StIcon,
 }
 
 .world-clocks-button {
-  color: white;
+  color: #fff;
   border-radius: 0;
   padding: 0;
 }
@@ -3155,12 +3155,12 @@ StEntry:insensitive StIcon,
 }
 
 .world-clocks-button:hover .world-clocks-header, .world-clocks-button:focus .world-clocks-header, .world-clocks-button:active .world-clocks-header {
-  color: #72a9ee;
+  color: #63a5f7;
   text-decoration: underline;
 }
 
 .world-clocks-header {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
   font-size: 12px;
 }
@@ -3193,17 +3193,17 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-month-label {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: bold;
   padding: .6em;
 }
 
 .calendar-month-label:focus {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .pager-button {
-  color: white;
+  color: #fff;
   background-color: transparent;
   width: 32px;
   border-radius: 0 !important;
@@ -3269,20 +3269,20 @@ StEntry:insensitive StIcon,
 
 .calendar-day-heading {
   font-size: inherit;
-  color: white;
+  color: #fff;
   margin-top: 1em;
   height: 2em;
 }
 
 .calendar-day-heading:focus {
   background-color: transparent;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .calendar-work-day {
   border-image: url("img/misc/calendar-work-day.svg") 7;
   border: none;
-  color: white;
+  color: #fff;
 }
 
 .calendar-work-day:hover, .calendar-work-day:focus {
@@ -3291,139 +3291,139 @@ StEntry:insensitive StIcon,
 
 .calendar-work-day:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-work-day-events.svg") 7;
   background-image: none !important;
-  color: #b599ff;
+  color: #a47fff;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
   border-image: url("img/containers/hover-violet.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-today {
   border-image: url("img/misc/calendar-work-day-today.svg") 7;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-day-with-events.calendar-today {
   border-image: url("img/misc/calendar-work-day-today-events.svg") 4 9 7 7;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .calendar-work-day.calendar-day-with-events.calendar-today:hover, .calendar-work-day.calendar-day-with-events.calendar-today:focus, .calendar-work-day.calendar-day-with-events.calendar-today:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-nonwork-day {
   border-image: url("img/misc/calendar-nonwork-day.svg") 7;
   border: none;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .calendar-nonwork-day:hover, .calendar-nonwork-day:focus {
   border-image: url("img/misc/calendar-nonwork-day-hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-nonwork-day:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: #b599ff;
+  color: #a47fff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
   border-image: url("img/containers/hover-violet.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-today {
   border-image: url("img/misc/calendar-nonwork-day-today.svg") 7;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today {
   border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 4 9 7 7;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-other-month-day {
   border-image: url("img/misc/calendar-other-month-day.svg") 7;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
   font-weight: normal;
 }
 
 .calendar-other-month-day:hover, .calendar-other-month-day:focus {
   font-weight: bold;
-  color: white;
+  color: #fff;
 }
 
 .calendar-other-month-day:active {
   border-image: url("img/containers/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-other-month-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-other-month-day-events.svg") 7;
   background-image: none !important;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
   border-image: url("img/containers/hover-violet.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-other-month-day.calendar-today {
   border-image: url("img/misc/calendar-other-month-day-today.svg") 7;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
   border-image: url("img/hover/hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-day-with-events:hover, .calendar-day-with-events:focus {
   border-image: none;
   background-image: none !important;
-  color: white;
+  color: #fff;
 }
 
 .calendar-today:hover, .calendar-today:focus {
   border-image: url("img/misc/calendar-hover.svg") 7;
-  color: white;
+  color: #fff;
 }
 
 .calendar-week-number {
   margin: 1px !important;
   background-color: transparent !important;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: inherit;
   font-weight: normal;
   width: 2.4em;
@@ -3445,7 +3445,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-placeholder StLabel {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
   font-size: 12px;
   font-weight: bold;
 }
@@ -3472,12 +3472,12 @@ StEntry:insensitive StIcon,
 .message-list-section-title {
   padding: .1em 0 0 .2em;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .message-list-section-title:hover, .message-list-section-title:focus, .message-list-section-title:active {
   background-color: transparent !important;
-  color: #72a9ee;
+  color: #63a5f7;
   text-decoration: underline;
 }
 
@@ -3487,7 +3487,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section-close > StIcon {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   icon-size: 16px;
   background-color: transparent !important;
   border-radius: 0 !important;
@@ -3496,7 +3496,7 @@ StEntry:insensitive StIcon,
 .message-list-section-close:hover > StIcon,
 .message-list-section-close:focus > StIcon {
   background-color: transparent;
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .message-list StScrollView StScrollBar {
@@ -3524,7 +3524,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-content > *:first-child StIcon {
-  color: #f85c5c;
+  color: #fb4545;
   width: 16px;
   height: 16px;
 }
@@ -3556,7 +3556,7 @@ StEntry:insensitive StIcon,
 }
 
 .message .event-time {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
 }
 
@@ -3570,7 +3570,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section .message:focus * {
-  color: white !important;
+  color: #fff !important;
 }
 
 /* events notification */
@@ -3583,7 +3583,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:last-child .message:focus * {
-  color: white !important;
+  color: #fff !important;
 }
 
 /* media notification */
@@ -3597,11 +3597,11 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:first-child .message:focus * {
-  color: white !important;
+  color: #fff !important;
 }
 
 .message-list-section:first-child .message:focus .message-media-control:hover StIcon {
-  color: white !important;
+  color: #fff !important;
 }
 
 .message-list-section:first-child .message .message-media-control {
@@ -3609,7 +3609,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:first-child .message .message-media-control:hover StIcon {
-  color: #4fc482;
+  color: #3dc27f;
 }
 
 .message-list-section:first-child .message .message-media-control:last-child:ltr {
@@ -3629,7 +3629,7 @@ StEntry:insensitive StIcon,
   border-radius: 0;
   padding: 0;
   border: 0;
-  color: white;
+  color: #fff;
   icon-size: 32px;
 }
 
@@ -3654,14 +3654,14 @@ StEntry:insensitive StIcon,
 }
 
 .system-menu-action {
-  color: white;
+  color: #fff;
   border-radius: 0;
   padding: 10px;
   border: 0 solid transparent !important;
 }
 
 .system-menu-action:hover, .system-menu-action:focus, .system-menu-action:active {
-  color: white;
+  color: #fff;
   border-radius: 0;
   padding: 10px;
   border: 0 solid transparent !important;
@@ -3702,11 +3702,11 @@ StEntry:insensitive StIcon,
  * Tweak default $text-link color to FIX
  */
 .url-highlighter {
-  link-color: #2485ff;
+  link-color: #1e82ff;
 }
 
 .notification-banner {
-  color: white;
+  color: #fff;
   font-size: 12px;
   margin: 5px;
   width: 34em;
@@ -3721,12 +3721,12 @@ StEntry:insensitive StIcon,
 }
 
 .notification-banner:hover, .notification-banner:focus {
-  color: white;
+  color: #fff;
   background-color: transparent !important;
 }
 
 .notification-banner:hover .message-content StIcon, .notification-banner:focus .message-content StIcon {
-  color: #f85c5c;
+  color: #fb4545;
 }
 
 .notification-banner StEntry {
@@ -3759,7 +3759,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
   background-color: transparent !important;
 }
@@ -3771,7 +3771,7 @@ StEntry:insensitive StIcon,
 }
 
 .notification-banner .notification-button StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:hover {
@@ -3784,11 +3784,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:focus {
   border-image: url("img/buttons/dialog-button-blue__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:focus:hover {
@@ -3801,11 +3801,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:grayed, .notification-banner .notification-button:disabled, .notification-banner .notification-button:insensitive, .notification-banner .notification-button:focus:grayed, .notification-banner .notification-button:focus:disabled, .notification-banner .notification-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:grayed StIcon, .notification-banner .notification-button:disabled StIcon, .notification-banner .notification-button:insensitive StIcon, .notification-banner .notification-button:focus:grayed StIcon, .notification-banner .notification-button:focus:disabled StIcon, .notification-banner .notification-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:first-child {
@@ -3820,7 +3820,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -3831,7 +3831,7 @@ StEntry:insensitive StIcon,
 }
 
 .notification-banner .notification-button:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:first-child:hover {
@@ -3844,11 +3844,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:first-child:focus {
   border-image: url("img/buttons/dialog-button-blue__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:first-child:focus:hover {
@@ -3861,11 +3861,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:first-child:grayed, .notification-banner .notification-button:first-child:disabled, .notification-banner .notification-button:first-child:insensitive, .notification-banner .notification-button:first-child:focus:grayed, .notification-banner .notification-button:first-child:focus:disabled, .notification-banner .notification-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:first-child:grayed StIcon, .notification-banner .notification-button:first-child:disabled StIcon, .notification-banner .notification-button:first-child:insensitive StIcon, .notification-banner .notification-button:first-child:focus:grayed StIcon, .notification-banner .notification-button:first-child:focus:disabled StIcon, .notification-banner .notification-button:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:last-child {
@@ -3880,7 +3880,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -3891,7 +3891,7 @@ StEntry:insensitive StIcon,
 }
 
 .notification-banner .notification-button:last-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:hover {
@@ -3904,11 +3904,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:focus {
   border-image: url("img/buttons/dialog-button-blue__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:focus:hover {
@@ -3921,11 +3921,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:grayed, .notification-banner .notification-button:last-child:disabled, .notification-banner .notification-button:last-child:insensitive, .notification-banner .notification-button:last-child:focus:grayed, .notification-banner .notification-button:last-child:focus:disabled, .notification-banner .notification-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:last-child:grayed StIcon, .notification-banner .notification-button:last-child:disabled StIcon, .notification-banner .notification-button:last-child:insensitive StIcon, .notification-banner .notification-button:last-child:focus:grayed StIcon, .notification-banner .notification-button:last-child:focus:disabled StIcon, .notification-banner .notification-button:last-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:last-child:first-child {
@@ -3940,7 +3940,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
 }
 
@@ -3951,7 +3951,7 @@ StEntry:insensitive StIcon,
 }
 
 .notification-banner .notification-button:last-child:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:first-child:hover {
@@ -3964,11 +3964,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:first-child:focus {
   border-image: url("img/buttons/dialog-button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .notification-banner .notification-button:last-child:first-child:focus:hover {
@@ -3981,11 +3981,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:first-child:grayed, .notification-banner .notification-button:last-child:first-child:disabled, .notification-banner .notification-button:last-child:first-child:insensitive, .notification-banner .notification-button:last-child:first-child:focus:grayed, .notification-banner .notification-button:last-child:first-child:focus:disabled, .notification-banner .notification-button:last-child:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .notification-banner .notification-button:last-child:first-child:grayed StIcon, .notification-banner .notification-button:last-child:first-child:disabled StIcon, .notification-banner .notification-button:last-child:first-child:insensitive StIcon, .notification-banner .notification-button:last-child:first-child:focus:grayed StIcon, .notification-banner .notification-button:last-child:first-child:focus:disabled StIcon, .notification-banner .notification-button:last-child:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .hotplug-notification-item {
@@ -4000,7 +4000,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em .4em;
   font-size: 12px;
   text-shadow: 0 0 transparent !important;
@@ -4014,7 +4014,7 @@ StEntry:insensitive StIcon,
 }
 
 .hotplug-notification-item StIcon {
-  color: white;
+  color: #fff;
 }
 
 .hotplug-notification-item:hover {
@@ -4027,11 +4027,11 @@ StEntry:insensitive StIcon,
 
 .hotplug-notification-item:focus {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .hotplug-notification-item:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .hotplug-notification-item:focus:hover {
@@ -4044,11 +4044,11 @@ StEntry:insensitive StIcon,
 
 .hotplug-notification-item:grayed, .hotplug-notification-item:disabled, .hotplug-notification-item:insensitive, .hotplug-notification-item:focus:grayed, .hotplug-notification-item:focus:disabled, .hotplug-notification-item:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .hotplug-notification-item:grayed StIcon, .hotplug-notification-item:disabled StIcon, .hotplug-notification-item:insensitive StIcon, .hotplug-notification-item:focus:grayed StIcon, .hotplug-notification-item:focus:disabled StIcon, .hotplug-notification-item:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .hotplug-notification-item-icon {
@@ -4079,7 +4079,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-log-message {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .chat-new-group {
@@ -4091,8 +4091,8 @@ StEntry:insensitive StIcon,
   padding: 1em 1.6em 1em 1em;
   margin-left: 2em;
   font-weight: bold;
-  color: white;
-  link-color: white !important;
+  color: #fff;
+  link-color: #fff !important;
 }
 
 .chat-received:rtl {
@@ -4103,7 +4103,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/containers/bubble-left-light-bg.svg") 11 7 9 7;
   padding: 1em 1em 1em 1.6em;
   margin-left: 0;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -4115,7 +4115,7 @@ StEntry:insensitive StIcon,
   padding-left: 4px;
   font-size: 12px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .chat-meta-message:rtl {
@@ -4156,13 +4156,13 @@ StEntry:insensitive StIcon,
 
 .legacy-tray-handle:ltr StIcon {
   icon-size: 16px;
-  color: white;
+  color: #fff;
   padding: 8px 8px 4px 8px !important;
   margin-right: 3px !important;
 }
 
 .legacy-tray-handle:hover StIcon, .legacy-tray-handle:focus StIcon, .legacy-tray-handle:active StIcon {
-  color: #72a9ee !important;
+  color: #63a5f7 !important;
 }
 
 .legacy-tray-handle:ltr:first-child StIcon {
@@ -4204,7 +4204,7 @@ StEntry:insensitive StIcon,
  * ! Magnifier
  * ====================================== */
 .magnifier-zoom-region {
-  border: 3px #E66464;
+  border: 3px #E74F4F;
 }
 
 .magnifier-zoom-region.full-screen {
@@ -4239,7 +4239,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em;
   font-size: 18px;
 }
@@ -4251,15 +4251,15 @@ StEntry:insensitive StIcon,
 }
 
 .keyboard-key StIcon {
-  color: white;
+  color: #fff;
 }
 
 .keyboard-key:hover, .keyboard-key:active, .keyboard-key:pressed, .keyboard-key:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .keyboard-key:hover StIcon, .keyboard-key:active StIcon, .keyboard-key:pressed StIcon, .keyboard-key:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .keyboard-key:hover {
@@ -4272,11 +4272,11 @@ StEntry:insensitive StIcon,
 
 .keyboard-key:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .keyboard-key:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .keyboard-key:focus:hover {
@@ -4289,11 +4289,11 @@ StEntry:insensitive StIcon,
 
 .keyboard-key:grayed, .keyboard-key:disabled, .keyboard-key:insensitive, .keyboard-key:focus:grayed, .keyboard-key:focus:disabled, .keyboard-key:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .keyboard-key:grayed StIcon, .keyboard-key:disabled StIcon, .keyboard-key:insensitive StIcon, .keyboard-key:focus:grayed StIcon, .keyboard-key:focus:disabled StIcon, .keyboard-key:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* Backspace, return, hide-keyboard & abc/123 keys */
@@ -4312,7 +4312,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-secondary__s.svg") 10;
-  color: white;
+  color: #fff;
   font-size: 18px;
 }
 
@@ -4329,7 +4329,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout .keyboard-row:last-child > *:last-child StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:hover, .keyboard-layout > *:first-child .keyboard-row > *:last-child:active, .keyboard-layout > *:first-child .keyboard-row > *:last-child:pressed, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected,
@@ -4345,7 +4345,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:active,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:pressed,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:hover StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:active StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:pressed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:selected StIcon,
@@ -4361,7 +4361,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:active StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:pressed StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:hover,
@@ -4389,14 +4389,14 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus StIcon,
 .keyboard-layout .keyboard-row:last-child > *:last-child:focus StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:hover,
@@ -4439,7 +4439,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive {
   border-image: url("img/buttons/button-secondary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:insensitive StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:insensitive StIcon,
@@ -4461,7 +4461,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:grayed StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* subkeys popup */
@@ -4498,24 +4498,24 @@ StEntry:insensitive StIcon,
   border-image: url("img/containers/popup-inside.svg") 7;
   padding: .2em;
   spacing: .5em;
-  color: white;
+  color: #fff;
 }
 
 .candidate-index {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   font-size: 14px;
   margin: 0 .7em 0 0;
 }
 
 .candidate-label {
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 14px;
 }
 
 .candidate-popup-text {
-  color: white;
+  color: #fff;
   font-weight: bold;
   font-size: 14px;
   padding: .7em;
@@ -4571,7 +4571,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em;
 }
 
@@ -4582,15 +4582,15 @@ StEntry:insensitive StIcon,
 }
 
 .candidate-page-button-previous StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-previous:hover, .candidate-page-button-previous:active, .candidate-page-button-previous:pressed, .candidate-page-button-previous:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .candidate-page-button-previous:hover StIcon, .candidate-page-button-previous:active StIcon, .candidate-page-button-previous:pressed StIcon, .candidate-page-button-previous:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .candidate-page-button-previous:hover {
@@ -4603,11 +4603,11 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-previous:focus {
   border-image: url("img/buttons/button-blue__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-previous:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-previous:focus:hover {
@@ -4620,11 +4620,11 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-previous:grayed, .candidate-page-button-previous:disabled, .candidate-page-button-previous:insensitive, .candidate-page-button-previous:focus:grayed, .candidate-page-button-previous:focus:disabled, .candidate-page-button-previous:focus:insensitive {
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-previous:grayed StIcon, .candidate-page-button-previous:disabled StIcon, .candidate-page-button-previous:insensitive StIcon, .candidate-page-button-previous:focus:grayed StIcon, .candidate-page-button-previous:focus:disabled StIcon, .candidate-page-button-previous:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-next {
@@ -4639,7 +4639,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em;
 }
 
@@ -4650,15 +4650,15 @@ StEntry:insensitive StIcon,
 }
 
 .candidate-page-button-next StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-next:hover, .candidate-page-button-next:active, .candidate-page-button-next:pressed, .candidate-page-button-next:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .candidate-page-button-next:hover StIcon, .candidate-page-button-next:active StIcon, .candidate-page-button-next:pressed StIcon, .candidate-page-button-next:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .candidate-page-button-next:hover {
@@ -4671,11 +4671,11 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-next:focus {
   border-image: url("img/buttons/button-blue__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-next:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-next:focus:hover {
@@ -4688,16 +4688,16 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-next:grayed, .candidate-page-button-next:disabled, .candidate-page-button-next:insensitive, .candidate-page-button-next:focus:grayed, .candidate-page-button-next:focus:disabled, .candidate-page-button-next:focus:insensitive {
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-next:grayed StIcon, .candidate-page-button-next:disabled StIcon, .candidate-page-button-next:insensitive StIcon, .candidate-page-button-next:focus:grayed StIcon, .candidate-page-button-next:focus:disabled StIcon, .candidate-page-button-next:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .candidate-page-button-icon {
   icon-size: 16px;
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -4714,7 +4714,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 14px;
   padding: 16px;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog {
@@ -4727,7 +4727,7 @@ StEntry:insensitive StIcon,
   spacing: 4px;
   margin: 2px;
   padding: 16px 11px 16px 22px !important;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog * {
@@ -4769,7 +4769,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
   padding: 0;
   -natural-hpadding: 12px;
   -minimum-hpadding: 6px;
@@ -4782,15 +4782,15 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Toolbar .notebook-tab StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:hover, .lg-dialog #Toolbar .notebook-tab:active, .lg-dialog #Toolbar .notebook-tab:pressed, .lg-dialog #Toolbar .notebook-tab:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:hover StIcon, .lg-dialog #Toolbar .notebook-tab:active StIcon, .lg-dialog #Toolbar .notebook-tab:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:hover {
@@ -4803,11 +4803,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:focus {
   border-image: url("img/buttons/button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:focus:hover {
@@ -4820,11 +4820,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:grayed, .lg-dialog #Toolbar .notebook-tab:disabled, .lg-dialog #Toolbar .notebook-tab:insensitive, .lg-dialog #Toolbar .notebook-tab:focus:grayed, .lg-dialog #Toolbar .notebook-tab:focus:disabled, .lg-dialog #Toolbar .notebook-tab:focus:insensitive {
   border-image: url("img/buttons/button-primary__m.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child {
@@ -4839,7 +4839,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child StIcon {
@@ -4849,15 +4849,15 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:hover, .lg-dialog #Toolbar .notebook-tab:first-child:active, .lg-dialog #Toolbar .notebook-tab:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:first-child:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:hover {
@@ -4870,11 +4870,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus {
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover {
@@ -4887,11 +4887,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:first-child:grayed, .lg-dialog #Toolbar .notebook-tab:first-child:disabled, .lg-dialog #Toolbar .notebook-tab:first-child:insensitive, .lg-dialog #Toolbar .notebook-tab:first-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:first-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:first-child:focus:insensitive {
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:first-child:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child {
@@ -4906,7 +4906,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child StIcon {
@@ -4916,15 +4916,15 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:hover {
@@ -4937,11 +4937,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus {
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover {
@@ -4954,11 +4954,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:insensitive, .lg-dialog #Toolbar .notebook-tab:last-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:focus:insensitive {
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child {
@@ -4973,7 +4973,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child StIcon {
@@ -4983,15 +4983,15 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:active, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:active StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:pressed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:hover {
@@ -5004,11 +5004,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover {
@@ -5021,11 +5021,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:insensitive, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:grayed, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:disabled, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:insensitive StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:grayed StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:disabled StIcon, .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:insensitive StIcon {
-  color: white;
+  color: #fff;
 }
 
 .lg-dialog #Toolbar .notebook-tab StButton {
@@ -5037,13 +5037,13 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #EvalBox {
-  color: white;
+  color: #fff;
   padding: 0 4px 4px 0;
   spacing: 8px;
 }
 
 .lg-dialog #ResultsArea {
-  color: white;
+  color: #fff;
   padding: 0 0 14px 0;
   spacing: 8px;
 }
@@ -5056,7 +5056,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #Windows {
-  color: white;
+  color: #fff;
   padding: 0 4px 4px 0;
   spacing: 8px;
 }
@@ -5083,7 +5083,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extensions-none {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension {
@@ -5091,12 +5091,12 @@ StEntry:insensitive StIcon,
   border-radius: 0 !important;
   border-image: url("img/containers/light-bg-marked-violet.svg") 7;
   padding: 10px 10px 10px 14px;
-  color: white;
+  color: #fff;
   spacing: .8em;
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension-name {
-  color: white;
+  color: #fff;
   font-size: 18px;
   font-weight: bold;
   padding-bottom: 2px;
@@ -5113,7 +5113,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extension-state {
   font-weight: bold;
-  color: #b599ff;
+  color: #a47fff;
 }
 
 .lg-dialog #EntryArea StLabel {
@@ -5122,8 +5122,8 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog #EntryArea StEntry {
-  selection-background-color: #6A98D2;
-  selected-color: white;
+  selection-background-color: #5A94DC;
+  selected-color: #fff;
 }
 
 .lg-dialog #LookingGlassAutoCompletionText {
@@ -5149,7 +5149,7 @@ StEntry:insensitive StIcon,
   background: transparent;
   border: 0 transparent;
   border-radius: 0;
-  color: white;
+  color: #fff;
   spacing: 0;
   padding: 10px 2px 10px 10px !important;
 }
@@ -5180,7 +5180,7 @@ StEntry:insensitive StIcon,
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-title {
-  color: white;
+  color: #fff;
   font-size: 14px;
   font-weight: bold;
   spacing: 4px;
@@ -5198,7 +5198,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em;
 }
 
@@ -5209,15 +5209,15 @@ StEntry:insensitive StIcon,
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button StIcon {
-  color: white;
+  color: #fff;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:hover, #LookingGlassPropertyInspector .lg-obj-inspector-button:active, #LookingGlassPropertyInspector .lg-obj-inspector-button:pressed, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:hover StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:active StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:pressed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:selected StIcon {
-  color: #72a9ee;
+  color: #63a5f7;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:hover {
@@ -5230,11 +5230,11 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:hover {
@@ -5247,11 +5247,11 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ======================================
@@ -5275,7 +5275,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-prompt-label {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   padding-top: 1em;
 }
@@ -5283,7 +5283,7 @@ StEntry:insensitive StIcon,
 .login-dialog .framed-user-icon {
   border-image: url("img/overview/overview-dark-bg.svg") 6;
   background-size: contain;
-  color: white;
+  color: #fff;
   padding: 6px;
 }
 
@@ -5307,11 +5307,11 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-warning {
-  color: #ffa959;
+  color: #ff6a37;
 }
 
 .login-dialog-message-hint {
-  color: #b599ff;
+  color: #a47fff;
 }
 
 .login-dialog-banner-view {
@@ -5320,7 +5320,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-banner {
-  color: white;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -5337,11 +5337,11 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-not-listed-button {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .login-dialog-not-listed-button:focus, .login-dialog-not-listed-button:hover {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog-not-listed-label {
@@ -5351,12 +5351,12 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-session-list-button {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   padding: 0 !important;
 }
 
 .login-dialog-session-list-button:active, .login-dialog-session-list-button:hover, .login-dialog-session-list-button:focus {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog-session-list-button StIcon {
@@ -5395,7 +5395,7 @@ StEntry:insensitive StIcon,
 .login-dialog-user-list-item {
   border-image: url("img/overview/overview-dark-bg.svg") 6;
   padding: 4px;
-  color: white;
+  color: #fff;
 }
 
 .login-dialog-user-list-item:ltr {
@@ -5421,11 +5421,11 @@ StEntry:insensitive StIcon,
 .login-dialog-user-list-item .login-dialog-timed-login-indicator {
   height: 2px;
   margin: 0;
-  background-color: #6A98D2;
+  background-color: #5A94DC;
 }
 
 .login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
-  background-color: #6A98D2;
+  background-color: #5A94DC;
 }
 
 .login-dialog-user-list-item .framed-user-icon {
@@ -5455,7 +5455,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-overview__s.svg") 10;
-  color: white;
+  color: #fff;
   padding: 1em 2em;
 }
 
@@ -5468,7 +5468,7 @@ StEntry:insensitive StIcon,
 
 .login-dialog .modal-dialog-button StIcon,
 .login-dialog .modal-dialog-button:default StIcon {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog .modal-dialog-button:hover, .login-dialog .modal-dialog-button:active, .login-dialog .modal-dialog-button:pressed, .login-dialog .modal-dialog-button:selected,
@@ -5476,7 +5476,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:active,
 .login-dialog .modal-dialog-button:default:pressed,
 .login-dialog .modal-dialog-button:default:selected {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog .modal-dialog-button:hover StIcon, .login-dialog .modal-dialog-button:active StIcon, .login-dialog .modal-dialog-button:pressed StIcon, .login-dialog .modal-dialog-button:selected StIcon,
@@ -5484,7 +5484,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:active StIcon,
 .login-dialog .modal-dialog-button:default:pressed StIcon,
 .login-dialog .modal-dialog-button:default:selected StIcon {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog .modal-dialog-button:hover,
@@ -5502,12 +5502,12 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:focus,
 .login-dialog .modal-dialog-button:default:focus {
   border-image: url("img/buttons/button-overview-blue__s.svg") 10;
-  color: white;
+  color: #fff;
 }
 
 .login-dialog .modal-dialog-button:focus StIcon,
 .login-dialog .modal-dialog-button:default:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog .modal-dialog-button:focus:hover,
@@ -5530,7 +5530,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:focus:disabled,
 .login-dialog .modal-dialog-button:default:focus:insensitive {
   border-image: url("img/buttons/button-overview__s.svg") 10;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .login-dialog .modal-dialog-button:grayed StIcon, .login-dialog .modal-dialog-button:disabled StIcon, .login-dialog .modal-dialog-button:insensitive StIcon, .login-dialog .modal-dialog-button:focus:grayed StIcon, .login-dialog .modal-dialog-button:focus:disabled StIcon, .login-dialog .modal-dialog-button:focus:insensitive StIcon,
@@ -5540,7 +5540,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:focus:grayed StIcon,
 .login-dialog .modal-dialog-button:default:focus:disabled StIcon,
 .login-dialog .modal-dialog-button:default:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .login-dialog StEntry {
@@ -5549,16 +5549,16 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   padding: .3em .6em !important;
   height: 2em;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .login-dialog StEntry StIcon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .login-dialog StEntry:hover StIcon {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog StEntry:focus {
@@ -5567,24 +5567,24 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   padding: .3em .6em !important;
   height: 2em;
-  color: white;
-  caret-color: white;
+  color: #fff;
+  caret-color: #fff;
   caret-size: 2px;
-  selected-color: white;
-  selection-background-color: #6A98D2;
+  selected-color: #fff;
+  selection-background-color: #5A94DC;
   font-weight: bold;
 }
 
 .login-dialog StEntry:focus StIcon {
-  color: white;
+  color: #fff;
 }
 
 .login-dialog StEntry:focus StIcon.capslock-warning {
-  color: white !important;
+  color: #fff !important;
 }
 
 .login-dialog StEntry:focus:hover StIcon {
-  color: white;
+  color: #fff;
 }
 
 /* ======================================
@@ -5624,12 +5624,12 @@ StEntry:insensitive StIcon,
 }
 
 .screen-shield-clock-time {
-  color: white;
+  color: #fff;
   font-size: 72px;
 }
 
 .screen-shield-clock-date {
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 24px;
   padding: 0 10px;
 }
@@ -5651,7 +5651,7 @@ StEntry:insensitive StIcon,
 .screen-shield-notifications-container .screen-shield-notification-source {
   border-image: url("img/overview/overview-light-bg.svg") 6;
   padding: .6em;
-  color: white;
+  color: #fff;
   font-family: Roboto, Sans-Serif;
   spacing: 10px;
 }
