@@ -103,7 +103,7 @@ StEntry:focus,
   height: 2em;
   color: white;
   caret-color: white;
-  caret-size: 1px;
+  caret-size: 2px;
   selected-color: white;
   selection-background-color: #6A98D2;
 }
@@ -1098,13 +1098,12 @@ StEntry:insensitive StIcon,
   padding: .3em .6em !important;
   height: 2em;
   width: 320px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .search-entry StIcon {
   icon-size: 16px;
-  padding: 0 4px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .search-entry:hover StIcon {
@@ -1120,7 +1119,7 @@ StEntry:insensitive StIcon,
   width: 320px;
   color: white;
   caret-color: white;
-  caret-size: 1px;
+  caret-size: 2px;
   selected-color: white;
   selection-background-color: #6A98D2;
   font-weight: bold;
@@ -5458,13 +5457,12 @@ StEntry:insensitive StIcon,
   padding: .3em .6em !important;
   height: 2em;
   width: 320px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .login-dialog StEntry StIcon {
   icon-size: 16px;
-  padding: 0 4px;
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .login-dialog StEntry:hover StIcon {
@@ -5480,7 +5478,7 @@ StEntry:insensitive StIcon,
   width: 320px;
   color: white;
   caret-color: white;
-  caret-size: 1px;
+  caret-size: 2px;
   selected-color: white;
   selection-background-color: #6A98D2;
   font-weight: bold;

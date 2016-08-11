@@ -1,4 +1,4 @@
-@mixin entry($t, $width: null ) {
+@mixin entry($t, $width:null) {
     @if $t==normal {
         background-gradient-direction: none;
         background-gradient-start: rgba(0, 0, 0, 0);
@@ -34,7 +34,7 @@
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
-        caret-size: 1px;
+        caret-size: 2px;
         selected-color: $text-primary;
         selection-background-color: $accent-primary;
 
@@ -60,12 +60,11 @@
         padding: .3em .6em !important;
         height: 2em;
         width: $width;
-        color: $text-secondary;
+        color: $text-disabled;
 
         StIcon {
             icon-size: 16px;
-            padding: 0 4px;
-            color: $text-secondary;
+            color: $text-disabled;
         }
 
         &:hover StIcon {
@@ -82,7 +81,7 @@
         width: $width;
         color: $text-primary;
         caret-color: $text-primary;
-        caret-size: 1px;
+        caret-size: 2px;
         selected-color: $text-primary;
         selection-background-color: $accent-primary;
         font-weight: bold;
@@ -100,6 +99,7 @@
         }
     }
 }
+
 /* ======================================
  * ! Entries (global)
  * ====================================== */
