@@ -3189,10 +3189,21 @@ StEntry:insensitive StIcon,
 /* ======================================
  * ! Change Month Bar
  * ====================================== */
+/* the container of the bar */
 .calendar > StBoxLayout:first-child {
   border-image: url("img/containers/dark-bg.svg") 7;
   padding: 0;
   margin: 1px;
+}
+
+.calendar-month-label {
+  color: rgba(255, 255, 255, 0.45);
+  font-weight: bold;
+  padding: .6em;
+}
+
+.calendar-month-label:focus {
+  color: #72a9ee;
 }
 
 .pager-button {
@@ -3207,43 +3218,23 @@ StEntry:insensitive StIcon,
   border-image: url("img/misc/change-month-btn-f.svg") 7;
 }
 
-.pager-button:first-child:focus {
-  background-color: transparent !important;
-}
-
-.pager-button:first-child:hover {
+.pager-button:first-child:hover, .pager-button:first-child:focus, .pager-button:first-child:active {
   border-image: url("img/misc/change-month-btn-f-hover.svg") 7;
-}
-
-.pager-button:first-child:active {
-  border-image: url("img/misc/change-month-btn-f-pressed.svg") 7;
 }
 
 .pager-button:last-child {
   border-image: url("img/misc/change-month-btn-l.svg") 7;
 }
 
-.pager-button:last-child:focus {
-  background-color: transparent !important;
-}
-
-.pager-button:last-child:hover {
+.pager-button:last-child:hover, .pager-button:last-child:focus, .pager-button:last-child:active {
   border-image: url("img/misc/change-month-btn-l-hover.svg") 7;
-}
-
-.pager-button:last-child:active {
-  border-image: url("img/misc/change-month-btn-l-pressed.svg") 7;
 }
 
 .pager-button.calendar-change-month-back, .pager-button.calendar-change-month-forward:rtl {
   background-image: url("img/controls/calendar-arrow-left.svg");
 }
 
-.pager-button.calendar-change-month-back:focus, .pager-button.calendar-change-month-forward:rtl:focus {
-  background-image: url("img/controls/calendar-arrow-left-active.svg");
-}
-
-.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-forward:rtl:hover {
+.pager-button.calendar-change-month-back:hover, .pager-button.calendar-change-month-back:focus, .pager-button.calendar-change-month-forward:rtl:hover, .pager-button.calendar-change-month-forward:rtl:focus {
   background-image: url("img/controls/calendar-arrow-left-hover.svg");
 }
 
@@ -3251,26 +3242,12 @@ StEntry:insensitive StIcon,
   background-image: url("img/controls/calendar-arrow-right.svg");
 }
 
-.pager-button.calendar-change-month-forward:focus, .pager-button.calendar-change-month-back:rtl:focus {
-  background-image: url("img/controls/calendar-arrow-right-active.svg");
-}
-
-.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-back:rtl:hover {
+.pager-button.calendar-change-month-forward:hover, .pager-button.calendar-change-month-forward:focus, .pager-button.calendar-change-month-back:rtl:hover, .pager-button.calendar-change-month-back:rtl:focus {
   background-image: url("img/controls/calendar-arrow-right-hover.svg");
 }
 
-.calendar-month-label {
-  color: rgba(255, 255, 255, 0.45);
-  font-weight: bold;
-  padding: .7em;
-}
-
-.calendar-month-label:focus {
-  color: #72a9ee;
-}
-
 /* ======================================
- * ! Calendar
+ * ! Calendar days
  * ====================================== */
 .calendar-day {
   /*!*/
@@ -3317,38 +3294,38 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-work-day:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
 .calendar-work-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-work-day-events.svg") 7;
   background-image: none !important;
-  color: white;
+  color: #b599ff;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
-  border-image: url("img/misc/calendar-day-active-events.svg") 7;
+  border-image: url("img/containers/hover-violet.svg") 7;
   color: white;
 }
 
 .calendar-work-day.calendar-today {
   border-image: url("img/misc/calendar-work-day-today.svg") 7;
-  color: white;
+  color: #72a9ee;
 }
 
 .calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
 .calendar-work-day.calendar-day-with-events.calendar-today {
-  border-image: url("img/misc/calendar-work-day-today-events.svg") 7;
-  color: white;
+  border-image: url("img/misc/calendar-work-day-today-events.svg") 4 9 7 7;
+  color: #72a9ee;
 }
 
 .calendar-work-day.calendar-day-with-events.calendar-today:hover, .calendar-work-day.calendar-day-with-events.calendar-today:focus, .calendar-work-day.calendar-day-with-events.calendar-today:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
@@ -3364,38 +3341,38 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-nonwork-day:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: white;
+  color: #b599ff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
-  border-image: url("img/misc/calendar-day-active-events.svg") 7;
+  border-image: url("img/containers/hover-violet.svg") 7;
   color: white;
 }
 
 .calendar-nonwork-day.calendar-today {
   border-image: url("img/misc/calendar-nonwork-day-today.svg") 7;
-  color: white;
+  color: #72a9ee;
 }
 
 .calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today {
-  border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 7;
-  color: white;
+  border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 4 9 7 7;
+  color: #72a9ee;
 }
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
@@ -3411,7 +3388,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-other-month-day:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/containers/hover.svg") 7;
   color: white;
 }
 
@@ -3422,7 +3399,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
-  border-image: url("img/misc/calendar-day-active-events.svg") 7;
+  border-image: url("img/containers/hover-violet.svg") 7;
   color: white;
 }
 
@@ -3432,7 +3409,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
-  border-image: url("img/misc/calendar-day-active.svg") 7;
+  border-image: url("img/hover/hover.svg") 7;
   color: white;
 }
 
@@ -3571,7 +3548,15 @@ StEntry:insensitive StIcon,
 .message-title {
   font-weight: bold;
   font-size: 12px;
-  min-height: 16px;
+  min-height: 18px;
+}
+
+.message-body {
+  /*!*/
+}
+
+.message-secondary-bin {
+  /*!*/
 }
 
 .message .event-time {
@@ -3579,9 +3564,7 @@ StEntry:insensitive StIcon,
   font-size: 12px;
 }
 
-/*
-    notifications
-*/
+/* normal notification */
 .message-list-section .message {
   border-image: url("img/containers/light-bg-marked-blue.svg") 7;
 }
@@ -3594,9 +3577,7 @@ StEntry:insensitive StIcon,
   color: white !important;
 }
 
-/*
-    events
-*/
+/* events notification */
 .message-list-section:last-child .message {
   border-image: url("img/containers/light-bg-marked-violet.svg") 7;
 }
@@ -3609,9 +3590,7 @@ StEntry:insensitive StIcon,
   color: white !important;
 }
 
-/*
-    media
-*/
+/* media notification */
 .message-list-section:first-child .message {
   border-image: url("img/containers/light-bg-marked-green.svg") 7;
 }
@@ -3626,7 +3605,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:first-child .message:focus .message-media-control:hover StIcon {
-  color: rgba(0, 0, 0, 0.75) !important;
+  color: white !important;
 }
 
 .message-list-section:first-child .message .message-media-control {
@@ -3634,7 +3613,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:first-child .message .message-media-control:hover StIcon {
-  color: #72a9ee;
+  color: #4fc482;
 }
 
 .message-list-section:first-child .message .message-media-control:last-child:ltr {

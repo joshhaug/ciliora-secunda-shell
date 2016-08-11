@@ -105,12 +105,22 @@
  * ! Change Month Bar
  * ====================================== */
 
-// pager bar
+/* the container of the bar */
 .calendar {
     > StBoxLayout:first-child {
         border-image: url("img/containers/dark-bg.svg") 7;
         padding: 0;
         margin: 1px;
+    }
+}
+
+.calendar-month-label {
+    color: $text-secondary;
+    font-weight: bold;
+    padding: .6em;
+
+    &:focus  {
+        color: $text-link;
     }
 }
 
@@ -124,45 +134,24 @@
     &:first-child {
         border-image: url("img/misc/change-month-btn-f.svg") 7;
 
-        &:focus {
-            background-color: transparent !important;
-        }
-
-        &:hover {
+        &:hover, &:focus, &:active {
             border-image: url("img/misc/change-month-btn-f-hover.svg") 7;
-        }
-
-        &:active {
-            border-image: url("img/misc/change-month-btn-f-pressed.svg") 7;
         }
     }
 
     &:last-child {
         border-image: url("img/misc/change-month-btn-l.svg") 7;
 
-        &:focus {
-            background-color: transparent !important;
-        }
-
-        &:hover {
+        &:hover, &:focus, &:active {
             border-image: url("img/misc/change-month-btn-l-hover.svg") 7;
-        }
-
-        &:active {
-            border-image: url("img/misc/change-month-btn-l-pressed.svg") 7;
         }
     }
 
-    // arrows
     &.calendar-change-month {
         &-back, &-forward:rtl {
             background-image: url("img/controls/calendar-arrow-left.svg");
 
-            &:focus {
-                background-image: url("img/controls/calendar-arrow-left-active.svg");
-            }
-
-            &:hover {
+            &:hover, &:focus {
                 background-image: url("img/controls/calendar-arrow-left-hover.svg");
             }
         }
@@ -170,29 +159,15 @@
         &-forward, &-back:rtl {
             background-image: url("img/controls/calendar-arrow-right.svg");
 
-            &:focus {
-                background-image: url("img/controls/calendar-arrow-right-active.svg");
-            }
-
-            &:hover {
+            &:hover, &:focus {
                 background-image: url("img/controls/calendar-arrow-right-hover.svg");
             }
         }
     }
 }
 
-.calendar-month-label {
-    color: $text-secondary;
-    font-weight: bold;
-    padding: .7em;
-
-    &:focus  {
-        color: $text-link;
-    }
-}
-
 /* ======================================
- * ! Calendar
+ * ! Calendar days
  * ====================================== */
 
 .calendar-day {/*!*/}
@@ -230,37 +205,37 @@
     }
 
     &:active {
-        border-image: url("img/misc/calendar-day-active.svg") 7;
+        border-image: url("img/containers/hover.svg") 7;
         color: $text-primary;
     }
 
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-work-day-events.svg") 7;
         background-image: none !important;
-        color: $text-primary;
+        color: $text-info;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active-events.svg") 7;
+            border-image: url("img/containers/hover-violet.svg") 7;
             color: $text-primary;
         }
     }
 
     &.calendar-today {
         border-image: url("img/misc/calendar-work-day-today.svg") 7;
-        color: $text-primary;
+        color: $text-link;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active.svg") 7;
+            border-image: url("img/containers/hover.svg") 7;
             color: $text-primary;
         }
     }
 
         &.calendar-day-with-events.calendar-today {
-        border-image: url("img/misc/calendar-work-day-today-events.svg") 7;
-        color: $text-primary;
+        border-image: url("img/misc/calendar-work-day-today-events.svg") 4 9 7 7;
+        color: $text-link;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active.svg") 7;
+            border-image: url("img/containers/hover.svg") 7;
             color: $text-primary;
         }
     }
@@ -277,37 +252,37 @@
     }
 
     &:active {
-        border-image: url("img/misc/calendar-day-active.svg") 7;
+        border-image: url("img/containers/hover.svg") 7;
         color: $text-primary;
     }
 
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
         background-image: none !important;
-        color: $text-primary;
+        color: $text-info;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active-events.svg") 7;
+            border-image: url("img/containers/hover-violet.svg") 7;
             color: $text-primary;
         }
     }
 
     &.calendar-today {
         border-image: url("img/misc/calendar-nonwork-day-today.svg") 7;
-        color: $text-primary;
+        color: $text-link;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active.svg") 7;
+            border-image: url("img/containers/hover.svg") 7;
             color: $text-primary;
         }
     }
 
     &.calendar-day-with-events.calendar-today {
-        border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 7;
-        color: $text-primary;
+        border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 4 9 7 7;
+        color: $text-link;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active.svg") 7;
+            border-image: url("img/containers/hover.svg") 7;
             color: $text-primary;
         }
     }
@@ -324,7 +299,7 @@
     }
 
     &:active {
-        border-image: url("img/misc/calendar-day-active.svg") 7;
+        border-image: url("img/containers/hover.svg") 7;
         color: $text-primary;
     }
 
@@ -334,7 +309,7 @@
         color: $text-disabled;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active-events.svg") 7;
+            border-image: url("img/containers/hover-violet.svg") 7;
             color: $text-primary;
         }
     }
@@ -344,7 +319,7 @@
         color: $text-disabled;
 
         &:hover, &:focus, &:active {
-            border-image: url("img/misc/calendar-day-active.svg") 7;
+            border-image: url("img/hover/hover.svg") 7;
             color: $text-primary;
         }
     }
@@ -411,7 +386,7 @@
 
     &-section-title-box {
         spacing: 4em;
-        min-height: 16px; // prevent jitter
+        min-height: 16px; // prevent jitter when hovering
     }
 
     &-section-title {
@@ -488,14 +463,12 @@
     &-title {
         font-weight: bold;
         font-size: $font-size-base;
-        min-height: 16px; // prevent jitter
+        min-height: 18px; // prevent jitter when hovering notif
     }
 
-    &-body {
-    }
+    &-body {/*!*/}
 
-    &-secondary-bin {
-    }
+    &-secondary-bin {/*!*/}
 
     .event-time {
         color: $text-secondary;
@@ -503,9 +476,7 @@
     }
 }
 
-/*
-    notifications
-*/
+/* normal notification */
 .message-list-section .message {
     border-image: url("img/containers/light-bg-marked-blue.svg") 7;
 
@@ -515,9 +486,7 @@
     }
 }
 
-/*
-    events
-*/
+/* events notification */
 .message-list-section:last-child .message {
     border-image: url("img/containers/light-bg-marked-violet.svg") 7;
 
@@ -527,9 +496,7 @@
     }
 }
 
-/*
-    media
-*/
+/* media notification */
 .message-list-section:first-child .message {
     border-image: url("img/containers/light-bg-marked-green.svg") 7;
 
@@ -542,14 +509,14 @@
         }
 
         .message-media-control:hover StIcon {
-            color: $text-primary-invert !important;
+            color: $text-primary !important;
         }
     }
 
     .message-media-control {
         padding: 6px;
 
-        &:hover StIcon { color: $text-link; }
+        &:hover StIcon { color: $text-success; }
 
         &:last-child:ltr { padding-right: 18px; }
         &:last-child:rtl { padding-left: 18px; }
@@ -568,4 +535,3 @@
         }
     }
 }
-
