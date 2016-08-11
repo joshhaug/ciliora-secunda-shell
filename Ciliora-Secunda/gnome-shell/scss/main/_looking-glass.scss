@@ -3,10 +3,11 @@
  * ====================================== */
 
 /*
-    Dialog when picker is active is targeted with an id
-    because it only has an id
-    The main dialog has the same id and the "lg-dialog" class
-*/
+ * The picker dialog has id "#LookingGlassDialog".
+ * The lg dialog has the same id and the class ".lg-dialog".
+ * Use the id to target the picker dialog and the class
+ * to target the lg-dialog.
+ */
 #LookingGlassDialog {
     border-image: url("img/containers/popup-osd.svg") 7;
     font-weight: bold;
@@ -15,8 +16,6 @@
     color: $text-primary;
 }
 
-
-/* Main dialog */
 .lg-dialog {
     background-color: rgba(0, 0, 0, 0) !important;
     border: 0 transparent !important;
@@ -26,16 +25,14 @@
     font-weight: normal !important;
     font-size: $font-size-base !important;
     spacing: 4px;
-    margin: 7px;
-    padding: 16px 10px 16px 22px !important;
+    margin: 2px;
+    padding: 16px 11px 16px 22px !important;
     color: $text-primary;
-
 
     * {
         font-family: $font-family;
         transition-duration: 0ms;
     }
-
 
     #Toolbar {
         border: 0 transparent !important;
@@ -62,18 +59,15 @@
         }
     }
 
-
     StScrollBar {
-        padding: 0 1px 4px 1px;
+        padding: 0 0 4px 0;
     }
-
 
     #EvalBox {
         color: $text-primary;
         padding: 0 4px 4px 0;
         spacing: 8px;
     }
-
 
     #ResultsArea {
         color: $text-primary;
@@ -87,7 +81,6 @@
             spacing: 1em;
         }
     }
-
 
     #Windows {
         color: $text-primary;
@@ -105,7 +98,6 @@
             }
         }
     }
-
 
     #lookingGlassExtensions {
         padding: 0 4px 4px 0;
@@ -151,7 +143,6 @@
         }
     }
 
-
     #EntryArea {
         StLabel {
             font-size: 0;
@@ -164,26 +155,23 @@
         }
     }
 
-
     #LookingGlassAutoCompletionText {
         padding: 0 1em;
     }
 }
 
-
 /*
-    Lg Inspector
-
-    This box has no id's or classes and is
-    the direct child of the global container
-*/
+ * This box has no id's or classes and is
+ * the direct child of the global container("#uiGroup").
+ * A child combinator is the only way to target it.
+ */
 #uiGroup {
     > StScrollView {
         border-image: url("img/containers/popup.svg") 7;
-        padding: 6px 0px 6px 6px;
+        padding: 5px;
 
         StScrollBar {
-            padding: 17px 12px 17px 0;
+            padding: 12px 6px 12px 0;
         }
     }
 }
@@ -196,15 +184,19 @@
 
     color: $text-primary;
     spacing: 0;
-    padding: 0 !important;
+    padding: 10px 2px 10px 10px !important;
 
     > StBoxLayout {
-        padding: 6px 14px;
+        border-image: url("img/containers/light-bg--top__vertical.svg") 10;
+        padding: 12px 14px;
 
         &:first-child {
-            padding: 10px;
-            margin: 10px 0 10px 10px;
             border-image: url("img/containers/light-bg.svg") 10;
+            margin: 0 0 10px 0;
+        }
+
+        &:last-child {
+            border-image: url("img/containers/light-bg--bottom__vertical.svg") 10;
         }
     }
 
@@ -227,6 +219,6 @@
 
     .lg-obj-inspector-button {
         @include btn-primary;
-        @include btn-width(wide);
+        @include btn-width(small);
     }
 }
