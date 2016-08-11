@@ -2966,10 +2966,10 @@ StEntry:insensitive StIcon,
   border-image: url("img/panel/panel-top.svg") 4;
   height: 2em;
   font-weight: bold;
+  /* targets first/last .panel-button in panel */
 }
 
 #panel.unlock-screen, #panel.lock-screen {
-  background-color: transparent;
   border-image: url("img/panel/panel-top.svg") 4;
 }
 
@@ -2980,53 +2980,41 @@ StEntry:insensitive StIcon,
 #panelActivities {
   color: transparent !important;
   font-size: 0 !important;
+  background-image: url("img/menu-icons/menu-6.svg");
   width: 24px;
   height: 24px;
-  background-image: url("img/menu-icons/menu-6.svg");
-  padding: 0 6px;
+  padding: 5px !important;
 }
 
 #panelActivities:overview {
-  color: transparent !important;
-  font-size: 0 !important;
-  width: 24px;
-  height: 24px;
   background-image: url("img/menu-icons/menu-6.svg");
-  padding: 0 6px;
 }
 
 #panel .panel-button {
+  transition-duration: 0ms;
   -natural-hpadding: 8px;
   -minimum-hpadding: 6px;
   font-weight: bold;
   color: white;
-  transition-duration: 0ms;
 }
 
 #panel .panel-button:hover {
-  border-image: url("img/panel/panel-top-item-blue.svg") 6;
+  border-image: url("img/panel/panel-top__item--hover.svg") 6;
 }
 
-#panel .panel-button:active,
-#panel .panel-button:overview,
-#panel .panel-button:focus,
-#panel .panel-button:checked {
+#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
   background-gradient-direction: none !important;
   background-color: transparent !important;
   box-shadow: inset 0 0 transparent !important;
-  border-image: url("img/panel/panel-top-item-blue-active.svg") 6;
+  border-image: url("img/panel/panel-top__item--hover.svg") 6;
 }
 
-#panel .panel-button:active > .system-status-icon,
-#panel .panel-button:overview > .system-status-icon,
-#panel .panel-button:focus > .system-status-icon,
-#panel .panel-button:checked > .system-status-icon {
-  icon-shadow: transparent 0 0 0;
+#panelLeft > *:first-child .panel-button:hover, #panelLeft > *:first-child .panel-button:active, #panelLeft > *:first-child .panel-button:overview, #panelLeft > *:first-child .panel-button:focus, #panelLeft > *:first-child .panel-button:checked {
+  border-image: url("img/panel/panel-top__item--hover--first.svg") 6;
 }
 
-#panel .panel-button .system-status-icon {
-  icon-size: 16px;
-  padding: 0 6px;
+#panelRight > *:last-child .panel-button:hover, #panelRight > *:last-child .panel-button:active, #panelRight > *:last-child .panel-button:overview, #panelRight > *:last-child .panel-button:focus, #panelRight > *:last-child .panel-button:checked {
+  border-image: url("img/panel/panel-top__item--hover--last.svg") 6;
 }
 
 #panel .panel-status-indicators-box,
@@ -3055,7 +3043,13 @@ StEntry:insensitive StIcon,
   -panel-corner-border-color: transparent;
 }
 
-#panel .panel-button .app-menu-icon {
+#panel .system-status-icon {
+  icon-size: 16px !important;
+  padding: 0 6px !important;
+  icon-shadow: transparent 0 0 !important;
+}
+
+#panel .app-menu-icon {
   width: 0;
   -st-icon-style: symbolic;
   margin-left: 0;
@@ -3066,25 +3060,9 @@ StEntry:insensitive StIcon,
   width: 0;
 }
 
-.unlock-screen #panel .panel-button,
-.login-screen #panel .panel-button,
-.lock-screen #panel .panel-button {
-  color: white;
-}
-
-.unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active,
-.login-screen #panel .panel-button:focus,
-.login-screen #panel .panel-button:hover,
-.login-screen #panel .panel-button:active,
-.lock-screen #panel .panel-button:focus,
-.lock-screen #panel .panel-button:hover,
-.lock-screen #panel .panel-button:active {
-  color: white;
-}
-
 #appMenu {
   spinner-image: url("img/misc/process-working.svg");
-  padding: 0 8px;
+  padding: 0 5px;
 }
 
 #appMenu StBin:last-child {
@@ -3097,11 +3075,11 @@ StEntry:insensitive StIcon,
   background-image: url("img/panel/notification-indicator.svg");
   width: 6px;
   height: 6px;
-  margin-left: .6em;
+  margin-left: .5em;
 }
 
 .clock-display:hover > * > *:last-child {
-  background-image: url("img/panel/notification-indicator-hover.svg");
+  background-image: url("img/panel/notification-indicator--hover.svg");
 }
 
 /* ======================================
