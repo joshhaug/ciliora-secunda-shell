@@ -43,7 +43,6 @@
 .show-apps-icon { color: $text-primary; }
 
 .overview-icon {
-
     .show-apps &,
     .dash-item-container .app-well-app & {
         background-color: transparent !important;
@@ -56,18 +55,15 @@
 
     .show-apps:hover &,
     .show-apps:focus &,
+    .show-apps:selected &,
     .show-apps:active &,
+    .show-apps:checked &,
     .dash-item-container .app-well-app:hover &,
     .dash-item-container .app-well-app:focus &,
     .dash-item-container .app-well-app:selected &,
     .dash-item-container .app-well-app:active &,
     .dash-item-container .app-well-app:checked & {
         border-image: url("img/overview/overview-light-bg.svg") 7;
-    }
-
-    .show-apps:checked &,
-    .show-apps:selected & {
-        border-image: url("img/overview/overview-highlight-bg.svg") 7;
     }
 }
 
@@ -82,40 +78,42 @@
 #dashtodockContainer {
     .app-well-app-running-dot { @include size(0); }
 
-    &.left {
-        #dash { padding: 0; }
+    #dash { padding: 0; }
 
-        .dash-item-container > * { padding: 0 0 3px 0; }
+    &.left {
+        .dash-item-container > * { padding: 0 0 2px 0; }
+
+        .overview-icon { padding: 8px 9px 8px 8px !important; }
 
         .show-apps,
-        .app-well-app > * { padding: 0 0 0 2px; }
+        .app-well-app > * { padding: 0; }
     }
 
     &.right {
-        #dash { padding: 0; }
+        .dash-item-container > * { padding: 0 0 2px 0; }
 
-        .dash-item-container > * { padding: 0 0 3px 0; }
+        .overview-icon { padding: 8px 8px 8px 9px !important; }
 
         .show-apps,
-        .app-well-app > * { padding: 0 2px 0 0; }
+        .app-well-app > * { padding: 0; }
     }
 
     &.top {
-        #dash { padding: 0; }
+        .dash-item-container > * { padding: 0 2px 0 0; }
 
-        .dash-item-container > * { padding: 0 3px 0 0; }
+        .overview-icon { padding: 8px 9px 9px 9px !important; }
 
         .show-apps,
-        .app-well-app > * { padding: 2px 0 0 0; }
+        .app-well-app > * { padding: 0; }
     }
 
     &.bottom {
-        #dash { padding: 0; }
+        .dash-item-container > * { padding: 0 2px 0 0; }
 
-        .dash-item-container > * { padding: 0 3px 0 0; }
+        .overview-icon { padding: 9px 9px 8px 9px !important; }
 
         .show-apps,
-        .app-well-app > * { padding: 0 0 2px 0; }
+        .app-well-app > * { padding: 0; }
     }
 }
 
@@ -123,21 +121,26 @@
 @each $c in 1, 2, 3, 4 {
     #dashtodockContainer.#{$d} {
         #dash {
-            border-image: url("img/overview/dash-bg__#{$d}.svg") 7;
+            border-image: url("img/overview/overview-dark-bg-#{$d}.svg") 7;
         }
 
         &.extended #dash {
-            border-image: url("img/overview/dash-bg__#{$d}--extended.svg") 7;
+            border-image: url("img/overview/overview-dark-bg-#{$d}--extended.svg") 7;
         }
 
         .app-well-app {
             &:hover > * {
-                border-image: url("img/overview/app-indicator--hover--#{$d}.svg") 14;
+                border-image: none;
+            }
+
+            &:hover .overview-icon {
+                border-image: url("img/overview/overview-light-bg__dash--#{$d}.svg") 7 !important;
             }
 
             &.running#{$c} {
-                &.focused .overview-icon {
-                    border-image: url("img/overview/overview-light-bg.svg") 7;
+                &.focused .overview-icon,
+                &:hover .overview-icon, {
+                    border-image: url("img/overview/overview-light-bg__dash--#{$d}-active.svg") 7 !important;
                 }
 
                 > * {
@@ -147,12 +150,16 @@
         }
 
         .show-apps {
-            &:hover {
-                border-image: url("img/overview/app-indicator--hover--#{$d}.svg") 14;
+            &:hover .overview-icon {
+                border-image: url("img/overview/overview-light-bg__dash--#{$d}.svg") 7 !important;
             }
 
             &:checked {
-                border-image: url("img/overview/app-indicator__1--#{$d}.svg") 14;
+                border-image: none;
+
+                .overview-icon {
+                    border-image: url("img/overview/overview-highlight-bg__dash--#{$d}.svg") 7 !important;
+                }
             }
         }
     }

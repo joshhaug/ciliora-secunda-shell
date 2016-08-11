@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="app-indicator--hover--bottom.svg"
+   sodipodi:docname="overview-highlight-bg__dash--bottom.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -29,9 +29,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="14.145833"
-     inkscape:cx="-4.4005898"
-     inkscape:cy="16.17084"
+     inkscape:zoom="13.979167"
+     inkscape:cx="1.4128173"
+     inkscape:cy="9.4962732"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -130,18 +130,18 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       y="-23"
-       x="298"
-       height="22.000002"
-       width="2"
-       id="rect5315-7"
-       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
-       transform="matrix(0,1,-1,0,0,0)" />
-    <path
-       style="opacity:0.45;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 24,298 -1,0 0,2 1,0 z m -23,0 -1,0 0,2 1,0 z"
-       id="rect4190"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccc" />
+       y="276"
+       x="0"
+       height="24"
+       width="24"
+       id="rect4136"
+       style="display:inline;opacity:0.65;fill:#000000;fill-opacity:1;stroke:none;enable-background:new" />
+    <rect
+       style="display:inline;fill:#6a98d2;fill-opacity:1;stroke:none;enable-background:new"
+       id="rect4270-9-6"
+       width="22"
+       height="23"
+       x="1"
+       y="277" />
   </g>
 </svg>

@@ -3,23 +3,23 @@
    ===================================================== */
 
 #workspacestodockDock.right .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-right.svg") 7 !important;
-    padding: 10px 10px 10px 12px;
+    border-image: url("../../img/overview/overview-dark-bg-right.svg") 7 !important;
+    padding: 10px 9px 10px 10px;
 }
 
 #workspacestodockDock.left .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-left.svg") 7 !important;
-    padding: 10px 12px 10px 10px;
+    border-image: url("../../img/overview/overview-dark-bg-left.svg") 7 !important;
+    padding: 10px 10px 10px 9px;
 }
 
 #workspacestodockDock.top .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-top.svg") 7 !important;
-    padding: 10px 10px 12px 12px;
+    border-image: url("../../img/overview/overview-dark-bg-top.svg") 7 !important;
+    padding: 9px 10px 10px 10px;
 }
 
 #workspacestodockDock.bottom .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-bottom.svg") 7 !important;
-    padding: 12px 10px 10px 12px;
+    border-image: url("../../img/overview/overview-dark-bg-bottom.svg") 7 !important;
+    padding: 10px 10px 9spx 10px;
 }
 
 
@@ -28,58 +28,56 @@
    ===================================================== */
 
 #workspacestodockDock.right.fullheight .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-right-extended.svg") 7 !important;
-    padding: 10px 10px 10px 12px;
+    border-image: url("../../img/overview/overview-dark-bg-right--extended.svg") 7 !important;
+    padding: 10px 9px 10px 10px;
 }
 
 #workspacestodockDock.left.fullheight .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-left-extended.svg") 7 !important;
-    padding: 10px 12px 10px 10px;
+    border-image: url("../../img/overview/overview-dark-bg-left--extended.svg") 7 !important;
+    padding: 10px 10px 10px 9px;
 }
 
 #workspacestodockDock.top.fullheight .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-top-extended.svg") 7 !important;
-    padding: 10px 10px 12px 10px;
+    border-image: url("../../img/overview/overview-dark-bg-top--extended.svg") 7 !important;
+    padding: 9px 10px 10px 10px;
 }
 
 #workspacestodockDock.bottom.fullheight .workspace-thumbnails {
-    border-image: url("../../img/overview/workspace-bg-bottom-extended.svg") 7 !important;
-    padding: 12px 10px 10px 10px;
+    border-image: url("../../img/overview/overview-dark-bg-bottom--extended.svg") 7 !important;
+    padding: 10px 10px 9px 10px;
 }
-
 
 /* =====================================================
  * ! Indicator
    ===================================================== */
 
-#workspacestodockDock.right .workspace-thumbnail-indicator {
+#workspacestodockDock .workspace-thumbnail-indicator {
     border-image: url("../../img/overview/workspace-indicator-right.svg") 7 !important;
-    border-width: 12px;
+    border-width: 10px;
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
 
 #workspacestodockDock.left .workspace-thumbnail-indicator {
     border-image: url("../../img/overview/workspace-indicator-left.svg") 7 !important;
-    border-width: 12px;
+    border-width: 10px;
     border-top-width: 1px;
     border-bottom-width: 1px;
 }
 
 #workspacestodockDock.top .workspace-thumbnail-indicator {
     border-image: url("../../img/overview/workspace-indicator-top.svg") 7 !important;
-    border-width: 12px;
+    border-width: 10px;
     border-right-width: 1px;
     border-left-width: 1px;
 }
 
 #workspacestodockDock.bottom .workspace-thumbnail-indicator {
     border-image: url("../../img/overview/workspace-indicator-bottom.svg") 7 !important;
-    border-width: 12px;
+    border-width: 10px;
     border-right-width: 1px;
     border-left-width: 1px;
 }
-
 
 .workspacestodock-shortcuts-panel {
     padding: 2px;
@@ -150,7 +148,7 @@
 }
 
 .workspacestodock-caption-windowapps-menu {
-    -boxpointer-gap: 12px;
+    -boxpointer-gap: 16px;
 }
 
 .workspacestodock-caption-windowapps-menu-icon {
@@ -169,6 +167,7 @@
     background-size: 24px;
     height: 24px;
     width: 24px;
+    margin: 2px 0;
 }
 
 .workspacestodock-caption-windowapps-button {
@@ -176,20 +175,21 @@
 }
 
 .workspacestodock-caption-windowapps-button-icon {
-    padding: 1px;
+    padding: 0px;
     background-color: rgba(30, 30, 30, .65);
-    border: 1px rgba(0, 0, 0, .55);
+    border: 0px rgba(0, 0, 0, .55);
 }
 
 .workspacestodock-caption-windowapps-button-active > .workspacestodock-caption-windowapps-button-icon {
     background-color: rgba(141, 174, 203, .8);
-    border: 1px rgba(0, 19, 34, .85);
+    border: 0px rgba(0, 19, 34, .85);
 }
 
 /* caption workspace number */
 .workspacestodock-caption-number {
-    color: rgba(255, 255, 255, .3);
-    font-size: 10pt;
+    color: rgba(255, 255, 255, .4);
+    font-size: 9pt;
+    font-family: Roboto;
     font-weight: bold;
     text-align: center;
     padding: 0 10px;
@@ -198,7 +198,7 @@
 /* caption workspace name */
 .workspacestodock-caption-name {
     color: rgba(255, 255, 255, .7);
-    font-size: 10pt;
+    font-size: 9pt;
     font-weight: bold;
     text-align: center;
     padding: 0 4px;

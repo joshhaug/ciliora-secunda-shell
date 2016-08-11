@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="dash-bg__left--extended.svg"
+   sodipodi:docname="overview-dark-bg-left--extended.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.895833"
-     inkscape:cx="11.110489"
-     inkscape:cy="13.745454"
+     inkscape:cx="0.83915923"
+     inkscape:cy="18.377621"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -46,7 +46,7 @@
      inkscape:snap-nodes="true"
      inkscape:snap-bbox="true"
      gridtolerance="10000"
-     inkscape:object-nodes="true"
+     inkscape:object-nodes="false"
      inkscape:snap-grids="true"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -130,17 +130,16 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
-       id="rect5315-7-0-3"
-       width="24"
-       height="24"
+       y="276"
        x="0"
-       y="276" />
+       height="24"
+       width="24"
+       id="rect5315-7-0"
+       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none" />
     <path
        style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 2,276 1,0 0,24 -1,0 z m 21,0 1,0 0,24 -1,0 z"
-       id="path4074-9"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccc" />
+       d="m 24,276 -1,0 0,1 0,22 0,1 1,0 0,-24 z"
+       id="path4074"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

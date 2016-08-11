@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.895833"
-     inkscape:cx="6.9197244"
+     inkscape:cx="-3.4187374"
      inkscape:cy="5.3640072"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -129,12 +129,6 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
-    <path
-       style="opacity:0.65;fill:#000000;fill-opacity:1;stroke:none"
-       d="M 5.7220459e-6,300 24.000005,300 l 0,-5 L 5.7220459e-6,295 Z M 1.0000057,299 l 0,-3 21.9999993,0 0,3 z"
-       id="rect5319-7"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccccccc" />
     <rect
        y="1.0000114"
        x="-299"
