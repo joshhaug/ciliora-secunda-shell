@@ -2222,12 +2222,6 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-message-layout {
-  /*
-    collapsed boxes are affected by spacing and
-    cause ugly paddings in some cases
-    with "em" units, collapsed boxes
-    produce 0px margins
-    */
   spacing: 0;
 }
 
@@ -2266,7 +2260,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-error-label {
   font-size: 12px;
   font-weight: bold;
-  color: #f85c5c;
+  color: #ffa959;
   padding-bottom: 0;
 }
 
@@ -2310,6 +2304,7 @@ StEntry:insensitive StIcon,
 
 .polkit-dialog-user-root-label {
   color: #f85c5c;
+  font-weight: bold;
 }
 
 .polkit-dialog-user-label {
