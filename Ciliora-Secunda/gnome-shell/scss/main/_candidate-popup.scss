@@ -76,12 +76,24 @@
     }
 
     &-previous {
-        @include btn(f, $text-primary, primary, $text-primary, blue);
+        @include btn(
+            f,
+            $text-primary,
+            primary,
+            $text-link,
+            blue
+        );
         @include btn-width(small);
     }
 
     &-next {
-        @include btn(l, $text-primary, primary, $text-primary, blue);
+        @include btn(
+            l,
+            $text-primary,
+            primary,
+            $text-link,
+            blue
+        );
         @include btn-width(small);
     }
 

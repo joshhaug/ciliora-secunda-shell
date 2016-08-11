@@ -3,9 +3,9 @@
  * ====================================== */
 
 /*
-    The url highlighter gets
-    the opacity from the color property
-    Tweak default $text-link color to FIX
+ * The url highlighter gets
+ * the opacity from the color property
+ * Tweak default $text-link color to FIX
  */
 .url-highlighter {
     link-color: saturate(darken($text-link, 12%), 100%);

@@ -1,5 +1,5 @@
 // ======================================
-// Common button properties
+//  Common button properties
 // ======================================
 @mixin btn-common {
     background-color: rgba(0, 0, 0, 0);
@@ -20,29 +20,24 @@
     }
 }
 
-
 // ======================================
-// Generate simple buttons
+//  Generate simple buttons
 //
+//  {String} $position is one of:
+//    's' (adjust style for single-child)
+//    'f' (adjust style for first-child)
+//    'l' (adjust style for last-child)
+//    'm' (adjust style for all middle children)
+//  {Color}  $color-primary   is text color
+//  {String} $bg-primary      is bg color
+//  {Color}  $color-secondary is text color of hover state
+//  {String} $bg-secondary    is bg color of focus states
+//  {Color}  $color-disabled  is text color of disabled state
 //
-//  Provide a $position parameter:
-//      s (single-child)
-//      f (first-child)
-//      l (last-child)
-//      m (middle: between first and last)
+//  $bg-primary & $bg-secondary arguments are interpolated
+//  into image URL's.
 //
-//
-//  $color-primary & $bg-primary modify text and bg color.
-//
-//
-//  $color-secondary & $bg-secondary are optional and
-//  modify text & bg colors of focused states (focus, focus:hover
-//  focus:active).
-//
-//
-//  $bg & $position parameteres are not css values, but
-//  modify image URL's instead.
-//  Name format:
+//  Name format for assets:
 //      button-{$bg}__{$position}.svg
 //      button-{$bg}__{$position}--hover.svg
 //      button-{$bg}__{$position}--pressed.svg
@@ -55,20 +50,19 @@
     $bg-secondary:$bg-primary,
     $color-disabled:$color-primary
 ){
-
-    // Parameters in this case are strings, not css colors
-    // Quote them to prevent conversion to hex values
-    $bg-primary:   quote($bg-primary);
-    $bg-secondary: quote($bg-secondary);
-
-
-    // Include common properties
     @include btn-common;
-
 
     border-image: url("img/buttons/button-#{$bg-primary}__#{$position}.svg") 10;
     color: $color-primary;
     StIcon { color: $color-primary; }
+
+    &:hover,
+    &:active,
+    &:pressed,
+    &:selected {
+        color: $color-secondary;
+        StIcon { color: $color-secondary; }
+    }
 
     &:hover {
         border-image: url("img/buttons/button-#{$bg-primary}__#{$position}--hover.svg") 10;
@@ -82,8 +76,8 @@
 
     &:focus {
         border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}.svg") 10;
-        color: $color-secondary;
-        StIcon { color: $color-primary; }
+        color: $text-primary-invert;
+        StIcon { color: $text-primary-invert; }
     }
 
     &:focus:hover {
@@ -108,14 +102,12 @@
     }
 }
 
-
 // ======================================
-// Generate dialog buttons
+//  Generate dialog buttons
 //
-//  Name format:
-//      dialog-button-{$bg}__{$position}.svg
-//      dialog-button-{$bg}__{$position}--hover.svg
-//      dialog-button-{$bg}__{$position}--pressed.svg
+//  differs from @mixin btn at:
+//  {Color}  $color-secondary is text color of focus and hover states
+//  {String} $bg-secondary    is bg color of focus and hover states
 // ======================================
 @mixin btn-dialog(
     $position,
@@ -179,9 +171,8 @@
     }
 }
 
-
 // ======================================
-// Standard button widths
+//  Standard button widths
 // ======================================
 @mixin btn-width($btn-width) {
     @if $btn-width == "small" { padding: 1em; }
@@ -189,56 +180,60 @@
     @if $btn-width == "wide" { padding: 1em 2em; }
 }
 
-
 // ======================================
-// Standard buttons
+//  Standard buttons
 // ======================================
 @mixin btn-primary {
     @include btn(
-        s,
-        $text-primary, primary,
-        $text-primary, blue,
+        's',
+        $text-primary,
+        'primary',
+        $text-link,
+        'blue',
         $text-disabled
     );
 }
 
 @mixin btn-secondary {
     @include btn(
-        s,
-        $text-primary, secondary,
-        $text-primary, blue,
+        's',
+        $text-primary,
+        'secondary',
+        $text-link,
+        'blue',
         $text-disabled
     );
 }
 
 @mixin btn-linked-primary {
-    @include btn(m, $text-primary, primary);
+    @include btn('m', $text-primary, 'primary', $text-link);
 
     &:first-child {
-        @include btn(f, $text-primary, primary);
+        @include btn('f', $text-primary, 'primary', $text-link);
     }
 
     &:last-child {
-        @include btn(l, $text-primary, primary);
+        @include btn('l', $text-primary, 'primary', $text-link);
     }
 
     &:last-child:first-child {
-        @include btn(s, $text-primary, primary);
+        @include btn('s', $text-primary, 'primary', $text-link);
     }
 }
 
 @mixin btn-overview {
     @include btn(
-        s,
-        $text-primary, overview,
-        $text-primary, overview-blue,
-        $text-disabled
+        's',
+        $text-primary-invert,
+        'overview',
+        $text-primary-invert,
+        overview-blue,
+        $text-disabled-invert
     );
 }
 
-
 // ======================================
-// Standard dialog buttons
+//  Standard dialog buttons
 // ======================================
 @mixin btn-dialog-primary {
     @include btn-dialog(
@@ -276,9 +271,8 @@
     }
 }
 
-
 /* ======================================
- * ! Button (global selector)
+ *  ! Button (global selector)
  * ====================================== */
 .button {
     @include btn-primary;
