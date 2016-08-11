@@ -7,13 +7,13 @@ $accent-danger:  #E66464;
 
 
 // Text color
-$text-primary:   alpha(#fff, 1);
-$text-secondary: alpha(#fff, .45);
-$text-disabled:  alpha(#fff, .15);
+$text-primary:   rgba(#fff, 1);
+$text-secondary: rgba(#fff, .45);
+$text-disabled:  rgba(#fff, .15);
 
-$text-primary-invert:   alpha(#000, .75);
-$text-secondary-invert: alpha(#000, .45);
-$text-disabled-invert:  alpha(#000, .2);
+$text-primary-invert:   rgba(#000, .75);
+$text-secondary-invert: rgba(#000, .45);
+$text-disabled-invert:  rgba(#000, .2);
 
 $text-link:    saturate(lighten($accent-primary, 7%), 25%);
 $text-success: saturate(lighten($accent-success, 5%),  1%);
