@@ -3,9 +3,13 @@
  * ====================================== */
 
 #lockDialogGroup {
-    background: #333 url("img/overview/overview-pattern.svg");
+    background: #303030 url("img/overview/overview-pattern.svg");
     background-repeat: repeat;
 }
+
+.unlock-screen,
+.login-screen,
+.lock-screen {}
 
 .login-dialog {
     border: none;
@@ -53,8 +57,7 @@
     }
 
     &-message-hint {
-        padding-top: 0;
-        padding-bottom: 20px;
+        color: $text-info;
     }
 
     &-banner-view {
@@ -95,8 +98,8 @@
     }
 
     &-session-list-button {
-        padding: 0 .4em;
         color: $text-secondary;
+        padding: 0 !important;
 
         &:active,
         &:hover,
@@ -109,8 +112,6 @@
         }
     }
 
-
-    // User List
     &-user-list-view {
         -st-vfade-offset: 0;
         max-height: 600px;
@@ -143,7 +144,7 @@
     &-user-list-item {
         border-image: url("img/overview/overview-dark-bg.svg") 6;
         padding: 4px;
-        color: #fff;
+        color: $text-primary;
 
         &:ltr { padding-right: 1em; }
 
@@ -169,7 +170,7 @@
         }
 
         &:focus .login-dialog-timed-login-indicator {
-            background-color: #ffffff;
+            background-color: $accent-primary;
         }
 
         .framed-user-icon {
@@ -179,27 +180,25 @@
         }
     }
 
-
-    // buttons
-    .modal-dialog-button-box {
+    &-button-box {
         spacing: 0;
+
+        // spinner image
+        StWidget { padding: 0 .3em; }
     }
 
-    .modal-dialog-button:default,
-    .modal-dialog-button {
+    .modal-dialog-button,
+    .modal-dialog-button:default {
         @include btn-overview;
         @include btn-width(wide);
     }
 
-
-    // entry
     StEntry {
-        @include entry(overview--normal, $width: 320px);
+        @include entry(overview--normal);
 
-        &:focus { @include entry(overview--focus, $width: 320px); }
+        &:focus { @include entry(overview--focus); }
     }
 }
-
 
 /* ======================================
  * ! Screen Shield
@@ -220,58 +219,58 @@
 
 .screen-shield-arrows {
     background-image: url("img/misc/lock.svg");
-    padding-bottom: 2.8em;
-}
+    @include size(24px);
+    margin-bottom: 32px;
 
-.screen-shield-arrows Gjs_Arrow {
-    color: transparent;
-    width: 24px;
-    height: 24px;
-    -arrow-thickness: 12px;
-    -arrow-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    Gjs_Arrow {
+        color: transparent;
+        @include size(0);
+        -arrow-thickness: 0;
+        -arrow-shadow: 0 0 rgba(0, 0, 0, 0);
+    }
 }
 
 .screen-shield-clock {
     font-weight: normal;
     text-align: center;
-}
 
-.screen-shield-clock-time {
-    color: $text-primary;
-    font-size: $font-size-mega;
-}
+    &-time {
+        color: $text-primary;
+        font-size: $font-size-mega;
+    }
 
-.screen-shield-clock-date {
-    color: $text-secondary;
-    font-size: $font-size-xxl;
-    padding: 0 10px;
+    &-date {
+        color: $text-secondary;
+        font-size: $font-size-xxl;
+        padding: 0 10px;
+    }
 }
 
 .screen-shield-notifications-container {
     spacing: 4px;
     min-width: 30em;
     background-color: transparent;
-    max-height: 500px;
+    max-height: 394px;
     padding-left: 8px;
-}
 
-.screen-shield-notifications-container .summary-notification-stack-scrollview {
-    padding-top: 0;
-    padding-bottom: 0;
-}
+    .summary-notification-stack-scrollview {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 
-.screen-shield-notifications-container .notification,
-.screen-shield-notifications-container .screen-shield-notification-source {
-    border-image: url("img/overview/overview-light-bg.svg") 6;
-    padding: .6em;
-    color: $text-primary;
-    font-family: Droid Sans, sans-serif;
-    spacing: 10px;
+    .notification,
+    .screen-shield-notification-source {
+        border-image: url("img/overview/overview-light-bg.svg") 6;
+        padding: .6em;
+        color: $text-primary;
+        font-family: $font-family;
+        spacing: 10px;
+    }
 }
 
 .screen-shield-notification-label {
     font-weight: bold;
-    font-size: $font-size-xl;
+    font-size: $font-size-lg;
     padding: .2em 0 0 0;
 }
 
@@ -279,20 +278,23 @@
     padding: .6em 0 0 0;
 }
 
-#screenShieldNotifications StScrollBar {
-    padding: 0 0 0 6px;
-    min-height: 10px;
-    min-width: 10px;
-}
+#screenShieldNotifications {
+    StScrollBar {
+        padding: 0 0 0 6px;
+        min-height: 10px;
+        min-width: 10px;
+    }
 
-#screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
-    border-image: url("img/controls/overview-scroll-handle.svg") 4;
-}
+    StButton#vhandle,
+    StButton#hhandle {
+        border-image: url("img/controls/overview-scroll-handle.svg") 4;
 
-#screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
-    border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
-}
+        &:hover, &:focus {
+            border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
+        }
 
-#screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
-    border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
+        &:active {
+           border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
+        }
+    }
 }

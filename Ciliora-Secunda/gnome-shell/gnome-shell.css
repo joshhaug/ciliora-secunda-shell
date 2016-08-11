@@ -217,11 +217,11 @@ StEntry:insensitive StIcon,
 
 .button:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .button:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .button:focus:hover {
@@ -4294,11 +4294,11 @@ StEntry:insensitive StIcon,
 
 .keyboard-key:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .keyboard-key:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .keyboard-key:focus:hover {
@@ -4411,14 +4411,14 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus StIcon,
 .keyboard-layout .keyboard-row:last-child > *:last-child:focus StIcon,
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child:focus StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:hover,
@@ -4625,11 +4625,11 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-previous:focus {
   border-image: url("img/buttons/button-blue__f.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .candidate-page-button-previous:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .candidate-page-button-previous:focus:hover {
@@ -4693,11 +4693,11 @@ StEntry:insensitive StIcon,
 
 .candidate-page-button-next:focus {
   border-image: url("img/buttons/button-blue__l.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .candidate-page-button-next:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .candidate-page-button-next:focus:hover {
@@ -4825,11 +4825,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:focus {
   border-image: url("img/buttons/button-primary__m.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:focus:hover {
@@ -4892,11 +4892,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus {
   border-image: url("img/buttons/button-primary__f.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:first-child:focus:hover {
@@ -4959,11 +4959,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus {
   border-image: url("img/buttons/button-primary__l.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:focus:hover {
@@ -5026,11 +5026,11 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 .lg-dialog #Toolbar .notebook-tab:last-child:first-child:focus:hover {
@@ -5249,11 +5249,11 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus {
   border-image: url("img/buttons/button-blue__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:hover {
@@ -5277,7 +5277,7 @@ StEntry:insensitive StIcon,
  * ! Login and Lock Screen
  * ====================================== */
 #lockDialogGroup {
-  background: #333 url("img/overview/overview-pattern.svg");
+  background: #303030 url("img/overview/overview-pattern.svg");
   background-repeat: repeat;
 }
 
@@ -5330,8 +5330,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-hint {
-  padding-top: 0;
-  padding-bottom: 20px;
+  color: #b599ff;
 }
 
 .login-dialog-banner-view {
@@ -5371,8 +5370,8 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-session-list-button {
-  padding: 0 .4em;
   color: rgba(255, 255, 255, 0.45);
+  padding: 0 !important;
 }
 
 .login-dialog-session-list-button:active, .login-dialog-session-list-button:hover, .login-dialog-session-list-button:focus {
@@ -5415,7 +5414,7 @@ StEntry:insensitive StIcon,
 .login-dialog-user-list-item {
   border-image: url("img/overview/overview-dark-bg.svg") 6;
   padding: 4px;
-  color: #fff;
+  color: white;
 }
 
 .login-dialog-user-list-item:ltr {
@@ -5445,7 +5444,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-user-list-item:focus .login-dialog-timed-login-indicator {
-  background-color: #ffffff;
+  background-color: #6A98D2;
 }
 
 .login-dialog-user-list-item .framed-user-icon {
@@ -5454,12 +5453,16 @@ StEntry:insensitive StIcon,
   padding: 0;
 }
 
-.login-dialog .modal-dialog-button-box {
+.login-dialog-button-box {
   spacing: 0;
 }
 
-.login-dialog .modal-dialog-button:default,
-.login-dialog .modal-dialog-button {
+.login-dialog-button-box StWidget {
+  padding: 0 .3em;
+}
+
+.login-dialog .modal-dialog-button,
+.login-dialog .modal-dialog-button:default {
   background-color: transparent;
   background-gradient-direction: none;
   background-gradient-start: transparent;
@@ -5471,92 +5474,92 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/button-overview__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
   padding: 1em 2em;
 }
 
-.login-dialog .modal-dialog-button:default StIcon,
-.login-dialog .modal-dialog-button StIcon {
+.login-dialog .modal-dialog-button StIcon,
+.login-dialog .modal-dialog-button:default StIcon {
   width: 16px !important;
   height: 16px !important;
   icon-size: 16px !important;
 }
 
-.login-dialog .modal-dialog-button:default StIcon,
-.login-dialog .modal-dialog-button StIcon {
-  color: rgba(0, 0, 0, 0.75);
+.login-dialog .modal-dialog-button StIcon,
+.login-dialog .modal-dialog-button:default StIcon {
+  color: white;
 }
 
-.login-dialog .modal-dialog-button:default:hover, .login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:pressed, .login-dialog .modal-dialog-button:default:selected,
-.login-dialog .modal-dialog-button:hover,
-.login-dialog .modal-dialog-button:active,
-.login-dialog .modal-dialog-button:pressed,
-.login-dialog .modal-dialog-button:selected {
-  color: rgba(0, 0, 0, 0.75);
-}
-
-.login-dialog .modal-dialog-button:default:hover StIcon, .login-dialog .modal-dialog-button:default:active StIcon, .login-dialog .modal-dialog-button:default:pressed StIcon, .login-dialog .modal-dialog-button:default:selected StIcon,
-.login-dialog .modal-dialog-button:hover StIcon,
-.login-dialog .modal-dialog-button:active StIcon,
-.login-dialog .modal-dialog-button:pressed StIcon,
-.login-dialog .modal-dialog-button:selected StIcon {
-  color: rgba(0, 0, 0, 0.75);
-}
-
+.login-dialog .modal-dialog-button:hover, .login-dialog .modal-dialog-button:active, .login-dialog .modal-dialog-button:pressed, .login-dialog .modal-dialog-button:selected,
 .login-dialog .modal-dialog-button:default:hover,
-.login-dialog .modal-dialog-button:hover {
+.login-dialog .modal-dialog-button:default:active,
+.login-dialog .modal-dialog-button:default:pressed,
+.login-dialog .modal-dialog-button:default:selected {
+  color: white;
+}
+
+.login-dialog .modal-dialog-button:hover StIcon, .login-dialog .modal-dialog-button:active StIcon, .login-dialog .modal-dialog-button:pressed StIcon, .login-dialog .modal-dialog-button:selected StIcon,
+.login-dialog .modal-dialog-button:default:hover StIcon,
+.login-dialog .modal-dialog-button:default:active StIcon,
+.login-dialog .modal-dialog-button:default:pressed StIcon,
+.login-dialog .modal-dialog-button:default:selected StIcon {
+  color: white;
+}
+
+.login-dialog .modal-dialog-button:hover,
+.login-dialog .modal-dialog-button:default:hover {
   border-image: url("img/buttons/button-overview__s--hover.svg") 10;
 }
 
-.login-dialog .modal-dialog-button:default:active, .login-dialog .modal-dialog-button:default:pressed, .login-dialog .modal-dialog-button:default:selected,
-.login-dialog .modal-dialog-button:active,
-.login-dialog .modal-dialog-button:pressed,
-.login-dialog .modal-dialog-button:selected {
+.login-dialog .modal-dialog-button:active, .login-dialog .modal-dialog-button:pressed, .login-dialog .modal-dialog-button:selected,
+.login-dialog .modal-dialog-button:default:active,
+.login-dialog .modal-dialog-button:default:pressed,
+.login-dialog .modal-dialog-button:default:selected {
   border-image: url("img/buttons/button-overview__s--pressed.svg") 10;
 }
 
-.login-dialog .modal-dialog-button:default:focus,
-.login-dialog .modal-dialog-button:focus {
+.login-dialog .modal-dialog-button:focus,
+.login-dialog .modal-dialog-button:default:focus {
   border-image: url("img/buttons/button-overview-blue__s.svg") 10;
-  color: rgba(0, 0, 0, 0.75);
+  color: white;
 }
 
-.login-dialog .modal-dialog-button:default:focus StIcon,
-.login-dialog .modal-dialog-button:focus StIcon {
-  color: rgba(0, 0, 0, 0.75);
+.login-dialog .modal-dialog-button:focus StIcon,
+.login-dialog .modal-dialog-button:default:focus StIcon {
+  color: white;
 }
 
-.login-dialog .modal-dialog-button:default:focus:hover,
-.login-dialog .modal-dialog-button:focus:hover {
+.login-dialog .modal-dialog-button:focus:hover,
+.login-dialog .modal-dialog-button:default:focus:hover {
   border-image: url("img/buttons/button-overview-blue__s--hover.svg") 10;
 }
 
-.login-dialog .modal-dialog-button:default:focus:active, .login-dialog .modal-dialog-button:default:focus:pressed, .login-dialog .modal-dialog-button:default:focus:selected,
-.login-dialog .modal-dialog-button:focus:active,
-.login-dialog .modal-dialog-button:focus:pressed,
-.login-dialog .modal-dialog-button:focus:selected {
+.login-dialog .modal-dialog-button:focus:active, .login-dialog .modal-dialog-button:focus:pressed, .login-dialog .modal-dialog-button:focus:selected,
+.login-dialog .modal-dialog-button:default:focus:active,
+.login-dialog .modal-dialog-button:default:focus:pressed,
+.login-dialog .modal-dialog-button:default:focus:selected {
   border-image: url("img/buttons/button-overview-blue__s--pressed.svg") 10;
 }
 
-.login-dialog .modal-dialog-button:default:grayed, .login-dialog .modal-dialog-button:default:disabled, .login-dialog .modal-dialog-button:default:insensitive, .login-dialog .modal-dialog-button:default:focus:grayed, .login-dialog .modal-dialog-button:default:focus:disabled, .login-dialog .modal-dialog-button:default:focus:insensitive,
-.login-dialog .modal-dialog-button:grayed,
-.login-dialog .modal-dialog-button:disabled,
-.login-dialog .modal-dialog-button:insensitive,
-.login-dialog .modal-dialog-button:focus:grayed,
-.login-dialog .modal-dialog-button:focus:disabled,
-.login-dialog .modal-dialog-button:focus:insensitive {
+.login-dialog .modal-dialog-button:grayed, .login-dialog .modal-dialog-button:disabled, .login-dialog .modal-dialog-button:insensitive, .login-dialog .modal-dialog-button:focus:grayed, .login-dialog .modal-dialog-button:focus:disabled, .login-dialog .modal-dialog-button:focus:insensitive,
+.login-dialog .modal-dialog-button:default:grayed,
+.login-dialog .modal-dialog-button:default:disabled,
+.login-dialog .modal-dialog-button:default:insensitive,
+.login-dialog .modal-dialog-button:default:focus:grayed,
+.login-dialog .modal-dialog-button:default:focus:disabled,
+.login-dialog .modal-dialog-button:default:focus:insensitive {
   border-image: url("img/buttons/button-overview__s.svg") 10;
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.15);
 }
 
-.login-dialog .modal-dialog-button:default:grayed StIcon, .login-dialog .modal-dialog-button:default:disabled StIcon, .login-dialog .modal-dialog-button:default:insensitive StIcon, .login-dialog .modal-dialog-button:default:focus:grayed StIcon, .login-dialog .modal-dialog-button:default:focus:disabled StIcon, .login-dialog .modal-dialog-button:default:focus:insensitive StIcon,
-.login-dialog .modal-dialog-button:grayed StIcon,
-.login-dialog .modal-dialog-button:disabled StIcon,
-.login-dialog .modal-dialog-button:insensitive StIcon,
-.login-dialog .modal-dialog-button:focus:grayed StIcon,
-.login-dialog .modal-dialog-button:focus:disabled StIcon,
-.login-dialog .modal-dialog-button:focus:insensitive StIcon {
-  color: rgba(0, 0, 0, 0.2);
+.login-dialog .modal-dialog-button:grayed StIcon, .login-dialog .modal-dialog-button:disabled StIcon, .login-dialog .modal-dialog-button:insensitive StIcon, .login-dialog .modal-dialog-button:focus:grayed StIcon, .login-dialog .modal-dialog-button:focus:disabled StIcon, .login-dialog .modal-dialog-button:focus:insensitive StIcon,
+.login-dialog .modal-dialog-button:default:grayed StIcon,
+.login-dialog .modal-dialog-button:default:disabled StIcon,
+.login-dialog .modal-dialog-button:default:insensitive StIcon,
+.login-dialog .modal-dialog-button:default:focus:grayed StIcon,
+.login-dialog .modal-dialog-button:default:focus:disabled StIcon,
+.login-dialog .modal-dialog-button:default:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.15);
 }
 
 .login-dialog StEntry {
@@ -5565,7 +5568,6 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   padding: .3em .6em !important;
   height: 2em;
-  width: 320px;
   color: rgba(255, 255, 255, 0.15);
 }
 
@@ -5584,7 +5586,6 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   padding: .3em .6em !important;
   height: 2em;
-  width: 320px;
   color: white;
   caret-color: white;
   caret-size: 2px;
@@ -5623,15 +5624,17 @@ StEntry:insensitive StIcon,
 
 .screen-shield-arrows {
   background-image: url("img/misc/lock.svg");
-  padding-bottom: 2.8em;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 32px;
 }
 
 .screen-shield-arrows Gjs_Arrow {
   color: transparent;
-  width: 24px;
-  height: 24px;
-  -arrow-thickness: 12px;
-  -arrow-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  width: 0;
+  height: 0;
+  -arrow-thickness: 0;
+  -arrow-shadow: 0 0 transparent;
 }
 
 .screen-shield-clock {
@@ -5654,7 +5657,7 @@ StEntry:insensitive StIcon,
   spacing: 4px;
   min-width: 30em;
   background-color: transparent;
-  max-height: 500px;
+  max-height: 394px;
   padding-left: 8px;
 }
 
@@ -5668,13 +5671,13 @@ StEntry:insensitive StIcon,
   border-image: url("img/overview/overview-light-bg.svg") 6;
   padding: .6em;
   color: white;
-  font-family: Droid Sans, sans-serif;
+  font-family: Roboto, Sans-Serif;
   spacing: 10px;
 }
 
 .screen-shield-notification-label {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 14px;
   padding: .2em 0 0 0;
 }
 
@@ -5688,15 +5691,19 @@ StEntry:insensitive StIcon,
   min-width: 10px;
 }
 
-#screenShieldNotifications StButton#vhandle, #screenShieldNotifications StButton#hhandle {
+#screenShieldNotifications StButton#vhandle,
+#screenShieldNotifications StButton#hhandle {
   border-image: url("img/controls/overview-scroll-handle.svg") 4;
 }
 
-#screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus, #screenShieldNotifications StButton#hhandle:hover, #screenShieldNotifications StButton#hhandle:focus {
+#screenShieldNotifications StButton#vhandle:hover, #screenShieldNotifications StButton#vhandle:focus,
+#screenShieldNotifications StButton#hhandle:hover,
+#screenShieldNotifications StButton#hhandle:focus {
   border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
 }
 
-#screenShieldNotifications StButton#vhandle:active, #screenShieldNotifications StButton#hhandle:active {
+#screenShieldNotifications StButton#vhandle:active,
+#screenShieldNotifications StButton#hhandle:active {
   border-image: url("img/controls/overview-scroll-handle-hover.svg") 4;
 }
 

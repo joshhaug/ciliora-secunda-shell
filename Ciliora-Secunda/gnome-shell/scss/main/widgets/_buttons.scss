@@ -76,8 +76,8 @@
 
     &:focus {
         border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}.svg") 10;
-        color: $text-primary-invert;
-        StIcon { color: $text-primary-invert; }
+        color: $text-primary;
+        StIcon { color: $text-primary; }
     }
 
     &:focus:hover {
@@ -224,11 +224,11 @@
 @mixin btn-overview {
     @include btn(
         's',
-        $text-primary-invert,
+        $text-primary,
         'overview',
-        $text-primary-invert,
+        $text-primary,
         overview-blue,
-        $text-disabled-invert
+        $text-disabled
     );
 }
 
