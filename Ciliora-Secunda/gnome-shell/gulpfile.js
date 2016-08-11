@@ -8,21 +8,24 @@ var gulp        = require("gulp"),
     rimraf      = require("rimraf"),
     sass        = require("gulp-sass");
 
-
-var themesDir    = process.env.HOME+"/.themes/",
-    theme        = "Ciliora-Secunda",
-    sass_modules = "scss/gnome-shell.scss";
+var themesDir   = process.env.HOME+"/.themes/",
+    theme       = "Ciliora-Secunda",
+    sassModules = "scss/gnome-shell.scss";
 
 
 // Error handler
 var onError = function (err) {
-    var errorLine   = (err.line) ? "Line " + err.line : "",
-        errorTitle  = (err.plugin) ? "Error in plugin: [ " + err.plugin + " ]" : "Error";
+    var errorTitle  = (err.plugin && err.message) ?
+                        "Error: " + err.plugin + " | Line: " + err.line :
+                        "Error",
+        errorBody   = (err.line) ?
+                        "Line " + err.stack.split('\n')[1] :
+                        "";
 
     notify.logLevel(0);
     notify({
-            title: errorTitle,
-            message: errorLine
+            title:   errorTitle,
+            message: errorBody
     }).write(err);
 
     beep();
@@ -35,7 +38,7 @@ var onError = function (err) {
 
 // Compile sass
 gulp.task("sass", function () {
-    return gulp.src(sass_modules)
+    return gulp.src(sassModules)
         .pipe(plumber({ errorHandler: onError }))
         .pipe(sass({ outputStyle: "expanded" }))
         .pipe(gulp.dest("."));
