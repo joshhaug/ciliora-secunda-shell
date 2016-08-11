@@ -2,7 +2,7 @@
  * ! Font
  * ====================================== */
 stage {
-  font-family: Droid Sans, Sans-Serif;
+  font-family: Roboto, Sans-Serif;
   font-size: 12px;
 }
 
@@ -3273,14 +3273,26 @@ StEntry:insensitive StIcon,
 /* ======================================
  * ! Calendar
  * ====================================== */
+.calendar-day {
+  /*!*/
+}
+
+.calendar-day-top {
+  /*!*/
+}
+
+.calendar-day-left {
+  /*!*/
+}
+
 .calendar-day-base {
   font-size: 12px;
   font-weight: bold;
   text-align: center;
   margin: 1px;
-  padding-left: .2em;
-  width: 2.5em;
-  height: 2.7em;
+  padding-left: 2px;
+  width: 2.4em;
+  height: 2.6em;
 }
 
 .calendar-day-heading {
@@ -3295,7 +3307,6 @@ StEntry:insensitive StIcon,
   color: #72a9ee;
 }
 
-/*  ! Work Day */
 .calendar-work-day {
   border-image: url("img/misc/calendar-work-day.svg") 7;
   border: none;
@@ -3342,7 +3353,6 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/*  ! Non-work Day */
 .calendar-nonwork-day {
   border-image: url("img/misc/calendar-nonwork-day.svg") 7;
   border: none;
@@ -3390,7 +3400,6 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/*  ! Other Month Day */
 .calendar-other-month-day {
   border-image: url("img/misc/calendar-other-month-day.svg") 7;
   color: rgba(255, 255, 255, 0.15);
@@ -3428,29 +3437,26 @@ StEntry:insensitive StIcon,
   color: white;
 }
 
-/*  ! Events Day */
 .calendar-day-with-events:hover, .calendar-day-with-events:focus {
   border-image: none;
   background-image: none !important;
   color: white;
 }
 
-/*  ! Today */
 .calendar-today:hover, .calendar-today:focus {
   border-image: url("img/misc/calendar-hover.svg") 7;
   color: white;
 }
 
-/*  ! Week Number */
 .calendar-week-number {
-  margin: 0 !important;
+  margin: 1px !important;
   background-color: transparent !important;
   color: rgba(255, 255, 255, 0.45);
   font-size: inherit;
   font-weight: normal;
   width: 2.4em;
-  height: 1.6em;
-  padding: .9em .4em 0 0;
+  height: 1.4em;
+  padding: .7em .4em 0 0;
 }
 
 /* ======================================
@@ -4695,7 +4701,7 @@ StEntry:insensitive StIcon,
 }
 
 .lg-dialog * {
-  font-family: Droid Sans, Sans-Serif;
+  font-family: Roboto, Sans-Serif;
   transition-duration: 0ms;
 }
 
