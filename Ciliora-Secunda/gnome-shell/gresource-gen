@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =============================================
-#   Constants
+#  Constants
 # =============================================
 assets_dir="img"
 
@@ -13,15 +13,15 @@ gresource_dest="../../gnome-shell-theme.gresource"
 
 
 # =============================================
-#   Copy all assets into $tmp_dir
+#  Copy all assets into $tmp_dir
 #
-#   Some asset url's are hardcoded into the
-#   gnome-shell .js files and point to the
-#   theme's root dir.
+#  Some asset url's are hardcoded into the
+#  gnome-shell .js files and point to the
+#  theme's root dir.
 #
-#   To prevent any crashes, copy all assets
-#   into one dir before generating the
-#   gresource file.
+#  To prevent any crashes, copy all assets
+#  into one dir before generating the
+#  gresource file.
 # =============================================
 echo -e "\e[34mGenerating gresource file...\e[0m"
 
@@ -33,7 +33,7 @@ find "$assets_dir" -type f -execdir cp -f {} "$PWD/$tmp_dir/" \;
 
 
 # =============================================
-#   Modify url's in css file
+#  Modify url's in css file
 # =============================================
 regex="(url\([\"\']*).*/(.*\))"
 
@@ -41,7 +41,7 @@ sed -r "s:$regex:\1\2:" "$css_file" > "$tmp_dir/gnome-shell.css"
 
 
 # =============================================
-#   Create gresource.xml file
+#  Create gresource.xml file
 # =============================================
 echo "<?xml version='1.0' encoding='UTF-8'?><gresources><gresource prefix='/org/gnome/shell/theme'>" \
      > "$tmp_dir/gnome-shell-theme.gresource.xml"
@@ -60,7 +60,7 @@ echo "<file>gnome-shell.css</file></gresource></gresources>" \
 
 
 # =============================================
-#   Create gresource file
+#  Create gresource file
 # =============================================
 glib-compile-resources --sourcedir="$tmp_dir" \
                        --target="$gresource_dest" \
