@@ -2884,6 +2884,9 @@ StEntry:insensitive StIcon,
 }
 
 .input-source-switcher-symbol {
+  width: 96px;
+  height: 96px;
+  icon-size: 96px;
   font-size: 30px;
 }
 

@@ -66,5 +66,7 @@
 }
 
 .input-source-switcher-symbol {
+    @include size(96px);
+    icon-size: 96px;
     font-size: $font-size-xxxl;
 }
