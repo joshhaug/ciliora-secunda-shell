@@ -204,7 +204,7 @@
        sodipodi:nodetypes="ccccc" />
     <rect
        transform="matrix(0,-1,-1,0,0,0)"
-       style="fill:#6a98d2;fill-opacity:1;stroke:none"
+       style="fill:#5a94dc;fill-opacity:1;stroke:none"
        id="rect4270-9-0-0-5"
        width="2"
        height="14"
@@ -216,7 +216,7 @@
        transform="matrix(-1,0,0,1,-28,-13)" />
     <rect
        transform="matrix(0,1,-1,0,0,0)"
-       style="fill:#9b75ff;fill-opacity:1;stroke:none"
+       style="fill:#a06dff;fill-opacity:1;stroke:none"
        id="rect4270-9-0-0"
        width="2"
        height="5"

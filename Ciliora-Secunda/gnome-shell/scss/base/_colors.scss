@@ -3,7 +3,7 @@ $accent-primary: #5A94DC;
 $accent-success: #38AE72;
 $accent-info:    #8B5BFF;
 $accent-warning: #EE6B3E;
-$accent-danger:  #E74F4F;
+$accent-danger:  #E66464;
 
 // Text color
 $text-primary:   #fff;
@@ -14,8 +14,8 @@ $text-primary-invert:   rgba(#000, .75);
 $text-secondary-invert: rgba(#000, .45);
 $text-disabled-invert:  rgba(#000, .2);
 
-$text-link:    saturate(lighten($accent-primary, 7%), 25%);
-$text-success: saturate(lighten($accent-success, 5%),  1%);
-$text-info:    saturate(lighten($accent-info,    7%), 30%);
-$text-warning: saturate(lighten($accent-warning, 2%), 20%);
-$text-danger:  saturate(lighten($accent-danger,  2%), 20%);
+$text-link:    saturate(lighten($accent-primary, 10%), 25%);
+$text-success: saturate(lighten($accent-success, 10%), 15%);
+$text-info:    saturate(lighten($accent-info,    10%), 30%);
+$text-warning: saturate(lighten($accent-warning, 4%),  20%);
+$text-danger:  saturate(lighten($accent-danger,  4%),  20%);
