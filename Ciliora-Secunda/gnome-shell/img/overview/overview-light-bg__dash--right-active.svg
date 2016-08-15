@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145833"
-     inkscape:cx="-6.114114"
-     inkscape:cy="14.1564"
+     inkscape:cx="-1.0949679"
+     inkscape:cy="9.9148682"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -135,7 +135,7 @@
        height="22.000013"
        width="19.999998"
        id="rect5315-7"
-       style="opacity:0.28;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="opacity:0.28;fill:#e9f0ff;fill-opacity:1;stroke:none"
        transform="scale(-1,1)" />
     <path
        style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
@@ -179,7 +179,7 @@
        height="22"
        width="1"
        id="rect4140"
-       style="opacity:0.15;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.15;fill:#e9f0ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="scale(-1,1)" />
   </g>
 </svg>

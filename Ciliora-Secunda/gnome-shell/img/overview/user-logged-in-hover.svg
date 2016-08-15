@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145832"
-     inkscape:cx="0.56524409"
+     inkscape:cx="-10.321355"
      inkscape:cy="15.004085"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -130,7 +130,7 @@
      id="layer1"
      transform="translate(0,-276)">
     <path
-       style="opacity:0.28;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="opacity:0.28;fill:#e9f0ff;fill-opacity:1;stroke:none"
        d="m 1,277 0,22 2,0 0,-22 -2,0 z m 3,0 0,22 19,0 0,-22 -19,0 z"
        id="rect5315-7"
        inkscape:connector-curvature="0" />
