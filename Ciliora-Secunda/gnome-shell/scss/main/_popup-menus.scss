@@ -6,10 +6,6 @@
     padding: 3px;
     min-width: 10em;
 
-    > * > * > * {
-        border-image: url("img/containers/popup-inside.svg") 9;
-    }
-
     &-boxpointer {
         padding: 0;
         -arrow-border-radius: 0;
@@ -22,6 +18,7 @@
     }
 
     &-content {
+        border-image: url("img/containers/popup-inside.svg") 9;
         padding: .7em .2em;
         color: $text-primary;
     }

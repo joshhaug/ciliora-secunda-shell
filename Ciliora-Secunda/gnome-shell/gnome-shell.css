@@ -2651,10 +2651,6 @@ StEntry:insensitive StIcon,
   min-width: 10em;
 }
 
-.popup-menu > * > * > * {
-  border-image: url("img/containers/popup-inside.svg") 9;
-}
-
 .popup-menu-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
@@ -2667,6 +2663,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu-content {
+  border-image: url("img/containers/popup-inside.svg") 9;
   padding: .7em .2em;
   color: #fff;
 }
