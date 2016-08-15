@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="light-bg-top__vertical.svg"
+   sodipodi:docname="light-bg--top__vertical.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="20.005229"
-     inkscape:cx="6.5301424"
+     inkscape:cx="-1.167845"
      inkscape:cy="12.199946"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -138,7 +138,7 @@
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cccccccccc" />
     <path
-       style="opacity:0.5;fill:#343e48;fill-opacity:1;stroke:none"
+       style="opacity:0.8;fill:#2c343c;fill-opacity:1;stroke:none"
        d="m 2,277 20,0 0,23 -20,0 z"
        id="rect5188-0"
        inkscape:connector-curvature="0"

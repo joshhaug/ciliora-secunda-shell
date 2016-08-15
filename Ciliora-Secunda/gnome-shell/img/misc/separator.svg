@@ -15,7 +15,7 @@
    height="13"
    id="svg11300"
    sodipodi:version="0.32"
-   inkscape:version="0.91 r"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="separator.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.970588"
-     inkscape:cx="-2.2569956"
+     inkscape:cx="-9.9683359"
      inkscape:cy="8.3998527"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,8 +38,8 @@
      inkscape:document-units="px"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
-     inkscape:window-height="875"
-     inkscape:window-x="-1"
+     inkscape:window-height="848"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      width="400px"
      height="300px"
@@ -135,6 +135,6 @@
        height="1"
        width="5"
        id="rect4145"
-       style="opacity:0.16;fill:#000000;fill-opacity:1;stroke:none" />
+       style="opacity:0.22;fill:#000000;fill-opacity:1;stroke:none" />
   </g>
 </svg>
