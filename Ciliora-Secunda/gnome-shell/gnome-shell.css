@@ -2658,7 +2658,7 @@ StEntry:insensitive StIcon,
 .popup-menu-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
-  -arrow-background-color: rgba(19, 22, 25, 0.9);
+  -arrow-background-color: rgba(15, 17, 21, 0.9);
   -arrow-border-color: rgba(0, 0, 0, 0.9);
   -arrow-border-width: 1px;
   -arrow-base: 12px;

@@ -30,9 +30,9 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.2804881"
-     inkscape:cx="15.321835"
-     inkscape:cy="29.833463"
+     inkscape:zoom="66.243905"
+     inkscape:cx="19.361434"
+     inkscape:cy="36.421323"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -158,7 +158,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -200,23 +200,18 @@
      transform="translate(0,-259)">
     <path
        inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.02000002;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="M 20.5,260 A 19.5,19.5 0 0 0 1,279.5 19.5,19.5 0 0 0 20.5,299 19.5,19.5 0 0 0 40,279.5 19.5,19.5 0 0 0 20.5,260 Z m 0,1 A 18.5,18.5 0 0 1 39,279.5 18.5,18.5 0 0 1 20.5,298 18.5,18.5 0 0 1 2,279.5 18.5,18.5 0 0 1 20.5,261 Z"
-       id="path4178" />
-    <path
-       inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.12000002;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.02;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="M 20.5,261 A 18.5,18.5 0 0 0 2,279.5 18.5,18.5 0 0 0 20.5,298 18.5,18.5 0 0 0 39,279.5 18.5,18.5 0 0 0 20.5,261 Z m 0,1 A 17.5,17.5 0 0 1 38,279.5 17.5,17.5 0 0 1 20.5,297 17.5,17.5 0 0 1 3,279.5 17.5,17.5 0 0 1 20.5,262 Z"
        id="path4173" />
     <circle
        id="path5896-9"
-       style="display:inline;opacity:0.85;fill:#131619;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.9;fill:#101115;fill-opacity:1;stroke:none;enable-background:new"
        cx="20.5"
        cy="279.5"
        r="17.5" />
     <path
        inkscape:connector-curvature="0"
-       style="display:inline;opacity:0.9;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       style="display:inline;opacity:0.75;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
        d="M 20.5,262 A 17.5,17.5 0 0 0 3,279.5 17.5,17.5 0 0 0 20.5,297 17.5,17.5 0 0 0 38,279.5 17.5,17.5 0 0 0 20.5,262 Z m 0,1.40234 A 16.096783,16.096783 0 0 1 36.597656,279.5 16.096783,16.096783 0 0 1 20.5,295.59766 16.096783,16.096783 0 0 1 4.402344,279.5 16.096783,16.096783 0 0 1 20.5,263.40234 Z"
        id="circle4240" />
     <circle

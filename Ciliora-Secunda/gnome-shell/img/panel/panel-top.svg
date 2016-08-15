@@ -30,7 +30,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="17.382377"
-     inkscape:cx="15.535862"
+     inkscape:cx="6.3986256"
      inkscape:cy="10.032645"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -130,11 +130,11 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#101115;fill-opacity:1;stroke:none"
        id="rect5315"
        width="24"
        height="24"
-       x="8.8817842e-16"
+       x="0"
        y="276" />
     <rect
        y="299"
@@ -142,6 +142,6 @@
        height="1"
        width="24"
        id="rect5319"
-       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
+       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none" />
   </g>
 </svg>

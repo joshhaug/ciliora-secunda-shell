@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145832"
-     inkscape:cx="-2.6187304"
-     inkscape:cy="13.802317"
+     inkscape:cx="-0.56865657"
+     inkscape:cy="13.095395"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -130,7 +130,7 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       style="opacity:0.9;fill:#131619;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#101115;fill-opacity:1;stroke:none"
        id="rect5315-7-0"
        width="24"
        height="24"
@@ -142,7 +142,7 @@
        inkscape:connector-curvature="0"
        id="rect5319-7"
        d="m 24,300 0,-24 -24,0 0,24 z m -1,-1 -22,0 0,-22 22,0 z"
-       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
+       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        style="fill:#5a94dc;fill-opacity:1;stroke:none"
        id="rect4270-9-0"
@@ -151,11 +151,5 @@
        x="1"
        y="-299"
        transform="scale(1,-1)" />
-    <path
-       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none"
-       d="m 3,299 1,0 0,-22 -1,0 z"
-       id="rect4238-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccc" />
   </g>
 </svg>

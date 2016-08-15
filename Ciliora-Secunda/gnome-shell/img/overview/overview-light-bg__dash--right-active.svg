@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145833"
-     inkscape:cx="-5.4778842"
-     inkscape:cy="15.075399"
+     inkscape:cx="-6.114114"
+     inkscape:cy="14.1564"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -89,7 +89,7 @@
         <dc:source />
         <cc:license
            rdf:resource="" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:subject>
           <rdf:Bag />
         </dc:subject>
@@ -135,10 +135,10 @@
        height="22.000013"
        width="19.999998"
        id="rect5315-7"
-       style="opacity:0.35;fill:#ffffff;fill-opacity:1;stroke:none"
+       style="opacity:0.28;fill:#ffffff;fill-opacity:1;stroke:none"
        transform="scale(-1,1)" />
     <path
-       style="opacity:0.45;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
        d="m 21,276 0,1 -20,0 0,22 20,0 0,1 -21,0 0,-24 z"
        id="rect5319-7"
        inkscape:connector-curvature="0"

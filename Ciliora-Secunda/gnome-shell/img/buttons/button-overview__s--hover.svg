@@ -31,8 +31,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="19.769527"
-     inkscape:cx="-6.0649521"
-     inkscape:cy="8.4258976"
+     inkscape:cx="3.1917185"
+     inkscape:cy="13.332439"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -166,7 +166,7 @@
      id="layer1"
      transform="translate(0,-276)">
     <rect
-       style="opacity:0.9;fill:#1e2328;fill-opacity:1;stroke:none"
+       style="opacity:0.9;fill:#191a1f;fill-opacity:1;stroke:none"
        id="rect5315-7-0"
        width="16"
        height="16"
@@ -177,7 +177,7 @@
        inkscape:connector-curvature="0"
        id="rect5319-7"
        d="m 0,280 0,16 16,0 0,-16 z m 1,1 14,0 0,14 -14,0 z"
-       style="opacity:0.9;fill:#000000;fill-opacity:1;stroke:none" />
+       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none" />
     <rect
        rx="1.4545455"
        style="display:inline;opacity:0.5;fill:url(#linearGradient5205);fill-opacity:1;stroke:none;enable-background:new"
