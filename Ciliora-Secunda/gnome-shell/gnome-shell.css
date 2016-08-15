@@ -116,12 +116,12 @@ StEntry:focus StIcon,
 StEntry:insensitive,
 .popup-menu .search-entry:insensitive {
   border-image: url("img/controls/entry-insensitive.svg") 6;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 StEntry:insensitive StIcon,
 .popup-menu .search-entry:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ======================================
@@ -234,11 +234,11 @@ StEntry:insensitive StIcon,
 
 .button:grayed, .button:disabled, .button:insensitive, .button:focus:grayed, .button:focus:disabled, .button:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button:grayed StIcon, .button:disabled StIcon, .button:insensitive StIcon, .button:focus:grayed StIcon, .button:focus:disabled StIcon, .button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ======================================
@@ -1171,12 +1171,12 @@ StEntry:insensitive StIcon,
   padding: .3em .6em !important;
   height: 2em;
   width: 320px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-entry StIcon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .search-entry:hover StIcon {
@@ -1211,7 +1211,7 @@ StEntry:insensitive StIcon,
 }
 
 .search-statustext {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1336,7 +1336,7 @@ StEntry:insensitive StIcon,
 }
 
 .no-frequent-applications-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1396,7 +1396,7 @@ StEntry:insensitive StIcon,
   box-shadow: 0 0 transparent;
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   padding: 6px 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .app-view-control:hover, .app-view-control:focus, .app-view-control:focus:active, .app-view-control:checked {
@@ -1572,11 +1572,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:grayed, .modal-dialog-linked-button:disabled, .modal-dialog-linked-button:insensitive, .modal-dialog-linked-button:focus:grayed, .modal-dialog-linked-button:focus:disabled, .modal-dialog-linked-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:grayed StIcon, .modal-dialog-linked-button:disabled StIcon, .modal-dialog-linked-button:insensitive StIcon, .modal-dialog-linked-button:focus:grayed StIcon, .modal-dialog-linked-button:focus:disabled StIcon, .modal-dialog-linked-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:first-child {
@@ -1632,11 +1632,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:first-child:grayed, .modal-dialog-linked-button:first-child:disabled, .modal-dialog-linked-button:first-child:insensitive, .modal-dialog-linked-button:first-child:focus:grayed, .modal-dialog-linked-button:first-child:focus:disabled, .modal-dialog-linked-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:first-child:grayed StIcon, .modal-dialog-linked-button:first-child:disabled StIcon, .modal-dialog-linked-button:first-child:insensitive StIcon, .modal-dialog-linked-button:first-child:focus:grayed StIcon, .modal-dialog-linked-button:first-child:focus:disabled StIcon, .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:last-child {
@@ -1692,11 +1692,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:grayed, .modal-dialog-linked-button:last-child:disabled, .modal-dialog-linked-button:last-child:insensitive, .modal-dialog-linked-button:last-child:focus:grayed, .modal-dialog-linked-button:last-child:focus:disabled, .modal-dialog-linked-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:last-child:grayed StIcon, .modal-dialog-linked-button:last-child:disabled StIcon, .modal-dialog-linked-button:last-child:insensitive StIcon, .modal-dialog-linked-button:last-child:focus:grayed StIcon, .modal-dialog-linked-button:last-child:focus:disabled StIcon, .modal-dialog-linked-button:last-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:last-child:first-child {
@@ -1752,11 +1752,11 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:first-child:grayed, .modal-dialog-linked-button:last-child:first-child:disabled, .modal-dialog-linked-button:last-child:first-child:insensitive, .modal-dialog-linked-button:last-child:first-child:focus:grayed, .modal-dialog-linked-button:last-child:first-child:focus:disabled, .modal-dialog-linked-button:last-child:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-dialog-linked-button:last-child:first-child:grayed StIcon, .modal-dialog-linked-button:last-child:first-child:disabled StIcon, .modal-dialog-linked-button:last-child:first-child:insensitive StIcon, .modal-dialog-linked-button:last-child:first-child:focus:grayed StIcon, .modal-dialog-linked-button:last-child:first-child:focus:disabled StIcon, .modal-dialog-linked-button:last-child:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ======================================
@@ -1945,7 +1945,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
@@ -2268,7 +2268,7 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-password-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .prompt-dialog-error-label {
@@ -2423,7 +2423,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-icon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .no-networks-label {
@@ -2735,7 +2735,7 @@ StEntry:insensitive StIcon,
 
 .popup-menu-item:insensitive {
   font-weight: normal;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .popup-menu .popup-inactive-menu-item {
@@ -2743,11 +2743,11 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu .popup-inactive-menu-item:insensitive {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .popup-menu .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .popup-menu:active .popup-status-menu-item,
@@ -3119,7 +3119,7 @@ StEntry:insensitive StIcon,
 .datemenu-today-button .day-label {
   padding-bottom: .2em;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .datemenu-today-button .date-label {
@@ -3160,7 +3160,7 @@ StEntry:insensitive StIcon,
 }
 
 .world-clocks-header {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   font-size: 12px;
 }
@@ -3193,7 +3193,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-month-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
   padding: .6em;
 }
@@ -3328,7 +3328,7 @@ StEntry:insensitive StIcon,
 .calendar-nonwork-day {
   border-image: url("img/misc/calendar-nonwork-day.svg") 7;
   border: none;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .calendar-nonwork-day:hover, .calendar-nonwork-day:focus {
@@ -3374,7 +3374,7 @@ StEntry:insensitive StIcon,
 
 .calendar-other-month-day {
   border-image: url("img/misc/calendar-other-month-day.svg") 7;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
   font-weight: normal;
 }
 
@@ -3391,7 +3391,7 @@ StEntry:insensitive StIcon,
 .calendar-other-month-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-other-month-day-events.svg") 7;
   background-image: none !important;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
@@ -3401,7 +3401,7 @@ StEntry:insensitive StIcon,
 
 .calendar-other-month-day.calendar-today {
   border-image: url("img/misc/calendar-other-month-day-today.svg") 7;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
@@ -3423,7 +3423,7 @@ StEntry:insensitive StIcon,
 .calendar-week-number {
   margin: 1px !important;
   background-color: transparent !important;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: inherit;
   font-weight: normal;
   width: 2.4em;
@@ -3445,7 +3445,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-placeholder StLabel {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
   font-size: 12px;
   font-weight: bold;
 }
@@ -3472,7 +3472,7 @@ StEntry:insensitive StIcon,
 .message-list-section-title {
   padding: .1em 0 0 .2em;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .message-list-section-title:hover, .message-list-section-title:focus, .message-list-section-title:active {
@@ -3487,7 +3487,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section-close > StIcon {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   icon-size: 16px;
   background-color: transparent !important;
   border-radius: 0 !important;
@@ -3556,7 +3556,7 @@ StEntry:insensitive StIcon,
 }
 
 .message .event-time {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
 }
 
@@ -3801,11 +3801,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:grayed, .notification-banner .notification-button:disabled, .notification-banner .notification-button:insensitive, .notification-banner .notification-button:focus:grayed, .notification-banner .notification-button:focus:disabled, .notification-banner .notification-button:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__m.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:grayed StIcon, .notification-banner .notification-button:disabled StIcon, .notification-banner .notification-button:insensitive StIcon, .notification-banner .notification-button:focus:grayed StIcon, .notification-banner .notification-button:focus:disabled StIcon, .notification-banner .notification-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:first-child {
@@ -3861,11 +3861,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:first-child:grayed, .notification-banner .notification-button:first-child:disabled, .notification-banner .notification-button:first-child:insensitive, .notification-banner .notification-button:first-child:focus:grayed, .notification-banner .notification-button:first-child:focus:disabled, .notification-banner .notification-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:first-child:grayed StIcon, .notification-banner .notification-button:first-child:disabled StIcon, .notification-banner .notification-button:first-child:insensitive StIcon, .notification-banner .notification-button:first-child:focus:grayed StIcon, .notification-banner .notification-button:first-child:focus:disabled StIcon, .notification-banner .notification-button:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:last-child {
@@ -3921,11 +3921,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:grayed, .notification-banner .notification-button:last-child:disabled, .notification-banner .notification-button:last-child:insensitive, .notification-banner .notification-button:last-child:focus:grayed, .notification-banner .notification-button:last-child:focus:disabled, .notification-banner .notification-button:last-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__l.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:last-child:grayed StIcon, .notification-banner .notification-button:last-child:disabled StIcon, .notification-banner .notification-button:last-child:insensitive StIcon, .notification-banner .notification-button:last-child:focus:grayed StIcon, .notification-banner .notification-button:last-child:focus:disabled StIcon, .notification-banner .notification-button:last-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:last-child:first-child {
@@ -3981,11 +3981,11 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:first-child:grayed, .notification-banner .notification-button:last-child:first-child:disabled, .notification-banner .notification-button:last-child:first-child:insensitive, .notification-banner .notification-button:last-child:first-child:focus:grayed, .notification-banner .notification-button:last-child:first-child:focus:disabled, .notification-banner .notification-button:last-child:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-banner .notification-button:last-child:first-child:grayed StIcon, .notification-banner .notification-button:last-child:first-child:disabled StIcon, .notification-banner .notification-button:last-child:first-child:insensitive StIcon, .notification-banner .notification-button:last-child:first-child:focus:grayed StIcon, .notification-banner .notification-button:last-child:first-child:focus:disabled StIcon, .notification-banner .notification-button:last-child:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotplug-notification-item {
@@ -4079,7 +4079,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-log-message {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .chat-new-group {
@@ -4115,7 +4115,7 @@ StEntry:insensitive StIcon,
   padding-left: 4px;
   font-size: 12px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .chat-meta-message:rtl {
@@ -4289,11 +4289,11 @@ StEntry:insensitive StIcon,
 
 .keyboard-key:grayed, .keyboard-key:disabled, .keyboard-key:insensitive, .keyboard-key:focus:grayed, .keyboard-key:focus:disabled, .keyboard-key:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .keyboard-key:grayed StIcon, .keyboard-key:disabled StIcon, .keyboard-key:insensitive StIcon, .keyboard-key:focus:grayed StIcon, .keyboard-key:focus:disabled StIcon, .keyboard-key:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Backspace, return, hide-keyboard & abc/123 keys */
@@ -4439,7 +4439,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive {
   border-image: url("img/buttons/button-secondary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:insensitive StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:last-child:focus:insensitive StIcon,
@@ -4461,7 +4461,7 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:grayed StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* subkeys popup */
@@ -4502,7 +4502,7 @@ StEntry:insensitive StIcon,
 }
 
 .candidate-index {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-weight: normal;
   font-size: 14px;
   margin: 0 .7em 0 0;
@@ -5083,7 +5083,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extensions-none {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension {
@@ -5247,11 +5247,11 @@ StEntry:insensitive StIcon,
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive {
   border-image: url("img/buttons/button-primary__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 #LookingGlassPropertyInspector .lg-obj-inspector-button:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:insensitive StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:grayed StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:disabled StIcon, #LookingGlassPropertyInspector .lg-obj-inspector-button:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ======================================
@@ -5275,7 +5275,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-prompt-label {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 12px;
   padding-top: 1em;
 }
@@ -5337,7 +5337,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-not-listed-button {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .login-dialog-not-listed-button:focus, .login-dialog-not-listed-button:hover {
@@ -5351,7 +5351,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-session-list-button {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   padding: 0 !important;
 }
 
@@ -5530,7 +5530,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:focus:disabled,
 .login-dialog .modal-dialog-button:default:focus:insensitive {
   border-image: url("img/buttons/button-overview__s.svg") 10;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .login-dialog .modal-dialog-button:grayed StIcon, .login-dialog .modal-dialog-button:disabled StIcon, .login-dialog .modal-dialog-button:insensitive StIcon, .login-dialog .modal-dialog-button:focus:grayed StIcon, .login-dialog .modal-dialog-button:focus:disabled StIcon, .login-dialog .modal-dialog-button:focus:insensitive StIcon,
@@ -5540,7 +5540,7 @@ StEntry:insensitive StIcon,
 .login-dialog .modal-dialog-button:default:focus:grayed StIcon,
 .login-dialog .modal-dialog-button:default:focus:disabled StIcon,
 .login-dialog .modal-dialog-button:default:focus:insensitive StIcon {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .login-dialog StEntry {
@@ -5549,12 +5549,12 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   padding: .3em .6em !important;
   height: 2em;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .login-dialog StEntry StIcon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .login-dialog StEntry:hover StIcon {
@@ -5629,7 +5629,7 @@ StEntry:insensitive StIcon,
 }
 
 .screen-shield-clock-date {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 24px;
   padding: 0 10px;
 }
