@@ -2844,7 +2844,7 @@ StEntry:insensitive StIcon,
 }
 
 .switcher-list > StLabel {
-  padding: 4px 10px;
+  padding: 4px 8px 8px 8px;
 }
 
 .switcher-list .item-box {
@@ -2853,7 +2853,7 @@ StEntry:insensitive StIcon,
   padding: 10px;
 }
 
-.switcher-list .item-box > StLabel {
+.switcher-list .item-box StLabel {
   padding-top: 6px;
 }
 

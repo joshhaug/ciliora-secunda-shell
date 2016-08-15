@@ -20,7 +20,7 @@
     }
 
     > StLabel {
-        padding: 4px 10px;
+        padding: 4px 8px 8px 8px;
     }
 
     .item-box {
@@ -28,7 +28,7 @@
         border-image: url("img/containers/popup-inside-2.svg") 9;
         padding: 10px;
 
-        > StLabel {
+        StLabel {
             padding-top: 6px;
         }
     }
