@@ -30,8 +30,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="17.382377"
-     inkscape:cx="-6.4742024"
-     inkscape:cy="8.9503573"
+     inkscape:cx="-3.942903"
+     inkscape:cy="8.6627096"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -131,39 +131,39 @@
      transform="translate(0,-276)">
     <rect
        y="-297"
-       x="0"
+       x="1"
        height="1"
-       width="24"
+       width="22"
        id="rect4708"
-       style="opacity:0.07;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.07000002;fill:#000000;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
        y="-298"
-       x="0"
-       height="22"
-       width="24"
+       x="1"
+       height="21"
+       width="22"
        id="rect5315-5"
        style="opacity:0.5;fill:#080d18;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
        style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
        id="rect4706"
-       width="24"
+       width="22"
        height="1"
-       x="0"
+       x="1"
        y="-298"
        transform="scale(1,-1)" />
     <rect
        y="-299"
-       x="0"
+       x="1"
        height="1"
-       width="24"
+       width="22"
        id="rect4719"
-       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.85"
+       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <path
-       style="display:inline;opacity:0.04;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 0,299 0,1 24,0 0,-1 -24,0 z"
+       style="display:inline;opacity:0.03999999;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       d="m 1,299 0,1 22,0 0,-1 -22,0 z"
        id="rect4185"
        inkscape:connector-curvature="0" />
   </g>
