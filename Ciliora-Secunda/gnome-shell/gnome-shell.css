@@ -3645,14 +3645,6 @@ StEntry:insensitive StIcon,
   icon-size: 16px;
 }
 
-.aggregate-menu {
-  min-width: 21em;
-}
-
-.aggregate-menu .popup-menu-icon {
-  padding: 0;
-}
-
 .system-menu-action {
   color: #fff;
   border-radius: 0;
@@ -3670,6 +3662,20 @@ StEntry:insensitive StIcon,
 
 .system-menu-action > StIcon {
   icon-size: 16px;
+}
+
+.aggregate-menu {
+  min-width: 21em;
+}
+
+.aggregate-menu .popup-menu-icon {
+  padding: 0;
+}
+
+.aggregate-menu StBoxLayout:last-child > *:last-child > .popup-menu-item:last-child {
+  margin-bottom: .5em;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .aggregate-menu .system-menu-action:last-child:hover, .aggregate-menu .system-menu-action:last-child:focus, .aggregate-menu .system-menu-action:last-child:active {
