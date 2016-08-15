@@ -1486,7 +1486,7 @@ StEntry:insensitive StIcon,
  * ! Modal dialogs
  * ====================================== */
 #modalDialogGroup > * {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(19, 22, 25, 0.5);
 }
 
 .headline {
@@ -2658,7 +2658,7 @@ StEntry:insensitive StIcon,
 .popup-menu-boxpointer {
   padding: 0;
   -arrow-border-radius: 0;
-  -arrow-background-color: rgba(15, 17, 21, 0.9);
+  -arrow-background-color: rgba(19, 22, 25, 0.9);
   -arrow-border-color: rgba(0, 0, 0, 0.9);
   -arrow-border-width: 1px;
   -arrow-base: 12px;
@@ -5591,7 +5591,7 @@ StEntry:insensitive StIcon,
  * ! Screen Shield
  * ====================================== */
 #lockScreenContents {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(19, 22, 25, 0.7);
 }
 
 .screen-shield-background {
