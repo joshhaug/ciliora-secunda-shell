@@ -198,7 +198,7 @@
 .calendar-work-day {
     border-image: url("img/misc/calendar-work-day.svg") 7;
     border: none;
-    color: $text-primary;
+    color: $text-secondary;
 
     &:hover, &:focus {
         border-image: url("img/misc/calendar-work-day-hover.svg") 7;
@@ -212,7 +212,7 @@
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-work-day-events.svg") 7;
         background-image: none !important;
-        color: $text-info;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover-violet.svg") 7;
@@ -222,7 +222,7 @@
 
     &.calendar-today {
         border-image: url("img/misc/calendar-work-day-today.svg") 7;
-        color: $text-link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover.svg") 7;
@@ -232,7 +232,7 @@
 
         &.calendar-day-with-events.calendar-today {
         border-image: url("img/misc/calendar-work-day-today-events.svg") 4 9 7 7;
-        color: $text-link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover.svg") 7;
@@ -259,7 +259,7 @@
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
         background-image: none !important;
-        color: $text-info;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover-violet.svg") 7;
@@ -269,7 +269,7 @@
 
     &.calendar-today {
         border-image: url("img/misc/calendar-nonwork-day-today.svg") 7;
-        color: $text-link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover.svg") 7;
@@ -279,7 +279,7 @@
 
     &.calendar-day-with-events.calendar-today {
         border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 4 9 7 7;
-        color: $text-link;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover.svg") 7;
@@ -306,7 +306,7 @@
     &.calendar-day-with-events {
         border-image: url("img/misc/calendar-other-month-day-events.svg") 7;
         background-image: none !important;
-        color: $text-disabled;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/containers/hover-violet.svg") 7;
@@ -316,7 +316,7 @@
 
     &.calendar-today {
         border-image: url("img/misc/calendar-other-month-day-today.svg") 7;
-        color: $text-disabled;
+        color: $text-primary;
 
         &:hover, &:focus, &:active {
             border-image: url("img/hover/hover.svg") 7;

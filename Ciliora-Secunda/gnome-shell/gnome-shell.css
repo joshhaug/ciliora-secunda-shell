@@ -1211,7 +1211,7 @@ StEntry:insensitive StIcon,
 }
 
 .search-statustext {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1336,7 +1336,7 @@ StEntry:insensitive StIcon,
 }
 
 .no-frequent-applications-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 24px;
   font-weight: bold;
 }
@@ -1396,7 +1396,7 @@ StEntry:insensitive StIcon,
   box-shadow: 0 0 transparent;
   border-image: url("img/overview/overview-dark-bg.svg") 7;
   padding: 6px 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .app-view-control:hover, .app-view-control:focus, .app-view-control:focus:active, .app-view-control:checked {
@@ -1945,7 +1945,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog-app-list-item-description, .end-session-dialog-session-list-item-description {
   margin-top: .4em;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 12px;
 }
 
@@ -2268,7 +2268,7 @@ StEntry:insensitive StIcon,
 }
 
 .prompt-dialog-password-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .prompt-dialog-error-label {
@@ -2423,7 +2423,7 @@ StEntry:insensitive StIcon,
 
 .nm-dialog-icon {
   icon-size: 16px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .no-networks-label {
@@ -2744,7 +2744,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-menu .popup-status-menu-item {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .popup-menu:active .popup-status-menu-item,
@@ -3116,7 +3116,7 @@ StEntry:insensitive StIcon,
 .datemenu-today-button .day-label {
   padding-bottom: .2em;
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .datemenu-today-button .date-label {
@@ -3157,7 +3157,7 @@ StEntry:insensitive StIcon,
 }
 
 .world-clocks-header {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: bold;
   font-size: 12px;
 }
@@ -3190,7 +3190,7 @@ StEntry:insensitive StIcon,
 }
 
 .calendar-month-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: bold;
   padding: .6em;
 }
@@ -3279,7 +3279,7 @@ StEntry:insensitive StIcon,
 .calendar-work-day {
   border-image: url("img/misc/calendar-work-day.svg") 7;
   border: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .calendar-work-day:hover, .calendar-work-day:focus {
@@ -3294,7 +3294,7 @@ StEntry:insensitive StIcon,
 .calendar-work-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-work-day-events.svg") 7;
   background-image: none !important;
-  color: #af8eff;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
@@ -3304,7 +3304,7 @@ StEntry:insensitive StIcon,
 
 .calendar-work-day.calendar-today {
   border-image: url("img/misc/calendar-work-day-today.svg") 7;
-  color: #71adf8;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active {
@@ -3314,7 +3314,7 @@ StEntry:insensitive StIcon,
 
 .calendar-work-day.calendar-day-with-events.calendar-today {
   border-image: url("img/misc/calendar-work-day-today-events.svg") 4 9 7 7;
-  color: #71adf8;
+  color: #fff;
 }
 
 .calendar-work-day.calendar-day-with-events.calendar-today:hover, .calendar-work-day.calendar-day-with-events.calendar-today:focus, .calendar-work-day.calendar-day-with-events.calendar-today:active {
@@ -3325,7 +3325,7 @@ StEntry:insensitive StIcon,
 .calendar-nonwork-day {
   border-image: url("img/misc/calendar-nonwork-day.svg") 7;
   border: none;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .calendar-nonwork-day:hover, .calendar-nonwork-day:focus {
@@ -3341,7 +3341,7 @@ StEntry:insensitive StIcon,
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: #af8eff;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
@@ -3351,7 +3351,7 @@ StEntry:insensitive StIcon,
 
 .calendar-nonwork-day.calendar-today {
   border-image: url("img/misc/calendar-nonwork-day-today.svg") 7;
-  color: #71adf8;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
@@ -3361,7 +3361,7 @@ StEntry:insensitive StIcon,
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today {
   border-image: url("img/misc/calendar-nonwork-day-today-events.svg") 4 9 7 7;
-  color: #71adf8;
+  color: #fff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active {
@@ -3388,7 +3388,7 @@ StEntry:insensitive StIcon,
 .calendar-other-month-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-other-month-day-events.svg") 7;
   background-image: none !important;
-  color: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
@@ -3398,7 +3398,7 @@ StEntry:insensitive StIcon,
 
 .calendar-other-month-day.calendar-today {
   border-image: url("img/misc/calendar-other-month-day-today.svg") 7;
-  color: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
@@ -3420,7 +3420,7 @@ StEntry:insensitive StIcon,
 .calendar-week-number {
   margin: 1px !important;
   background-color: transparent !important;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: inherit;
   font-weight: normal;
   width: 2.4em;
@@ -3469,7 +3469,7 @@ StEntry:insensitive StIcon,
 .message-list-section-title {
   padding: .1em 0 0 .2em;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .message-list-section-title:hover, .message-list-section-title:focus, .message-list-section-title:active {
@@ -3484,7 +3484,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section-close > StIcon {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   icon-size: 16px;
   background-color: transparent !important;
   border-radius: 0 !important;
@@ -3553,7 +3553,7 @@ StEntry:insensitive StIcon,
 }
 
 .message .event-time {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 12px;
 }
 
@@ -4082,7 +4082,7 @@ StEntry:insensitive StIcon,
 }
 
 .chat-log-message {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .chat-new-group {
@@ -4118,7 +4118,7 @@ StEntry:insensitive StIcon,
   padding-left: 4px;
   font-size: 12px;
   font-weight: bold;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .chat-meta-message:rtl {
@@ -4505,7 +4505,7 @@ StEntry:insensitive StIcon,
 }
 
 .candidate-index {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-weight: normal;
   font-size: 14px;
   margin: 0 .7em 0 0;
@@ -5086,7 +5086,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extensions-none {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .lg-dialog #lookingGlassExtensions .lg-extension {
@@ -5278,7 +5278,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-prompt-label {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 12px;
   padding-top: 1em;
 }
@@ -5340,7 +5340,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-not-listed-button {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
 }
 
 .login-dialog-not-listed-button:focus, .login-dialog-not-listed-button:hover {
@@ -5354,7 +5354,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-session-list-button {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   padding: 0 !important;
 }
 
@@ -5632,7 +5632,7 @@ StEntry:insensitive StIcon,
 }
 
 .screen-shield-clock-date {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 24px;
   padding: 0 10px;
 }
