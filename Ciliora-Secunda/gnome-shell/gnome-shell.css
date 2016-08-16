@@ -91,7 +91,7 @@ StEntry StIcon,
 
 StEntry StIcon.capslock-warning,
 .popup-menu .search-entry StIcon.capslock-warning {
-  color: #ddcd4b !important;
+  color: #ecd738 !important;
 }
 
 StEntry:focus,
@@ -1853,7 +1853,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .check-box StLabel {
   font-weight: bold;
-  color: #ddcd4b;
+  color: #ecd738;
   padding-left: .4em;
 }
 
@@ -2274,7 +2274,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-error-label {
   font-size: 12px;
   font-weight: bold;
-  color: #ddcd4b;
+  color: #ecd738;
   padding-bottom: 0;
 }
 
@@ -5310,7 +5310,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-warning {
-  color: #ddcd4b;
+  color: #ecd738;
 }
 
 .login-dialog-message-hint {

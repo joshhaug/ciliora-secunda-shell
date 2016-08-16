@@ -17,5 +17,5 @@ $text-disabled-invert:  rgba(#000, .2);
 $text-link:    saturate(lighten($accent-primary, 10%), 25%);
 $text-success: saturate(lighten($accent-success, 10%), 15%);
 $text-info:    saturate(lighten($accent-info,    10%), 30%);
-$text-warning: saturate(lighten($accent-warning,  5%),  6%);
+$text-warning: saturate(lighten($accent-warning,  4%), 20%);
 $text-danger:  saturate(lighten($accent-danger,   4%), 20%);
