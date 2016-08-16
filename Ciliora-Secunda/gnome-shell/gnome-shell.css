@@ -2281,7 +2281,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-info-label {
   font-size: 12px;
   font-weight: bold;
-  color: #b698ff;
+  color: #af8eff;
   padding-bottom: 0;
 }
 
@@ -3294,7 +3294,7 @@ StEntry:insensitive StIcon,
 .calendar-work-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-work-day-events.svg") 7;
   background-image: none !important;
-  color: #b698ff;
+  color: #af8eff;
 }
 
 .calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
@@ -3341,7 +3341,7 @@ StEntry:insensitive StIcon,
 .calendar-nonwork-day.calendar-day-with-events {
   border-image: url("img/misc/calendar-nonwork-day-events.svg") 7;
   background-image: none !important;
-  color: #b698ff;
+  color: #af8eff;
 }
 
 .calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
@@ -5116,7 +5116,7 @@ StEntry:insensitive StIcon,
 
 .lg-dialog #lookingGlassExtensions .lg-extension-state {
   font-weight: bold;
-  color: #b698ff;
+  color: #af8eff;
 }
 
 .lg-dialog #EntryArea StLabel {
@@ -5314,7 +5314,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-hint {
-  color: #b698ff;
+  color: #af8eff;
 }
 
 .login-dialog-banner-view {
