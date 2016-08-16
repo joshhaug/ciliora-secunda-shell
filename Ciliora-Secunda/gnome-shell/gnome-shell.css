@@ -167,7 +167,7 @@ StEntry:insensitive StIcon,
 }
 
 .check-box:focus:checked StBin {
-  background-image: url("img/controls/check-box-focused-checked.svg");
+  background-image: url("img/controls/check-box-checked-focused.svg");
 }
 
 /* ======================================
