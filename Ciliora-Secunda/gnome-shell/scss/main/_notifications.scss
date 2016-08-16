@@ -8,7 +8,7 @@
  * Tweak default $text-link color to FIX
  */
 .url-highlighter {
-    link-color: saturate(darken($text-link, 12%), 100%);
+    link-color: $text-link;
 }
 
 .notification-banner {

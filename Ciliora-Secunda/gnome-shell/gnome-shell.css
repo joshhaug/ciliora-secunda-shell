@@ -3705,7 +3705,7 @@ StEntry:insensitive StIcon,
  * Tweak default $text-link color to FIX
  */
 .url-highlighter {
-  link-color: #2d8bff;
+  link-color: #71adf8;
 }
 
 .notification-banner {
