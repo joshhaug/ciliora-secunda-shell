@@ -1545,6 +1545,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.modal-dialog-linked-button:hover, .modal-dialog-linked-button:active, .modal-dialog-linked-button:pressed, .modal-dialog-linked-button:selected {
+  color: #71adf8;
+}
+
+.modal-dialog-linked-button:hover StIcon, .modal-dialog-linked-button:active StIcon, .modal-dialog-linked-button:pressed StIcon, .modal-dialog-linked-button:selected StIcon {
+  color: #71adf8;
+}
+
 .modal-dialog-linked-button:hover {
   border-image: url("img/buttons/dialog-button-primary__m--hover.svg") 10;
 }
@@ -1603,6 +1611,14 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:first-child StIcon {
   color: #fff;
+}
+
+.modal-dialog-linked-button:first-child:hover, .modal-dialog-linked-button:first-child:active, .modal-dialog-linked-button:first-child:pressed, .modal-dialog-linked-button:first-child:selected {
+  color: #71adf8;
+}
+
+.modal-dialog-linked-button:first-child:hover StIcon, .modal-dialog-linked-button:first-child:active StIcon, .modal-dialog-linked-button:first-child:pressed StIcon, .modal-dialog-linked-button:first-child:selected StIcon {
+  color: #71adf8;
 }
 
 .modal-dialog-linked-button:first-child:hover {
@@ -1665,6 +1681,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.modal-dialog-linked-button:last-child:hover, .modal-dialog-linked-button:last-child:active, .modal-dialog-linked-button:last-child:pressed, .modal-dialog-linked-button:last-child:selected {
+  color: #71adf8;
+}
+
+.modal-dialog-linked-button:last-child:hover StIcon, .modal-dialog-linked-button:last-child:active StIcon, .modal-dialog-linked-button:last-child:pressed StIcon, .modal-dialog-linked-button:last-child:selected StIcon {
+  color: #71adf8;
+}
+
 .modal-dialog-linked-button:last-child:hover {
   border-image: url("img/buttons/dialog-button-primary__l--hover.svg") 10;
 }
@@ -1723,6 +1747,14 @@ StEntry:insensitive StIcon,
 
 .modal-dialog-linked-button:last-child:first-child StIcon {
   color: #fff;
+}
+
+.modal-dialog-linked-button:last-child:first-child:hover, .modal-dialog-linked-button:last-child:first-child:active, .modal-dialog-linked-button:last-child:first-child:pressed, .modal-dialog-linked-button:last-child:first-child:selected {
+  color: #71adf8;
+}
+
+.modal-dialog-linked-button:last-child:first-child:hover StIcon, .modal-dialog-linked-button:last-child:first-child:active StIcon, .modal-dialog-linked-button:last-child:first-child:pressed StIcon, .modal-dialog-linked-button:last-child:first-child:selected StIcon {
+  color: #71adf8;
 }
 
 .modal-dialog-linked-button:last-child:first-child:hover {
@@ -1978,6 +2010,14 @@ StEntry:insensitive StIcon,
   color: #f96666;
 }
 
+.end-session-dialog .modal-dialog-linked-button:hover, .end-session-dialog .modal-dialog-linked-button:active, .end-session-dialog .modal-dialog-linked-button:pressed, .end-session-dialog .modal-dialog-linked-button:selected {
+  color: #f96666;
+}
+
+.end-session-dialog .modal-dialog-linked-button:hover StIcon, .end-session-dialog .modal-dialog-linked-button:active StIcon, .end-session-dialog .modal-dialog-linked-button:pressed StIcon, .end-session-dialog .modal-dialog-linked-button:selected StIcon {
+  color: #f96666;
+}
+
 .end-session-dialog .modal-dialog-linked-button:hover {
   border-image: url("img/buttons/dialog-button-primary__m--hover.svg") 10;
 }
@@ -1992,7 +2032,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:focus StIcon {
-  color: #f96666;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:focus:hover {
@@ -2038,6 +2078,14 @@ StEntry:insensitive StIcon,
   color: #41d88b;
 }
 
+.end-session-dialog .modal-dialog-linked-button:first-child:hover, .end-session-dialog .modal-dialog-linked-button:first-child:active, .end-session-dialog .modal-dialog-linked-button:first-child:pressed, .end-session-dialog .modal-dialog-linked-button:first-child:selected {
+  color: #41d88b;
+}
+
+.end-session-dialog .modal-dialog-linked-button:first-child:hover StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:active StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:pressed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:selected StIcon {
+  color: #41d88b;
+}
+
 .end-session-dialog .modal-dialog-linked-button:first-child:hover {
   border-image: url("img/buttons/dialog-button-primary__f--hover.svg") 10;
 }
@@ -2052,7 +2100,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:focus StIcon {
-  color: #41d88b;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:focus:hover {
@@ -2098,6 +2146,14 @@ StEntry:insensitive StIcon,
   color: #f96666;
 }
 
+.end-session-dialog .modal-dialog-linked-button:last-child:hover, .end-session-dialog .modal-dialog-linked-button:last-child:active, .end-session-dialog .modal-dialog-linked-button:last-child:pressed, .end-session-dialog .modal-dialog-linked-button:last-child:selected {
+  color: #f96666;
+}
+
+.end-session-dialog .modal-dialog-linked-button:last-child:hover StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:active StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:pressed StIcon, .end-session-dialog .modal-dialog-linked-button:last-child:selected StIcon {
+  color: #f96666;
+}
+
 .end-session-dialog .modal-dialog-linked-button:last-child:hover {
   border-image: url("img/buttons/dialog-button-primary__l--hover.svg") 10;
 }
@@ -2112,7 +2168,7 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:focus StIcon {
-  color: #f96666;
+  color: #fff;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child:focus:hover {
@@ -2478,6 +2534,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.extension-dialog .modal-dialog-linked-button:hover, .extension-dialog .modal-dialog-linked-button:active, .extension-dialog .modal-dialog-linked-button:pressed, .extension-dialog .modal-dialog-linked-button:selected {
+  color: #fff;
+}
+
+.extension-dialog .modal-dialog-linked-button:hover StIcon, .extension-dialog .modal-dialog-linked-button:active StIcon, .extension-dialog .modal-dialog-linked-button:pressed StIcon, .extension-dialog .modal-dialog-linked-button:selected StIcon {
+  color: #fff;
+}
+
 .extension-dialog .modal-dialog-linked-button:hover {
   border-image: url("img/buttons/dialog-button-primary__m--hover.svg") 10;
 }
@@ -2538,6 +2602,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.extension-dialog .modal-dialog-linked-button:first-child:hover, .extension-dialog .modal-dialog-linked-button:first-child:active, .extension-dialog .modal-dialog-linked-button:first-child:pressed, .extension-dialog .modal-dialog-linked-button:first-child:selected {
+  color: #fff;
+}
+
+.extension-dialog .modal-dialog-linked-button:first-child:hover StIcon, .extension-dialog .modal-dialog-linked-button:first-child:active StIcon, .extension-dialog .modal-dialog-linked-button:first-child:pressed StIcon, .extension-dialog .modal-dialog-linked-button:first-child:selected StIcon {
+  color: #fff;
+}
+
 .extension-dialog .modal-dialog-linked-button:first-child:hover {
   border-image: url("img/buttons/dialog-button-primary__f--hover.svg") 10;
 }
@@ -2595,6 +2667,14 @@ StEntry:insensitive StIcon,
 }
 
 .extension-dialog .modal-dialog-linked-button:last-child StIcon {
+  color: #fff;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:hover, .extension-dialog .modal-dialog-linked-button:last-child:active, .extension-dialog .modal-dialog-linked-button:last-child:pressed, .extension-dialog .modal-dialog-linked-button:last-child:selected {
+  color: #fff;
+}
+
+.extension-dialog .modal-dialog-linked-button:last-child:hover StIcon, .extension-dialog .modal-dialog-linked-button:last-child:active StIcon, .extension-dialog .modal-dialog-linked-button:last-child:pressed StIcon, .extension-dialog .modal-dialog-linked-button:last-child:selected StIcon {
   color: #fff;
 }
 
@@ -3777,6 +3857,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.notification-banner .notification-button:hover, .notification-banner .notification-button:active, .notification-banner .notification-button:pressed, .notification-banner .notification-button:selected {
+  color: #71adf8;
+}
+
+.notification-banner .notification-button:hover StIcon, .notification-banner .notification-button:active StIcon, .notification-banner .notification-button:pressed StIcon, .notification-banner .notification-button:selected StIcon {
+  color: #71adf8;
+}
+
 .notification-banner .notification-button:hover {
   border-image: url("img/buttons/dialog-button-primary__m--hover.svg") 10;
 }
@@ -3835,6 +3923,14 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:first-child StIcon {
   color: #fff;
+}
+
+.notification-banner .notification-button:first-child:hover, .notification-banner .notification-button:first-child:active, .notification-banner .notification-button:first-child:pressed, .notification-banner .notification-button:first-child:selected {
+  color: #71adf8;
+}
+
+.notification-banner .notification-button:first-child:hover StIcon, .notification-banner .notification-button:first-child:active StIcon, .notification-banner .notification-button:first-child:pressed StIcon, .notification-banner .notification-button:first-child:selected StIcon {
+  color: #71adf8;
 }
 
 .notification-banner .notification-button:first-child:hover {
@@ -3897,6 +3993,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.notification-banner .notification-button:last-child:hover, .notification-banner .notification-button:last-child:active, .notification-banner .notification-button:last-child:pressed, .notification-banner .notification-button:last-child:selected {
+  color: #71adf8;
+}
+
+.notification-banner .notification-button:last-child:hover StIcon, .notification-banner .notification-button:last-child:active StIcon, .notification-banner .notification-button:last-child:pressed StIcon, .notification-banner .notification-button:last-child:selected StIcon {
+  color: #71adf8;
+}
+
 .notification-banner .notification-button:last-child:hover {
   border-image: url("img/buttons/dialog-button-primary__l--hover.svg") 10;
 }
@@ -3955,6 +4059,14 @@ StEntry:insensitive StIcon,
 
 .notification-banner .notification-button:last-child:first-child StIcon {
   color: #fff;
+}
+
+.notification-banner .notification-button:last-child:first-child:hover, .notification-banner .notification-button:last-child:first-child:active, .notification-banner .notification-button:last-child:first-child:pressed, .notification-banner .notification-button:last-child:first-child:selected {
+  color: #71adf8;
+}
+
+.notification-banner .notification-button:last-child:first-child:hover StIcon, .notification-banner .notification-button:last-child:first-child:active StIcon, .notification-banner .notification-button:last-child:first-child:pressed StIcon, .notification-banner .notification-button:last-child:first-child:selected StIcon {
+  color: #71adf8;
 }
 
 .notification-banner .notification-button:last-child:first-child:hover {
@@ -4020,6 +4132,14 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
+.hotplug-notification-item:hover, .hotplug-notification-item:active, .hotplug-notification-item:pressed, .hotplug-notification-item:selected {
+  color: #71adf8;
+}
+
+.hotplug-notification-item:hover StIcon, .hotplug-notification-item:active StIcon, .hotplug-notification-item:pressed StIcon, .hotplug-notification-item:selected StIcon {
+  color: #71adf8;
+}
+
 .hotplug-notification-item:hover {
   border-image: url("img/buttons/dialog-button-primary__s--hover.svg") 10;
 }
@@ -4030,7 +4150,7 @@ StEntry:insensitive StIcon,
 
 .hotplug-notification-item:focus {
   border-image: url("img/buttons/dialog-button-primary__s.svg") 10;
-  color: #71adf8;
+  color: #fff;
 }
 
 .hotplug-notification-item:focus StIcon {

@@ -78,16 +78,16 @@
         border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}.svg") 10;
         color: $text-primary;
         StIcon { color: $text-primary; }
-    }
 
-    &:focus:hover {
-        border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--hover.svg") 10;
-    }
+        &:hover {
+            border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--hover.svg") 10;
+        }
 
-    &:focus:active,
-    &:focus:pressed,
-    &:focus:selected {
-        border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+        &:active,
+        &:pressed,
+        &:selected {
+            border-image: url("img/buttons/button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+        }
     }
 
     &:grayed,
@@ -105,9 +105,7 @@
 // ======================================
 //  Generate dialog buttons
 //
-//  differs from @mixin btn at:
-//  {Color}  $color-secondary is text color of focus and hover states
-//  {String} $bg-secondary    is bg color of focus and hover states
+//  works like @mixin btn
 // ======================================
 @mixin btn-dialog(
     $position,
@@ -133,6 +131,14 @@
     StIcon { color: $color-primary; }
     padding: 1em .4em;
 
+    &:hover,
+    &:active,
+    &:pressed,
+    &:selected {
+        color: $color-secondary;
+        StIcon { color: $color-secondary; }
+    }
+
     &:hover {
         border-image: url("img/buttons/dialog-button-#{$bg-primary}__#{$position}--hover.svg") 10;
     }
@@ -145,18 +151,18 @@
 
     &:focus {
         border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}.svg") 10;
-        color: $color-secondary;
-        StIcon { color: $color-primary; }
-    }
+        color: $text-primary;
+        StIcon { color: $text-primary; }
 
-    &:focus:hover {
-        border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--hover.svg") 10;
-    }
+        &:hover {
+            border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--hover.svg") 10;
+        }
 
-    &:focus:active,
-    &:focus:pressed,
-    &:focus:selected {
-        border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+        &:active,
+        &:pressed,
+        &:selected {
+            border-image: url("img/buttons/dialog-button-#{$bg-secondary}__#{$position}--pressed.svg") 10;
+        }
     }
 
     &:grayed,
@@ -238,16 +244,20 @@
 @mixin btn-dialog-primary {
     @include btn-dialog(
         m,
-        $text-primary, primary,
-        $text-primary, blue,
+        $text-primary,
+        primary,
+        $text-link,
+        blue,
         $text-disabled
     );
 
     &:first-child {
         @include btn-dialog(
             f,
-            $text-primary, primary,
-            $text-primary, blue,
+            $text-primary,
+            primary,
+            $text-link,
+            blue,
             $text-disabled
         );
     }
@@ -255,8 +265,10 @@
     &:last-child {
         @include btn-dialog(
             l,
-            $text-primary, primary,
-            $text-primary, blue,
+            $text-primary,
+            primary,
+            $text-link,
+            blue,
             $text-disabled
         );
     }
@@ -264,8 +276,10 @@
     &:last-child:first-child {
         @include btn-dialog(
             s,
-            $text-primary, primary,
-            $text-primary, blue,
+            $text-primary,
+            primary,
+            $text-link,
+            blue,
             $text-disabled
         );
     }

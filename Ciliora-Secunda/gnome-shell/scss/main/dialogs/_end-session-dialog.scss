@@ -138,23 +138,29 @@
 .end-session-dialog .modal-dialog-linked-button {
     @include btn-dialog(
         m,
-        $text-danger, primary,
-        $text-primary, red
+        $text-danger,
+        primary,
+        $text-danger,
+        red
     );
 
     &:first-child {
         @include btn-dialog(
             f,
-            $text-success, primary,
-            $text-primary, green
+            $text-success,
+            primary,
+            $text-success,
+            green
         );
     }
 
     &:last-child {
         @include btn-dialog(
             l,
-            $text-danger, primary,
-            $text-primary, red
+            $text-danger,
+            primary,
+            $text-danger,
+            red
         );
     }
 }
