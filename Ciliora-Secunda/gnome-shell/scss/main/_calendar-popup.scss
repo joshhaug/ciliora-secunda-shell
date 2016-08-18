@@ -202,6 +202,7 @@
 
     &:hover, &:focus {
         border-image: url("img/misc/calendar-work-day-hover.svg") 7;
+        color: $text-primary;
     }
 
     &:active {

@@ -3364,6 +3364,7 @@ StEntry:insensitive StIcon,
 
 .calendar-work-day:hover, .calendar-work-day:focus {
   border-image: url("img/misc/calendar-work-day-hover.svg") 7;
+  color: #fff;
 }
 
 .calendar-work-day:active {
