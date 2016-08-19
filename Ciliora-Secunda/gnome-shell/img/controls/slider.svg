@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="21.21875"
-     inkscape:cx="1.6440057"
+     inkscape:cx="-5.6137263"
      inkscape:cy="7.4187702"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -133,7 +133,7 @@
     <path
        sodipodi:nodetypes="cccccccccc"
        inkscape:connector-curvature="0"
-       style="opacity:1;fill:#040404;fill-opacity:1;stroke:none"
+       style="opacity:0.75;fill:#040404;fill-opacity:1;stroke:none"
        d="m 0,290 0,4 16,0 0,-4 z m 1,1 14,0 0,2 -14,0 z"
        id="rect5190-1" />
   </g>
