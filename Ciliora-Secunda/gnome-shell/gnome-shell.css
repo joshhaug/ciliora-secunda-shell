@@ -3057,14 +3057,14 @@ StEntry:insensitive StIcon,
 #panelActivities {
   color: transparent !important;
   font-size: 0 !important;
-  background-image: url("img/menu-icons/menu-6.svg");
-  width: 24px;
-  height: 24px;
-  padding: 5px !important;
+  background-image: url("img/menu-icons/hamburger.svg");
+  width: 16px;
+  height: 16px;
+  padding: 0 9px !important;
 }
 
 #panelActivities:overview {
-  background-image: url("img/menu-icons/menu-6.svg");
+  background-image: url("img/menu-icons/hamburger.svg");
 }
 
 #panel .panel-button {
