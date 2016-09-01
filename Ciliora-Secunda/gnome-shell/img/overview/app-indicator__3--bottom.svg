@@ -30,7 +30,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="13.979167"
-     inkscape:cx="12.160637"
+     inkscape:cx="1.1442438"
      inkscape:cy="5.2687916"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -137,10 +137,10 @@
        height="18"
        width="2"
        id="rect4270-9-2"
-       style="opacity:1;fill:#d2c13d;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none"
        transform="matrix(0,-1,1,0,0,0)" />
     <rect
-       style="opacity:1;fill:#d2c13d;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none"
        id="rect4310"
        width="2"
        height="2"
@@ -154,6 +154,6 @@
        height="2"
        width="2"
        id="rect4312"
-       style="opacity:1;fill:#d2c13d;fill-opacity:1;stroke:none" />
+       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none" />
   </g>
 </svg>

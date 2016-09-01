@@ -91,7 +91,7 @@ StEntry StIcon,
 
 StEntry StIcon.capslock-warning,
 .popup-menu .search-entry StIcon.capslock-warning {
-  color: #ecd738 !important;
+  color: #ffb24f !important;
 }
 
 StEntry:focus,
@@ -1885,7 +1885,7 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .check-box StLabel {
   font-weight: bold;
-  color: #ecd738;
+  color: #ffb24f;
   padding-left: .4em;
 }
 
@@ -2064,7 +2064,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 12px;
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: #41d88b;
+  color: #44d58b;
   padding: 1em .4em;
 }
 
@@ -2075,15 +2075,15 @@ StEntry:insensitive StIcon,
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child StIcon {
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:hover, .end-session-dialog .modal-dialog-linked-button:first-child:active, .end-session-dialog .modal-dialog-linked-button:first-child:pressed, .end-session-dialog .modal-dialog-linked-button:first-child:selected {
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:hover StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:active StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:pressed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:selected StIcon {
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:hover {
@@ -2113,11 +2113,11 @@ StEntry:insensitive StIcon,
 
 .end-session-dialog .modal-dialog-linked-button:first-child:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive {
   border-image: url("img/buttons/dialog-button-primary__f.svg") 10;
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .end-session-dialog .modal-dialog-linked-button:first-child:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:insensitive StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:grayed StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:disabled StIcon, .end-session-dialog .modal-dialog-linked-button:first-child:focus:insensitive StIcon {
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .end-session-dialog .modal-dialog-linked-button:last-child {
@@ -2330,7 +2330,7 @@ StEntry:insensitive StIcon,
 .prompt-dialog-error-label {
   font-size: 12px;
   font-weight: bold;
-  color: #ecd738;
+  color: #ffb24f;
   padding-bottom: 0;
 }
 
@@ -3687,7 +3687,7 @@ StEntry:insensitive StIcon,
 }
 
 .message-list-section:first-child .message .message-media-control:hover StIcon {
-  color: #41d88b;
+  color: #44d58b;
 }
 
 .message-list-section:first-child .message .message-media-control:last-child:ltr {
@@ -5431,7 +5431,7 @@ StEntry:insensitive StIcon,
 }
 
 .login-dialog-message-warning {
-  color: #ecd738;
+  color: #ffb24f;
 }
 
 .login-dialog-message-hint {
