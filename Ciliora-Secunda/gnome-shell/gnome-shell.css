@@ -4365,7 +4365,7 @@ StEntry:insensitive StIcon,
   border-image: url("img/buttons/button-primary__s.svg") 10;
   color: #fff;
   padding: 1em;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .keyboard-key StIcon {
@@ -4437,7 +4437,6 @@ StEntry:insensitive StIcon,
   font-size: 12px;
   border-image: url("img/buttons/button-secondary__s.svg") 10;
   color: #fff;
-  font-size: 18px;
 }
 
 .keyboard-layout > *:first-child .keyboard-row > *:last-child StIcon,
@@ -4585,6 +4584,215 @@ StEntry:insensitive StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:grayed StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:disabled StIcon,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Shift key
+ *
+ * Style the first key in each row
+ * as well as the spacebar, then reset
+ * the other keys
+ */
+.keyboard-layout .keyboard-row > *:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 12px;
+  border-image: url("img/buttons/button-secondary__s.svg") 10;
+  color: #fff;
+}
+
+.keyboard-layout .keyboard-row > *:first-child StIcon {
+  width: 16px !important;
+  height: 16px !important;
+  icon-size: 16px !important;
+}
+
+.keyboard-layout .keyboard-row > *:first-child StIcon {
+  color: #fff;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:hover, .keyboard-layout .keyboard-row > *:first-child:active, .keyboard-layout .keyboard-row > *:first-child:pressed, .keyboard-layout .keyboard-row > *:first-child:selected {
+  color: #71adf8;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:hover StIcon, .keyboard-layout .keyboard-row > *:first-child:active StIcon, .keyboard-layout .keyboard-row > *:first-child:pressed StIcon, .keyboard-layout .keyboard-row > *:first-child:selected StIcon {
+  color: #71adf8;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:hover {
+  border-image: url("img/buttons/button-secondary__s--hover.svg") 10;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:active, .keyboard-layout .keyboard-row > *:first-child:pressed, .keyboard-layout .keyboard-row > *:first-child:selected {
+  border-image: url("img/buttons/button-secondary__s--pressed.svg") 10;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:focus {
+  border-image: url("img/buttons/button-blue__s.svg") 10;
+  color: #fff;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:focus StIcon {
+  color: #fff;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:focus:hover {
+  border-image: url("img/buttons/button-blue__s--hover.svg") 10;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:focus:active, .keyboard-layout .keyboard-row > *:first-child:focus:pressed, .keyboard-layout .keyboard-row > *:first-child:focus:selected {
+  border-image: url("img/buttons/button-blue__s--pressed.svg") 10;
+}
+
+.keyboard-layout .keyboard-row > *:first-child:grayed, .keyboard-layout .keyboard-row > *:first-child:disabled, .keyboard-layout .keyboard-row > *:first-child:insensitive, .keyboard-layout .keyboard-row > *:first-child:focus:grayed, .keyboard-layout .keyboard-row > *:first-child:focus:disabled, .keyboard-layout .keyboard-row > *:first-child:focus:insensitive {
+  border-image: url("img/buttons/button-secondary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.keyboard-layout .keyboard-row > *:first-child:grayed StIcon, .keyboard-layout .keyboard-row > *:first-child:disabled StIcon, .keyboard-layout .keyboard-row > *:first-child:insensitive StIcon, .keyboard-layout .keyboard-row > *:first-child:focus:grayed StIcon, .keyboard-layout .keyboard-row > *:first-child:focus:disabled StIcon, .keyboard-layout .keyboard-row > *:first-child:focus:insensitive StIcon {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Reset the style for the spacebar and the first keys
+ * in the first/second row
+ */
+.keyboard-layout > *:first-child .keyboard-row > *:first-child,
+.keyboard-layout > *:last-child .keyboard-row > *,
+.keyboard-layout .keyboard-row:last-child > *:first-child {
+  background-color: transparent;
+  background-gradient-direction: none;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+  box-shadow: 0 0 transparent;
+  border: none;
+  border-width: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 12px;
+  border-image: url("img/buttons/button-primary__s.svg") 10;
+  color: #fff;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child StIcon,
+.keyboard-layout > *:last-child .keyboard-row > * StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child StIcon {
+  width: 16px !important;
+  height: 16px !important;
+  icon-size: 16px !important;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child StIcon,
+.keyboard-layout > *:last-child .keyboard-row > * StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child StIcon {
+  color: #fff;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:hover, .keyboard-layout > *:first-child .keyboard-row > *:first-child:active, .keyboard-layout > *:first-child .keyboard-row > *:first-child:pressed, .keyboard-layout > *:first-child .keyboard-row > *:first-child:selected,
+.keyboard-layout > *:last-child .keyboard-row > *:hover,
+.keyboard-layout > *:last-child .keyboard-row > *:active,
+.keyboard-layout > *:last-child .keyboard-row > *:pressed,
+.keyboard-layout > *:last-child .keyboard-row > *:selected,
+.keyboard-layout .keyboard-row:last-child > *:first-child:hover,
+.keyboard-layout .keyboard-row:last-child > *:first-child:active,
+.keyboard-layout .keyboard-row:last-child > *:first-child:pressed,
+.keyboard-layout .keyboard-row:last-child > *:first-child:selected {
+  color: #71adf8;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:hover StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:active StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:pressed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:selected StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:hover StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:active StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:pressed StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:selected StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:hover StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:active StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:pressed StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:selected StIcon {
+  color: #71adf8;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:hover,
+.keyboard-layout > *:last-child .keyboard-row > *:hover,
+.keyboard-layout .keyboard-row:last-child > *:first-child:hover {
+  border-image: url("img/buttons/button-primary__s--hover.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:active, .keyboard-layout > *:first-child .keyboard-row > *:first-child:pressed, .keyboard-layout > *:first-child .keyboard-row > *:first-child:selected,
+.keyboard-layout > *:last-child .keyboard-row > *:active,
+.keyboard-layout > *:last-child .keyboard-row > *:pressed,
+.keyboard-layout > *:last-child .keyboard-row > *:selected,
+.keyboard-layout .keyboard-row:last-child > *:first-child:active,
+.keyboard-layout .keyboard-row:last-child > *:first-child:pressed,
+.keyboard-layout .keyboard-row:last-child > *:first-child:selected {
+  border-image: url("img/buttons/button-primary__s--pressed.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:focus,
+.keyboard-layout > *:last-child .keyboard-row > *:focus,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus {
+  border-image: url("img/buttons/button-blue__s.svg") 10;
+  color: #fff;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:focus StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:focus StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus StIcon {
+  color: #fff;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:hover,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:hover,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:hover {
+  border-image: url("img/buttons/button-blue__s--hover.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:active, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:pressed, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:selected,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:active,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:pressed,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:selected,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:active,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:pressed,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:selected {
+  border-image: url("img/buttons/button-blue__s--pressed.svg") 10;
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:grayed, .keyboard-layout > *:first-child .keyboard-row > *:first-child:disabled, .keyboard-layout > *:first-child .keyboard-row > *:first-child:insensitive, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:grayed, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:disabled, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:insensitive,
+.keyboard-layout > *:last-child .keyboard-row > *:grayed,
+.keyboard-layout > *:last-child .keyboard-row > *:disabled,
+.keyboard-layout > *:last-child .keyboard-row > *:insensitive,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:grayed,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:disabled,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:insensitive,
+.keyboard-layout .keyboard-row:last-child > *:first-child:grayed,
+.keyboard-layout .keyboard-row:last-child > *:first-child:disabled,
+.keyboard-layout .keyboard-row:last-child > *:first-child:insensitive,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:grayed,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:disabled,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:insensitive {
+  border-image: url("img/buttons/button-primary__s.svg") 10;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.keyboard-layout > *:first-child .keyboard-row > *:first-child:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:insensitive StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:grayed StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:disabled StIcon, .keyboard-layout > *:first-child .keyboard-row > *:first-child:focus:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:insensitive StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:grayed StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:disabled StIcon,
+.keyboard-layout > *:last-child .keyboard-row > *:focus:insensitive StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:grayed StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:disabled StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:insensitive StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:grayed StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:disabled StIcon,
+.keyboard-layout .keyboard-row:last-child > *:first-child:focus:insensitive StIcon {
   color: rgba(255, 255, 255, 0.3);
 }
 

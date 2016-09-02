@@ -18,7 +18,7 @@
 .keyboard-key {
     @include btn-primary;
     @include btn-width(small);
-    font-size: $font-size-xl;
+    font-size: $font-size-xl !important;
 }
 
 /* Backspace, return, hide-keyboard & abc/123 keys */
@@ -27,7 +27,25 @@
 .keyboard-layout > *:last-child .keyboard-row:last-child > *:last-child,
 .keyboard-layout > *:last-child .keyboard-row:first-child > *:first-child {
     @include btn-secondary;
-    font-size: $font-size-xl;
+}
+
+/* Shift key
+ *
+ * Style the first key in each row
+ * as well as the spacebar, then reset
+ * the other keys
+ */
+.keyboard-layout .keyboard-row > *:first-child {
+    @include btn-secondary;
+}
+
+/* Reset the style for the spacebar and the first keys
+ * in the first/second row
+ */
+.keyboard-layout > *:first-child .keyboard-row > *:first-child,
+.keyboard-layout > *:last-child .keyboard-row > *,
+.keyboard-layout .keyboard-row:last-child > *:first-child {
+    @include btn-primary;
 }
 
 /* subkeys popup */
