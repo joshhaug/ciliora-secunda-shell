@@ -60,7 +60,7 @@
     }
 
     StScrollBar {
-        padding: 0 0 4px 0;
+        padding: 0 0 4px 2px;
     }
 
     #EvalBox {
@@ -171,7 +171,7 @@
         padding: 5px;
 
         StScrollBar {
-            padding: 12px 6px 12px 0;
+            padding: 17px 6px 17px 0;
         }
     }
 }
@@ -184,7 +184,7 @@
 
     color: $text-primary;
     spacing: 0;
-    padding: 10px 2px 10px 10px !important;
+    padding: 10px 0 10px 10px !important;
 
     > StBoxLayout {
         border-image: url("img/containers/light-bg--top__vertical.svg") 10;
