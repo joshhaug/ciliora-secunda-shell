@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="14.145833"
-     inkscape:cx="-26.826927"
-     inkscape:cy="12.954633"
+     inkscape:cx="5.6914832"
+     inkscape:cy="12.389095"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -179,7 +179,7 @@
        height="22"
        width="1"
        id="rect4140"
-       style="opacity:0.15;fill:#e9f0ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:0.1;fill:#e9f0ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        transform="matrix(0,1,-1,0,0,0)" />
   </g>
 </svg>
