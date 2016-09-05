@@ -113,5 +113,5 @@ Make sure to update the `asset_dirs` variable in case you change your dirs.
 
 ---
 
-<img src="http://orig04.deviantart.net/3e4e/f/2016/245/8/4/ciliora_secunda_shell_by_zagortenay333-d86qzm2.png" id="preview">
+<img src="http://orig11.deviantart.net/0c0c/f/2016/249/f/2/ciliora_secunda_shell_by_zagortenay333-d86qzm2.png" id="preview">
 <sup>**Screenshot info:** [Wallpaper](http://nosphere.deviantart.com/art/Ns-Wp-03-447969721), [Icons](https://github.com/moka-project/moka-icon-theme)</sup>
