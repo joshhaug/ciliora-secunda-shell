@@ -30,8 +30,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="13.979167"
-     inkscape:cx="-36.053967"
-     inkscape:cy="10.276243"
+     inkscape:cx="4.2202496"
+     inkscape:cy="9.2032177"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -137,9 +137,9 @@
        height="18"
        width="2"
        id="rect4270-9-2"
-       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none" />
+       style="opacity:1;fill:#eea84c;fill-opacity:1;stroke:none" />
     <rect
-       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none"
+       style="opacity:1;fill:#eea84c;fill-opacity:1;stroke:none"
        id="rect4310"
        width="2"
        height="2"
@@ -153,6 +153,6 @@
        height="2"
        width="2"
        id="rect4312"
-       style="opacity:1;fill:#f7a843;fill-opacity:1;stroke:none" />
+       style="opacity:1;fill:#eea84c;fill-opacity:1;stroke:none" />
   </g>
 </svg>
