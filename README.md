@@ -14,7 +14,7 @@
 
 ####Compatibility
 
-The latest version of this theme is on the master branch, and it supports gnome-shell `3.20`.
+The latest version of this theme is on the master branch, and it supports gnome-shell `3.20` and `3.22`.
 
 For older versions, check the available [releases](../../releases).
 

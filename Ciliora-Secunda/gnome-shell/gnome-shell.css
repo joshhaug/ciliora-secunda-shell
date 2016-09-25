@@ -2974,6 +2974,10 @@ StEntry:insensitive StIcon,
   font-size: 30px;
 }
 
+.cycler-highlight {
+  border: 5px #5A94DC;
+}
+
 /* ======================================
  * ! Workspace Switcher
  * ====================================== */
@@ -3367,7 +3371,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-work-day:active {
+.calendar-work-day:selected, .calendar-work-day:active {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }
@@ -3414,7 +3418,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-nonwork-day:active {
+.calendar-nonwork-day:selected, .calendar-nonwork-day:active {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }
@@ -3425,7 +3429,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active {
+.calendar-nonwork-day.calendar-day-with-events:hover, .calendar-nonwork-day.calendar-day-with-events:focus, .calendar-nonwork-day.calendar-day-with-events:active, .calendar-nonwork-day.calendar-day-with-events:selected {
   border-image: url("img/containers/hover-violet.svg") 7;
   color: #fff;
 }
@@ -3435,7 +3439,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active {
+.calendar-nonwork-day.calendar-today:hover, .calendar-nonwork-day.calendar-today:focus, .calendar-nonwork-day.calendar-today:active, .calendar-nonwork-day.calendar-today:selected {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }
@@ -3445,7 +3449,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active {
+.calendar-nonwork-day.calendar-day-with-events.calendar-today:hover, .calendar-nonwork-day.calendar-day-with-events.calendar-today:focus, .calendar-nonwork-day.calendar-day-with-events.calendar-today:active, .calendar-nonwork-day.calendar-day-with-events.calendar-today:selected {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }
@@ -3461,7 +3465,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-other-month-day:active {
+.calendar-other-month-day:selected, .calendar-other-month-day:active {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }
@@ -3472,7 +3476,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active {
+.calendar-other-month-day.calendar-day-with-events:hover, .calendar-other-month-day.calendar-day-with-events:focus, .calendar-other-month-day.calendar-day-with-events:active, .calendar-other-month-day.calendar-day-with-events:selected {
   border-image: url("img/containers/hover-violet.svg") 7;
   color: #fff;
 }
@@ -3482,7 +3486,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active {
+.calendar-other-month-day.calendar-today:hover, .calendar-other-month-day.calendar-today:focus, .calendar-other-month-day.calendar-today:active, .calendar-other-month-day.calendar-today:selected {
   border-image: url("img/hover/hover.svg") 7;
   color: #fff;
 }
