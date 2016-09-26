@@ -14,19 +14,22 @@
     border-image: url("img/containers/popup.svg") 7;
 
     StIcon { color: $text-primary; }
-}
 
-.osd-window .osd-monitor-label {
-    font-size: $font-size-mega;
-    padding-top: 0;
-}
+    &-label {
+        font-size: $font-size-mega;
+        padding-top: 0;
+    }
 
-.osd-window .level {
-    border-radius: 0 !important;
-    border-image: url("img/controls/slider-OSD.svg") 9 6 8 8;
-    color: $accent-primary;
-    height: 6px;
-    padding: 6px;
+    .level {
+        border-radius: 0 !important;
+        border-image: url("img/controls/slider-OSD.svg") 9 6 8 8;
+        height: 6px;
+        padding: 6px;
+    }
+
+    .level-bar {
+        background-color: $accent-primary;
+    }
 }
 
 .resize-popup  {

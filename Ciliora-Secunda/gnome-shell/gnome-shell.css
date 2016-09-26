@@ -2875,7 +2875,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.osd-window .osd-monitor-label {
+.osd-window-label {
   font-size: 72px;
   padding-top: 0;
 }
@@ -2883,9 +2883,12 @@ StEntry:insensitive StIcon,
 .osd-window .level {
   border-radius: 0 !important;
   border-image: url("img/controls/slider-OSD.svg") 9 6 8 8;
-  color: #5A94DC;
   height: 6px;
   padding: 6px;
+}
+
+.osd-window .level-bar {
+  background-color: #5A94DC;
 }
 
 .resize-popup {
