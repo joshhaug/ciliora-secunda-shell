@@ -2979,6 +2979,7 @@ StEntry:insensitive StIcon,
 
 .cycler-highlight {
   border: 5px #5A94DC;
+  background: rgba(90, 148, 220, 0.1);
 }
 
 /* ======================================
