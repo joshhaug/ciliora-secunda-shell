@@ -3064,14 +3064,14 @@ StEntry:insensitive StIcon,
 #panelActivities {
   color: transparent !important;
   font-size: 0 !important;
-  background-image: url("img/menu-icons/hamburger.svg");
+  background-image: url("img/menu-icons/lambda.svg");
   width: 16px;
   height: 16px;
   padding: 0 9px !important;
 }
 
 #panelActivities:overview {
-  background-image: url("img/menu-icons/hamburger.svg");
+  background-image: url("img/menu-icons/lambda.svg");
 }
 
 #panel .panel-button {
@@ -3385,7 +3385,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active {
+.calendar-work-day.calendar-day-with-events:hover, .calendar-work-day.calendar-day-with-events:focus, .calendar-work-day.calendar-day-with-events:active, .calendar-work-day.calendar-day-with-events:selected {
   border-image: url("img/containers/hover-violet.svg") 7;
   color: #fff;
 }
@@ -3395,7 +3395,7 @@ StEntry:insensitive StIcon,
   color: #fff;
 }
 
-.calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active {
+.calendar-work-day.calendar-today:hover, .calendar-work-day.calendar-today:focus, .calendar-work-day.calendar-today:active, .calendar-work-day.calendar-today:selected {
   border-image: url("img/containers/hover.svg") 7;
   color: #fff;
 }

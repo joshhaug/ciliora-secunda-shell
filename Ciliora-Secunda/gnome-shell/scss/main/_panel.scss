@@ -24,12 +24,12 @@
         color: rgba(0, 0, 0, 0) !important;
         font-size: 0 !important;
 
-        background-image: url("img/menu-icons/hamburger.svg");
+        background-image: url("img/menu-icons/lambda.svg");
         @include size(16px);
         padding: 0 9px !important;
 
         &:overview {
-            background-image: url("img/menu-icons/hamburger.svg");
+            background-image: url("img/menu-icons/lambda.svg");
         }
     }
 

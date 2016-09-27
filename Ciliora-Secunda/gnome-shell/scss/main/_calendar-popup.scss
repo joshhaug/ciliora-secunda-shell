@@ -205,8 +205,7 @@
         color: $text-primary;
     }
 
-    &:selected,
-    &:active {
+    &:selected, &:active {
         border-image: url("img/containers/hover.svg") 7;
         color: $text-primary;
     }
@@ -216,7 +215,7 @@
         background-image: none !important;
         color: $text-primary;
 
-        &:hover, &:focus, &:active {
+        &:hover, &:focus, &:active , &:selected {
             border-image: url("img/containers/hover-violet.svg") 7;
             color: $text-primary;
         }
@@ -226,7 +225,7 @@
         border-image: url("img/misc/calendar-work-day-today.svg") 7;
         color: $text-primary;
 
-        &:hover, &:focus, &:active {
+        &:hover, &:focus, &:active , &:selected {
             border-image: url("img/containers/hover.svg") 7;
             color: $text-primary;
         }
