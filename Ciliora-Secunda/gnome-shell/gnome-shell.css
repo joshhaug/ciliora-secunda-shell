@@ -2938,7 +2938,7 @@ StEntry:insensitive StIcon,
 }
 
 .switcher-list .item-box:outlined {
-  border: 0 transparent !important;
+  border-image: url("img/containers/popup-inside-2-active.svg") 7;
 }
 
 .switcher-list .item-box:selected {
