@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sub.svg"
+   sodipodi:docname="submenu-bg.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -27,11 +27,11 @@
      pagecolor="#8c8c8c"
      bordercolor="#ff5e00"
      borderopacity="1"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="17.382377"
-     inkscape:cx="-3.942903"
-     inkscape:cy="8.6627096"
+     inkscape:zoom="14.145833"
+     inkscape:cx="-4.6126664"
+     inkscape:cy="11.789334"
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:grid-bbox="true"
@@ -129,42 +129,65 @@
      inkscape:label="Base"
      id="layer1"
      transform="translate(0,-276)">
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.04"
+       d="m 1,278 0,1 22,0 0,-1 -22,0 z"
+       id="path4238" />
     <rect
-       y="-297"
+       y="280"
        x="1"
-       height="1"
-       width="22"
-       id="rect4708"
-       style="opacity:0.07000002;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
-    <rect
-       y="-298"
-       x="1"
-       height="21"
+       height="16"
        width="22"
        id="rect5315-5"
-       style="opacity:0.5;fill:#080d18;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
+       style="opacity:0.8;fill:#2c343c;fill-opacity:1;stroke:none" />
     <rect
-       style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
-       id="rect4706"
-       width="22"
-       height="1"
-       x="1"
-       y="-298"
-       transform="scale(1,-1)" />
-    <rect
-       y="-299"
+       y="279"
        x="1"
        height="1"
        width="22"
        id="rect4719"
-       style="opacity:0.85;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(1,-1)" />
+       style="fill:#000000;fill-opacity:1;stroke:none;opacity:0.75" />
     <path
-       style="display:inline;opacity:0.03999999;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       d="m 1,299 0,1 22,0 0,-1 -22,0 z"
-       id="rect4185"
+       style="opacity:0.35;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 1,280 22,0 0,1 -22,0 z"
+       id="rect2996"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.01;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 23,295 -22,0 0,-1 22,0 z"
+       id="rect3014"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.08;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 23,296 -22,0 0,-1 22,0 z"
+       id="rect3008"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.09;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 23,282 -22,0 0,-1 22,0 z"
+       id="rect3818"
+       inkscape:connector-curvature="0" />
+    <path
+       style="opacity:0.04;fill:#000000;fill-opacity:1;stroke:none"
+       d="m 23,283 -22,0 0,-1 22,0 z"
+       id="rect3820"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="opacity:0.75;fill:#000000;fill-opacity:1;stroke:none"
+       id="rect3090"
+       width="22"
+       height="1"
+       x="1"
+       y="296" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path3125"
+       d="m 23,284 -22,0 0,-1 22,0 z"
+       style="opacity:0.01000001;fill:#000000;fill-opacity:1;stroke:none" />
+    <path
+       id="path4186"
+       d="m 1,297 0,1 22,0 0,-1 -22,0 z"
+       style="opacity:0.03999999;fill:#000000;fill-opacity:1;stroke:none"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

@@ -2837,7 +2837,7 @@ StEntry:insensitive StIcon,
 }
 
 .popup-sub-menu {
-  border-image: url("img/containers/submenu-bg.svg") 7;
+  border-image: url("img/containers/popup-submenu.svg") 7;
   box-shadow: 0 0 transparent;
   padding: 12px 0;
 }
@@ -3004,7 +3004,7 @@ StEntry:insensitive StIcon,
 }
 
 .ws-switcher-active-up, .ws-switcher-active-down {
-  border-image: url("img/containers/popup-inside-2-active.svg") 7;
+  border-image: url("img/containers/alt-tab-active.svg") 7;
   height: 30px;
   background-image: none !important;
   background-color: transparent !important;
@@ -4859,7 +4859,7 @@ StEntry:insensitive StIcon,
   font-weight: bold;
   font-size: 14px;
   padding: .7em;
-  border-image: url("img/containers/sub.svg") 7;
+  border-image: url("img/containers/submenu--top.svg") 7;
 }
 
 .candidate-box {
