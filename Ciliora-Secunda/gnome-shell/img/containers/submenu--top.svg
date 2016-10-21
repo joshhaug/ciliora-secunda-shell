@@ -16,7 +16,7 @@
    id="svg11300"
    sodipodi:version="0.32"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="sub.svg"
+   sodipodi:docname="submenu--top.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
    version="1.0"
    style="display:inline;enable-background:new">
@@ -30,7 +30,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="12.291197"
-     inkscape:cx="-7.7728011"
+     inkscape:cx="-20.302093"
      inkscape:cy="6.1577805"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -146,7 +146,7 @@
        style="opacity:0.8;fill:#2c343c;fill-opacity:1;stroke:none"
        transform="scale(1,-1)" />
     <rect
-       style="opacity:0.3;fill:#000000;fill-opacity:1;stroke:none"
+       style="opacity:0.2;fill:#000000;fill-opacity:1;stroke:none"
        id="rect4706"
        width="22"
        height="1"
@@ -166,5 +166,13 @@
        d="m 1,299 0,1 22,0 0,-1 -22,0 z"
        id="rect4185"
        inkscape:connector-curvature="0" />
+    <rect
+       transform="scale(1,-1)"
+       y="-297"
+       x="1"
+       height="1"
+       width="22"
+       id="rect4170"
+       style="opacity:0.02;fill:#000000;fill-opacity:1;stroke:none" />
   </g>
 </svg>

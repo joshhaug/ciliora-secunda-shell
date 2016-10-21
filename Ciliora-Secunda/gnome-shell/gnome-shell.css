@@ -247,18 +247,13 @@ StEntry:insensitive StIcon,
 .slider {
   min-height: 16px;
   -slider-height: 2px;
-  -slider-background-color: rgba(8, 13, 24, 0.3);
+  -slider-background-color: rgba(44, 52, 60, 0.8);
   -slider-border-color: transparent;
   -slider-active-background-color: #5A94DC;
   -slider-active-border-color: #5A94DC;
   -slider-border-width: 0;
   -slider-handle-radius: 0;
   border-image: url("img/controls/slider.svg") 9 6 8 8;
-}
-
-.popup-menu-item.selected .slider {
-  -slider-background-color: rgba(8, 13, 24, 0.5);
-  border-image: url("img/controls/slider-hover.svg") 9 6 8 8;
 }
 
 /* ======================================
@@ -2882,7 +2877,7 @@ StEntry:insensitive StIcon,
 
 .osd-window .level {
   border-radius: 0 !important;
-  border-image: url("img/controls/slider-OSD.svg") 9 6 8 8;
+  border-image: url("img/controls/slider-OSD.svg") 9 9 8 8;
   height: 6px;
   padding: 6px;
 }
@@ -3004,7 +2999,7 @@ StEntry:insensitive StIcon,
 }
 
 .ws-switcher-active-up, .ws-switcher-active-down {
-  border-image: url("img/containers/alt-tab-active.svg") 7;
+  border-image: url("img/containers/popup-inside-2-active.svg") 7;
   height: 30px;
   background-image: none !important;
   background-color: transparent !important;
